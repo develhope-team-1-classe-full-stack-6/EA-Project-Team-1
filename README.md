@@ -17,9 +17,9 @@ Convenzione:
 
   I commit dovranno avere la seguente dicitura: “feat: <<oggetto commit>> <<n. versione>>” (es.: feat: add body part 3 in html v. 1)
 
-  Aggiungere il css al file scss/_home.scss (commentare l'inizio del proprio task es. /* Header */ )
+  Aggiungere il css al file scss/_home.scss (commentare l'inizio del proprio task es. /* Giochi in evidenza */ )
 
-  Css di Header e Footer su scss.style.scss
+  Css di Header e Footer su scss/style.scss
 
   Aggiungere le variabili, Mixin e Functions nel file scss/_config.scss;
 
