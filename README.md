@@ -27,7 +27,7 @@ Convenzione:
     mobile max-width: 576px
     tablet max-width: 991px
 
-  Aggiungere buttons e cards sul file scss/_components.scss 
+  Aggiungere buttons e cards sul file scss/_components.scss (questo punto sarebbe da discuterne insieme)
 
 Tasks: 
   https://trello.com/b/oijAaTE2/ea-project-team-1
