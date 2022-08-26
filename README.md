@@ -11,13 +11,15 @@ Membri del Team 1:
 repository: https://github.com/ugoscelfo/EA-Project-Team-1.git
 
 Convenzione:
-  Creare branch a partire dal “dev”;
+  Creare branch a partire dal “dev”
 
-  Nominare il branch con la seguente dicitura: feature/nome_persona (es. feature/dario);
+  Nominare il branch con la seguente dicitura: feature/nome_persona (es. feature/dario)
 
-  I commit dovranno avere la seguente dicitura: “feat: <<oggetto commit>> <<n. versione>>” (es.: feat: add body part 3 in html v. 1);
+  I commit dovranno avere la seguente dicitura: “feat: <<oggetto commit>> <<n. versione>>” (es.: feat: add body part 3 in html v. 1)
 
-  Aggiungere il css al file scss/_home.scss; (commentare l'inizio del proprio task es. /* Header */ )
+  Aggiungere il css al file scss/_home.scss (commentare l'inizio del proprio task es. /* Header */ )
+
+  Css di Header e Footer su scss.style.scss
 
   Aggiungere le variabili, Mixin e Functions nel file scss/_config.scss;
 
