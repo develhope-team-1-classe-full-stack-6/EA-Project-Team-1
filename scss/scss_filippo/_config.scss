@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@mixin typography ($size, $spacing,$height) {
+    font-size: $size;
+    letter-spacing: $spacing;
+    line-height: $height;
+}
