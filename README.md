@@ -17,19 +17,14 @@ Convenzione:
 
   I commit dovranno avere la seguente dicitura: “feat: <<oggetto commit>> <<n. versione>>” (es.: feat: add body part 3 in html v. 1)
 
-  Aggiungere il css al file scss/_home.scss (commentare l'inizio del proprio task es. /* Giochi in evidenza */ )
+  I componenti sono suddivisi ognuno con la sua cartella all interno di SCSS, incluso l'html del componente stesso
 
-  Css di Header e Footer su scss/style.scss
+  Aggiungere le immagini nella cartella assets/images
 
-  Aggiungere le variabili, Mixin e Functions nel file scss/_config.scss;
+  Aggiungere i fonts su assets/fonts
 
-  Aggiungere le immagini nella cartella assets/
-
-  Aggiungere il responsive sul file scss/_responsive.scss 
-    mobile max-width: 576px
-    tablet max-width: 991px
-
-  Aggiungere buttons e cards sul file scss/_components.scss (questo punto sarebbe da discuterne insieme)
+  Il responsive va messo per ogni elemento sul proprio foglio di stile (scss)
+    Breakpoints: Tablet (max-width: 1023px) Mobile (max-width: 767px)
 
 Tasks: 
   https://trello.com/b/oijAaTE2/ea-project-team-1
