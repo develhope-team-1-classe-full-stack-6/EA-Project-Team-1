@@ -8,48 +8,90 @@
 $styles_selectors: (
 
     "body": (
-        "font-family":
-            ("ElectronicArtsText": '"ElectronicArtsText", "Verdana", "Helvetica", "Arial", sans-serif'),
+        "font-size": (
+            "mobile": 16px,
+            "tablet": 18px,
+            "desktop": 18px
+        ),
+
+        "font-family": (
+            "ElectronicArtsText": '"ElectronicArtsText", "Verdana", "Helvetica", "Arial", sans-serif'),
 
         "font-weight":(
             "light": 300,
             "normal": 400,
             "bold": 600),
 
-        "letter-spacing":( 
-        "normal": normal)
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+
+        "line-height": (
+            "mobile": 1.65,
+            "tablet": 1.5,
+            "desktop": 1.5)
     ),
 
     "h1": (
 
-    "font-size": (
-        "tablet": 44px,
-        "desktop": 48px),
+        "font-size": (
+            "mobile": 40px,
+            "tablet": 44px,
+            "desktop": 48px),
 
-    "font-weight": (
-        "400" : 400),
+        "font-weight": (
+            "400" : 400),
 
-    "letter-spacing": (
-        "mobile": normal,
-        "tablet": normal,
-        "desktop": normal),
-    
-    "line-height": (
-        "mobile": 1.25,
-        "tablet": 1.25,
-        "desktop": 1.35),
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+        
+        "line-height": (
+            "mobile": 1.25,
+            "tablet": 1.25,
+            "desktop": 1.35),
 
-    "margin": (
-        "mobile": 0.65em 0,
-        "tablet": 0.65em 0,
-        "desktop": 0.65em 0)
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+        
+    ),
+
+    "h2": (
+
+        "font-size": (
+            "mobile": 32px,
+            "tablet": 36px,
+            "desktop": 40px),
+
+        "font-weight": (
+            "400" : 400),
+
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+        
+        "line-height": (
+            "mobile": 1.25,
+            "tablet": 1.25,
+            "desktop": 1.35),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+        
     ),
 
     "h3": (
         "font-size": (
-            "desktop": 36px,
+            "mobile": 28px,
             "tablet": 32px,
-            "mobile": 28px),
+            "desktop": 36px),
 
         "letter-spacing": (
             "desktop": normal,
@@ -68,15 +110,13 @@ $styles_selectors: (
             "mobile": 0.75em 0,
             "tablet": 0.75em 0,
             "desktop": 0.65em 0)
-    )
-);
-
-$styles_classes: (
-    "d4": (
+    ), 
+    
+    "h4": (
         "font-size": (
-            "desktop": 44px,
-            "tablet": 40px,
-            "mobile": 32px),
+            "mobile": 20px,
+            "tablet": 24px,
+            "desktop": 24px),
 
         "letter-spacing": (
             "desktop": normal,
@@ -84,9 +124,86 @@ $styles_classes: (
             "mobile": normal),
 
         "line-height": (
-            "desktop": 1.15,
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+    ),  
+    
+    "h5": (
+        "font-size": (
+            "mobile": 20px,
+            "tablet": 24px,
+            "desktop": 24px),
+
+        "letter-spacing": (
+            "mobile": -0.025em,
+            "tablet": -0.025em,
+            "desktop": -0.025em),
+
+        "line-height": (
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+    ),  
+    
+    "h6": (
+        "font-size": (
+            "mobile": 20px,
+            "tablet": 24px,
+            "desktop": 24px),
+
+        "letter-spacing": (
+            "mobile": -0.025em,
+            "tablet": -0.025em,
+            "desktop": -0.025em),
+
+        "line-height": (
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+    )
+);
+
+$styles_classes: (
+    "d1": (
+        "font-size": (
+            "mobile": 50px,
+            "tablet": 64px,
+            "desktop": 80px),
+
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+
+        "line-height": (
+            "mobile": 1.15,
             "tablet": 1.15,
-            "mobile": 1.15),
+            "desktop": 1.15),
 
         "font-style": (
             "normal": normal),
@@ -96,6 +213,387 @@ $styles_classes: (
             
         "font-family": (
             "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+    ),
+
+    "d2": (
+        "font-size": (
+            "mobile": 42px,
+            "tablet": 54px,
+            "desktop": 68px),
+
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+
+        "line-height": (
+            "mobile": 1.15,
+            "tablet": 1.15,
+            "desktop": 1.15),
+
+        "font-style": (
+            "normal": normal),
+            
+        "font-weight": (
+            "600": 600),
+            
+        "font-family": (
+            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+    ),
+
+    "d3": (
+        "font-size": (
+            "mobile": 36px,
+            "tablet": 44px,
+            "desktop": 54px),
+
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+
+        "line-height": (
+            "mobile": 1.15,
+            "tablet": 1.15,
+            "desktop": 1.15),
+
+        "font-style": (
+            "normal": normal),
+            
+        "font-weight": (
+            "600": 600),
+            
+        "font-family": (
+            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+    ),
+
+    "d4": (
+        "font-size": (
+            "mobile": 32px,
+            "tablet": 40px,
+            "desktop": 44px),
+
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+
+        "line-height": (
+            "mobile": 1.15,
+            "tablet": 1.15,
+            "desktop": 1.15),
+
+        "font-style": (
+            "normal": normal),
+            
+        "font-weight": (
+            "600": 600),
+            
+        "font-family": (
+            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+    ),
+
+    "d5": (
+        "font-size": (
+            "mobile": 22px,
+            "desktop": 32px),
+
+        "letter-spacing": (
+            "normal": normal),
+
+        "line-height": (
+            "100":100%),
+
+        "font-style": (
+            "normal": normal),
+            
+        "font-weight": (
+            "600": 600),
+            
+        "font-family": (
+            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+    ),
+
+    "d6": (
+        "font-size": (
+            "mobile": 20px,
+            "desktop": 24px),
+
+        "letter-spacing": (
+            "normal": normal),
+
+        "line-height": (
+            "100":100%),
+
+        "font-style": (
+            "normal": normal),
+            
+        "font-weight": (
+            "600": 600),
+            
+        "font-family": (
+            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+    ),
+
+    "h1": (
+
+        "font-size": (
+            "mobile": 40px,
+            "tablet": 44px,
+            "desktop": 48px),
+
+        "font-weight": (
+            "400" : 400),
+
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+        
+        "line-height": (
+            "mobile": 1.25,
+            "tablet": 1.25,
+            "desktop": 1.35),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+        
+    ),
+
+    "h2": (
+
+        "font-size": (
+            "mobile": 32px,
+            "tablet": 36px,
+            "desktop": 40px),
+
+        "font-weight": (
+            "400" : 400),
+
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+        
+        "line-height": (
+            "mobile": 1.25,
+            "tablet": 1.25,
+            "desktop": 1.35),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+        
+    ),
+
+    "h3": (
+        "font-size": (
+            "mobile": 28px,
+            "tablet": 32px,
+            "desktop": 36px),
+
+        "letter-spacing": (
+            "desktop": normal,
+            "tablet": normal,
+            "mobile": normal),
+
+        "line-height": (
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.75em 0,
+            "tablet": 0.75em 0,
+            "desktop": 0.65em 0)
+    ), 
+    
+    "h4": (
+        "font-size": (
+            "mobile": 20px,
+            "tablet": 24px,
+            "desktop": 24px),
+
+        "letter-spacing": (
+            "desktop": normal,
+            "tablet": normal,
+            "mobile": normal),
+
+        "line-height": (
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+    ),  
+    
+    "h5": (
+        "font-size": (
+            "mobile": 20px,
+            "tablet": 24px,
+            "desktop": 24px),
+
+        "letter-spacing": (
+            "mobile": -0.025em,
+            "tablet": -0.025em,
+            "desktop": -0.025em),
+
+        "line-height": (
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+    ),  
+    
+    "h6": (
+        "font-size": (
+            "mobile": 20px,
+            "tablet": 24px,
+            "desktop": 24px),
+
+        "letter-spacing": (
+            "mobile": -0.025em,
+            "tablet": -0.025em,
+            "desktop": -0.025em),
+
+        "line-height": (
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.65em 0,
+            "tablet": 0.65em 0,
+            "desktop": 0.65em 0)
+    ),
+
+    "l1": (
+        "font-size": (
+            "mobile": 24px,
+            "tablet": 24px,
+            "desktop": 26px),
+        
+        
+        "font-weight": ( 
+            "600":600),
+
+        "letter-spacing": (
+            "normal": normal),
+
+        "line-height": (
+            "mobile": 1.35,
+            "tablet": 1.35,
+            "desktop": 1.35),
+
+        "margin": (
+            "mobile": 1em 0,
+            "tablet": 1em 0,
+            "desktop": 1em 0)
+    ),
+
+    "l2": (
+        "font-size": (
+            "mobile": 14px,
+            "tablet": 14px,
+            "desktop": 16px),
+        
+        
+        "font-weight": ( 
+            "600":600),
+
+        "letter-spacing": (
+            "normal": normal),
+
+        "line-height": (
+            "mobile": 1.35,
+            "tablet": 1.35,
+            "desktop": 1.35),
+
+        "margin": (
+            "mobile": 1.5em 0,
+            "tablet": 1.5em 0,
+            "desktop": 1.5em 0)
+    ),
+
+    "l3": (
+        "font-size": (
+            "mobile": 14px,
+            "desktop": 16px),
+
+        "font-style": (
+            "normal": normal),
+
+        "font-weight": ( 
+            "600":600),
+
+        "letter-spacing": (
+            "normal": normal),
+
+        "line-height": (
+            "100": 100%)
+    ),
+
+    "l4": (
+        "font-size": (
+            "mobile": 14px,
+            "desktop": 14px),
+
+        "font-style": (
+            "normal": normal),
+
+        "font-weight": ( 
+            "600":600),
+
+        "letter-spacing": (
+            "normal": normal),
+
+        "line-height": (
+            "100": 100%)
+    ),
+
+    "btn": (
+        "font-family": (
+            "ElectronicArtsText":'"ElectronicArtsText", "Verdana", "Helvetica", "Arial", sans-serif'),
+
+       
+        "font-size": (
+            "mobile": 16px,
+            "tablet": 18px,
+            "desktop": 18px
+        ),
+
+        "line-height": (
+            "mobile": 1.65,
+            "tablet": 1.5,
+            "desktop": 1.5),
+
+        "font-weight": (
+            "normal":normal),
+
+        "letter-spacing": (
+            "normal":normal)
     )
 );
 
