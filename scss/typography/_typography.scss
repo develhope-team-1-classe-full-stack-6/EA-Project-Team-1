@@ -1,94 +1,32 @@
-@font-face {
-    font-family: 'ElectronicArtsDisplay';
-    src: url(/assets/fonts/ElectronicArtsDisplay-Regular.woff2) format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ElectronicArtsDisplay';
-    src: url(/assets/fonts/ElectronicArtsDisplay-Bold.woff2) format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ElectronicArtsText';
-    src: url(/assets/fonts/ElectronicArtsText-Light.woff2) format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ElectronicArtsText';
-    src: url(/assets/fonts/ElectronicArtsText-LightItalic.woff2) format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'ElectronicArtsText';
-    src: url(/assets/fonts/ElectronicArtsText-Regular.woff2) format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ElectronicArtsText';
-    src: url(/assets/fonts/ElectronicArtsText-Italic.woff2) format('woff');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'ElectronicArtsText';
-    src: url(/assets/fonts/ElectronicArtsText-Bold.woff2) format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ElectronicArtsText';
-    src: url(/assets/fonts/ElectronicArtsText-BoldItalic.woff2) format('woff');
-    font-weight: 600;
-    font-style: italic;
-}
+@use 'fonts';
+@use 'fuctions';
 
-/* mixin*/
+$styles: (
+    "d4": (
+        "font-size": (
+            "desktop": 44px,
+            "tablet": 40px,
+            "mobile": 32px),
 
-@mixin typography ($size, $spacing,$height) {
-    font-size: $size;
-    letter-spacing: $spacing;
-    line-height: $height;
-}
+        "letter-spacing": (
+            "desktop": normal,
+            "tablet": normal,
+            "mobile": normal),
 
-/*font size */
+        "line-height": (
+            "desktop": 1.15,
+            "tablet": 1.15,
+            "mobile": 1.15),
 
-$font-size-d4-desktop:40px;
-$font-size-d4-tablet:36px;
-$font-size-d4-mobile:32px;
+        "font-style": (
+            "normal": normal),
+            
+        "font-weight": (
+            "600": 600),
+            
+        "font-family": (
+            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+    )
+);
 
-$font-size-button-desktop:15px;
-
-/* letter spacing*/
-
-$letter-spacing-d4-desktop: normal;
-$letter-spacing-d4-tablet: normal;
-$letter-spacing-d4-mobile: normal;
-
-
-$letter-spacing-button-desktop: normal;
-
-/* line-height*/
-
-$line-height-d4-desktop: 1.15;
-$line-height-d4-tablet: 1.15;
-$line-height-d4-mobile: 1.15;
-
-$line-height-button-desktop: 1.15;
-
-/* font style*/
-
-$font-style-d4: normal;
-
-/* font wight*/
-$font-weight-d4: 600;
-$font-weight-button-desktop: 400;
-
-/*font family*/
-$font-family-heading-EA: 'ElectronicArtsDisplay', Verdana, Helvetica, Arial, sans-serif;
-
-$font-family-button-EA: 'ElectronicArtsText', Verdana, Helvetica, Arial, sans-serif;
+@include fuctions.typography($styles);
