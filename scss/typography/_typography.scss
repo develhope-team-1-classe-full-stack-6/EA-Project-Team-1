@@ -212,7 +212,7 @@ $styles_classes: (
             "600": 600),
             
         "font-family": (
-            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
     ),
 
     "d2": (
@@ -238,7 +238,7 @@ $styles_classes: (
             "600": 600),
             
         "font-family": (
-            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
     ),
 
     "d3": (
@@ -264,7 +264,7 @@ $styles_classes: (
             "600": 600),
             
         "font-family": (
-            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
     ),
 
     "d4": (
@@ -290,7 +290,7 @@ $styles_classes: (
             "600": 600),
             
         "font-family": (
-            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
     ),
 
     "d5": (
@@ -311,7 +311,7 @@ $styles_classes: (
             "600": 600),
             
         "font-family": (
-            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
     ),
 
     "d6": (
@@ -332,7 +332,7 @@ $styles_classes: (
             "600": 600),
             
         "font-family": (
-            "electronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif')
     ),
 
     "h1": (
@@ -506,6 +506,9 @@ $styles_classes: (
             "mobile": 1.35,
             "tablet": 1.35,
             "desktop": 1.35),
+            
+        "font-family": (
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif'),
 
         "margin": (
             "mobile": 1em 0,
@@ -530,6 +533,9 @@ $styles_classes: (
             "mobile": 1.35,
             "tablet": 1.35,
             "desktop": 1.35),
+            
+        "font-family": (
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif'),
 
         "margin": (
             "mobile": 1.5em 0,
@@ -552,7 +558,10 @@ $styles_classes: (
             "normal": normal),
 
         "line-height": (
-            "100": 100%)
+            "100": 100%),
+            
+        "font-family": (
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif'),
     ),
 
     "l4": (
@@ -570,7 +579,15 @@ $styles_classes: (
             "normal": normal),
 
         "line-height": (
-            "100": 100%)
+            "100": 100%),
+        
+            
+        "font-family": (
+            "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif'),
+        
+        "font-family": (
+            
+        )
     ),
 
     "btn": (
@@ -608,3 +625,4 @@ $root: map-merge($styles_selectors, $styles_classes);
 
 /*clasess*/
 @include fuctions.typography_classes($styles_classes);
+
