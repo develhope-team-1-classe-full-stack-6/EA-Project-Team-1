@@ -1,7 +1,77 @@
+/*tipografia*/
+
 @use 'fonts';
 @use 'fuctions';
 
-$styles: (
+
+
+$styles_selectors: (
+
+    "body": (
+        "font-family":
+            ("ElectronicArtsText": '"ElectronicArtsText", "Verdana", "Helvetica", "Arial", sans-serif'),
+
+        "font-weight":(
+            "light": 300,
+            "normal": 400,
+            "bold": 600),
+
+        "letter-spacing":( 
+        "normal": normal)
+    ),
+
+    "h1": (
+
+    "font-size": (
+        "tablet": 44px,
+        "desktop": 48px),
+
+    "font-weight": (
+        "400" : 400),
+
+    "letter-spacing": (
+        "mobile": normal,
+        "tablet": normal,
+        "desktop": normal),
+    
+    "line-height": (
+        "mobile": 1.25,
+        "tablet": 1.25,
+        "desktop": 1.35),
+
+    "margin": (
+        "mobile": 0.65em 0,
+        "tablet": 0.65em 0,
+        "desktop": 0.65em 0)
+    ),
+
+    "h3": (
+        "font-size": (
+            "desktop": 36px,
+            "tablet": 32px,
+            "mobile": 28px),
+
+        "letter-spacing": (
+            "desktop": normal,
+            "tablet": normal,
+            "mobile": normal),
+
+        "line-height": (
+            "desktop": 1.35,
+            "tablet": 1.25,
+            "mobile": 1.25),
+            
+        "font-weight": (
+            "400": 400),
+
+        "margin": (
+            "mobile": 0.75em 0,
+            "tablet": 0.75em 0,
+            "desktop": 0.65em 0)
+    )
+);
+
+$styles_classes: (
     "d4": (
         "font-size": (
             "desktop": 44px,
@@ -29,4 +99,14 @@ $styles: (
     )
 );
 
-@include fuctions.typography($styles);
+/*unisco le liste per estrarre i root*/
+$root: map-merge($styles_selectors, $styles_classes);
+
+/*root*/
+@include fuctions.typography_root($root);
+
+/*selectors*/
+@include fuctions.typography_selectors($styles_selectors);
+
+/*clasess*/
+@include fuctions.typography_classes($styles_classes);
