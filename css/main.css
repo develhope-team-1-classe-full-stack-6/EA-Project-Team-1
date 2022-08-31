@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ElectronicArtsDisplay";
+  src: url(/assets/fonts/ElectronicArtsDisplay-Regular.woff2) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ElectronicArtsDisplay";
+  src: url(/assets/fonts/ElectronicArtsDisplay-Bold.woff2) format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ElectronicArtsText";
+  src: url(/assets/fonts/ElectronicArtsText-Light.woff2) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ElectronicArtsText";
+  src: url(/assets/fonts/ElectronicArtsText-LightItalic.woff2) format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ElectronicArtsText";
+  src: url(/assets/fonts/ElectronicArtsText-Regular.woff2) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ElectronicArtsText";
+  src: url(/assets/fonts/ElectronicArtsText-Italic.woff2) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ElectronicArtsText";
+  src: url(/assets/fonts/ElectronicArtsText-Bold.woff2) format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ElectronicArtsText";
+  src: url(/assets/fonts/ElectronicArtsText-BoldItalic.woff2) format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+:root {
+  --d4-font-size-desktop: 44px;
+  --d4-font-size-tablet: 40px;
+  --d4-font-size-mobile: 32px;
+  --d4-letter-spacing-desktop: normal;
+  --d4-letter-spacing-tablet: normal;
+  --d4-letter-spacing-mobile: normal;
+  --d4-line-height-desktop: 1.15;
+  --d4-line-height-tablet: 1.15;
+  --d4-line-height-mobile: 1.15;
+  --d4-font-style-normal: normal;
+  --d4-font-weight-600: 600;
+  --d4-font-family-electronicArtsDisplay: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+}
+
+.d4 {
+  font-size: var(--d4-font-size-mobile);
+  letter-spacing: var(--d4-letter-spacing-mobile);
+  line-height: var(--d4-line-height-mobile);
+  font-style: var(--d4-font-style-normal);
+  font-weight: var(--d4-font-weight-600);
+  font-family: var(--d4-font-family-electronicArtsDisplay);
+}
+
+@media only screen and (min-width: 1456px) {
+  .d4 {
+    font-size: var(--d4-font-size-desktop);
+    letter-spacing: var(--d4-letter-spacing-desktop);
+    line-height: var(--d4-line-height-desktop);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .d4 {
+    font-size: var(--d4-font-size-tablet);
+    letter-spacing: var(--d4-letter-spacing-tablet);
+    line-height: var(--d4-line-height-tablet);
+  }
+}/*# sourceMappingURL=main.css.map */
