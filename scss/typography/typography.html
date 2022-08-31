@@ -19,7 +19,16 @@
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: flex-start;
+            gap: 10px
         }
+        /* a.nav-link + div{
+            visibility: collapse;
+        }
+
+        a.nav-link:hover + div{
+            visibility:visible;
+        } */
+
     </style>
 </head>
 <body>
@@ -30,21 +39,26 @@
     <h3 class="d5">Heading .d5</h3>
     <h3 class="d6">Heading .d6</h3>
     <hr>
-    <h1>Heading h1</h1>
-    <h2>Heading h2</h2>
-    <h3>Heading h3</h3>
-    <h4>Heading h4</h4>
-    <h5>Heading h5</h5>
-    <h6>Heading h6</h6>
+    <h1>Heading h1 e .h1</h1>
+    <h2>Heading h2 e .h2</h2>
+    <h3>Heading h3 e .h3</h3>
+    <h4>Heading h4 e .h4</h4>
+    <h5>Heading h5 e .h5</h5>
+    <h6>Heading h6 e .h6</h6>
     <hr>
-    <h2 class="l1">label l1</h2>
-    <h2 class="l2">label l2</h2>
-    <h2 class="l3">label l3</h2>
-    <h2 class="l4">label l4</h2>
+    <h2 class="l1">label .l1</h2>
+    <h2 class="l2">label .l2</h2>
+    <h2 class="l3">label .l3</h2>
+    <h2 class="l4">label .l4</h2>
     <hr>
-    <h6 class="b1">body b1</h6>
-    <h6 class="b2">body b2</h6>
-    <h6 class="b3">body b3</h6>
+    <h6 class="b1">body .b1</h6>
+    <h6 class="b2">body .b2</h6>
+    <h6 class="b3">body .b3</h6>
+    <hr>
+    <nav><a class="nav-bar-1" href="">navbar .nav-bar-1</a></nav>
+    <hr>
+    <nav><a class="nav-link" href="">navbar .nav-link</a>
+    <div><div class="nav-dropdown-item-title">navbar title .nav-dropdown-item-title</div><a class="nav-link" href="">navbar item .nav-dropdown-item</a></div></nav>
     <hr>
     <a class="btn">button .btn</a>
 </body>
