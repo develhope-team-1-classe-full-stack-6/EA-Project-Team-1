@@ -584,10 +584,6 @@ $styles_classes: (
             
         "font-family": (
             "ElectronicArtsDisplay": '"ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif'),
-        
-        "font-family": (
-            
-        )
     ),
 
     "btn": (
@@ -611,7 +607,72 @@ $styles_classes: (
 
         "letter-spacing": (
             "normal":normal)
+    ),
+
+    "b1" : (
+        "font-size": (
+            "mobile": 20px,
+            "tablet": 20px,
+            "desktop": 24px),
+        
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+        
+        "line-height": (
+            "mobile": 1.65,
+            "tablet": 1.5,
+            "desktop": 1.5,),
+
+        "margin": (
+            "mobile": 0.75em 0,
+            "tablet": 0.75em 0,
+            "desktop": 0.75em 0)
+
+    ),
+
+    "b2" : (
+        "font-size": (
+            "mobile": 16px,
+            "tablet": 18px,
+            "desktop": 18px),
+        
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+        
+        "line-height": (
+            "mobile": 1.65,
+            "tablet": 1.5,
+            "desktop": 1.5,),
+
+        "margin": (
+            "mobile": 0.5em 0,
+            "tablet": 0.5em 0)
+
+    ),
+
+    "b3" : (
+        "font-size": (
+            "mobile": 14px,
+            "desktop": 16px),
+        
+        "letter-spacing": (
+            "mobile": normal,
+            "tablet": normal,
+            "desktop": normal),
+        
+        "line-height": (
+            "mobile": 1.65,
+            "desktop": 1.5,),
+
+        "margin": (
+            "mobile": 1em 0,
+            "desktop": 1em 0)
     )
+
 );
 
 /*unisco le liste per estrarre i root*/
