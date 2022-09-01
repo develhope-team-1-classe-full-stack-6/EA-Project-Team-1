@@ -33,7 +33,6 @@ main {
   border-radius: 4px;
   transition: 0.1s;
 }
-
 .btn:hover {
   padding: 1.3rem;
 }
@@ -826,4 +825,4 @@ h6 {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.csss.map */

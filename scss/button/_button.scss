@@ -1,0 +1,49 @@
+body{
+    background-color: bisque;
+}
+
+main{
+    height: 100vh;
+}
+
+.btn-margin{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.btn{
+    background-color: #f3f3f3;
+    color: rgb(22, 22, 22);
+    position: absolute;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: .1s;
+
+    &:hover{
+        padding: 1.3rem;
+    }
+}
+
+
+ .btn-arrow{
+    border: 2px solid #f3f3f3;
+    background-color: transparent;
+    color: #f3f3f3;
+}
+
+
+.btn-dark{
+    border: 2px solid #161616;
+    background-color: transparent;
+    color: #161616;
+}
