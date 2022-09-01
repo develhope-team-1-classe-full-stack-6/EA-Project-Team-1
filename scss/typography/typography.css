@@ -53,7 +53,7 @@
   --body-font-size-mobile: 16px;
   --body-font-size-tablet: 18px;
   --body-font-size-desktop: 18px;
-  --body-font-family-ElectronicArtsText: "ElectronicArtsText", "Verdana", "Helvetica", "Arial", sans-serif;
+  --body-font-family-ElectronicArtsText: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
   --body-font-weight-light: 300;
   --body-font-weight-normal: 400;
   --body-font-weight-bold: 600;
@@ -73,9 +73,6 @@
   --h1-line-height-mobile: 1.25;
   --h1-line-height-tablet: 1.25;
   --h1-line-height-desktop: 1.35;
-  --h1-margin-mobile: 0.65em 0;
-  --h1-margin-tablet: 0.65em 0;
-  --h1-margin-desktop: 0.65em 0;
   --h2-font-size-mobile: 32px;
   --h2-font-size-tablet: 36px;
   --h2-font-size-desktop: 40px;
@@ -86,9 +83,6 @@
   --h2-line-height-mobile: 1.25;
   --h2-line-height-tablet: 1.25;
   --h2-line-height-desktop: 1.35;
-  --h2-margin-mobile: 0.65em 0;
-  --h2-margin-tablet: 0.65em 0;
-  --h2-margin-desktop: 0.65em 0;
   --h3-font-size-mobile: 28px;
   --h3-font-size-tablet: 32px;
   --h3-font-size-desktop: 36px;
@@ -99,9 +93,6 @@
   --h3-line-height-tablet: 1.25;
   --h3-line-height-mobile: 1.25;
   --h3-font-weight-400: 400;
-  --h3-margin-mobile: 0.75em 0;
-  --h3-margin-tablet: 0.75em 0;
-  --h3-margin-desktop: 0.65em 0;
   --h4-font-size-mobile: 20px;
   --h4-font-size-tablet: 24px;
   --h4-font-size-desktop: 24px;
@@ -112,9 +103,6 @@
   --h4-line-height-tablet: 1.25;
   --h4-line-height-mobile: 1.25;
   --h4-font-weight-400: 400;
-  --h4-margin-mobile: 0.65em 0;
-  --h4-margin-tablet: 0.65em 0;
-  --h4-margin-desktop: 0.65em 0;
   --h5-font-size-mobile: 20px;
   --h5-font-size-tablet: 24px;
   --h5-font-size-desktop: 24px;
@@ -125,9 +113,6 @@
   --h5-line-height-tablet: 1.25;
   --h5-line-height-mobile: 1.25;
   --h5-font-weight-400: 400;
-  --h5-margin-mobile: 0.65em 0;
-  --h5-margin-tablet: 0.65em 0;
-  --h5-margin-desktop: 0.65em 0;
   --h6-font-size-mobile: 20px;
   --h6-font-size-tablet: 24px;
   --h6-font-size-desktop: 24px;
@@ -138,9 +123,6 @@
   --h6-line-height-tablet: 1.25;
   --h6-line-height-mobile: 1.25;
   --h6-font-weight-400: 400;
-  --h6-margin-mobile: 0.65em 0;
-  --h6-margin-tablet: 0.65em 0;
-  --h6-margin-desktop: 0.65em 0;
   --d1-font-size-mobile: 50px;
   --d1-font-size-tablet: 64px;
   --d1-font-size-desktop: 80px;
@@ -152,7 +134,7 @@
   --d1-line-height-desktop: 1.15;
   --d1-font-style-normal: normal;
   --d1-font-weight-600: 600;
-  --d1-font-family-electronicArtsDisplay: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+  --d1-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --d2-font-size-mobile: 42px;
   --d2-font-size-tablet: 54px;
   --d2-font-size-desktop: 68px;
@@ -164,7 +146,7 @@
   --d2-line-height-desktop: 1.15;
   --d2-font-style-normal: normal;
   --d2-font-weight-600: 600;
-  --d2-font-family-electronicArtsDisplay: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+  --d2-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --d3-font-size-mobile: 36px;
   --d3-font-size-tablet: 44px;
   --d3-font-size-desktop: 54px;
@@ -176,7 +158,7 @@
   --d3-line-height-desktop: 1.15;
   --d3-font-style-normal: normal;
   --d3-font-weight-600: 600;
-  --d3-font-family-electronicArtsDisplay: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+  --d3-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --d4-font-size-mobile: 32px;
   --d4-font-size-tablet: 40px;
   --d4-font-size-desktop: 44px;
@@ -188,21 +170,21 @@
   --d4-line-height-desktop: 1.15;
   --d4-font-style-normal: normal;
   --d4-font-weight-600: 600;
-  --d4-font-family-electronicArtsDisplay: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+  --d4-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --d5-font-size-mobile: 22px;
   --d5-font-size-desktop: 32px;
   --d5-letter-spacing-normal: normal;
   --d5-line-height-100: 100%;
   --d5-font-style-normal: normal;
   --d5-font-weight-600: 600;
-  --d5-font-family-electronicArtsDisplay: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+  --d5-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --d6-font-size-mobile: 20px;
   --d6-font-size-desktop: 24px;
   --d6-letter-spacing-normal: normal;
   --d6-line-height-100: 100%;
   --d6-font-style-normal: normal;
   --d6-font-weight-600: 600;
-  --d6-font-family-electronicArtsDisplay: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+  --d6-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --l1-font-size-mobile: 24px;
   --l1-font-size-tablet: 24px;
   --l1-font-size-desktop: 26px;
@@ -211,9 +193,7 @@
   --l1-line-height-mobile: 1.35;
   --l1-line-height-tablet: 1.35;
   --l1-line-height-desktop: 1.35;
-  --l1-margin-mobile: 1em 0;
-  --l1-margin-tablet: 1em 0;
-  --l1-margin-desktop: 1em 0;
+  --l1-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --l2-font-size-mobile: 14px;
   --l2-font-size-tablet: 14px;
   --l2-font-size-desktop: 16px;
@@ -222,22 +202,47 @@
   --l2-line-height-mobile: 1.35;
   --l2-line-height-tablet: 1.35;
   --l2-line-height-desktop: 1.35;
-  --l2-margin-mobile: 1.5em 0;
-  --l2-margin-tablet: 1.5em 0;
-  --l2-margin-desktop: 1.5em 0;
+  --l2-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --l3-font-size-mobile: 14px;
   --l3-font-size-desktop: 16px;
   --l3-font-style-normal: normal;
   --l3-font-weight-600: 600;
   --l3-letter-spacing-normal: normal;
   --l3-line-height-100: 100%;
+  --l3-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
   --l4-font-size-mobile: 14px;
   --l4-font-size-desktop: 14px;
   --l4-font-style-normal: normal;
   --l4-font-weight-600: 600;
   --l4-letter-spacing-normal: normal;
   --l4-line-height-100: 100%;
-  --btn-font-family-ElectronicArtsText: "ElectronicArtsText", "Verdana", "Helvetica", "Arial", sans-serif;
+  --l4-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
+  --b1-font-size-mobile: 20px;
+  --b1-font-size-tablet: 20px;
+  --b1-font-size-desktop: 24px;
+  --b1-letter-spacing-mobile: normal;
+  --b1-letter-spacing-tablet: normal;
+  --b1-letter-spacing-desktop: normal;
+  --b1-line-height-mobile: 1.65;
+  --b1-line-height-tablet: 1.5;
+  --b1-line-height-desktop: 1.5;
+  --b2-font-size-mobile: 16px;
+  --b2-font-size-tablet: 18px;
+  --b2-font-size-desktop: 18px;
+  --b2-letter-spacing-mobile: normal;
+  --b2-letter-spacing-tablet: normal;
+  --b2-letter-spacing-desktop: normal;
+  --b2-line-height-mobile: 1.65;
+  --b2-line-height-tablet: 1.5;
+  --b2-line-height-desktop: 1.5;
+  --b3-font-size-mobile: 14px;
+  --b3-font-size-desktop: 16px;
+  --b3-letter-spacing-mobile: normal;
+  --b3-letter-spacing-tablet: normal;
+  --b3-letter-spacing-desktop: normal;
+  --b3-line-height-mobile: 1.65;
+  --b3-line-height-desktop: 1.5;
+  --btn-font-family-ElectronicArtsText: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
   --btn-font-size-mobile: 16px;
   --btn-font-size-tablet: 18px;
   --btn-font-size-desktop: 18px;
@@ -246,6 +251,30 @@
   --btn-line-height-desktop: 1.5;
   --btn-font-weight-normal: normal;
   --btn-letter-spacing-normal: normal;
+  --btn-text-transform-none: none;
+  --nav-bar-1-font-size-16: 16px;
+  --nav-bar-1-font-family-open-sans: open-sans, "Verdana", "Helvetica", "Arial", sans-serif;
+  --nav-bar-1-line-height-1_35: 1.35;
+  --nav-bar-1-text-decoration-none: none;
+  --nav-bar-1-color-inherit: inherit;
+  --nav-link-font-family-ElectronicArtsText: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
+  --nav-link-font-size-mobile: 16px;
+  --nav-link-font-size-tablet: 18px;
+  --nav-link-font-size-desktop: 18px;
+  --nav-link-line-height-mobile: 1.65;
+  --nav-link-line-height-tablet: 1.5;
+  --nav-link-line-height-desktop: 1.5;
+  --nav-link-font-weight-normal: normal;
+  --nav-link-letter-spacing-normal: normal;
+  --nav-link-text-decoration-none: none;
+  --nav-link-color-inherit: inherit;
+  --nav-dropdown-item-font-size-mobile: 16px;
+  --nav-dropdown-item-font-size-tablet: 16px;
+  --nav-dropdown-item-font-size-desktop: 16px;
+  --nav-dropdown-item-font-weight-300: 300;
+  --nav-dropdown-item-text-decoration-none: none;
+  --nav-dropdown-item-title-font-weight-700: 700;
+  --nav-dropdown-item-title-text-decoration-none: none;
 }
 
 /*selectors*/
@@ -264,7 +293,6 @@ h1 {
   font-weight: var(--h1-font-weight-400);
   letter-spacing: var(--h1-letter-spacing-mobile);
   line-height: var(--h1-line-height-mobile);
-  margin: var(--h1-margin-mobile);
 }
 
 h2 {
@@ -272,7 +300,6 @@ h2 {
   font-weight: var(--h2-font-weight-400);
   letter-spacing: var(--h2-letter-spacing-mobile);
   line-height: var(--h2-line-height-mobile);
-  margin: var(--h2-margin-mobile);
 }
 
 h3 {
@@ -280,7 +307,6 @@ h3 {
   letter-spacing: var(--h3-letter-spacing-mobile);
   line-height: var(--h3-line-height-mobile);
   font-weight: var(--h3-font-weight-400);
-  margin: var(--h3-margin-mobile);
 }
 
 h4 {
@@ -288,7 +314,6 @@ h4 {
   letter-spacing: var(--h4-letter-spacing-mobile);
   line-height: var(--h4-line-height-mobile);
   font-weight: var(--h4-font-weight-400);
-  margin: var(--h4-margin-mobile);
 }
 
 h5 {
@@ -296,7 +321,6 @@ h5 {
   letter-spacing: var(--h5-letter-spacing-mobile);
   line-height: var(--h5-line-height-mobile);
   font-weight: var(--h5-font-weight-400);
-  margin: var(--h5-margin-mobile);
 }
 
 h6 {
@@ -304,7 +328,6 @@ h6 {
   letter-spacing: var(--h6-letter-spacing-mobile);
   line-height: var(--h6-line-height-mobile);
   font-weight: var(--h6-font-weight-400);
-  margin: var(--h6-margin-mobile);
 }
 
 @media only screen and (min-width: 1456px) {
@@ -317,37 +340,31 @@ h6 {
     font-size: var(--h1-font-size-desktop);
     letter-spacing: var(--h1-letter-spacing-desktop);
     line-height: var(--h1-line-height-desktop);
-    margin: var(--h1-margin-desktop);
   }
   h2 {
     font-size: var(--h2-font-size-desktop);
     letter-spacing: var(--h2-letter-spacing-desktop);
     line-height: var(--h2-line-height-desktop);
-    margin: var(--h2-margin-desktop);
   }
   h3 {
     font-size: var(--h3-font-size-desktop);
     letter-spacing: var(--h3-letter-spacing-desktop);
     line-height: var(--h3-line-height-desktop);
-    margin: var(--h3-margin-desktop);
   }
   h4 {
     font-size: var(--h4-font-size-desktop);
     letter-spacing: var(--h4-letter-spacing-desktop);
     line-height: var(--h4-line-height-desktop);
-    margin: var(--h4-margin-desktop);
   }
   h5 {
     font-size: var(--h5-font-size-desktop);
     letter-spacing: var(--h5-letter-spacing-desktop);
     line-height: var(--h5-line-height-desktop);
-    margin: var(--h5-margin-desktop);
   }
   h6 {
     font-size: var(--h6-font-size-desktop);
     letter-spacing: var(--h6-letter-spacing-desktop);
     line-height: var(--h6-line-height-desktop);
-    margin: var(--h6-margin-desktop);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -360,37 +377,31 @@ h6 {
     font-size: var(--h1-font-size-tablet);
     letter-spacing: var(--h1-letter-spacing-tablet);
     line-height: var(--h1-line-height-tablet);
-    margin: var(--h1-margin-tablet);
   }
   h2 {
     font-size: var(--h2-font-size-tablet);
     letter-spacing: var(--h2-letter-spacing-tablet);
     line-height: var(--h2-line-height-tablet);
-    margin: var(--h2-margin-tablet);
   }
   h3 {
     font-size: var(--h3-font-size-tablet);
     letter-spacing: var(--h3-letter-spacing-tablet);
     line-height: var(--h3-line-height-tablet);
-    margin: var(--h3-margin-tablet);
   }
   h4 {
     font-size: var(--h4-font-size-tablet);
     letter-spacing: var(--h4-letter-spacing-tablet);
     line-height: var(--h4-line-height-tablet);
-    margin: var(--h4-margin-tablet);
   }
   h5 {
     font-size: var(--h5-font-size-tablet);
     letter-spacing: var(--h5-letter-spacing-tablet);
     line-height: var(--h5-line-height-tablet);
-    margin: var(--h5-margin-tablet);
   }
   h6 {
     font-size: var(--h6-font-size-tablet);
     letter-spacing: var(--h6-letter-spacing-tablet);
     line-height: var(--h6-line-height-tablet);
-    margin: var(--h6-margin-tablet);
   }
 }
 /*clasess*/
@@ -400,7 +411,7 @@ h6 {
   line-height: var(--d1-line-height-mobile);
   font-style: var(--d1-font-style-normal);
   font-weight: var(--d1-font-weight-600);
-  font-family: var(--d1-font-family-electronicArtsDisplay);
+  font-family: var(--d1-font-family-ElectronicArtsDisplay);
 }
 
 .d2 {
@@ -409,7 +420,7 @@ h6 {
   line-height: var(--d2-line-height-mobile);
   font-style: var(--d2-font-style-normal);
   font-weight: var(--d2-font-weight-600);
-  font-family: var(--d2-font-family-electronicArtsDisplay);
+  font-family: var(--d2-font-family-ElectronicArtsDisplay);
 }
 
 .d3 {
@@ -418,7 +429,7 @@ h6 {
   line-height: var(--d3-line-height-mobile);
   font-style: var(--d3-font-style-normal);
   font-weight: var(--d3-font-weight-600);
-  font-family: var(--d3-font-family-electronicArtsDisplay);
+  font-family: var(--d3-font-family-ElectronicArtsDisplay);
 }
 
 .d4 {
@@ -427,7 +438,7 @@ h6 {
   line-height: var(--d4-line-height-mobile);
   font-style: var(--d4-font-style-normal);
   font-weight: var(--d4-font-weight-600);
-  font-family: var(--d4-font-family-electronicArtsDisplay);
+  font-family: var(--d4-font-family-ElectronicArtsDisplay);
 }
 
 .d5 {
@@ -436,7 +447,7 @@ h6 {
   line-height: var(--d5-line-height-100);
   font-style: var(--d5-font-style-normal);
   font-weight: var(--d5-font-weight-600);
-  font-family: var(--d5-font-family-electronicArtsDisplay);
+  font-family: var(--d5-font-family-ElectronicArtsDisplay);
 }
 
 .d6 {
@@ -445,7 +456,7 @@ h6 {
   line-height: var(--d6-line-height-100);
   font-style: var(--d6-font-style-normal);
   font-weight: var(--d6-font-weight-600);
-  font-family: var(--d6-font-family-electronicArtsDisplay);
+  font-family: var(--d6-font-family-ElectronicArtsDisplay);
 }
 
 .h1 {
@@ -453,7 +464,6 @@ h6 {
   font-weight: var(--h1-font-weight-400);
   letter-spacing: var(--h1-letter-spacing-mobile);
   line-height: var(--h1-line-height-mobile);
-  margin: var(--h1-margin-mobile);
 }
 
 .h2 {
@@ -461,7 +471,6 @@ h6 {
   font-weight: var(--h2-font-weight-400);
   letter-spacing: var(--h2-letter-spacing-mobile);
   line-height: var(--h2-line-height-mobile);
-  margin: var(--h2-margin-mobile);
 }
 
 .h3 {
@@ -469,7 +478,6 @@ h6 {
   letter-spacing: var(--h3-letter-spacing-mobile);
   line-height: var(--h3-line-height-mobile);
   font-weight: var(--h3-font-weight-400);
-  margin: var(--h3-margin-mobile);
 }
 
 .h4 {
@@ -477,7 +485,6 @@ h6 {
   letter-spacing: var(--h4-letter-spacing-mobile);
   line-height: var(--h4-line-height-mobile);
   font-weight: var(--h4-font-weight-400);
-  margin: var(--h4-margin-mobile);
 }
 
 .h5 {
@@ -485,7 +492,6 @@ h6 {
   letter-spacing: var(--h5-letter-spacing-mobile);
   line-height: var(--h5-line-height-mobile);
   font-weight: var(--h5-font-weight-400);
-  margin: var(--h5-margin-mobile);
 }
 
 .h6 {
@@ -493,7 +499,6 @@ h6 {
   letter-spacing: var(--h6-letter-spacing-mobile);
   line-height: var(--h6-line-height-mobile);
   font-weight: var(--h6-font-weight-400);
-  margin: var(--h6-margin-mobile);
 }
 
 .l1 {
@@ -501,7 +506,7 @@ h6 {
   font-weight: var(--l1-font-weight-600);
   letter-spacing: var(--l1-letter-spacing-normal);
   line-height: var(--l1-line-height-mobile);
-  margin: var(--l1-margin-mobile);
+  font-family: var(--l1-font-family-ElectronicArtsDisplay);
 }
 
 .l2 {
@@ -509,7 +514,7 @@ h6 {
   font-weight: var(--l2-font-weight-600);
   letter-spacing: var(--l2-letter-spacing-normal);
   line-height: var(--l2-line-height-mobile);
-  margin: var(--l2-margin-mobile);
+  font-family: var(--l2-font-family-ElectronicArtsDisplay);
 }
 
 .l3 {
@@ -518,6 +523,7 @@ h6 {
   font-weight: var(--l3-font-weight-600);
   letter-spacing: var(--l3-letter-spacing-normal);
   line-height: var(--l3-line-height-100);
+  font-family: var(--l3-font-family-ElectronicArtsDisplay);
 }
 
 .l4 {
@@ -526,6 +532,25 @@ h6 {
   font-weight: var(--l4-font-weight-600);
   letter-spacing: var(--l4-letter-spacing-normal);
   line-height: var(--l4-line-height-100);
+  font-family: var(--l4-font-family-ElectronicArtsDisplay);
+}
+
+.b1 {
+  font-size: var(--b1-font-size-mobile);
+  letter-spacing: var(--b1-letter-spacing-mobile);
+  line-height: var(--b1-line-height-mobile);
+}
+
+.b2 {
+  font-size: var(--b2-font-size-mobile);
+  letter-spacing: var(--b2-letter-spacing-mobile);
+  line-height: var(--b2-line-height-mobile);
+}
+
+.b3 {
+  font-size: var(--b3-font-size-mobile);
+  letter-spacing: var(--b3-letter-spacing-mobile);
+  line-height: var(--b3-line-height-mobile);
 }
 
 .btn {
@@ -534,6 +559,36 @@ h6 {
   line-height: var(--btn-line-height-mobile);
   font-weight: var(--btn-font-weight-normal);
   letter-spacing: var(--btn-letter-spacing-normal);
+  text-transform: var(--btn-text-transform-none);
+}
+
+.nav-bar-1 {
+  font-size: var(--nav-bar-1-font-size-16);
+  font-family: var(--nav-bar-1-font-family-open-sans);
+  line-height: var(--nav-bar-1-line-height-1_35);
+  text-decoration: var(--nav-bar-1-text-decoration-none);
+  color: var(--nav-bar-1-color-inherit);
+}
+
+.nav-link {
+  font-family: var(--nav-link-font-family-ElectronicArtsText);
+  font-size: var(--nav-link-font-size-mobile);
+  line-height: var(--nav-link-line-height-mobile);
+  font-weight: var(--nav-link-font-weight-normal);
+  letter-spacing: var(--nav-link-letter-spacing-normal);
+  text-decoration: var(--nav-link-text-decoration-none);
+  color: var(--nav-link-color-inherit);
+}
+
+.nav-dropdown-item {
+  font-size: var(--nav-dropdown-item-font-size-mobile);
+  font-weight: var(--nav-dropdown-item-font-weight-300);
+  text-decoration: var(--nav-dropdown-item-text-decoration-none);
+}
+
+.nav-dropdown-item-title {
+  font-weight: var(--nav-dropdown-item-title-font-weight-700);
+  text-decoration: var(--nav-dropdown-item-title-text-decoration-none);
 }
 
 @media only screen and (min-width: 1456px) {
@@ -567,47 +622,39 @@ h6 {
     font-size: var(--h1-font-size-desktop);
     letter-spacing: var(--h1-letter-spacing-desktop);
     line-height: var(--h1-line-height-desktop);
-    margin: var(--h1-margin-desktop);
   }
   .h2 {
     font-size: var(--h2-font-size-desktop);
     letter-spacing: var(--h2-letter-spacing-desktop);
     line-height: var(--h2-line-height-desktop);
-    margin: var(--h2-margin-desktop);
   }
   .h3 {
     font-size: var(--h3-font-size-desktop);
     letter-spacing: var(--h3-letter-spacing-desktop);
     line-height: var(--h3-line-height-desktop);
-    margin: var(--h3-margin-desktop);
   }
   .h4 {
     font-size: var(--h4-font-size-desktop);
     letter-spacing: var(--h4-letter-spacing-desktop);
     line-height: var(--h4-line-height-desktop);
-    margin: var(--h4-margin-desktop);
   }
   .h5 {
     font-size: var(--h5-font-size-desktop);
     letter-spacing: var(--h5-letter-spacing-desktop);
     line-height: var(--h5-line-height-desktop);
-    margin: var(--h5-margin-desktop);
   }
   .h6 {
     font-size: var(--h6-font-size-desktop);
     letter-spacing: var(--h6-letter-spacing-desktop);
     line-height: var(--h6-line-height-desktop);
-    margin: var(--h6-margin-desktop);
   }
   .l1 {
     font-size: var(--l1-font-size-desktop);
     line-height: var(--l1-line-height-desktop);
-    margin: var(--l1-margin-desktop);
   }
   .l2 {
     font-size: var(--l2-font-size-desktop);
     line-height: var(--l2-line-height-desktop);
-    margin: var(--l2-margin-desktop);
   }
   .l3 {
     font-size: var(--l3-font-size-desktop);
@@ -615,9 +662,31 @@ h6 {
   .l4 {
     font-size: var(--l4-font-size-desktop);
   }
+  .b1 {
+    font-size: var(--b1-font-size-desktop);
+    letter-spacing: var(--b1-letter-spacing-desktop);
+    line-height: var(--b1-line-height-desktop);
+  }
+  .b2 {
+    font-size: var(--b2-font-size-desktop);
+    letter-spacing: var(--b2-letter-spacing-desktop);
+    line-height: var(--b2-line-height-desktop);
+  }
+  .b3 {
+    font-size: var(--b3-font-size-desktop);
+    letter-spacing: var(--b3-letter-spacing-desktop);
+    line-height: var(--b3-line-height-desktop);
+  }
   .btn {
     font-size: var(--btn-font-size-desktop);
     line-height: var(--btn-line-height-desktop);
+  }
+  .nav-link {
+    font-size: var(--nav-link-font-size-desktop);
+    line-height: var(--nav-link-line-height-desktop);
+  }
+  .nav-dropdown-item {
+    font-size: var(--nav-dropdown-item-font-size-desktop);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -645,51 +714,63 @@ h6 {
     font-size: var(--h1-font-size-tablet);
     letter-spacing: var(--h1-letter-spacing-tablet);
     line-height: var(--h1-line-height-tablet);
-    margin: var(--h1-margin-tablet);
   }
   .h2 {
     font-size: var(--h2-font-size-tablet);
     letter-spacing: var(--h2-letter-spacing-tablet);
     line-height: var(--h2-line-height-tablet);
-    margin: var(--h2-margin-tablet);
   }
   .h3 {
     font-size: var(--h3-font-size-tablet);
     letter-spacing: var(--h3-letter-spacing-tablet);
     line-height: var(--h3-line-height-tablet);
-    margin: var(--h3-margin-tablet);
   }
   .h4 {
     font-size: var(--h4-font-size-tablet);
     letter-spacing: var(--h4-letter-spacing-tablet);
     line-height: var(--h4-line-height-tablet);
-    margin: var(--h4-margin-tablet);
   }
   .h5 {
     font-size: var(--h5-font-size-tablet);
     letter-spacing: var(--h5-letter-spacing-tablet);
     line-height: var(--h5-line-height-tablet);
-    margin: var(--h5-margin-tablet);
   }
   .h6 {
     font-size: var(--h6-font-size-tablet);
     letter-spacing: var(--h6-letter-spacing-tablet);
     line-height: var(--h6-line-height-tablet);
-    margin: var(--h6-margin-tablet);
   }
   .l1 {
     font-size: var(--l1-font-size-tablet);
     line-height: var(--l1-line-height-tablet);
-    margin: var(--l1-margin-tablet);
   }
   .l2 {
     font-size: var(--l2-font-size-tablet);
     line-height: var(--l2-line-height-tablet);
-    margin: var(--l2-margin-tablet);
+  }
+  .b1 {
+    font-size: var(--b1-font-size-tablet);
+    letter-spacing: var(--b1-letter-spacing-tablet);
+    line-height: var(--b1-line-height-tablet);
+  }
+  .b2 {
+    font-size: var(--b2-font-size-tablet);
+    letter-spacing: var(--b2-letter-spacing-tablet);
+    line-height: var(--b2-line-height-tablet);
+  }
+  .b3 {
+    letter-spacing: var(--b3-letter-spacing-tablet);
   }
   .btn {
     font-size: var(--btn-font-size-tablet);
     line-height: var(--btn-line-height-tablet);
+  }
+  .nav-link {
+    font-size: var(--nav-link-font-size-tablet);
+    line-height: var(--nav-link-line-height-tablet);
+  }
+  .nav-dropdown-item {
+    font-size: var(--nav-dropdown-item-font-size-tablet);
   }
 }
 
