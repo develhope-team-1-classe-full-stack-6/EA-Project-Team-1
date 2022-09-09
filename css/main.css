@@ -5,43 +5,40 @@
 }
 
 body {
-  background-color: bisque;
-}
-
-main {
-  height: 100vh;
-}
-
-.btn-margin {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-evenly;
+  background-color: #333;
 }
 
 .btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  width: 100%;
+  height: 120px;
 }
 
 .btn {
+  height: 60px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
   background-color: #f3f3f3;
   color: rgb(22, 22, 22);
-  position: absolute;
-  padding: 1rem;
-  border-radius: 4px;
+  position: relative;
+  padding: 1.2rem;
+  border-radius: 2.5px;
   transition: 0.1s;
 }
-
-.btn:hover {
-  padding: 1.3rem;
+.btn p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.btn-arrow {
-  border: 2px solid #f3f3f3;
-  background-color: transparent;
-  color: #f3f3f3;
+.btn:hover {
+  width: 170px;
+  height: 65px;
 }
 
 .btn-dark {
@@ -50,6 +47,42 @@ main {
   color: #161616;
 }
 
+.btn-white {
+  border: 2px solid #f3f3f3;
+  background-color: transparent;
+  color: #f3f3f3;
+}
+
+@media only screen and (max-width: 1023px) {
+  .btn {
+    height: 47px;
+    width: 134px;
+  }
+  .btn:hover {
+    height: 54px;
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    height: 48px;
+    width: 132px;
+  }
+  .btn:hover {
+    height: 53px;
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .btn {
+    width: 540px;
+    height: 50px;
+  }
+  .btn:hover {
+    width: 550px;
+    height: 55px;
+  }
+}
 @font-face {
   font-family: "ElectronicArtsDisplay";
   src: url(../../assets/fonts/ElectronicArtsDisplay-Regular.woff2) format("woff");
