@@ -4,6 +4,32 @@
   box-sizing: border-box;
 }
 
+.card {
+  height: 50rem;
+  width: 33.3%;
+  box-shadow: 0.5px 0.5px 10px;
+}
+.card .img {
+  width: 100%;
+}
+.card .img img {
+  margin: 0;
+  width: 100%;
+}
+.card .spans {
+  display: flex;
+  margin: 1rem;
+}
+.card .spans span {
+  margin-right: 1rem;
+}
+.card h3 {
+  margin: 1rem;
+}
+.card h6 {
+  margin: 1rem;
+}
+
 @font-face {
   font-family: "ElectronicArtsDisplay";
   src: url(../../assets/fonts/ElectronicArtsDisplay-Regular.woff2) format("woff");
@@ -281,6 +307,7 @@
   --nav-dropdown-item-text-decoration-none: none;
   --nav-dropdown-item-title-font-weight-700: 700;
   --nav-dropdown-item-title-text-decoration-none: none;
+  --title-font-weight-bold: bold;
 }
 
 /*selectors*/
@@ -595,6 +622,10 @@ h6 {
 .nav-dropdown-item-title {
   font-weight: var(--nav-dropdown-item-title-font-weight-700);
   text-decoration: var(--nav-dropdown-item-title-text-decoration-none);
+}
+
+.title {
+  font-weight: var(--title-font-weight-bold);
 }
 
 @media only screen and (min-width: 1456px) {
