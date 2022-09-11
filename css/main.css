@@ -4,49 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Box Styling*/
-.box-container {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 355px;
-  height: 355px;
-  background: linear-gradient(90deg, #29244d, #ed5355);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box-container:hover .box-background {
-  opacity: 0.2;
-}
-.box-container:hover .box-logo {
-  transform: translateY(-70px);
-}
-.box-container:hover p {
-  visibility: visible;
-}
-.box-container .box-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 355px;
-  height: 355px;
-  opacity: 1;
-  transition: all 300ms ease-in-out;
-  filter: brightness(0.7);
-}
-.box-container .box-logo {
-  width: 130px;
-  position: absolute;
-  color: white;
-  transition: all 300ms ease-out;
-}
-.box-container p {
-  position: absolute;
-  visibility: hidden;
-  color: white;
-}
-
 @font-face {
   font-family: "ElectronicArtsDisplay";
   src: url(../../assets/fonts/ElectronicArtsDisplay-Regular.woff2) format("woff");
@@ -821,6 +778,80 @@ h6 {
   .nav-dropdown-item {
     font-size: var(--nav-dropdown-item-font-size-tablet);
   }
+}
+/* Box Styling*/
+.box-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 355px;
+  height: 355px;
+  background: linear-gradient(90deg, #29244d, #ed5355);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-container:hover .box-background {
+  opacity: 0.1;
+}
+.box-container:hover .box-logo {
+  transform: translateY(-70px);
+}
+.box-container:hover p {
+  visibility: visible;
+}
+.box-container .box-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 355px;
+  height: 355px;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+  filter: brightness(0.7);
+}
+.box-container .box-logo {
+  position: absolute;
+  transition: all 300ms ease-out;
+}
+.box-container p {
+  position: absolute;
+  visibility: hidden;
+  color: white;
+}
+
+.box-logo-w1 {
+  width: 160px;
+}
+
+.box-logo-w2 {
+  width: 130px;
+}
+
+.box-logo-w3 {
+  width: 100px;
+}
+
+.box-logo-w4 {
+  width: 70px;
+}
+
+/*Sezione giochi in evidenza*/
+#giochi-in-evidenza {
+  max-width: 1456px;
+  margin: 0 auto;
+}
+
+.giochi-in-evidenza-text {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.boxes-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
