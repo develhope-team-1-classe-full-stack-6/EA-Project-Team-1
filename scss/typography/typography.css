@@ -1,54 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: bisque;
-}
-
-main {
-  height: 100vh;
-}
-
-.btn-margin {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.btn {
-  background-color: #f3f3f3;
-  color: rgb(22, 22, 22);
-  position: absolute;
-  padding: 1rem;
-  border-radius: 4px;
-  transition: 0.1s;
-}
-.btn:hover {
-  padding: 1.3rem;
-}
-
-.btn-arrow {
-  border: 2px solid #f3f3f3;
-  background-color: transparent;
-  color: #f3f3f3;
-}
-
-.btn-dark {
-  border: 2px solid #161616;
-  background-color: transparent;
-  color: #161616;
-}
-
 @font-face {
   font-family: "ElectronicArtsDisplay";
   src: url(../../assets/fonts/ElectronicArtsDisplay-Regular.woff2) format("woff");
@@ -302,7 +251,7 @@ main {
   --btn-line-height-desktop: 1.5;
   --btn-font-weight-normal: normal;
   --btn-letter-spacing-normal: normal;
-  --btn-text-decoration-none: none;
+  --btn-text-transform-none: none;
   --nav-bar-1-font-size-16: 16px;
   --nav-bar-1-font-family-open-sans: open-sans, "Verdana", "Helvetica", "Arial", sans-serif;
   --nav-bar-1-line-height-1_35: 1.35;
@@ -610,7 +559,7 @@ h6 {
   line-height: var(--btn-line-height-mobile);
   font-weight: var(--btn-font-weight-normal);
   letter-spacing: var(--btn-letter-spacing-normal);
-  text-decoration: var(--btn-text-decoration-none);
+  text-transform: var(--btn-text-transform-none);
 }
 
 .nav-bar-1 {
@@ -825,4 +774,4 @@ h6 {
   }
 }
 
-/*# sourceMappingURL=main.csss.map */
+/*# sourceMappingURL=typography.css.map */
