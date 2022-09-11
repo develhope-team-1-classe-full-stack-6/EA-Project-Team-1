@@ -4,31 +4,6 @@
   box-sizing: border-box;
 }
 
-.card {
-  height: 50rem;
-  width: 33.3%;
-  box-shadow: 0.5px 0.5px 10px;
-}
-.card .img {
-  width: 100%;
-}
-.card .img img {
-  margin: 0;
-  width: 100%;
-}
-.card .spans {
-  display: flex;
-  margin: 1rem;
-}
-.card .spans span {
-  margin-right: 1rem;
-}
-.card h3 {
-  margin: 1rem;
-}
-.card h6 {
-  margin: 1rem;
-=======
 /* Box Styling*/
 .box-container {
   position: relative;
@@ -70,7 +45,53 @@
   position: absolute;
   visibility: hidden;
   color: white;
+}
 
+/*Card Styling*/
+.cards-container {
+  width: 70rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+.cards-container .card {
+  height: 31.5rem;
+  width: 22rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.cards-container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+.cards-container .card .img {
+  width: 100%;
+}
+.cards-container .card .img img {
+  margin: 0;
+  width: 100%;
+}
+.cards-container .card .spans {
+  display: flex;
+  margin: 1rem;
+}
+.cards-container .card .spans span {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+.cards-container .card .spans span:first-of-type {
+  color: orangered;
+}
+.cards-container .card h3 {
+  margin: 1rem;
+}
+.cards-container .card h6 {
+  margin: 1rem;
 }
 
 @font-face {

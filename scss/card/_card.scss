@@ -1,35 +1,56 @@
-.card {
-    // background-color: #green;
-    height: 50rem;
-    width: 33.3%;
-    // border: 1px solid black;
-    box-shadow: .5px .5px 10px; 
-    
+/*Card Styling*/
+
+.cards-container {
+  width: 70rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem; //da rimuovere appena andremo a posizionare tutto
+
+  .card {
+    height: 31.5rem;
+    width: 22rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    margin-bottom: 1rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, .7);
+    }
+
     .img {
+      width: 100%;
+
+      img {
+        margin: 0;
         width: 100%;
-        
-        img {
-            margin: 0;
-            width: 100%;
-        }
-        
-        
+      }
     }
 
     .spans {
-        display: flex;
-        margin: 1rem;
+      display: flex;
+      margin: 1rem;
 
-        span {
-         margin-right: 1rem;   
-        }
+      span {
+        margin-right: 1rem;
+        font-size: 1rem;
+      }
+
+      span:first-of-type {
+        color: orangered;
+      }
     }
 
     h3 {
-        margin: 1rem;
+      margin: 1rem;
     }
 
     h6 {
-        margin: 1rem;
+      margin: 1rem;
     }
+  }
 }
