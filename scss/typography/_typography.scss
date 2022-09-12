@@ -589,7 +589,7 @@ $styles_classes: (
         letter-spacing: (
             normal:normal),
         
-        text-transform: (
+        text-decoration: (
             none: none
         )
     ),
@@ -665,6 +665,12 @@ $styles_classes: (
             
         text-decoration: (
             none: none
+        )
+    ),
+
+    title: (
+        font-weight: (
+            bold: bold
         )
     )
 
