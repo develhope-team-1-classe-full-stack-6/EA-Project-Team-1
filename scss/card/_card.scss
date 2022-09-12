@@ -40,7 +40,7 @@
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 
     &:hover {
-      transform: translateY(-15px);
+      transform: translateY(-12px);
       box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
     }
 
@@ -90,6 +90,12 @@
       margin-bottom: 1rem;
       margin-right: 1rem;
       margin-left: 1rem;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+      }
 
       .spans {
         margin: 0.5rem 1rem 0.5rem 1rem;
