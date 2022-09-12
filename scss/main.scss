@@ -1,8 +1,29 @@
 @use "config";
+
+@use "typography/typography";
+
 @use "hero/hero";
+
 @use "box/box";
 @use "button/button";
 @use "card/card";
 @use "colors/colors";
 @use "nav/nav";
-@use "typography/typography";
+
+/*Sezione giochi in evidenza*/
+#giochi-in-evidenza{
+  max-width: 1456px;
+  margin: 0 auto;
+}
+
+.giochi-in-evidenza-text{
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.boxes-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
