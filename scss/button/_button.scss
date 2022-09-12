@@ -3,20 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 120px;
+    width: 168px;
+    height: 65px;
+    position: relative;
+    margin-top: 21px;
 }
 
 // SPECIFICHE GENERALI DI TUTTI I BUTTONS
 .btn{
     height: 60px;
     width: 160px;
-    display: flex;
-    justify-content: center;
     background-color: #f3f3f3;
     color: rgb(22, 22, 22);
-    position: relative;
-    padding: 1.2rem;
     border-radius: 2.5px;
     transition: .1s;
 
@@ -30,8 +28,14 @@
     }
 
     &:hover{
-        width: 170px;
+        width: 168px;
         height: 65px;
+    }
+
+    &:focus{
+        border: 2.5px solid black;
+        outline: 2.5px solid #f3f3f3;
+        transition: 0s;
     }
 }
 
@@ -41,12 +45,28 @@
     border: 2px solid #161616;
     background-color: transparent;
     color: #161616;
+
+    &:focus{
+        background-color: #161616;
+        border: 2.5px solid #f3f3f3;
+        outline: 2.5px solid #161616;
+        color: #f3f3f3;
+        transition: 0s;
+    }
 }
 
 .btn-white{
     border: 2px solid #f3f3f3;
     background-color: transparent;
     color: #f3f3f3;
+
+    &:focus{
+        background-color: #f3f3f3;
+        border: 2.5px solid #161616;
+        outline: 2.5px solid #f3f3f3;
+        color: #161616;
+        transition: 0s;
+    }
 }
 
 
@@ -54,13 +74,18 @@
 
 //TABLET
 @media only screen and (max-width: 1023px){
+    .btn-container{
+        height: 56px;
+        width: 144px;
+    }
+    
     .btn{
-        height: 47px;
-        width: 134px;
+        height: 50px;
+        width: 136px;
 
         &:hover{
-            height: 54px;
-            width: 140px;
+            height: 56px;
+            width: 144px;
         }
     }
 }
@@ -68,25 +93,35 @@
 
 //MOBILE
 @media only screen and (max-width: 767px){
+    .btn-container{
+        height: 56px;
+        width: 144px;
+    }
+    
     .btn{
-        height: 48px;
-        width: 132px;
+        height: 50px;
+        width: 136px;
 
         &:hover{
-            height: 53px;
-            width: 140px;
+            height: 56px;
+            width: 144px;
         }
     }
 }
 
 @media only screen and (max-width: 639px){
+   .btn-container{
+    width: 547px;
+    height: 56px;
+   }
+   
     .btn{
-        width: 540px;
+        width: 544px;
         height: 50px;
 
         &:hover{
-            width: 550px;
-            height: 55px;
+            width: 547px;
+            height: 56px;
         }
     }
 }
