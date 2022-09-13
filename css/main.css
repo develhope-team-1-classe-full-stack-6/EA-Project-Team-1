@@ -1255,6 +1255,95 @@ h6 {
     display: none;
   }
 }
+.nav-bar-1 {
+  height: 40px;
+  background-color: #161616;
+  color: #b0b0b0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.nav-bar-1 .nav-bar-1-link {
+  text-decoration: none;
+  color: #636363;
+}
+.nav-bar-1 .fa-user, .nav-bar-1 .fa-question {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.nav-bar-1 .nav-bar-1-svg-container {
+  width: 32px;
+  height: 32px;
+  fill: #5f5f5f;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.nav-bar-1 .nav-bar-1-svg-container:hover {
+  fill: #a3a3a3;
+}
+.nav-bar-1 .fa-user:hover, .nav-bar-1 .fa-question:hover {
+  color: #f3f3f3;
+}
+
+.nav-bar-2 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fa-ellipsis-vertical {
+  font-size: 1.5rem;
+  transition: 0.25s;
+  position: absolute;
+  margin-left: 1.5rem;
+}
+.fa-ellipsis-vertical:hover {
+  color: rgb(255, 71, 71);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.img-link {
+  margin-left: 4.4rem;
+  margin-top: 0.48rem;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.nav-link-container {
+  display: flex;
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #161616;
+  margin-left: 1rem;
+  margin-right: 0.7rem;
+}
+.nav-link .fa-angle-down {
+  transition: 0.2s;
+  margin-left: 5px;
+}
+.nav-link .fa-angle-down {
+  transition: 0.3s;
+}
+.nav-link:hover {
+  transition: 0.1s;
+  color: rgb(255, 71, 71);
+}
+.nav-link:hover .fa-angle-down {
+  transform: rotateX(180deg);
+  transition: 0.3s;
+}
+
 /*Sezione giochi in evidenza*/
 #giochi-in-evidenza {
   max-width: 1456px;
