@@ -8,7 +8,7 @@ Membri del Team 1:
   Mirko Autiero
   Dan Kaufman
 
-repository: https://github.com/ugoscelfo/EA-Project-Team-1.git
+repository: https://github.com/hershellayton95/EA-Project-Team-1.git
 
 Convenzione:
   Creare branch a partire dal “dev”
