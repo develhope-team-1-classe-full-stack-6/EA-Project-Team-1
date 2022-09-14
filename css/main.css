@@ -1362,4 +1362,10 @@ h6 {
   justify-content: center;
 }
 
+.gie-inner-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 /*# sourceMappingURL=main.css.map */
