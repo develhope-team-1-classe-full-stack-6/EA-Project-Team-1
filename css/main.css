@@ -263,10 +263,10 @@
   --nav-bar-1-line-height-1_35: 1.35;
   --nav-bar-1-text-decoration-none: none;
   --nav-bar-1-color-inherit: inherit;
-  --nav-link-font-family-ElectronicArtsText: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
-  --nav-link-font-size-mobile: 16px;
-  --nav-link-font-size-tablet: 18px;
-  --nav-link-font-size-desktop: 18px;
+  --nav-link-font-family-ElectronicArtsDisplay: "ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif;
+  --nav-link-font-size-mobile: 15px;
+  --nav-link-font-size-tablet: 17px;
+  --nav-link-font-size-desktop: 17px;
   --nav-link-line-height-mobile: 1.65;
   --nav-link-line-height-tablet: 1.5;
   --nav-link-line-height-desktop: 1.5;
@@ -578,7 +578,7 @@ h6 {
 }
 
 .nav-link {
-  font-family: var(--nav-link-font-family-ElectronicArtsText);
+  font-family: var(--nav-link-font-family-ElectronicArtsDisplay);
   font-size: var(--nav-link-font-size-mobile);
   line-height: var(--nav-link-line-height-mobile);
   font-weight: var(--nav-link-font-weight-normal);
