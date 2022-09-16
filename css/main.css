@@ -1049,7 +1049,6 @@ h6 {
   width: 168px;
   height: 65px;
   position: relative;
-  margin-top: 21px;
 }
 
 .btn {
@@ -1255,6 +1254,165 @@ h6 {
     display: none;
   }
 }
+:root {
+  --black: #000000;
+  --dark: #161616;
+  --light: #f3f3f3;
+  --white: #ffffff;
+  --gray: #eaeaea;
+  --gray-focus: #dedede;
+  --dark-blue: #29244d;
+  --light-orange: #ed5355;
+  --orange: #ff4747;
+  --red: #fe0115;
+  --dark-light-blue: #6fb0d6;
+  --transparent: transparent;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-gray-focus {
+  color: var(--gray-focus);
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+
+.text-light-orange {
+  color: var(--light-orange);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-dark-light-blue {
+  color: var(--dark-light-blue);
+}
+
+.text-transparent {
+  color: var(--transparent);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-gray-focus {
+  background-color: var(--gray-focus);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-dark-light-blue {
+  background-color: var(--dark-light-blue);
+}
+
+.bg-transparent {
+  background-color: var(--transparent);
+}
+
+.btn-black {
+  color: var(--black);
+}
+
+.btn-dark {
+  color: var(--dark);
+}
+
+.btn-light {
+  color: var(--light);
+}
+
+.btn-white {
+  color: var(--white);
+}
+
+.btn-gray {
+  color: var(--gray);
+}
+
+.btn-gray-focus {
+  color: var(--gray-focus);
+}
+
+.btn-dark-blue {
+  color: var(--dark-blue);
+}
+
+.btn-light-orange {
+  color: var(--light-orange);
+}
+
+.btn-orange {
+  color: var(--orange);
+}
+
+.btn-red {
+  color: var(--red);
+}
+
+.btn-dark-light-blue {
+  color: var(--dark-light-blue);
+}
+
+.btn-transparent {
+  color: var(--transparent);
+}
+
 .nav-bar-1 {
   height: 40px;
   background-color: #161616;
