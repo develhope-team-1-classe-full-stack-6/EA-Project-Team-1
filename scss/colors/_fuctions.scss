@@ -1,0 +1,17 @@
+@mixin color_root($colors) {
+    :root {
+      @each $key1, $value1 in $colors {
+        --#{$key1}: #{$value1};
+      }
+    }
+  }
+  
+  @mixin color_classes($colors, $items) {
+    @each $item, $value1 in $items {
+      @each $color, $value2 in $colors {
+        .#{$item}-#{$color} {
+          #{$value1}: var(--#{$color});
+        }
+      }
+    }
+  }
