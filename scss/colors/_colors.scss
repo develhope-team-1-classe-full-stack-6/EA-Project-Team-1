@@ -1,0 +1,26 @@
+@use 'fuctions';
+
+$colors: (
+  "black": #000000,
+  "dark": #161616,
+  "light": #f3f3f3,
+  "white": #ffffff,
+  "gray": #eaeaea,
+  "gray-focus": #dedede,
+  "dark-blue": #29244d,
+  "light-orange": #ed5355,
+  "orange": #ff4747,
+  "red": #fe0115,
+  "dark-light-blue": #6fb0d6,
+  "transparent": transparent
+);
+
+$items: (
+  "text": color,
+  "bg": background-color,
+  "btn": color
+);
+
+@include fuctions.color_root($colors);
+
+@include fuctions.color_classes($colors, $items);
