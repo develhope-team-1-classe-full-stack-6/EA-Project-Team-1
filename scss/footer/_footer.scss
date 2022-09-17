@@ -1,0 +1,264 @@
+@use "../colors/colors" as color;
+@use "../typography/fonts" as font;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+#ea-local-footer {
+  height: 235px;
+  background-color: #eaeaea;
+  line-height: 27px;
+  display: block;
+  font-size: 18px;
+  overflow-wrap: break-word;
+  padding-bottom: 12px;
+  padding-left: 76px;
+  padding-right: 76px;
+  display: flex;
+  flex-direction: column;
+  #section-footer-container {
+    width: 80%;
+    height: 121.78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 27px;
+    margin-left: 145px;
+    margin-right: 31.5px;
+    margin-top: 40px;
+    padding-bottom: 28px;
+    overflow-wrap: break-word;
+    #ea-local-links {
+      width: 850px;
+      display: flex;
+      flex-wrap: wrap;
+      font-family: ElectronicArtsText;
+      font-size: 18px;
+      line-height: 27px;
+      margin-top: 14px;
+      color: black;
+      a {
+        font-size: 16px;
+        font-family: "ElectronicArtsText";
+        font-weight: lighter;
+        color: #161616;
+        text-decoration: none;
+        margin-bottom: 5px;
+        margin-right: 40px;
+        margin-top: 8px;
+        &:hover {
+          color: rgb(255, 71, 71);
+        }
+      }
+    }
+  }
+}
+
+#ea-social-links {
+  width: 245px;
+  min-width: 245px !important;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#links-container {
+  height: 27px;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  a {
+    transition: all 0.1s;
+    transform-origin: 50% 50%;
+    &:hover {
+        transform: scale(1.2);
+    }
+  }
+  
+}
+
+#ea-network-footer {
+  width: 100%;
+  height: 337.72px;
+  background-color: #f3f3f3;
+  padding: 15px 93px 40px;
+  display: flex;
+  justify-content: center;
+  #network-footer-section {
+    width: 82%;
+    height: 282.72px;
+    display: flex;
+    justify-content: space-between;
+    #ea-logo {
+      width: 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    #footer-row {
+      width: 90%;
+      justify-self: end;
+      #row-1 {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        #network-links {
+          height: 100%;
+          width: 55%;
+          line-height: 50px;
+          a {
+            font-size: 18px;
+            font-family: "ElectronicArtsText";
+            font-weight: lighter;
+            color: #161616;
+            text-decoration: none;
+            margin-bottom: 5px;
+            margin-right: 40px;
+            margin-top: 8px;
+          }
+        }
+        #selector-container {
+          margin-top: 15px;
+          height: 100%;
+          width: 40%;
+          display: flex;
+          justify-content: space-between;
+          gap: 35px !important;
+          .footer-selector {
+            height: 61px;
+            width: 191px;
+            min-height: 61px !important;
+            min-width: 191px !important;
+            border: 2px solid rgb(194, 194, 194);
+            border-radius: 3px;
+            outline: 2px solid transparent;
+            transition: 0.1s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.1s;
+            &:hover {
+              border: 2px solid transparent;
+              outline: 2px solid rgb(194, 194, 194)
+            }
+            &:focus {
+              border: 2px solid transparent;
+              outline: 3px solid rgb(194, 194, 194)
+            }
+            #options-container-pricing {
+              height: 50px;
+              width: 142px;
+              font-family: ElectronicArtsText;
+              font-size: 15px;
+              font-stretch: 100%;
+              font-weight: 400;
+              letter-spacing: normal;
+              line-height: 22.5px;
+              text-align: left;
+              text-indent: 0px;
+              word-spacing: 0px;
+              color: rgb(90, 90, 88);
+              cursor: default;
+              #country-prices-dropdown {
+                color: rgb(22, 22, 22);
+              }
+              #dropdown-selection {
+                display: flex;
+                align-items: center;
+                position: relative;
+                #regional-dropdown {
+                  position: absolute;
+                  right: 0px;
+                }
+              }
+            }
+
+          }
+          #language-selector {
+            #options-container-language {
+              height: 50px;
+              width: 142px;
+              font-family: ElectronicArtsText;
+              font-size: 15px;
+              font-stretch: 100%;
+              font-weight: 400;
+              letter-spacing: normal;
+              line-height: 22.5px;
+              text-align: left;
+              text-indent: 0px;
+              word-spacing: 0px;
+              color: rgb(90, 90, 88);
+              #dropdown-language-selection {
+                display: flex;
+                align-items: center;
+                position: relative;
+                #country-language-dropdown {
+                  color: rgb(22, 22, 22);
+                }
+                #language-dropdown {
+                  position: absolute;
+                  right: 0px;
+                }
+                span {
+                  height: 11px;
+                  width: 16px;
+                  margin-right: 7px;
+                  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA50lEQVR42nWRMQ/BQBSAL0aRdDQzMnVjJWam1iDiV4jE5g+ZLSYSC6vIhSbowFrX3rXVeL0Xjza8fOn0fb17LSvOSt84Jwe4uu75cgT2By4ZQ24aBtJ0MyGSJHnqieKUMAzlYPSwbED1up+gv7CRpw7iOI6iCGylVNBoeqYp6rU/QdaGQVtUqqrT+RGAR7aUMggCtAE4Kh+0562cnQba9srlTAAqAouS7fu+gNF2JhguxxTkbSFAvRtG2pgmxwAvgwhfkP3QgwEAy3A6gZamq1MDL8YP9TmBWQViu9uuVyt8Ilz/YP7mBVsTOUQfESu+AAAAAElFTkSuQmCC");
+                }
+              }
+            }
+          }
+        }
+      }
+      #row-2 {
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #ea-network-legal {
+          height: 100%;
+          width: 50%;
+          a, p {
+            font-size: 16px;
+            font-family: "ElectronicArtsText";
+            font-weight: lighter;
+            color: #161616;
+            text-decoration: none;
+            margin-bottom: 5px;
+            margin-right: 40px;
+            margin-top: 8px;}
+        }
+        #img-rights-container {
+          width: 191px;
+          height: 61px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.footer-activated {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-activated {
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+}
