@@ -1,0 +1,162 @@
+.nav-bar-1{
+    height: 40px;
+    background-color: #161616;
+    color: #b0b0b0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+    .nav-bar-1-link{
+        text-decoration: none;
+        color: #636363;
+    }
+
+    .fa-user, .fa-question{
+        margin-left: 2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .nav-bar-1-svg-container{
+        width: 32px;
+        height: 32px;
+        fill: #777777;
+        margin-right: 2.25rem;
+        margin-left: 1.5rem;
+
+        &:hover{
+            fill: #a3a3a3;
+        }
+    }
+
+
+    .fa-user:hover, .fa-question:hover{
+        color: #f3f3f3;
+    }
+}
+
+
+.nav-bar-2{
+    height: 60px;
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+
+.fa-ellipsis-vertical{
+    font-size: 1.5rem;
+    transition: .25s;
+    position: absolute;
+    margin-left:1.5rem;
+
+    &:hover{
+        color: rgb(255, 71, 71);
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .25s ease-in-out;
+    }
+}
+
+.fa-bars{
+    display: none;
+}
+
+.img-link{
+    margin-left: 4.4rem;
+    margin-top: .48rem;
+}
+
+
+.nav-links{
+    display: flex;
+    margin-left: 3rem;
+}
+
+.nav-link-container{
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-link{
+    text-decoration: none;
+        color: #161616;
+        margin-left: 1rem;
+        margin-right: 0.7rem;
+
+        .fa-angle-down{
+            transition: .2s;
+            margin-left: 5px;
+        }
+
+        .fa-angle-down{
+            transition: .3s;
+        }
+
+        &:hover{
+            transition: .1s;
+            color: rgb(255, 71, 71);
+        }
+
+        &:hover .fa-angle-down{
+            transform: rotateX(180deg);
+            transition: .3s;
+        }
+}
+
+@media only screen and (max-width: 1023px) {
+    .nav-links{
+        display: none;
+    }
+
+    .fa-ellipsis-vertical{
+        display: none;
+    }
+
+    .fa-bars{
+        display: block;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 30%;
+        left: 1.5%;
+
+        &:hover{
+            transition: .1s;
+            color: rgb(255, 71, 71);
+        }
+    }
+
+    .img-link{
+        margin: 0;
+        margin-left: 3rem;
+        margin-top: .27rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .img-link{
+        img{
+            width: 55%;
+            margin-bottom: .3rem;
+        }
+    }
+
+    .fa-bars{
+        top: 29%;
+        left: 2%;
+    }
+
+    @media screen and (max-width: 639px){
+        .img-link{
+            img{
+                width: 55%;
+                margin-bottom: .3rem;
+            }
+        }
+    
+        .fa-bars{
+            top: 29%;
+            left: 2%;
+        }
+}
+}
