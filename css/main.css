@@ -1146,8 +1146,18 @@ h6 {
   }
 }
 /*Card Styling*/
+.titleultime {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleultime .ultimenov {
+  text-align: center;
+}
+
 .cards-container {
-  width: 70rem;
+  width: 72rem;
   display: flex;
   justify-content: space-around;
   align-items: space-around;
@@ -1155,7 +1165,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   flex: 1 1;
-  margin-top: 5rem;
+  margin-top: 4rem;
   /* approccio super responsive per le transitions, da sistemare*/
 }
 .cards-container .card {
@@ -1254,6 +1264,13 @@ h6 {
     display: none;
   }
 }
+.btn-ultime {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 2.7rem;
+}
+
 :root {
   --black: #000000;
   --dark: #161616;
@@ -1500,6 +1517,44 @@ h6 {
 .nav-link:hover .fa-angle-down {
   transform: rotateX(180deg);
   transition: 0.3s;
+}
+
+.tabs-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 2rem;
+  height: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.7);
+}
+.tabs-wrapper ul {
+  width: 72rem;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.tabs-wrapper ul li {
+  border-left: 1.5px solid rgba(211, 211, 211, 0.7);
+}
+.tabs-wrapper ul li a {
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.tabs-wrapper ul li a:hover {
+  transition: all 0.3s ease;
+  background: rgba(211, 211, 211, 0.7);
+  color: rgba(0, 0, 0, 0.6);
+}
+.tabs-wrapper ul li a sup {
+  vertical-align: top;
+  font-size: 0.6em;
+}
+.tabs-wrapper ul li:nth-of-type(1) {
+  border-left: none;
 }
 
 /*Sezione giochi in evidenza*/
