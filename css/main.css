@@ -1146,8 +1146,18 @@ h6 {
   }
 }
 /*Card Styling*/
+.titleultime {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleultime .ultimenov {
+  text-align: center;
+}
+
 .cards-container {
-  width: 70rem;
+  width: 72rem;
   display: flex;
   justify-content: space-around;
   align-items: space-around;
@@ -1155,7 +1165,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   flex: 1 1;
-  margin-top: 5rem;
+  margin-top: 4rem;
   /* approccio super responsive per le transitions, da sistemare*/
 }
 .cards-container .card {
@@ -1254,6 +1264,13 @@ h6 {
     display: none;
   }
 }
+.btn-ultime {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 2.7rem;
+}
+
 :root {
   --black: #000000;
   --dark: #161616;
@@ -1503,7 +1520,9 @@ h6 {
 }
 
 .tabs-wrapper {
-  margin-top: 5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 2rem;
   height: 3.75rem;
   display: flex;
   justify-content: center;
@@ -1511,10 +1530,10 @@ h6 {
   border-bottom: 2px solid rgba(211, 211, 211, 0.7);
 }
 .tabs-wrapper ul {
+  width: 72rem;
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
 }
 .tabs-wrapper ul li {
   border-left: 1.5px solid rgba(211, 211, 211, 0.7);
