@@ -1469,20 +1469,20 @@ h6 {
   position: relative;
 }
 
-.fa-ellipsis-vertical {
+.nav-bar-2-vertical-menu {
   font-size: 1.5rem;
   transition: 0.25s;
   position: absolute;
   margin-left: 1.5rem;
 }
-.fa-ellipsis-vertical:hover {
+.nav-bar-2-vertical-menu:hover {
   color: rgb(255, 71, 71);
   font-size: 2rem;
   cursor: pointer;
   transition: 0.25s ease-in-out;
 }
 
-.fa-bars {
+.nav-bar-2-hamburger-menu {
   display: none;
 }
 
@@ -1527,17 +1527,17 @@ h6 {
   .nav-bar-2-links {
     display: none;
   }
-  .fa-ellipsis-vertical {
+  .nav-bar-2-vertical-menu {
     display: none;
   }
-  .fa-bars {
+  .nav-bar-2-hamburger-menu {
     display: block;
     font-size: 1.4rem;
     position: absolute;
     top: 30%;
     left: 1.5%;
   }
-  .fa-bars:hover {
+  .nav-bar-2-hamburger-menu:hover {
     transition: 0.1s;
     color: rgb(255, 71, 71);
   }
@@ -1552,7 +1552,7 @@ h6 {
     width: 55%;
     margin-bottom: 0.3rem;
   }
-  .fa-bars {
+  .nav-bar-2-hamburger-menu {
     top: 29%;
     left: 2%;
   }
@@ -1562,7 +1562,7 @@ h6 {
     width: 55%;
     margin-bottom: 0.3rem;
   }
-  .fa-bars {
+  .nav-bar-2-hamburger-menu {
     top: 29%;
     left: 2%;
   }
