@@ -1567,109 +1567,6 @@ h6 {
     left: 2%;
   }
 }
-
-/* EA Play Box Styling*/
-.sidebar-ea-play-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 336px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sidebar-ea-play-box:hover .sidebar-box-logo {
-  transform: scale(1.1);
-}
-.sidebar-ea-play-box .sidebar-ea-play-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 336px;
-  filter: brightness(0.9);
-  transition: all 300ms ease-in-out;
-}
-.sidebar-ea-play-box .sidebar-box-logo {
-  width: 90px;
-  position: absolute;
-  transition: all 300ms ease-out;
-}
-
-/* Sidebar Little Box Styling*/
-.sidebar-little-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: calc(50% - 16px);
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sidebar-little-box:hover .sidebar-little-box-logo {
-  transform: scale(1.1);
-}
-.sidebar-little-box .sidebar-little-box-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-  filter: brightness(0.9);
-  transition: all 300ms ease-in-out;
-}
-.sidebar-little-box .sidebar-little-box-logo {
-  width: 60px;
-  position: absolute;
-  transition: all 300ms ease-out;
-}
-
-/* sidebar */
-.sidebar-wrapper {
-  background-color: #fff;
-  width: 416px;
-  padding: 0 48px 64px 32px;
-  box-shadow: 5px 10px 8px #888888;
-  transition: all 0.3s ease-in;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.sidebar-close-icon {
-  width: 16px;
-}
-.sidebar-close-icon:hover {
-  color: red;
-}
-
-.sidebar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 47px 0 47px 0;
-}
-
-.boxes-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 32px;
-}
-
-.btn {
-  position: absolute;
-  top: 50px;
-  left: 1000px;
-}
-
-.sidebar-nav-text {
-  color: gray;
-  font-weight: bold;
-  margin: 0;
-
 .tabs-wrapper {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -1706,7 +1603,6 @@ h6 {
 }
 .tabs-wrapper ul li:nth-of-type(1) {
   border-left: none;
-
 }
 
 /*Sezione giochi in evidenza*/
