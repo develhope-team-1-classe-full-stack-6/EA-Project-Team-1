@@ -1,0 +1,44 @@
+/* sidebar */ 
+.sidebar-wrapper{
+  background-color: #fff;
+  width: 416px;
+  padding: 0 48px 64px 32px;
+  box-shadow: 5px 10px 8px #888888;
+  transition: all 0.3s ease-in;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-close-icon{
+  width: 16px;
+  &:hover{
+    color: red;
+  }
+}
+
+.sidebar-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 47px 0 47px 0;
+}
+
+.boxes-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.btn{
+  position: absolute;
+  top: 50px;
+  left: 1000px;
+}
+
+.sidebar-nav-text{
+  color: gray;
+  font-weight: bold;
+  margin: 0;
+}
