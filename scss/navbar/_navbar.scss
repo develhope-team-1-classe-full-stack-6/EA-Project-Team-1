@@ -44,7 +44,7 @@
     position: relative;
 }
 
-.fa-ellipsis-vertical{
+.nav-bar-2-vertical-menu{
     font-size: 1.5rem;
     transition: .25s;
     position: absolute;
@@ -58,7 +58,7 @@
     }
 }
 
-.fa-bars{
+.nav-bar-2-hamburger-menu{
     display: none;
 }
 
@@ -109,11 +109,11 @@
         display: none;
     }
 
-    .fa-ellipsis-vertical{
+    .nav-bar-2-vertical-menu{
         display: none;
     }
 
-    .fa-bars{
+    .nav-bar-2-hamburger-menu{
         display: block;
         font-size: 1.4rem;
         position: absolute;
@@ -141,7 +141,7 @@
         }
     }
 
-    .fa-bars{
+    .nav-bar-2-hamburger-menu{
         top: 29%;
         left: 2%;
     }
@@ -154,7 +154,7 @@
             }
         }
     
-        .fa-bars{
+        .nav-bar-2-hamburger-menu{
             top: 29%;
             left: 2%;
         }
