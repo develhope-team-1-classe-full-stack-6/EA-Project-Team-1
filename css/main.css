@@ -1382,54 +1382,6 @@ h6 {
   background-color: var(--transparent);
 }
 
-.btn-black {
-  color: var(--black);
-}
-
-.btn-dark {
-  color: var(--dark);
-}
-
-.btn-light {
-  color: var(--light);
-}
-
-.btn-white {
-  color: var(--white);
-}
-
-.btn-gray {
-  color: var(--gray);
-}
-
-.btn-gray-focus {
-  color: var(--gray-focus);
-}
-
-.btn-dark-blue {
-  color: var(--dark-blue);
-}
-
-.btn-light-orange {
-  color: var(--light-orange);
-}
-
-.btn-orange {
-  color: var(--orange);
-}
-
-.btn-red {
-  color: var(--red);
-}
-
-.btn-dark-light-blue {
-  color: var(--dark-light-blue);
-}
-
-.btn-transparent {
-  color: var(--transparent);
-}
-
 .nav-bar-1 {
   height: 40px;
   background-color: #161616;

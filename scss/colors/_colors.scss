@@ -20,6 +20,6 @@ $items: (
   "bg": background-color
 );
 
-@include fuctions.color_root($colors);
+@include functions.color_root($colors);
 
-@include fuctions.color_classes($colors, $items);
+@include functions.color_classes($colors, $items);
