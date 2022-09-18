@@ -1,7 +1,7 @@
 /*tipografia*/
 
 @use 'fonts';
-@use 'fuctions';
+@use 'functions';
 
 
 
@@ -683,8 +683,8 @@ $root: map-merge($styles_selectors, $styles_classes);
 @include fuctions.typography_root($root);
 
 /*selectors*/
-@include fuctions.typography_selectors($styles_selectors);
+@include functions.typography_selectors($styles_selectors);
 
 /*clasess*/
-@include fuctions.typography_classes($styles_classes);
+@include functions.typography_classes($styles_classes);
 
