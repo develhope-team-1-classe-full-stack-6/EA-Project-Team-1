@@ -795,7 +795,7 @@ h6 {
   width: 100%;
   position: absolute;
   z-index: auto;
-  scale: 1.02;
+  scale: 1.1;
 }
 @media screen and (max-width: 1455px) {
   .hero {
