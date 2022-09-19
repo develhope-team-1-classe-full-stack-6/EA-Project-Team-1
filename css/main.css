@@ -1557,6 +1557,56 @@ h6 {
   border-left: none;
 }
 
+.banner {
+  width: 100%;
+  height: 5.8823529412vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.banner .banner-item {
+  display: flex;
+  max-width: 60%;
+  flex: 1 1;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1455px) {
+  .banner .banner-item {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner .banner-item {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner .banner-item {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .banner-item .btn-container {
+    margin-block: 15px;
+  }
+}
+@media screen and (max-width: 1455px) {
+  .banner {
+    height: 7.6923076923vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner {
+    height: 16.6666666667vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    height: 25vw;
+  }
+}
+
 /*Sezione giochi in evidenza*/
 #giochi-in-evidenza {
   max-width: 1456px;
