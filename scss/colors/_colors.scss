@@ -1,4 +1,4 @@
-@use 'fuctions';
+@use 'functions';
 
 $colors: (
   "black": #000000,
@@ -12,15 +12,14 @@ $colors: (
   "orange": #ff4747,
   "red": #fe0115,
   "dark-light-blue": #6fb0d6,
-  "transparent": transparent
+  "transparent": transparent,
 );
 
 $items: (
   "text": color,
-  "bg": background-color,
-  "btn": color
+  "bg": background-color
 );
 
-@include fuctions.color_root($colors);
+@include functions.color_root($colors);
 
-@include fuctions.color_classes($colors, $items);
+@include functions.color_classes($colors, $items);

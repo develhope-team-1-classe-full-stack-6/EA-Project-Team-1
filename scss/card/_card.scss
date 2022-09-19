@@ -1,6 +1,17 @@
 /*Card Styling*/
+.titleultime {
+  margin-top:4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ultimenov {
+    text-align: center;
+  }
+}
+
 .cards-container {
-  width: 70rem;
+  width: 72rem;
   display: flex;
   justify-content: space-around;
   align-items: space-around;
@@ -8,7 +19,7 @@
   margin-left: auto;
   margin-right: auto;
   flex: 1 1;
-  margin-top: 5rem; //da rimuovere appena andremo a posizionare tutto
+  margin-top:4rem; //da rimuovere appena andremo a posizionare tutto
 
   /* approccio super responsive per le transitions, da sistemare*/
   // .card {
@@ -146,4 +157,11 @@
       }
     }
   }
+}
+
+.btn-ultime {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 2.7rem;
 }

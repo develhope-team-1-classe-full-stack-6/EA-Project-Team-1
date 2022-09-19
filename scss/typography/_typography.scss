@@ -1,7 +1,7 @@
 /*tipografia*/
 
 @use 'fonts';
-@use 'fuctions';
+@use 'functions';
 
 
 
@@ -614,7 +614,7 @@ $styles_classes: (
         )
     ),
 
-    nav-link: (
+    nav-bar-2-link: (
         font-family: (
             ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
 
@@ -644,7 +644,7 @@ $styles_classes: (
         )
     ),
 
-    nav-dropdown-item: (
+    nav-bar-2-dropdown-item: (
         font-size: (
             mobile: 16px,
             tablet: 16px,
@@ -659,7 +659,7 @@ $styles_classes: (
         )
     ),
     
-    nav-dropdown-item-title: (
+    nav-bar-2-dropdown-item-title: (
         font-weight: (
             700: 700),
             
@@ -680,11 +680,11 @@ $styles_classes: (
 $root: map-merge($styles_selectors, $styles_classes);
 
 /*root*/
-@include fuctions.typography_root($root);
+@include functions.typography_root($root);
 
 /*selectors*/
-@include fuctions.typography_selectors($styles_selectors);
+@include functions.typography_selectors($styles_selectors);
 
 /*clasess*/
-@include fuctions.typography_classes($styles_classes);
+@include functions.typography_classes($styles_classes);
 
