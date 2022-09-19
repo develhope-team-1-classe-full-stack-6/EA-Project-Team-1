@@ -5,13 +5,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  //border: 1px solid black;
 }
 
 .bottom-footer {
-  width: 100vw;
+  width: 100% !important;
+  max-width: 100% !important;
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
+  overflow: hidden !important;
 }
 
 #ea-local-footer {
@@ -261,4 +264,343 @@
   -o-transform: scale(-1, -1);
       -webkit-transform: scale(-1, -1);
       transform: scale(-1, -1);
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  #ea-local-footer {
+    height: 172.78px;
+    #section-footer-container {
+      width: 90vw !important;
+      align-self: center !important;
+      margin: 0;
+      margin-top: 20px; 
+      #ea-local-links {
+        width: 900px;
+        height: 86.78px;
+      }
+      #ea-social-links {
+        width: 218px;
+        height: 82.89px;
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #ea-logo {
+    width: 49px;
+    img {
+      width: 49px;
+    }
+  }
+
+  #ea-network-footer {
+    height: 281.81px;
+  }
+
+  #network-footer-section {
+    max-width: 1120px;
+    width: 90vw !important;
+    height: 90% !important;
+  }
+
+  #ea-network-legal {
+    width: 70% !important;
+    a {
+      font-size: 14px !important;
+    }
+  }
+
+  #network-links {
+    height: 95px !important;
+    max-height: 95px !important;
+    a {
+      font-size: 16px !important;
+      margin: 10px !important;
+    }
+  }
+
+  #selector-container {
+    margin-left: 0px !important;
+    left: 0px !important;
+    gap: 0px !important;
+    justify-content: space-evenly !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+#ea-local-footer {
+  height: 261.06px;
+  justify-content: center;
+  #section-footer-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-direction: column;
+    left: 0;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 70%;
+  }
+}
+
+#ea-social-links {
+  height: 80px !important;
+  margin-top: 15px;
+  h3 {
+    font-size: 14px !important;
+    left: 0px !important;
+    text-align: left !important;
+    margin-left: 0px !important;
+    margin-bottom: 10px !important;
+
+  }
+}
+
+#ea-network-footer {
+  height: 450px;
+}
+
+#network-footer-section {
+  width: 870px !important;
+  height: 90% !important;
+  margin: 0px !important;
+  flex-direction: column;
+}
+
+#ea-logo {
+  img {
+    width: 49px;
+    height: 49px;
+  }
+}
+
+#row-1 {
+  flex-direction: column;
+  width: 100% !important;
+}
+
+#network-links {
+  width: 110% !important;
+  line-height: 30px !important;
+  a {
+    font-size: 16px !important;
+    margin: 5px !important;
+  }
+}
+
+#selector-container {
+  width: 90vw !important;
+  justify-content: space-around !important;
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.footer-selector {
+  width: 40% !important;
+}
+
+#row-2 {
+  width: 110% !important;
+  flex-direction: column;
+}
+
+#ea-network-legal {
+  width: 100% !important;
+  a, p {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+
+#img-rights-container {
+  align-self:flex-start;
+}
+
+.footer-selector {
+  width: 100% !important;
+  position: relative !important;
+  #options-container-pricing {
+    width: 95% !important;
+  }
+  #options-container-language {
+    width: 95% !important;
+  }
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 883px) {
+  #ea-local-links {
+    width: 100% !important;
+  }
+
+  .footer-selector {
+    width: 100% !important;
+    position: relative !important;
+    #options-container-pricing {
+      width: 95% !important;
+    }
+    #options-container-language {
+      width: 95% !important;
+    }
+  }
+
+  #selector-container {
+    margin-bottom: 0px !important;
+  }
+
+  #ea-network-legal {
+    margin-top: 0px !important;
+  }
+
+}
+
+@media only screen and (min-width: 642px) and (max-width: 768px) {
+  .bottom-footer {
+    height: 850px;
+    background-color: #f3f3f3;
+  }
+  #ea-local-links {
+    width: 100% !important;
+    width: 90vw !important;
+    left: 0px !important;
+    margin-left: 0px !important;
+    border-bottom: 1px solid #969696;
+    align-self: center !important;
+  }
+
+  #section-footer-container {
+    height: 100% !important;
+  }
+
+  #selector-container {
+    margin-top: 20px !important;
+    flex-direction: column;
+  }
+
+  //INTERVENIRE QUI SOTTO!
+  .footer-selector {
+    width: 100% !important;
+    position: relative !important;
+    #options-container-pricing {
+      width: 95% !important;
+    }
+    #options-container-language {
+      width: 95% !important;
+    }
+  }
+
+  #ea-network-legal {
+    margin-top: 50px;
+    a {
+      font-size: 14px !important;
+    }
+  }
+
+  #ea-local-footer {
+    height: 300px;
+  }
+
+  #ea-network-footer {
+    height: 700px;
+  }
+
+  #ea-social-links {
+    height: 60px !important;
+    margin-top: 35px;
+    h3 {
+      position: relative !important;
+      left: -20px !important;
+    }
+  }
+}
+
+@media  only screen and (max-width: 641px) {
+  .bottom-footer {
+    height: 1000px;
+    background-color: #f3f3f3;
+  }
+  #ea-local-links {
+    width: 100% !important;
+    width: 90vw !important;
+    left: 0px !important;
+    margin-left: 0px !important;
+    border-bottom: 1px solid #969696;
+    align-self: center !important;
+  }
+
+  #section-footer-container {
+    height: 100% !important;
+  }
+
+  #selector-container {
+    flex-direction: column;
+  }
+
+  .footer-selector {
+    width: 100% !important;
+    position: relative !important;
+    #options-container-pricing {
+      width: 95% !important;
+    }
+    #options-container-language {
+      width: 95% !important;
+    }
+  }
+
+  #ea-network-legal {
+    margin-top: 20px;
+    a {
+      font-size: 14px !important;
+    }
+  }
+
+  #ea-local-footer {
+    height: 300px;
+  }
+
+  #ea-network-footer {
+    height: 700px;
+  }
+
+  #network-links {
+    margin-bottom: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  #ea-local-footer {
+    height: 400px !important;
+  }
+
+  #ea-social-links {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .bottom-footer {
+    height: 1000px !important;
+    background-color: #f3f3f3 !important;
+  }
+
+  #ea-network-footer {
+    height: 720px !important;
+  }
+
+}
+
+@media only screen and (max-width: 404px) {
+  .bottom-footer {
+    height: 1100px !important;
+  }
+  #ea-network-footer {
+    height: 750px !important;
+  }
+  #ea-social-links {
+    align-self: center !important;
+  }
 }
