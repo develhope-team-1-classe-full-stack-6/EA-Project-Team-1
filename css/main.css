@@ -1382,54 +1382,6 @@ h6 {
   background-color: var(--transparent);
 }
 
-.btn-black {
-  color: var(--black);
-}
-
-.btn-dark {
-  color: var(--dark);
-}
-
-.btn-light {
-  color: var(--light);
-}
-
-.btn-white {
-  color: var(--white);
-}
-
-.btn-gray {
-  color: var(--gray);
-}
-
-.btn-gray-focus {
-  color: var(--gray-focus);
-}
-
-.btn-dark-blue {
-  color: var(--dark-blue);
-}
-
-.btn-light-orange {
-  color: var(--light-orange);
-}
-
-.btn-orange {
-  color: var(--orange);
-}
-
-.btn-red {
-  color: var(--red);
-}
-
-.btn-dark-light-blue {
-  color: var(--dark-light-blue);
-}
-
-.btn-transparent {
-  color: var(--transparent);
-}
-
 .nav-bar-1 {
   height: 40px;
   background-color: #161616;
@@ -1603,6 +1555,56 @@ h6 {
 }
 .tabs-wrapper ul li:nth-of-type(1) {
   border-left: none;
+}
+
+.banner {
+  width: 100%;
+  height: 5.8823529412vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.banner .banner-item {
+  display: flex;
+  max-width: 60%;
+  flex: 1 1;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1455px) {
+  .banner .banner-item {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner .banner-item {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner .banner-item {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .banner-item .btn-container {
+    margin-block: 15px;
+  }
+}
+@media screen and (max-width: 1455px) {
+  .banner {
+    height: 7.6923076923vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner {
+    height: 16.6666666667vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    height: 25vw;
+  }
 }
 
 /*Sezione giochi in evidenza*/

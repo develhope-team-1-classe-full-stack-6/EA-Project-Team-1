@@ -12,13 +12,12 @@ $colors: (
   "orange": #ff4747,
   "red": #fe0115,
   "dark-light-blue": #6fb0d6,
-  "transparent": transparent
+  "transparent": transparent,
 );
 
 $items: (
   "text": color,
-  "bg": background-color,
-  "btn": color
+  "bg": background-color
 );
 
 @include functions.color_root($colors);
