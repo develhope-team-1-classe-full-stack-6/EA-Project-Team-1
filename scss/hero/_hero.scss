@@ -9,6 +9,7 @@
             width: 100%;
             position: absolute;
             z-index: auto;
+            scale: 1.02;
         }
     }
 
@@ -43,7 +44,7 @@
     &-items-left {
         position: absolute;
         width: 100%;
-        height: 80%;
+        height: 100%;
         z-index: 4;
         display: flex;
         justify-content: space-between;
@@ -88,34 +89,23 @@
 
         @media screen and (max-width: 767px) {
 
-            padding-top: 70px;
             padding-right: 20px;
             padding-left: 20px;
 
         }
-
-        .h6 {
-            font-size: calc(var(--h6-font-size-mobile) - 1px);
-
-            @media only screen and (min-width: 1456px) {
-                h6 {
-                  font-size: calc(var(--h6-font-size-desktop) - 6px);
-              }
-              @media only screen and (min-width: 1024px) {
-                  font-size: calc(var(--h6-font-size-tablet) - 6px);;
-                }
-              }
-          }
         
         .img-hero {
-            position:static;
-            max-width: 100%;
-
+            max-width: 80%;
+            margin-bottom: 1rem;
             @media screen and (max-width: 767px) {
 
                 width: 80vw;
                 
             }
+        }
+
+        .btn-container{
+            margin-top: 2.7rem;
         }
 
     }
@@ -146,17 +136,6 @@
             
             
         }
-
-        .b2 {
-            font-size: calc(var(--b2-font-size-mobile) - 1px);
-
-            @media only screen and (min-width: 1456px) {
-                  font-size: calc(var(--b2-font-size-desktop) - 5px);
-              @media only screen and (min-width: 1024px) {
-                  font-size: calc(var(--b2-font-size-tablet) - 5px);;
-                }
-              }
-          }
         
         .img-hero {
 
@@ -169,45 +148,10 @@
             }
         }
 
-    }
-
-    footer {
-        width: 100vw;
-        height: calc(100vw / 15);
-        background-color: #6fb0d6;
-        position: absolute;
-        bottom: 0;
-        z-index: 5;
-        display: flex;
-        justify-content: space-evenly;
-        
-        @media screen and (max-width: 1455px) {
-            height: calc(100vw / 12);
-        }
-    
-        @media screen and (max-width: 1023px) {
-            height: calc(100vw / 10);
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        @media screen and (max-width: 767px) {
-            height: 25vw;
+        .btn-container{
+            margin-top: 2.7rem;
         }
 
-        div {
-            display: flex;
-            align-items: center;
-            
-            .btn-container {
-                height: auto;
-                
-                @media screen and (max-width: 767px) {
-                    margin: 10px;
-                }
-            }
-        }
     }
 
 }
