@@ -119,9 +119,9 @@
   --h5-line-height-tablet: 1.25;
   --h5-line-height-mobile: 1.25;
   --h5-font-weight-400: 400;
-  --h6-font-size-mobile: 20px;
-  --h6-font-size-tablet: 24px;
-  --h6-font-size-desktop: 24px;
+  --h6-font-size-mobile: 19px;
+  --h6-font-size-tablet: 18px;
+  --h6-font-size-desktop: 18px;
   --h6-letter-spacing-mobile: -0.025em;
   --h6-letter-spacing-tablet: -0.025em;
   --h6-letter-spacing-desktop: -0.025em;
@@ -232,7 +232,7 @@
   --b1-line-height-mobile: 1.65;
   --b1-line-height-tablet: 1.5;
   --b1-line-height-desktop: 1.5;
-  --b2-font-size-mobile: 16px;
+  --b2-font-size-mobile: 15px;
   --b2-font-size-tablet: 18px;
   --b2-font-size-desktop: 18px;
   --b2-letter-spacing-mobile: normal;
@@ -795,6 +795,7 @@ h6 {
   width: 100%;
   position: absolute;
   z-index: auto;
+  scale: 1.1;
 }
 @media screen and (max-width: 1455px) {
   .hero {
@@ -829,7 +830,7 @@ h6 {
 .hero-items-left {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 100%;
   z-index: 4;
   display: flex;
   justify-content: space-between;
@@ -871,32 +872,21 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .hero-content-center {
-    padding-top: 70px;
     padding-right: 20px;
     padding-left: 20px;
   }
 }
-.hero-content-center .h6 {
-  font-size: calc(var(--h6-font-size-mobile) - 1px);
-}
-@media only screen and (min-width: 1456px) {
-  .hero-content-center .h6 h6 {
-    font-size: calc(var(--h6-font-size-desktop) - 6px);
-  }
-}
-@media only screen and (min-width: 1456px) and (min-width: 1024px) {
-  .hero-content-center .h6 {
-    font-size: calc(var(--h6-font-size-tablet) - 6px);
-  }
-}
 .hero-content-center .img-hero {
-  position: static;
-  max-width: 100%;
+  max-width: 80%;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 767px) {
   .hero-content-center .img-hero {
     width: 80vw;
   }
+}
+.hero-content-center .btn-container {
+  margin-top: 2.7rem;
 }
 .hero-content-left {
   width: 100%;
@@ -923,19 +913,6 @@ h6 {
     padding-inline: 10%;
   }
 }
-.hero-content-left .b2 {
-  font-size: calc(var(--b2-font-size-mobile) - 1px);
-}
-@media only screen and (min-width: 1456px) {
-  .hero-content-left .b2 {
-    font-size: calc(var(--b2-font-size-desktop) - 5px);
-  }
-}
-@media only screen and (min-width: 1456px) and (min-width: 1024px) {
-  .hero-content-left .b2 {
-    font-size: calc(var(--b2-font-size-tablet) - 5px);
-  }
-}
 .hero-content-left .img-hero {
   max-width: 50%;
 }
@@ -944,45 +921,8 @@ h6 {
     width: 20vw;
   }
 }
-.hero footer {
-  width: 100vw;
-  height: 6.6666666667vw;
-  background-color: #6fb0d6;
-  position: absolute;
-  bottom: 0;
-  z-index: 5;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media screen and (max-width: 1455px) {
-  .hero footer {
-    height: 8.3333333333vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .hero footer {
-    height: 10vw;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  .hero footer {
-    height: 25vw;
-  }
-}
-.hero footer div {
-  display: flex;
-  align-items: center;
-}
-.hero footer div .btn-container {
-  height: auto;
-}
-@media screen and (max-width: 767px) {
-  .hero footer div .btn-container {
-    margin: 10px;
-  }
+.hero-content-left .btn-container {
+  margin-top: 2.7rem;
 }
 
 /* Box Styling*/
@@ -2147,7 +2087,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .banner {
-    height: 25vw;
+    height: 30vw;
   }
 }
 
@@ -2172,7 +2112,7 @@ h6 {
 .gie-inner-section {
   display: flex;
   justify-content: center;
-  margin-top: 8px;
+  margin: 2.7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
