@@ -1,7 +1,7 @@
 /*tipografia*/
 
 @use 'fonts';
-@use 'fuctions';
+@use 'functions';
 
 
 
@@ -411,9 +411,9 @@ $styles_classes: (
     
     h6: (
         font-size: (
-            mobile: 20px,
-            tablet: 24px,
-            desktop: 24px),
+            mobile: 19px,
+            tablet: 18px,
+            desktop: 18px),
 
         letter-spacing: (
             mobile: -0.025em,
@@ -536,7 +536,7 @@ $styles_classes: (
 
     b2 : (
         font-size: (
-            mobile: 16px,
+            mobile: 15px,
             tablet: 18px,
             desktop: 18px),
         
@@ -589,7 +589,7 @@ $styles_classes: (
         letter-spacing: (
             normal:normal),
         
-        text-transform: (
+        text-decoration: (
             none: none
         )
     ),
@@ -614,14 +614,14 @@ $styles_classes: (
         )
     ),
 
-    nav-link: (
+    nav-bar-2-link: (
         font-family: (
-            ElectronicArtsText:'"ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif'),
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
 
         font-size: (
-            mobile: 16px,
-            tablet: 18px,
-            desktop: 18px
+            mobile: 15px,
+            tablet: 17px,
+            desktop: 17px
         ),
 
         line-height: (
@@ -644,7 +644,7 @@ $styles_classes: (
         )
     ),
 
-    nav-dropdown-item: (
+    nav-bar-2-dropdown-item: (
         font-size: (
             mobile: 16px,
             tablet: 16px,
@@ -659,12 +659,18 @@ $styles_classes: (
         )
     ),
     
-    nav-dropdown-item-title: (
+    nav-bar-2-dropdown-item-title: (
         font-weight: (
             700: 700),
             
         text-decoration: (
             none: none
+        )
+    ),
+
+    title: (
+        font-weight: (
+            bold: bold
         )
     )
 
@@ -674,11 +680,11 @@ $styles_classes: (
 $root: map-merge($styles_selectors, $styles_classes);
 
 /*root*/
-@include fuctions.typography_root($root);
+@include functions.typography_root($root);
 
 /*selectors*/
-@include fuctions.typography_selectors($styles_selectors);
+@include functions.typography_selectors($styles_selectors);
 
 /*clasess*/
-@include fuctions.typography_classes($styles_classes);
+@include functions.typography_classes($styles_classes);
 
