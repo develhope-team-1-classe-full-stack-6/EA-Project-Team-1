@@ -1,0 +1,690 @@
+/*tipografia*/
+
+@use 'fonts';
+@use '../abstracts/mixins';
+
+
+
+$styles_selectors: (
+
+    body: (
+        font-size: (
+            mobile: 16px,
+            tablet: 18px,
+            desktop: 18px
+        ),
+
+        font-family: (
+            ElectronicArtsText: '"ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif'),
+
+        font-weight:(
+            light: 300,
+            normal: 400,
+            bold: 600),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+
+        line-height: (
+            mobile: 1.65,
+            tablet: 1.5,
+            desktop: 1.5)
+    ),
+
+    h1: (
+
+        font-size: (
+            mobile: 40px,
+            tablet: 44px,
+            desktop: 48px),
+
+        font-weight: (
+            400 : 400),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+        
+        line-height: (
+            mobile: 1.25,
+            tablet: 1.25,
+            desktop: 1.35),
+        
+    ),
+
+    h2: (
+
+        font-size: (
+            mobile: 32px,
+            tablet: 36px,
+            desktop: 40px),
+
+        font-weight: (
+            400 : 400),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+        
+        line-height: (
+            mobile: 1.25,
+            tablet: 1.25,
+            desktop: 1.35),
+        
+    ),
+
+    h3: (
+        font-size: (
+            mobile: 28px,
+            tablet: 32px,
+            desktop: 36px),
+
+        letter-spacing: (
+            desktop: normal,
+            tablet: normal,
+            mobile: normal),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    ), 
+    
+    h4: (
+        font-size: (
+            mobile: 20px,
+            tablet: 24px,
+            desktop: 24px),
+
+        letter-spacing: (
+            desktop: normal,
+            tablet: normal,
+            mobile: normal),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    ),  
+    
+    h5: (
+        font-size: (
+            mobile: 20px,
+            tablet: 24px,
+            desktop: 24px),
+
+        letter-spacing: (
+            mobile: -0.025em,
+            tablet: -0.025em,
+            desktop: -0.025em),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    ),  
+    
+    h6: (
+        font-size: (
+            mobile: 20px,
+            tablet: 24px,
+            desktop: 24px),
+
+        letter-spacing: (
+            mobile: -0.025em,
+            tablet: -0.025em,
+            desktop: -0.025em),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    )
+);
+
+$styles_classes: (
+    d1: (
+        font-size: (
+            mobile: 50px,
+            tablet: 64px,
+            desktop: 80px),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+
+        line-height: (
+            mobile: 1.15,
+            tablet: 1.15,
+            desktop: 1.15),
+
+        font-style: (
+            normal: normal),
+            
+        font-weight: (
+            600: 600),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif')
+    ),
+
+    d2: (
+        font-size: (
+            mobile: 42px,
+            tablet: 54px,
+            desktop: 68px),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+
+        line-height: (
+            mobile: 1.15,
+            tablet: 1.15,
+            desktop: 1.15),
+
+        font-style: (
+            normal: normal),
+            
+        font-weight: (
+            600: 600),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif')
+    ),
+
+    d3: (
+        font-size: (
+            mobile: 36px,
+            tablet: 44px,
+            desktop: 54px),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+
+        line-height: (
+            mobile: 1.15,
+            tablet: 1.15,
+            desktop: 1.15),
+
+        font-style: (
+            normal: normal),
+            
+        font-weight: (
+            600: 600),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif')
+    ),
+
+    d4: (
+        font-size: (
+            mobile: 32px,
+            tablet: 40px,
+            desktop: 44px),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+
+        line-height: (
+            mobile: 1.15,
+            tablet: 1.15,
+            desktop: 1.15),
+
+        font-style: (
+            normal: normal),
+            
+        font-weight: (
+            600: 600),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif')
+    ),
+
+    d5: (
+        font-size: (
+            mobile: 22px,
+            desktop: 32px),
+
+        letter-spacing: (
+            normal: normal),
+
+        line-height: (
+            100:100%),
+
+        font-style: (
+            normal: normal),
+            
+        font-weight: (
+            600: 600),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif')
+    ),
+
+    d6: (
+        font-size: (
+            mobile: 20px,
+            desktop: 24px),
+
+        letter-spacing: (
+            normal: normal),
+
+        line-height: (
+            100:100%),
+
+        font-style: (
+            normal: normal),
+            
+        font-weight: (
+            600: 600),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif')
+    ),
+
+    h1: (
+
+        font-size: (
+            mobile: 40px,
+            tablet: 44px,
+            desktop: 48px),
+
+        font-weight: (
+            400 : 400),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+        
+        line-height: (
+            mobile: 1.25,
+            tablet: 1.25,
+            desktop: 1.35),
+        
+    ),
+
+    h2: (
+
+        font-size: (
+            mobile: 32px,
+            tablet: 36px,
+            desktop: 40px),
+
+        font-weight: (
+            400 : 400),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+        
+        line-height: (
+            mobile: 1.25,
+            tablet: 1.25,
+            desktop: 1.35),
+        
+    ),
+
+    h3: (
+        font-size: (
+            mobile: 28px,
+            tablet: 32px,
+            desktop: 36px),
+
+        letter-spacing: (
+            desktop: normal,
+            tablet: normal,
+            mobile: normal),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    ), 
+    
+    h4: (
+        font-size: (
+            mobile: 20px,
+            tablet: 24px,
+            desktop: 24px),
+
+        letter-spacing: (
+            desktop: normal,
+            tablet: normal,
+            mobile: normal),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    ),  
+    
+    h5: (
+        font-size: (
+            mobile: 20px,
+            tablet: 24px,
+            desktop: 24px),
+
+        letter-spacing: (
+            mobile: -0.025em,
+            tablet: -0.025em,
+            desktop: -0.025em),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    ),  
+    
+    h6: (
+        font-size: (
+            mobile: 19px,
+            tablet: 18px,
+            desktop: 18px),
+
+        letter-spacing: (
+            mobile: -0.025em,
+            tablet: -0.025em,
+            desktop: -0.025em),
+
+        line-height: (
+            desktop: 1.35,
+            tablet: 1.25,
+            mobile: 1.25),
+            
+        font-weight: (
+            400: 400),
+    ),
+
+    l1: (
+        font-size: (
+            mobile: 24px,
+            tablet: 24px,
+            desktop: 26px),
+        
+        
+        font-weight: ( 
+            600:600),
+
+        letter-spacing: (
+            normal: normal),
+
+        line-height: (
+            mobile: 1.35,
+            tablet: 1.35,
+            desktop: 1.35),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
+    ),
+
+    l2: (
+        font-size: (
+            mobile: 14px,
+            tablet: 14px,
+            desktop: 16px),
+        
+        
+        font-weight: ( 
+            600:600),
+
+        letter-spacing: (
+            normal: normal),
+
+        line-height: (
+            mobile: 1.35,
+            tablet: 1.35,
+            desktop: 1.35),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
+    ),
+
+    l3: (
+        font-size: (
+            mobile: 14px,
+            desktop: 16px),
+
+        font-style: (
+            normal: normal),
+
+        font-weight: ( 
+            600:600),
+
+        letter-spacing: (
+            normal: normal),
+
+        line-height: (
+            100: 100%),
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
+    ),
+
+    l4: (
+        font-size: (
+            mobile: 14px,
+            desktop: 14px),
+
+        font-style: (
+            normal: normal),
+
+        font-weight: ( 
+            600:600),
+
+        letter-spacing: (
+            normal: normal),
+
+        line-height: (
+            100: 100%),
+        
+            
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
+    ),
+
+    b1 : (
+        font-size: (
+            mobile: 20px,
+            tablet: 20px,
+            desktop: 24px),
+        
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+        
+        line-height: (
+            mobile: 1.65,
+            tablet: 1.5,
+            desktop: 1.5,),
+
+    ),
+
+    b2 : (
+        font-size: (
+            mobile: 15px,
+            tablet: 18px,
+            desktop: 18px),
+        
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+        
+        line-height: (
+            mobile: 1.65,
+            tablet: 1.5,
+            desktop: 1.5,),
+
+    ),
+
+    b3 : (
+        font-size: (
+            mobile: 14px,
+            desktop: 16px),
+        
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+        
+        line-height: (
+            mobile: 1.65,
+            desktop: 1.5,),
+    ),
+
+    btn: (
+        font-family: (
+            ElectronicArtsText:'"ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif'),
+
+       
+        font-size: (
+            mobile: 16px,
+            tablet: 18px,
+            desktop: 18px
+        ),
+
+        line-height: (
+            mobile: 1.65,
+            tablet: 1.5,
+            desktop: 1.5),
+
+        font-weight: (
+            normal:normal),
+
+        letter-spacing: (
+            normal:normal),
+        
+        text-decoration: (
+            none: none
+        )
+    ),
+    
+    nav-bar-1: (
+        font-size: (
+            16: 16px,
+        ),
+
+        font-family: (
+            open-sans: 'open-sans, "Verdana", "Helvetica", "Arial", sans-serif'),
+
+        line-height: (
+            1_35 : 1.35),
+        
+        text-decoration: (
+            none: none
+        ),
+
+        color: (
+            inherit: inherit
+        )
+    ),
+
+    nav-bar-2-link: (
+        font-family: (
+            ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
+
+        font-size: (
+            mobile: 15px,
+            tablet: 17px,
+            desktop: 17px
+        ),
+
+        line-height: (
+            mobile: 1.65,
+            tablet: 1.5,
+            desktop: 1.5),
+
+        font-weight: (
+            normal:normal),
+
+        letter-spacing: (
+            normal:normal),
+        
+        text-decoration: (
+            none: none
+        ),
+
+        color: (
+            inherit: inherit
+        )
+    ),
+
+    nav-bar-2-dropdown-item: (
+        font-size: (
+            mobile: 16px,
+            tablet: 16px,
+            desktop: 16px
+        ),
+
+        font-weight: (
+            300: 300),
+
+        text-decoration: (
+            none: none
+        )
+    ),
+    
+    nav-bar-2-dropdown-item-title: (
+        font-weight: (
+            700: 700),
+            
+        text-decoration: (
+            none: none
+        )
+    ),
+
+    title: (
+        font-weight: (
+            bold: bold
+        )
+    )
+
+);
+
+/*unisco le liste per estrarre i root*/
+$root: map-merge($styles_selectors, $styles_classes);
+
+/*root*/
+@include mixins.typography_root($root);
+
+/*selectors*/
+@include mixins.typography_selectors($styles_selectors);
+
+/*clasess*/
+@include mixins.typography_classes($styles_classes);
+
