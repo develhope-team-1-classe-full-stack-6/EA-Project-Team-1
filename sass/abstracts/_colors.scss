@@ -1,0 +1,25 @@
+@use 'mixins';
+
+$colors: (
+  "black": #000000,
+  "dark": #161616,
+  "light": #f3f3f3,
+  "white": #ffffff,
+  "gray": #eaeaea,
+  "gray-focus": #dedede,
+  "dark-blue": #29244d,
+  "light-orange": #ed5355,
+  "orange": #ff4747,
+  "red": #fe0115,
+  "dark-light-blue": #6fb0d6,
+  "transparent": transparent,
+);
+
+$items: (
+  "text": color,
+  "bg": background-color
+);
+
+@include mixins.color_root($colors);
+
+@include mixins.color_classes($colors, $items);

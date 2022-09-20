@@ -1,0 +1,68 @@
+/* EA Play Box Styling*/
+.sidebar-ea-play-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 336px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+
+    .sidebar-box-logo {
+      transform: scale(1.15);
+    }
+  }
+
+  .sidebar-ea-play-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 336px;
+    filter: brightness(0.9);
+    transition: all 300ms ease-in-out;
+  }
+
+  .sidebar-box-logo {
+    width: 90px;
+    position: absolute;
+    transition: all 300ms ease-out;
+  }
+}
+
+/* Sidebar Little Box Styling*/
+.sidebar-little-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc(50% - 16px);
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    .sidebar-little-box-logo {
+      transform: scale(1.15);
+    }
+  }
+
+  .sidebar-little-box-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    filter: brightness(0.9);
+    transition: all 300ms ease-in-out;
+  }
+
+  .sidebar-little-box-logo {
+    width: 70px;
+    position: absolute;
+    transition: all 300ms ease-out;
+  }
+}
