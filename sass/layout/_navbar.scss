@@ -1,6 +1,6 @@
 .nav-bar-1 {
     height: 40px;
-    background-color: #161616;
+    background-color: var(--dark);
     color: #b0b0b0;
     display: flex;
     justify-content: flex-end;
@@ -34,7 +34,7 @@
 
     .fa-user:hover,
     .fa-question:hover {
-        color: #f3f3f3;
+        color: var(--light);
     }
 }
 
@@ -53,7 +53,7 @@
     margin-left: 1.5rem;
 
     &:hover {
-        color: rgb(255, 71, 71);
+        color: var(--orange);
         font-size: 2rem;
         cursor: pointer;
         transition: .25s ease-in-out;
@@ -82,7 +82,7 @@
 
 .nav-bar-2-link {
     text-decoration: none;
-    color: #161616;
+    color: var(--dark);
     margin-left: 1rem;
     margin-right: 0.7rem;
 
@@ -97,7 +97,7 @@
 
     &:hover {
         transition: .1s;
-        color: rgb(255, 71, 71);
+        color: var(--orange);
     }
 
     &:hover .fa-angle-down {
@@ -124,7 +124,7 @@
 
         &:hover {
             transition: .1s;
-            color: rgb(255, 71, 71);
+            color: var(--orange);
         }
     }
 
