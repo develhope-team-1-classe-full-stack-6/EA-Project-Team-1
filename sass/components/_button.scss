@@ -109,8 +109,10 @@
 
 @media only screen and (max-width: 639px) {
     .btn-container {
-        width: 547px;
+        width: 100%;
         height: 56px;
+        margin: auto;
+       
     }
 
     .btn {
