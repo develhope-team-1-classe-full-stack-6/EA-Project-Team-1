@@ -5,7 +5,7 @@
   left: 0;
   width: 355px;
   height: 355px;
-  background: linear-gradient(90deg, #29244d, #ed5355);
+  background: linear-gradient(90deg, var(--dark-blue), var(--orange));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
   p {
     position: absolute;
     visibility: hidden;
-    color: white;
+    color: var(--white);
   }
 }
 

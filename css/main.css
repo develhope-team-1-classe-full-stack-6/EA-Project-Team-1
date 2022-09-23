@@ -960,7 +960,7 @@ h6 {
   left: 0;
   width: 355px;
   height: 355px;
-  background: linear-gradient(90deg, #29244d, #ed5355);
+  background: linear-gradient(90deg, var(--dark-blue), var(--orange));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -991,7 +991,7 @@ h6 {
 .box-container p {
   position: absolute;
   visibility: hidden;
-  color: white;
+  color: var(--white);
 }
 
 .box-logo-w1 {
@@ -1572,7 +1572,7 @@ h6 {
   width: 16px;
 }
 .sidebar-wrapper .sidebar-close-icon:hover {
-  color: red;
+  color: var(--red);
 }
 .sidebar-wrapper .sidebar-header {
   display: flex;
@@ -1585,6 +1585,13 @@ h6 {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 32px;
+}
+.sidebar-wrapper .sidebar-title {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+.sidebar-wrapper .sidebar-title:hover {
+  color: var(--red);
 }
 
 .banner {

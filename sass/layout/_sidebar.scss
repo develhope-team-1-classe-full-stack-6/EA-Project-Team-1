@@ -13,7 +13,7 @@
     width: 16px;
 
     &:hover {
-      color: red;
+      color: var(--red);
     }
   }
 
@@ -29,5 +29,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 32px;
+  }
+
+  .sidebar-title{
+    text-decoration: none;
+    color: #a9a9a9;
+    &:hover{
+      color: var(--red);
+    }
   }
 }
