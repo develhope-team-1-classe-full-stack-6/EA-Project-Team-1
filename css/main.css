@@ -1101,16 +1101,15 @@ h6 {
 }
 @media only screen and (max-width: 639px) {
   .btn-container {
-    width: 100%;
+    width: 95%;
     height: 56px;
-    margin: auto;
   }
   .btn {
-    width: 544px;
+    width: calc(100% - 3px);
     height: 50px;
   }
   .btn:hover {
-    width: 547px;
+    width: 100%;
     height: 56px;
   }
 }
@@ -1209,7 +1208,7 @@ h6 {
     flex-direction: column;
   }
   .cards-container .card {
-    width: 35.5rem;
+    width: 90%;
     height: 7.25rem;
     display: flex;
     flex-direction: column;
@@ -1613,7 +1612,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .hero-content-left {
-    padding-inline: 10%;
+    padding: 10%;
   }
 }
 .hero-content-left .img-hero {
