@@ -1,12 +1,6 @@
 @use "../abstracts/colors" as color;
 @use "../base/typography" as font;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  //border: 1px solid black;
-}
 
 .bottom-footer {
   width: 100% !important;
