@@ -1612,7 +1612,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .hero-content-left {
-    padding: 10%;
+    padding-inline: 10%;
   }
 }
 .hero-content-left .img-hero {
@@ -1716,11 +1716,10 @@ h6 {
     height: 30vw;
   }
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (max-width: 500px) {
+  .banner {
+    height: 50vw;
+  }
 }
 
 .bottom-footer {
@@ -2282,7 +2281,7 @@ h6 {
 .gie-inner-section {
   display: flex;
   justify-content: center;
-  margin: 2.7rem;
+  margin-block: 2.7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
