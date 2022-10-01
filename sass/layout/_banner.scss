@@ -44,6 +44,11 @@
         height: calc(100vw / 6);
     }
 
+
+    @media screen and (max-width: 860px) {
+        height: calc(100vw / 5);
+    }
+
     @media screen and (max-width: 767px) {
         height: 30vw;
     }
