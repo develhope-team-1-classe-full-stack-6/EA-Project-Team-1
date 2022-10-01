@@ -1689,7 +1689,13 @@ h6 {
 }
 @media screen and (max-width: 1023px) {
   .banner .banner-item {
-    display: block;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .banner-item div {
+    width: 100%;
   }
   .banner .banner-item .btn-container {
     margin-block: 15px;
