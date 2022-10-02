@@ -167,9 +167,9 @@
 /*unisco le liste per estrarre i root*/
 /*root*/
 :root {
-  --body-font-size-mobile: 16px;
-  --body-font-size-tablet: 18px;
-  --body-font-size-desktop: 18px;
+  --body-font-size-mobile: 14px;
+  --body-font-size-tablet: 15px;
+  --body-font-size-desktop: 15px;
   --body-font-family-ElectronicArtsText: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
   --body-font-weight-light: 300;
   --body-font-weight-normal: 400;
@@ -220,9 +220,9 @@
   --h4-line-height-tablet: 1.25;
   --h4-line-height-mobile: 1.25;
   --h4-font-weight-400: 400;
-  --h5-font-size-mobile: 20px;
-  --h5-font-size-tablet: 24px;
-  --h5-font-size-desktop: 24px;
+  --h5-font-size-mobile: 18px;
+  --h5-font-size-tablet: 22px;
+  --h5-font-size-desktop: 22px;
   --h5-letter-spacing-mobile: -0.025em;
   --h5-letter-spacing-tablet: -0.025em;
   --h5-letter-spacing-desktop: -0.025em;
@@ -344,8 +344,8 @@
   --b1-line-height-tablet: 1.5;
   --b1-line-height-desktop: 1.5;
   --b2-font-size-mobile: 15px;
-  --b2-font-size-tablet: 18px;
-  --b2-font-size-desktop: 18px;
+  --b2-font-size-tablet: 16px;
+  --b2-font-size-desktop: 16px;
   --b2-letter-spacing-mobile: normal;
   --b2-letter-spacing-tablet: normal;
   --b2-letter-spacing-desktop: normal;
@@ -360,9 +360,9 @@
   --b3-line-height-mobile: 1.65;
   --b3-line-height-desktop: 1.5;
   --btn-font-family-ElectronicArtsText: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
-  --btn-font-size-mobile: 16px;
-  --btn-font-size-tablet: 18px;
-  --btn-font-size-desktop: 18px;
+  --btn-font-size-mobile: 15px;
+  --btn-font-size-tablet: 16px;
+  --btn-font-size-desktop: 16px;
   --btn-line-height-mobile: 1.65;
   --btn-line-height-tablet: 1.5;
   --btn-line-height-desktop: 1.5;
@@ -1156,20 +1156,19 @@ h6 {
 }
 .cards-container .card .spans {
   display: flex;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 .cards-container .card .spans span {
   margin-right: 1rem;
-  font-size: 1rem;
 }
 .cards-container .card .spans span:first-of-type {
   color: orangered;
 }
 .cards-container .card h3 {
-  margin: 1rem;
+  margin: 1.5rem;
 }
 .cards-container .card h6 {
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -1199,7 +1198,6 @@ h6 {
   }
   .cards-container .card h6 {
     margin: 0.5rem 1rem 0.5rem 1rem;
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {

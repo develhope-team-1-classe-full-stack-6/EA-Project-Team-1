@@ -66,11 +66,10 @@
 
     .spans {
       display: flex;
-      margin: 1rem;
+      margin: 1.5rem;
 
       span {
         margin-right: 1rem;
-        font-size: 1rem;
       }
 
       span:first-of-type {
@@ -79,11 +78,11 @@
     }
 
     h3 {
-      margin: 1rem;
+      margin: 1.5rem;
     }
 
     h6 {
-      margin: 1rem;
+      margin: 1.5rem;
     }
   }
 }
@@ -118,7 +117,6 @@
 
       h6 {
         margin: 0.5rem 1rem 0.5rem 1rem;
-        font-size: 16px;
       }
     }
   }
