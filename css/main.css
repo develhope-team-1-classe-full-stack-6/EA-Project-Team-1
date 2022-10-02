@@ -1039,36 +1039,17 @@ h6 {
   width: 168px;
   height: 65px;
 }
-.btn:focus {
-  border: 2.5px solid var(--black);
-  outline: 2.5px solid var(--light);
-  transition: 0s;
-}
 
 .btn-dark {
   border: 2px solid var(--dark);
   background-color: var(--transparent);
   color: var(--dark);
 }
-.btn-dark:focus {
-  background-color: var(--dark);
-  border: 2.5px solid var(--light);
-  outline: 2.5px solid var(--dark);
-  color: var(--light);
-  transition: 0s;
-}
 
 .btn-white {
   border: 2px solid var(--light);
   background-color: transparent;
   color: var(--light);
-}
-.btn-white:focus {
-  background-color: var(--light);
-  border: 2.5px solid var(--dark);
-  outline: 2.5px solid var(--light);
-  color: var(--dark);
-  transition: 0s;
 }
 
 @media only screen and (max-width: 1023px) {
