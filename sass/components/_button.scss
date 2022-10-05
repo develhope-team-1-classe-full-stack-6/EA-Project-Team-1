@@ -1,104 +1,103 @@
+
+
 .btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 168px;
     height: 65px;
-    position: relative;
+    padding: 5px;
+    border-radius: 2.5px;
+
+    &:hover{
+        padding: 0px;
+    }
 }
 
-// SPECIFICHE GENERALI DI TUTTI I BUTTONS
 .btn {
-    height: 60px;
-    width: 160px;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-light{
     background-color: var(--light);
     color: var(--dark);
     border-radius: 2.5px;
+    border: transparent;
     transition: .1s;
 
-    p {
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
     &:hover {
-        width: 168px;
-        height: 65px;
+        background-color: var(--light);
+        color: var(--dark);
     }
 }
+// // SPECIFICHE GENERALI DI TUTTI I BUTTONS
 
 
-// SPECIFICHE ALTRI BUTTONS
-.btn-dark {
-    border: 2px solid var(--dark);
-    background-color: var(--transparent);
-    color: var(--dark);
-}
+// // SPECIFICHE ALTRI BUTTONS
+// .btn-dark {
+//     border: 2px solid var(--dark);
+//     background-color: var(--transparent);
+//     color: var(--dark);
+// }
 
-.btn-white {
-    border: 2px solid var(--light);
-    background-color: transparent;
-    color: var(--light);
-}
-
-
-// MEDIA QUERIES
-
-//TABLET
-@media only screen and (max-width: 1023px) {
-    .btn-container {
-        height: 56px;
-        width: 144px;
-    }
-
-    .btn {
-        height: 50px;
-        width: 136px;
-
-        &:hover {
-            height: 56px;
-            width: 144px;
-        }
-    }
-}
+// .btn-white {
+//     border: 2px solid var(--light);
+//     background-color: transparent;
+//     color: var(--light);
+// }
 
 
-//MOBILE
-@media only screen and (max-width: 767px) {
-    .btn-container {
-        height: 56px;
-        width: 144px;
-    }
+// // MEDIA QUERIES
 
-    .btn {
-        height: 50px;
-        width: 136px;
+// //TABLET
+// @media only screen and (max-width: 1023px) {
+//     .btn-container {
+//         height: 56px;
+//         width: 144px;
+//     }
 
-        &:hover {
-            height: 56px;
-            width: 144px;
-        }
-    }
-}
+//     .btn {
+//         height: 50px;
+//         width: 136px;
 
-@media only screen and (max-width: 639px) {
-    .btn-container {
-        width: 95%;
-        height: 56px;
+//         &:hover {
+//             height: 56px;
+//             width: 144px;
+//         }
+//     }
+// }
+
+
+// //MOBILE
+// @media only screen and (max-width: 767px) {
+//     .btn-container {
+//         height: 56px;
+//         width: 144px;
+//     }
+
+//     .btn {
+//         height: 50px;
+//         width: 136px;
+
+//         &:hover {
+//             height: 56px;
+//             width: 144px;
+//         }
+//     }
+// }
+
+// @media only screen and (max-width: 639px) {
+//     .btn-container {
+//         width: 95%;
+//         height: 56px;
        
-    }
+//     }
 
-    .btn {
-        width: calc(100% - 3px);
-        height: 50px;
+//     .btn {
+//         width: calc(100% - 3px);
+//         height: 50px;
 
-        &:hover {
-            width: 100%;
-            height: 56px;
-        }
-    }
-}
+//         &:hover {
+//             width: 100%;
+//             height: 56px;
+//         }
+//     }
+// }
