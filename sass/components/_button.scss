@@ -15,7 +15,7 @@
     .btn-container {
         width: 144px;
         height: 56px;
-    }
+    }   
 }
 
 @media (max-width: 576px) {
@@ -72,5 +72,58 @@
         background-color: var(--transparent);
         color: var(--light);
         border: 2px solid var(--light);
+    }
+}
+
+.btn-white {
+    border: 2px solid var(--light);
+    background-color: var(--transparent);
+    color: var(--light);
+
+    &:hover {
+        background-color: var(--transparent);
+        color: var(--light);
+        border: 2px solid var(--light);
+    }
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: var(--light);
+
+    &:hover {
+        background-color: var(--orange);
+        color: var(--light);
+    }
+}
+
+
+.btn-violet {
+    background-color: var(--violet);
+    color: var(--light);
+
+    &:hover {
+        background-color: var(--violet);
+        color: var(--light);
+    }
+}
+
+.btn-dark-violet {
+    background-color: var(--dark-violet);
+    color: var(--light);
+
+    &:hover {
+        background-color: var(--dark-violet);
+        color: var(--light);
+    }
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    color: var(--light);
+
+    &:hover {
+        background-color: var(--blue);
+        color: var(--light);
     }
 }
