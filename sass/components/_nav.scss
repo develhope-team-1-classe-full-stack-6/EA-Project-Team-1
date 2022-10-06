@@ -1,3 +1,4 @@
+@import "../abstracts/colors";
 .nav {
   flex-wrap: nowrap;
   border-bottom: 0px solid var(--gray);
@@ -38,14 +39,12 @@
       border-right: none;
     }
 
-    &:hover {
-      
+    &:hover {      
       background-color: transparentize(($gray-focus), 0.5);
     }
   }
   .nav-link.active {
-    color: black;
-    
+    color: black;    
     background-color: transparentize(($gray-focus), 0.5);
     border-radius: 0%;
   }
