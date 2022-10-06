@@ -1,4 +1,61 @@
+.nav {
+  flex-wrap: nowrap;
+  border-bottom: 0px solid var(--gray);
 
+  .nav-link {
+    height: 3.5rem;
+    position: relative;
+    color: black;
+    border-radius: 0%;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 0px;
+
+    .button-hr {
+      border: 0px;
+      width: 85%;
+      height: 2px;
+      opacity: 1;
+      background-color: var(--orange);
+      position: absolute;
+      bottom: -27%;
+      left: 7%;
+    }
+
+    p {
+      width: 100%;
+      padding-inline: 1rem;
+      margin-bottom: 0px;
+      border-left: 1px solid var(--gray-focus);
+      border-right: 1px solid var(--gray-focus);
+    }
+
+    &:nth-of-type(1) p {
+      border-left: none;
+    }
+
+    &:last-of-type p {
+      border-right: none;
+    }
+
+    &:hover {
+      
+      background-color: transparentize(($gray-focus), 0.5);
+    }
+  }
+  .nav-link.active {
+    color: black;
+    
+    background-color: transparentize(($gray-focus), 0.5);
+    border-radius: 0%;
+  }
+}
+
+.nav-hr {
+  opacity: 1;
+  margin: 0px;
+  border-top: 3px solid var(--gray-focus);
+}
 //#region Old Style Nav
 // .tabs-wrapper {
 //   overflow-x: hidden;
