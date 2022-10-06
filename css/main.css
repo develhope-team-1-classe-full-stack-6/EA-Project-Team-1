@@ -1525,6 +1525,9 @@ h6 {
   .hero {
     height: 125vw;
   }
+  .hero .margin-hero {
+    margin-left: 5px;
+  }
 }
 .hero .img-hero {
   max-width: 80%;
