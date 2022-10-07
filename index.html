@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/main.css" />
   <title>EA Project Team 1</title>
@@ -21,7 +22,9 @@
 
   <main>
     <!-- hero 1 -->
-    <section class="hero">
+
+
+    <section class="hero position-relative overflow-hidden">
       <picture>
         <source media="(max-width: 767px)"
           srcset="./assets/images/ea-play-grid-legends-hero-xl.jpg.adapt.crop16x9.767w.jpg">
@@ -31,27 +34,35 @@
           srcset="./assets/images/ea-play-grid-legends-hero-xl.jpg.adapt.crop5x2.1455w.jpg">
         <source media="(min-width: 1456px)"
           srcset="./assets/images/ea-play-grid-legends-hero-xl.jpg.adapt.crop7x2.1920w.jpg">
-        <img src="./assets/images/ea-play-grid-legends-hero-xl.jpg.adapt.crop16x9.320w.jpg" alt="">
+        <img src="./assets/images/ea-play-grid-legends-hero-xl.jpg.adapt.crop16x9.320w.jpg"
+          class="img-fluid position-relative top-0 start-0" alt="">
       </picture>
-      <div class="hero-items-center">
-        <div class="hero-content-center">
-          <div class="img-hero"><img
-              src="./assets/images/ea-play-grid-legends-7x2-xl-5x2-lg-2x1-md-16x9-sm-xs-white.svg" alt=""
-              width="100%"></div>
+      <div
+        class="card-img-overlay container-fluid overflow-hidden d-flex align-items-center justify-content-center flex-column-reverse flex-md-row row"
+        style="width: 100%;">
+        <div
+          class="col d-flex flex-column justify-content-center align-items-center text-center ps-5 pe-3 ps-md-5 pe-md-0 ps-xxl-0 pe-xl-5">
+          <div class="img-hero">
+            <img src="./assets/images/ea-play-grid-legends-7x2-xl-5x2-lg-2x1-md-16x9-sm-xs-white.svg" alt=""
+              width="100%">
+          </div>
 
-          <h2 class="h6 text-light">Prendi posto sulla griglia di partenza oggi stesso con EA Play!*</h2>
+          <h2 class="h6 text-light mb-4">Prendi posto sulla griglia di partenza oggi stesso con EA Play!*</h2>
 
           <div class="btn-container d-sm-block">
-                    <a class="btn btn-light" href="#">
-                        Gioca ora
-                    </a>
-                </div>
+            <a class="btn btn-light" href="#">
+              Gioca ora
+            </a>
+          </div>
 
         </div>
-        <div class="hero-content-center" style="max-height: 40%;">
+        <div class="col">
         </div>
+
       </div>
     </section>
+
+
 
     <!-- Sezione giochi in evidenza-->
     <section id="giochi-in-evidenza">
@@ -236,7 +247,7 @@
     </section>
 
     <!-- hero 2 -->
-    <section class="hero">
+    <section class="hero position-relative overflow-hidden">
       <picture>
         <source media="(max-width: 320px)"
           srcset="./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop3x5.320w.jpg">
@@ -249,41 +260,44 @@
         <source media="(min-width: 1456px)"
           srcset="./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg">
         <img class="eapl-hero__image eapl-animate__bg"
-          src="./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop3x5.320w.jpg" alt="">
+          src="./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop3x5.320w.jpg"
+          class="img-fluid position-relative top-0 start-0" alt="">
       </picture>
-      <div class="hero-items-left">
-        <div class="hero-content-left">
-          <div class="img-hero"><img src="./assets/images/ea-play-logo-coral-hero-logo-small.svg" alt=""
-              width="100%"></div>
+      <div
+        class="card-img-overlay overflow-hidden d-flex align-items-center justify-content-center flex-md-row ps-5 ms-lg-5 row"
+        style="width: 100vw;">
+        <div class="col d-flex flex-column justify-content-center align-items-start ms-md-5 flex-grow-1">
 
-          <h6 class="b2 text-light">Non limitarti al gioco. Gioca al massimo. Sblocca ricompense esclusive, contenuti
-            per i soli membri e una libreria dei migliori titoli.</h6>
-
-            <div class="btn-container d-sm-block">
-              <a class="btn btn-white" href="#">
-                  Iscriviti subito
-              </a>
+          <div class="img-hero"><img src="./assets/images/ea-play-logo-coral-hero-logo-small.svg" alt="" width="80%">
           </div>
+
+          <h6 class="b2 text-light mb-4">Non limitarti al gioco. Gioca al massimo. Sblocca ricompense esclusive,
+            contenuti per i soli membri e una libreria dei migliori titoli.</h6>
+
+          <div class="btn-container d-sm-block">
+            <a class="btn btn-white" href="#">
+              Iscriviti subito
+            </a>
+          </div>
+
         </div>
-        <div class="hero-content-left hidden">
+        <div class="col flex-grow-0 flex-lg-grow-1">
         </div>
+
       </div>
     </section>
 
     <!-- Banner -->
-    <div class="banner bg-dark-light-blue">
-      <div class="banner-item">
-        <div>
-          <h2 class="l1">
-            Genitori: il controllo dei videogiochi è nelle vostre mani.
-          </h2>
-        </div>
-        <div>
-          <div class="btn-container d-sm-block">
-            <a class="btn btn-dark" href="#" >
-                Scopri di più
-            </a>
-        </div>
+    <div class="banner bg-dark-light-blue container-fluid p-4">
+      <div class="banner-item d-flex flex-column flex-lg-row justify-content-evenly align-items-center text-center">
+
+        <h2 class="l1">
+          Genitori: il controllo dei videogiochi è nelle vostre mani.
+        </h2>
+        <div class="btn-container d-sm-block">
+          <a class="btn btn-dark" href="#">
+            Scopri di più
+          </a>
         </div>
       </div>
     </div>
@@ -468,9 +482,11 @@
       </div>
     </div>
   </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>

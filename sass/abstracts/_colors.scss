@@ -1,21 +1,37 @@
 @use 'mixins';
 
+  $black: #000000;
+  $dark: #161616;
+  $light: #f3f3f3;
+  $white: #ffffff;
+  $gray: #eaeaea;
+  $gray-focus: #dedede;
+  $dark-blue: #29244d;
+  $blue: #001C9D;
+  $light-orange: #ed5355;
+  $orange: #ff4747;
+  $red: #fe0115;
+  $dark-light-blue: #6fb0d6;
+  $violet: #a649ce;
+  $dark-violet: #390086;
+  $transparent: transparent;
+
 $colors: (
-  "black": #000000,
-  "dark": #161616,
-  "light": #f3f3f3,
-  "white": #ffffff,
-  "gray": #eaeaea,
-  "gray-focus": #dedede,
-  "dark-blue": #29244d,
-  "blue": #001C9D,
-  "light-orange": #ed5355,
-  "orange": #ff4747,
-  "red": #fe0115,
-  "dark-light-blue": #6fb0d6,
-  "violet": #a649ce,
-  "dark-violet": #390086,
-  "transparent": transparent
+  "black": $black,
+  "dark": $dark,
+  "light": $light,
+  "white": $white,
+  "gray": $gray,
+  "gray-focus": $gray-focus,
+  "dark-blue": $dark-blue,
+  "blue": $blue,
+  "light-orange": $light-orange,
+  "orange": $orange,
+  "red": $red,
+  "dark-light-blue": $dark-light-blue,
+  "violet": $violet,
+  "dark-violet": $dark-violet,
+  "transparent": $transparent
 );
 
 $items: (
