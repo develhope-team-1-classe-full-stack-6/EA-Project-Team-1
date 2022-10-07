@@ -1412,6 +1412,7 @@ h6 {
   position: absolute;
   bottom: -27%;
   left: 7%;
+  visibility: hidden;
 }
 .nav .nav-link p {
   width: 100%;
@@ -1434,6 +1435,10 @@ h6 {
   background-color: rgba(222, 222, 222, 0.5);
   border-radius: 0%;
 }
+.nav .nav-link.active .button-hr {
+  visibility: visible;
+  animation: myanimation 0.3s;
+}
 
 .nav-hr {
   opacity: 1;
@@ -1441,6 +1446,16 @@ h6 {
   border-top: 3px solid var(--gray-focus);
 }
 
+@keyframes myanimation {
+  from {
+    width: 1%;
+    left: 50%;
+  }
+  to {
+    width: 85%;
+    left: 7%;
+  }
+}
 .nav-bar-1 {
   height: 40px;
   background-color: var(--dark);
