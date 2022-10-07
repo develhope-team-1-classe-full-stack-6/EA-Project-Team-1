@@ -21,6 +21,7 @@
       position: absolute;
       bottom: -27%;
       left: 7%;
+      visibility:hidden;
     }
 
     p {
@@ -47,6 +48,9 @@
     color: black;    
     background-color: transparentize(($gray-focus), 0.5);
     border-radius: 0%;
+    .button-hr {
+      visibility: visible;
+    }
   }
 }
 
