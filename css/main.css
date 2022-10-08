@@ -1150,13 +1150,35 @@ h6 {
   color: var(--light);
 }
 
+.titleultime {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleultime .ultimenov {
+  text-align: center;
+}
+
+.cards {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .card {
-  height: 31.5rem;
+  height: 33rem;
   width: 22rem;
+  flex-shrink: 2;
   border-radius: 0%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 1rem;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.card .card-body .card-title {
+  margin-top: 3rem;
 }
 .card:hover {
   transform: translateY(-12px);
@@ -1393,6 +1415,9 @@ h6 {
 .nav {
   flex-wrap: nowrap;
   border-bottom: 0px solid var(--gray);
+  flex-shrink: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .nav .nav-link {
   height: 3.5rem;
@@ -1402,6 +1427,7 @@ h6 {
   padding-left: 0px;
   padding-right: 0px;
   border: 0px;
+  flex-shrink: 0;
 }
 .nav .nav-link .button-hr {
   border: 0px;
@@ -1413,6 +1439,7 @@ h6 {
   bottom: -27%;
   left: 7%;
   visibility: hidden;
+  flex-shrink: 0;
 }
 .nav .nav-link p {
   width: 100%;
@@ -1420,6 +1447,7 @@ h6 {
   margin-bottom: 0px;
   border-left: 1px solid var(--gray-focus);
   border-right: 1px solid var(--gray-focus);
+  flex-shrink: 0;
 }
 .nav .nav-link:nth-of-type(1) p {
   border-left: none;
@@ -1443,7 +1471,8 @@ h6 {
 .nav-hr {
   opacity: 1;
   margin: 0px;
-  border-top: 3px solid var(--gray-focus);
+  border-top: 2px solid var(--gray-focus);
+  flex-shrink: 0;
 }
 
 @keyframes myanimation {
