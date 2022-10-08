@@ -1393,6 +1393,9 @@ h6 {
 .nav {
   flex-wrap: nowrap;
   border-bottom: 0px solid var(--gray);
+  flex-shrink: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .nav .nav-link {
   height: 3.5rem;
@@ -1402,6 +1405,7 @@ h6 {
   padding-left: 0px;
   padding-right: 0px;
   border: 0px;
+  flex-shrink: 0;
 }
 .nav .nav-link .button-hr {
   border: 0px;
@@ -1413,6 +1417,7 @@ h6 {
   bottom: -27%;
   left: 7%;
   visibility: hidden;
+  flex-shrink: 0;
 }
 .nav .nav-link p {
   width: 100%;
@@ -1420,6 +1425,7 @@ h6 {
   margin-bottom: 0px;
   border-left: 1px solid var(--gray-focus);
   border-right: 1px solid var(--gray-focus);
+  flex-shrink: 0;
 }
 .nav .nav-link:nth-of-type(1) p {
   border-left: none;
@@ -1444,6 +1450,7 @@ h6 {
   opacity: 1;
   margin: 0px;
   border-top: 3px solid var(--gray-focus);
+  flex-shrink: 0;
 }
 
 @keyframes myanimation {
