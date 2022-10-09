@@ -1186,6 +1186,7 @@ h6 {
 
 .card {
   width: 24%;
+  min-width: 310px;
   height: auto;
   border-radius: 0%;
   text-decoration: none;
@@ -1204,25 +1205,19 @@ h6 {
 .card img {
   border-radius: 0px;
 }
-.card .spans-container {
-  display: flex;
-  margin-bottom: 0.8rem;
-}
-.card h3 {
-  margin-bottom: 0.8rem;
-}
-.card .card-body {
-  padding: 24px;
+.card .card-body span {
+  font-size: 0.84rem;
 }
 
 @media screen and (min-width: 1178px) {
-  .d5 {
-    font-size: var(--d5-font-size-desktop);
+  .h5 {
+    font-size: var(--h5-font-size-desktop);
   }
 }
 @media screen and (max-width: 1178px) {
   .cards-container {
     max-width: 100%;
+    min-width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1236,8 +1231,8 @@ h6 {
     transform: translateY(-10px);
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
   }
-  .cards-container .card .d5 {
-    font-size: var(--d5-font-size-desktop);
+  .cards-container .card .h5 {
+    font-size: var(--h5-font-size-desktop);
   }
 }
 @media screen and (max-width: 770px) {
@@ -1270,8 +1265,8 @@ h6 {
   .cards-container .card p {
     display: none;
   }
-  .cards-container .card .d5 {
-    font-size: var(--d5-font-size-mobile);
+  .cards-container .card .h5 {
+    font-size: var(--h5-font-size-mobile);
   }
 }
 /* OLD Card Styling*/
