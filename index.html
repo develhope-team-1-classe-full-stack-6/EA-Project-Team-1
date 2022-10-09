@@ -109,142 +109,765 @@
       </div>
     </section>
 
-    <!--cards-->
-    <section>
+    <!--Sezione Ultime Novità-->
+    <section class="ultime-novità">
       <div class="titleultime">
         <h3 class="d4 title ultimenov">Ultime Novità</h3>
       </div>
-
-      <div class="tabs-wrapper">
-        <ul>
-          <li class="h6"><a href="#">Notizie EA</a></li>
-          <li class="h6"><a href="#">EA Play</a></li>
-          <li class="h6"><a href="#">FIFA</a></li>
-          <li class="h6"><a href="#">F1</a></li>
-          <li class="h6"><a href="#">Apex Legends</a></li>
-          <li class="h6">
-            <a href="#">The Sims<sup>tm</sup> 4</a>
-          </li>
-          <li class="h6"><a href="#">Battlefield</a></li>
-          <li class="h6"><a href="#">Inside EA</a></li>
-        </ul>
-      </div>
-
-      <section class="card">
-        <div class="cards-container">
-          <a class="card" link="#">
-            <div class="img">
-              <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png"
-                alt="Immagine generica" />
-            </div>
-            <div class="spans">
-              <span>Electronic Arts Inc.</span>
-              <span>29-lug-2022</span>
-            </div>
-            <h3 class="title h5">Lorem, ipsum dolor.</h3>
-            <h6 class="b2 text-da">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-              atque voluptatum voluptatibus ratione enim nemo aperiam inventore
-              mollitia dolore vero!
-            </h6>
-          </a>
-
-          <a class="card" link="#">
-            <div class="img">
-              <img src="./assets/images/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                alt="Immagine generica" />
-            </div>
-            <div class="spans">
-              <span>Electronic Arts Inc.</span>
-              <span>29-lug-2022</span>
-            </div>
-            <h3 class="title h5">Lorem, ipsum dolor.</h3>
-            <h6 class="b2 text-da">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-              atque voluptatum voluptatibus ratione enim nemo aperiam inventore
-              mollitia dolore vero!
-            </h6>
-          </a>
-
-          <a class="card" link="#">
-            <div class="img">
-              <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png"
-                alt="Immagine generica" />
-            </div>
-            <div class="spans">
-              <span>Electronic Arts Inc.</span>
-              <span>29-lug-2022</span>
-            </div>
-            <h3 class="title h5">Lorem, ipsum dolor.</h3>
-            <h6 class="b2 text-da">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-              atque voluptatum voluptatibus ratione enim nemo aperiam inventore
-              mollitia dolore vero!
-            </h6>
-          </a>
-
-          <a class="card" link="#">
-            <div class="img">
-              <img src="./assets/images/ts4-sexual-orientation-top-image.jpg.adapt.crop16x9.431p.jpg"
-                alt="Sexual Orientation The Sims 4" />
-            </div>
-            <div class="spans">
-              <span>Electronic Arts Inc.</span>
-              <span>29-lug-2022</span>
-            </div>
-            <h3 class="title h5">Lorem, ipsum dolor.</h3>
-            <h6 class="b2 text-da">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-              atque voluptatum voluptatibus ratione enim nemo aperiam inventore
-              mollitia dolore vero!
-            </h6>
-          </a>
-
-          <a class="card" link="#">
-            <div class="img">
-              <img src="./assets/images/ts4-high-school-years-guided-tours.png.adapt.crop16x9.431p.png"
-                alt="The Sims College" />
-            </div>
-            <div class="spans">
-              <span>Electronic Arts Inc.</span>
-              <span>29-lug-2022</span>
-            </div>
-            <h3 class="title h5">Lorem, ipsum dolor.</h3>
-            <h6 class="b2 text-da">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-              atque voluptatum voluptatibus ratione enim nemo aperiam inventore
-              mollitia dolore vero!
-            </h6>
-          </a>
-
-          <a class="card" link="#">
-            <div class="img">
-              <img src="./assets/images/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                alt="Immagine generica" />
-            </div>
-            <div class="spans">
-              <span>Electronic Arts Inc.</span>
-              <span>29-lug-2022</span>
-            </div>
-            <h3 class="title h5">Lorem, ipsum dolor.</h3>
-            <h6 class="b2 text-da">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-              atque voluptatum voluptatibus ratione enim nemo aperiam inventore
-              mollitia dolore vero!
-            </h6>
-          </a>
+      <nav class="container" style="max-width: 1124px">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link h6 active"
+            id="nav-notizie-ea-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-notizie-ea"
+            type="button"
+            role="tab"
+            aria-controls="nav-notizie-ea"
+            aria-selected="true"
+          >
+            <p>Notizie EA</p>
+            <hr class="button-hr" />
+          </button>
+          <button
+            class="nav-link h6"
+            id="nav-ea-play-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-ea-play"
+            type="button"
+            role="tab"
+            aria-controls="nav-ea-play"
+            aria-selected="false"
+          >
+            <p>EA Play</p>
+            <hr class="button-hr" />
+          </button>
+          <button
+            class="nav-link h6"
+            id="nav-fifa-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-fifa"
+            type="button"
+            role="tab"
+            aria-controls="nav-fifa"
+            aria-selected="false"
+          >
+            <p>FIFA</p>
+            <hr class="button-hr" />
+          </button>
+          <button
+            class="nav-link h6"
+            id="nav-f1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-f1"
+            type="button"
+            role="tab"
+            aria-controls="nav-f1"
+            aria-selected="false"
+          >
+            <p>F1</p>
+            <hr class="button-hr" />
+          </button>
+          <button
+            class="nav-link h6"
+            id="nav-apex-legends-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-apex-legends"
+            type="button"
+            role="tab"
+            aria-controls="nav-apex-legends"
+            aria-selected="false"
+          >
+            <p>Apex Legends</p>
+            <hr class="button-hr" />
+          </button>
+          <button
+            class="nav-link h6"
+            id="nav-the-sims-4-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-the-sims-4"
+            type="button"
+            role="tab"
+            aria-controls="nav-the-sims-4"
+            aria-selected="false"
+          >
+            <p>The Sims <sup>tm</sup>4</p>
+            <hr class="button-hr" />
+          </button>
+          <button
+            class="nav-link h6"
+            id="nav-battlefield-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-battlefield"
+            type="button"
+            role="tab"
+            aria-controls="nav-battlefield"
+            aria-selected="false"
+          >
+            <p>Battlefield</p>
+            <hr class="button-hr" />
+          </button>
+          <button
+            class="nav-link h6"
+            id="nav-inside-ea-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-inside-ea"
+            type="button"
+            role="tab"
+            aria-controls="nav-inside-ea"
+            aria-selected="false"
+          >
+            <p>Inside EA</p>
+            <hr class="button-hr" />
+          </button>
         </div>
-
-        <div class="btn-ultime">
-          <div class="btn-container">
-            <a href="#" class="btn btn-dark">
-              <p>Più Dettagli</p>
-            </a>
+      </nav>
+      <hr class="nav-hr"/>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-notizie-ea"
+          role="tabpanel"
+          aria-labelledby="nav-notizie-ea-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
           </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
         </div>
-
-      </section>
-    </section>
+        <div
+          class="tab-pane fade"
+          id="nav-ea-play"
+          role="tabpanel"
+          aria-labelledby="nav-ea-play-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-fifa"
+          role="tabpanel"
+          aria-labelledby="nav-fifa-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-f1"
+          role="tabpanel"
+          aria-labelledby="nav-f1-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-apex-legends"
+          role="tabpanel"
+          aria-labelledby="nav-apex-legends-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-the-sims-4"
+          role="tabpanel"
+          aria-labelledby="nav-the-sims-4-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-battlefield"
+          role="tabpanel"
+          aria-labelledby="nav-battlefield-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-inside-ea"
+          role="tabpanel"
+          aria-labelledby="nav-inside-ea-tab"
+          tabindex="0"
+        >
+        <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+        <a href="*" class="card">
+          <img src="./assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
+          <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+              <span class="me-md-3" style="color:var(--orange);">Electronic Arts Inc.</span>
+              <span>29-lug-2022</span>
+            </div>
+            <h3 class="h5 title text-center text-md-start mb-2">Lorem Ipsum</h3>
+            <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad quam vitae veritatis, fugit eligendi harum, rerum nam aliquid, odio ab praesentium dolorem sunt tempora expedita deleniti pariatur dolorum culpa.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+      </div>
+      </div>
+      <div class="container-btn-ultime-novità">
+        <div class="btn-container d-sm-block">
+          <a class="btn btn-dark" href="#">
+              Più dettagli
+          </a>
+        </div>
+      </div>
+      
 
     <!-- hero 2 -->
     <section class="hero position-relative overflow-hidden">
@@ -301,7 +924,6 @@
         </div>
       </div>
     </div>
-
   </main>
   <!--iframe da aggiustare -->
   <!--
@@ -486,7 +1108,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
