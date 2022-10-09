@@ -1695,6 +1695,9 @@ h6 {
     left: 2%;
   }
 }
+.hero picture img {
+  width: 100vw;
+}
 @media screen and (max-width: 767px) {
   .hero {
     height: 125vw;

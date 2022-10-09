@@ -1,5 +1,8 @@
 .hero {
 
+    picture img {
+        width: 100vw;
+    }
 
     @media screen and (max-width: 767px) {
         height: 125vw;
