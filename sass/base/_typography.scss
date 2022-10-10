@@ -33,6 +33,32 @@ $styles_selectors: (
             desktop: 1.5)
     ),
 
+    p: (
+        font-size: (
+            mobile: 14px,
+            tablet: 16px,
+            desktop: 16px
+        ),
+
+        font-family: (
+            ElectronicArtsText: '"ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif'),
+
+        font-weight:(
+            light: 300,
+            normal: 400,
+            bold: 500),
+
+        letter-spacing: (
+            mobile: normal,
+            tablet: normal,
+            desktop: normal),
+
+        line-height: (
+            mobile: 1.65,
+            tablet: 1.65,
+            desktop: 1.65)
+    ),
+
     h1: (
 
         font-size: (
@@ -392,8 +418,8 @@ $styles_classes: (
     h5: (
         font-size: (
             mobile: 18px,
-            tablet: 22px,
-            desktop: 22px),
+            tablet: 24px,
+            desktop: 24px),
 
         letter-spacing: (
             mobile: -0.025em,

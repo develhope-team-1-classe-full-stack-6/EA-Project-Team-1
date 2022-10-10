@@ -1,23 +1,230 @@
 /*Sezione giochi in evidenza*/
-#giochi-in-evidenza{
-    max-width: 1456px;
-    margin: 0 auto;
+#giochi-in-evidenza {
+  max-width: 1456px;
+  margin: 0 auto;
+}
+
+.giochi-in-evidenza-text {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.boxes-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.gie-inner-section {
+  display: flex;
+  justify-content: center;
+  margin-block: 2.7rem;
+}
+
+
+//Styling sezione Ultime Novità
+//#region
+@import "../abstracts/colors";
+.ultime-novità{
+  .nav::-webkit-scrollbar {
+    display: none;
   }
-  
-  .giochi-in-evidenza-text{
+  .nav {
+    flex-wrap: nowrap;
+    border-bottom: 0px solid var(--gray);
+    flex-shrink: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .nav-link {
+      height: 3.5rem;
+      position: relative;
+      color: black;
+      border-radius: 0%;
+      padding-left: 0px;
+      padding-right: 0px;
+      border: 0px;
+      flex-shrink: 0;
+
+      .button-hr {
+        border: 0px;
+        width: 85%;
+        height: 2px;
+        opacity: 1;
+        background-color: var(--orange);
+        position: absolute;
+        bottom: -27%;
+        left: 7%;
+        visibility: hidden;
+        flex-shrink: 0;
+      }
+
+      p {
+        width: 100%;
+        padding-inline: 1rem;
+        margin-bottom: 0px;
+        border-left: 1px solid var(--gray-focus);
+        border-right: 1px solid var(--gray-focus);
+        flex-shrink: 0;
+      }
+
+      &:nth-of-type(1) p {
+        border-left: none;
+      }
+
+      &:last-of-type p {
+        border-right: none;
+      }
+
+      &:hover {
+        background-color: transparentize(($gray-focus), 0.5);
+      }
+    }
+    .nav-link.active {
+      color: black, 0.5;
+      background-color: transparentize(($gray-focus), 0.5);
+      border-radius: 0%;
+      .button-hr {
+        visibility: visible;
+        animation: myanimation 0.1s;
+      }
+    }
+  }
+
+  .nav-hr {
+    opacity: 1;
+    margin: 0px;
+    border-top: 2px solid var(--gray-focus);
+    flex-shrink: 0;
+    margin-bottom: 3rem;
+  }
+
+  @keyframes myanimation {
+    from {
+      width: 1%;
+      left: 50%;
+    }
+    to {
+      width: 85%;
+      left: 7%;
+    }
+  }
+
+  .ultimenov {
     text-align: center;
-    margin: 3rem 0 2rem 0;
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
   }
-  
-  .boxes-section{
+  .card {
+    width: 24%;
+    height: auto;
+    // width: 22rem;
+    // height: 35rem;
+    border-radius: 0%;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 0px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+    &:hover {
+      color: inherit;
+      transform: translateY(-12px);
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    img {
+      border-radius: 0px;
+    }
+    .spans-container {
+      display: flex;
+      margin-bottom: 0.8rem;
+    }
+
+    h3 {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  @media screen and (min-width: 1178px) {
+    .d5 {
+      font-size: var(--d5-font-size-desktop);
+    }
+  }
+
+  @media screen and (max-width: 1178px) {
+    .cards-container {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+        width: 40%;
+        height: auto;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .d5 {
+          font-size: var(--d5-font-size-desktop);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+
+      .card {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .spans-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        img {
+          display: none;
+        }
+
+        p {
+          display: none;
+        }
+
+        .d5 {
+          font-size: var(--d5-font-size-mobile);
+        }
+      }
+    }
+  }
+
+  .container-btn-ultime-novità {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
+    align-items: center;
+    margin: 3rem
   }
-  
-  .gie-inner-section{
-    display: flex;
-    justify-content: center;
-    margin-block: 2.7rem;
-  }
+//#endregion
+}

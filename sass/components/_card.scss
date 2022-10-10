@@ -1,105 +1,55 @@
-/*Card Styling*/
-.titleultime {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//Bootstrap Style
+.card {
+  width: 24%;
+  min-width: 310px;
+  height: auto;
+  // width: 22rem;
+  // height: 35rem;
+  border-radius: 0%;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0px; 
+  border: 0px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 
-  .ultimenov {
-    text-align: center;
+ 
+  &:hover {
+    color: inherit;
+    transform: translateY(-12px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  img {
+    border-radius: 0px;
+  } 
+
+  .card-body{
+    span{
+      font-size: 0.84rem;
+    }
+
   }
 }
 
-.cards-container {
-  width: 72rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: space-around;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-  flex: 1 1;
-  margin-top: 4rem; //da rimuovere appena andremo a posizionare tutto
-
-  /* approccio super responsive per le transitions, da sistemare*/
-  // .card {
-  //   height: 31.5rem;
-  //   width: 22rem;
-  //   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  //   margin-bottom: 1rem;
-
-  //   .card::after {
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     opacity: 0;
-  //     box-shadow: 5px 5px 30px rgba(0, 0, 0, .7);
-  //     transition: opacity .5s ease;
-  //   }
-  //    .card:hover {
-  //     opacity: 1;
-  //     transform: translateY(-15px);
-  //    }
-
-  .card {
-    height: 31.5rem;
-    width: 22rem;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 1rem;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-
-    &:hover {
-      transform: translateY(-12px);
-      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
-    }
-
-    .img {
-      width: 100%;
-
-      img {
-        margin: 0;
-        width: 100%;
-      }
-    }
-
-    .spans {
-      display: flex;
-      margin: 1.5rem;
-
-      span {
-        margin-right: 1rem;
-      }
-
-      span:first-of-type {
-        color: orangered;
-      }
-    }
-
-    h3 {
-      margin: 1.5rem;
-    }
-
-    h6 {
-      margin: 1.5rem;
-    }
+@media screen and (min-width: 1178px) {
+  .h5 {
+    font-size: var(--h5-font-size-desktop);
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1178px) {
   .cards-container {
     max-width: 100%;
+    min-width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .card {
-      width: 25.5rem;
-      height: 26.5rem;
-      margin-bottom: 1rem;
-      margin-right: 1rem;
-      margin-left: 1rem;
+      width: 40%;
+      height: auto;
       transition: transform 0.5s ease, box-shadow 0.5s ease;
 
       &:hover {
@@ -107,60 +57,220 @@
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
       }
 
-      .spans {
-        margin: 0.5rem 1rem 0.5rem 1rem;
-      }
-
-      h3 {
-        margin: 0.5rem 1rem 0.5rem 1rem;
-      }
-
-      h6 {
-        margin: 0.5rem 1rem 0.5rem 1rem;
+      .h5 {
+        font-size: var(--h5-font-size-desktop);
       }
     }
   }
 }
 
-@media screen and (max-width: 767px) {
-  .cards-container {
-    display: flex;
-    flex-direction: column;
-
-    .card {
-      width: 90%;
-      height: 7.25rem;
+@media screen and (max-width: 770px) {
+    
+    .cards-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-
-      &:hover {
-        transform: translateY(-10px);
-        box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.7);
-      }
-
-      .spans {
+  
+      .card {
+        width:90%;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-      }
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+  
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+        }
+  
+        .spans-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        img {
+          display: none;
+        }
+  
+        p {
+          display: none;
+        }
 
-      .img {
-        display: none;
-      }
-
-      h6 {
-        display: none;
+        .h5 {
+          font-size: var(--h5-font-size-mobile);
+        }
       }
     }
   }
-}
 
-.btn-ultime {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
-  margin-top: 2.7rem;
-}
+// #region Old card styling
+/* OLD Card Styling*/
+// .titleultime {
+//   margin-top: 4rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   .ultimenov {
+//     text-align: center;
+//   }
+// }
+
+// .cards-container {
+//   width: 72rem;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: space-around;
+//   flex-wrap: wrap;
+//   margin-left: auto;
+//   margin-right: auto;
+//   flex: 1 1;
+//   margin-top: 4rem; //da rimuovere appena andremo a posizionare tutto
+
+//   /* approccio super responsive per le transitions, da sistemare*/
+//   // .card {
+//   //   height: 31.5rem;
+//   //   width: 22rem;
+//   //   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+//   //   margin-bottom: 1rem;
+
+//   //   .card::after {
+//   //     position: absolute;
+//   //     top: 0;
+//   //     left: 0;
+//   //     right: 0;
+//   //     bottom: 0;
+//   //     opacity: 0;
+//   //     box-shadow: 5px 5px 30px rgba(0, 0, 0, .7);
+//   //     transition: opacity .5s ease;
+//   //   }
+//   //    .card:hover {
+//   //     opacity: 1;
+//   //     transform: translateY(-15px);
+//   //    }
+
+//   .card {
+//     height: 31.5rem;
+//     width: 22rem;
+//     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+//     margin-bottom: 1rem;
+//     transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+//     &:hover {
+//       transform: translateY(-12px);
+//       box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+//     }
+
+//     .img {
+//       width: 100%;
+
+//       img {
+//         margin: 0;
+//         width: 100%;
+//       }
+//     }
+
+//     .spans {
+//       display: flex;
+//       margin: 1.5rem;
+
+//       span {
+//         margin-right: 1rem;
+//       }
+
+//       span:first-of-type {
+//         color: orangered;
+//       }
+//     }
+
+//     h3 {
+//       margin: 1.5rem;
+//     }
+
+//     h6 {
+//       margin: 1.5rem;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1023px) {
+//   .cards-container {
+//     max-width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .card {
+//       width: 25.5rem;
+//       height: 26.5rem;
+//       margin-bottom: 1rem;
+//       margin-right: 1rem;
+//       margin-left: 1rem;
+//       transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+//       &:hover {
+//         transform: translateY(-10px);
+//         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+//       }
+
+//       .spans {
+//         margin: 0.5rem 1rem 0.5rem 1rem;
+//       }
+
+//       h3 {
+//         margin: 0.5rem 1rem 0.5rem 1rem;
+//       }
+
+//       h6 {
+//         margin: 0.5rem 1rem 0.5rem 1rem;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .cards-container {
+//     display: flex;
+//     flex-direction: column;
+
+//     .card {
+//       width: 90%;
+//       height: 7.25rem;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+//       &:hover {
+//         transform: translateY(-10px);
+//         box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.7);
+//       }
+
+//       .spans {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//       }
+
+//       .img {
+//         display: none;
+//       }
+
+//       h6 {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+// .btn-ultime {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 3rem;
+//   margin-top: 2.7rem;
+// }
+//#endregion
