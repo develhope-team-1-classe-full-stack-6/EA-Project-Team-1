@@ -1,61 +1,28 @@
-.coming-soon-card{
-  display: flex;
-  flex-direction: column;
-  width: 544px;
-
-  .coming-soon-title{
-    margin-top: 16px;
-    margin-bottom: 32px;
-    @media (max-width: 767px){
-      margin-bottom: 16px;
-    }
-  }
-
+.coming-soon-card-wrapper{
   .coming-soon-flex{
-    display: flex;
-    flex-direction: row;
     padding: 8px 0;
-    align-items: baseline;
     @media (max-width: 767px) {
       flex-direction: column;
     }
   }
-
-  .coming-soon-flex-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    @media (max-width: 767px){
-      padding-left: 0;
-    }
-  }
-
+  
   .coming-soon-border{
     border-bottom: 1px solid var(--gray);
     @media (max-width: 767px) {
       border: none;
     }
   }
-  
-  .coming-soon-subtitle{
-    width: 160px;
-    @media (max-width: 767px) {
-      padding-bottom: 8px;
-    }
+
+  p{
+    margin-bottom: 0;
   }
 
-  .coming-soon-w30{
-    width: 30%;
+  .coming-soon-responsive-width{
+    width: 75%;
     @media (max-width: 767px) {
       width: 100%;
     }
-  }
-  .coming-soon-w70{
-    width: 70%;
-    @media (max-width: 767px) {
-      width: 100%;
-    }
-  }
-  .coming-soon-btn{
-    margin-top: 32px;
   }
 }
+
+  
