@@ -2218,6 +2218,29 @@ h6 {
     align-self: center !important;
   }
 }
+/*Sezione giochi in evidenza*/
+#giochi-in-evidenza {
+  max-width: 1456px;
+  margin: 0 auto;
+}
+
+.giochi-in-evidenza-text {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.boxes-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.gie-inner-section {
+  display: flex;
+  justify-content: center;
+  margin-block: 2.7rem;
+}
 
 :root {
   --black: #000000;
