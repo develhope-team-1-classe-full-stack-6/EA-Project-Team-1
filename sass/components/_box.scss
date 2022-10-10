@@ -1,14 +1,8 @@
 /* Box Styling*/
 .box-container {
-  position: relative;
-  top: 0;
-  left: 0;
   width: 355px;
   height: 355px;
   background: linear-gradient(90deg, var(--dark-blue), var(--orange));
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &:hover {
     .box-background {
@@ -25,9 +19,6 @@
   }
 
   .box-background {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 355px;
     height: 355px;
     opacity: 1;
@@ -35,30 +26,8 @@
     filter: brightness(0.7);
   }
 
-  .box-logo {
-    position: absolute;
-    transition: all 300ms ease-out;
-  }
-
   p {
-    position: absolute;
     visibility: hidden;
     color: var(--white);
   }
-}
-
-.box-logo-w1 {
-  width: 160px;
-}
-
-.box-logo-w2 {
-  width: 130px;
-}
-
-.box-logo-w3 {
-  width: 100px;
-}
-
-.box-logo-w4 {
-  width: 70px;
 }
