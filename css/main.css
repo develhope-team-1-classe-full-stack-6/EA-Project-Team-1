@@ -1217,74 +1217,32 @@ h6 {
   }
 }
 /* OLD Card Styling*/
-.coming-soon-card {
-  display: flex;
-  flex-direction: column;
-  width: 544px;
-}
-.coming-soon-card .coming-soon-title {
-  margin-top: 16px;
-  margin-bottom: 32px;
-}
-@media (max-width: 767px) {
-  .coming-soon-card .coming-soon-title {
-    margin-bottom: 16px;
-  }
-}
-.coming-soon-card .coming-soon-flex {
-  display: flex;
-  flex-direction: row;
+.coming-soon-card-wrapper .coming-soon-flex {
   padding: 8px 0;
-  align-items: baseline;
 }
 @media (max-width: 767px) {
-  .coming-soon-card .coming-soon-flex {
+  .coming-soon-card-wrapper .coming-soon-flex {
     flex-direction: column;
   }
 }
-.coming-soon-card .coming-soon-flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (max-width: 767px) {
-  .coming-soon-card .coming-soon-flex-wrap {
-    padding-left: 0;
-  }
-}
-.coming-soon-card .coming-soon-border {
+.coming-soon-card-wrapper .coming-soon-border {
   border-bottom: 1px solid var(--gray);
 }
 @media (max-width: 767px) {
-  .coming-soon-card .coming-soon-border {
+  .coming-soon-card-wrapper .coming-soon-border {
     border: none;
   }
 }
-.coming-soon-card .coming-soon-subtitle {
-  width: 160px;
+.coming-soon-card-wrapper p {
+  margin-bottom: 0;
+}
+.coming-soon-card-wrapper .coming-soon-responsive-width {
+  width: 75%;
 }
 @media (max-width: 767px) {
-  .coming-soon-card .coming-soon-subtitle {
-    padding-bottom: 8px;
-  }
-}
-.coming-soon-card .coming-soon-w30 {
-  width: 30%;
-}
-@media (max-width: 767px) {
-  .coming-soon-card .coming-soon-w30 {
+  .coming-soon-card-wrapper .coming-soon-responsive-width {
     width: 100%;
   }
-}
-.coming-soon-card .coming-soon-w70 {
-  width: 70%;
-}
-@media (max-width: 767px) {
-  .coming-soon-card .coming-soon-w70 {
-    width: 100%;
-  }
-}
-.coming-soon-card .coming-soon-btn {
-  margin-top: 32px;
 }
 
 :root {
