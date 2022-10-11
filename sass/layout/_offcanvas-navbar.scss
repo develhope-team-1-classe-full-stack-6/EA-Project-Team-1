@@ -1,0 +1,137 @@
+@use "../abstracts/colors" as *;
+
+.offcanvas-navbar2 {
+
+
+
+    .offcanvas.offcanvas-start {
+        width: 380px;
+
+        .offcanvas-header {
+            background-color: var(--light);
+            padding: 0.7rem 1rem;
+
+            .btn-close {
+                transform: scale(2.5);
+                padding-right: 10px;
+                background: none;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+
+        .offcanvas-body {
+            padding-top: 30px;
+            .accordion-button {
+                padding-inline: 5px;
+                border-bottom: 1px solid var(--black);
+
+                &:focus {
+                    border-bottom: 1px solid var(--black);
+                    box-shadow: none;
+                }
+
+                &::after {
+                    display: none;
+                }
+
+                & .fa-solid {
+                    margin-left: auto;
+                    transition: all 0.45s;
+                }
+
+                &:hover {
+                    color: var(--orange);
+                }
+
+                &:not(.collapsed) {
+                    color: var(--orange);
+                    background-color: var(--transparent);
+                    border-bottom: 1px solid var(--orange);
+                    box-shadow: none;
+
+                    & .fa-solid {
+                        transform: rotateX(180deg);
+                        transition: all 0.45s;
+                    }
+                }
+            }
+
+            .accordion-collapse {
+                border-radius: 0;
+                border-bottom: 1px solid var(--orange);
+                transition: all 0.5s;
+            }
+
+            .accordion-body {
+                padding: 0;
+
+                .sub-accordion {
+                    .accordion-button {
+                        padding-top: 20px;
+                        padding-inline: 20px;
+                        border-bottom: 1px solid darken($color: $gray, $amount: 20);
+                        ;
+                        color: darken($color: $gray, $amount: 20);
+
+                        &:focus {
+                            border-bottom: 1px solid darken($color: $gray, $amount: 20);
+                            box-shadow: none;
+                        }
+
+                        &::after {
+                            display: none;
+                        }
+
+                        & .fa-solid {
+                            transform: rotateZ(45deg) scale(0.8);
+                            margin-left: auto;
+                            transition: all 0.45s;
+                        }
+
+                        &:hover {
+                            color: var(--orange);
+                        }
+
+                        &:not(.collapsed) {
+                            color: var(--dark);
+                            background-color: var(--transparent);
+                            border-bottom: none;
+                            box-shadow: none;
+
+                            & .fa-solid {
+                                transform: rotateZ(0deg) scale(0.8);
+                                transition: all 0.25s;
+                            }
+                        }
+                    }
+                }
+
+
+                .accordion-collapse {
+                    border-radius: 0;
+                    border-bottom: 1px solid var(--black);
+                    transition: all 0.5s;
+                }
+
+
+                .accordion-body {
+                    ul {
+                        list-style: none;
+                        li{
+                            margin: 10px;
+                            
+                        .accordion-item{
+                            text-decoration: none;
+                            font-weight: normal;
+                            background-color: var(--transparent);
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
