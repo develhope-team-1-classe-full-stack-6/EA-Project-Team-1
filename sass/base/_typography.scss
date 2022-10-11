@@ -640,14 +640,14 @@ $styles_classes: (
         )
     ),
 
-    nav-bar-2-link: (
+    nav-link: (
         font-family: (
             ElectronicArtsDisplay: '"ElectronicArtsDisplay", Verdana, Helvetica, Arial, sans-serif'),
 
         font-size: (
-            mobile: 15px,
-            tablet: 17px,
-            desktop: 17px
+            mobile: 16px,
+            tablet: 17.5px,
+            desktop: 17.5px
         ),
 
         line-height: (
@@ -670,7 +670,7 @@ $styles_classes: (
         )
     ),
 
-    nav-bar-2-dropdown-item: (
+    dropdown-item: (
         font-size: (
             mobile: 16px,
             tablet: 16px,
@@ -685,7 +685,7 @@ $styles_classes: (
         )
     ),
     
-    nav-bar-2-dropdown-item-title: (
+    dropdown-title: (
         font-weight: (
             700: 700),
             
