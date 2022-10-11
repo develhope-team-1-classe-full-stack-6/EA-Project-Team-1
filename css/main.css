@@ -1824,7 +1824,7 @@ h6 {
 }
 .navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .dropdown-item {
   color: var(--dark);
-  opacity: 0.8;
+  opacity: 0.9;
   padding-block: 8px;
 }
 .navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .dropdown-item:hover {
