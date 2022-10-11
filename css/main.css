@@ -1784,28 +1784,33 @@ h6 {
   }
 }
 .navbar2 .navbar .nav-item.dropdown .dropdown-menu.show {
+  transform-origin: top !important;
+  transform: scaleY(0) !important;
+}
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show {
+  transform: scaleY(1) !important;
+  transition: all 0.25s;
   background: transparent;
   border: none;
   padding-top: 1rem;
-  visibility: hidden;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .box-dropdown {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown {
   background: rgba(255, 255, 255, 0.88);
   list-style: none;
   padding: 35px;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .box-dropdown.left-radius {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.left-radius {
   border-radius: 5px 0px 0px 5px;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .box-dropdown.right-radius {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.right-radius {
   border-radius: 0px 5px 5px 0px;
   padding-left: 0px;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .box-dropdown.all-radius {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.all-radius {
   border-radius: 5px;
   padding: 10px 25px;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .dropdown-title {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-title {
   display: block;
   width: 100%;
   padding: 0.25rem 1rem;
@@ -1817,22 +1822,19 @@ h6 {
   background-color: transparent;
   border: 0;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .dropdown-divider {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-divider {
   width: 82%;
   transform: translateX(10%);
   margin: 1px;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .dropdown-item {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item {
   color: var(--dark);
   opacity: 0.9;
   padding-block: 8px;
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show .dropdown-item:hover {
+.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item:hover {
   background: unset;
   color: var(--orange);
-}
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show {
-  visibility: visible;
 }
 .navbar2 .navbar .nav-item.dropdown .nav-link {
   padding-top: 0.6rem;
