@@ -1958,6 +1958,9 @@ h6 {
   font-weight: normal;
   background-color: var(--transparent);
 }
+.offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .accordion-body ul li .accordion-item:hover {
+  color: var(--orange);
+}
 
 .hero picture img {
   width: 100vw;
