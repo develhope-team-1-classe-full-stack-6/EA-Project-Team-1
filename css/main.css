@@ -1463,12 +1463,14 @@ h6 {
 }
 .nav-bar-1 {
   height: 40px;
+  width: 100%;
   background-color: var(--dark);
   color: #b0b0b0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: relative;
+  position: fixed;
+  transition: 0.5s;
 }
 .nav-bar-1 .nav-bar-1-link {
   text-decoration: none;
@@ -1494,110 +1496,234 @@ h6 {
 .nav-bar-1 .fa-question:hover {
   color: var(--light);
 }
+.nav-bar-1 .fa-user:focus, .nav-bar-1 .fa-question:focus {
+  color: var(--light);
+}
 
-.nav-bar-2 {
-  height: 60px;
+.nav-hidden {
+  transform: translateY(-40px);
+}
+
+#offcanvasTop {
+  margin-top: 40px;
+  height: 400px;
+  background-color: #161616;
+}
+#offcanvasTop .offcanvas-header {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+#offcanvasTop .fa-xmark {
+  color: #f3f3f3;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 135%;
+  right: 1.8%;
+}
+
+.login-and-register {
+  display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
-
-.nav-bar-2-vertical-menu {
-  font-size: 1.5rem;
-  transition: 0.15s;
+.login-and-register .login {
   position: absolute;
-  margin-left: 1.5rem;
+  top: 120px;
+  left: 740px;
+  transition: 0.5s ease;
 }
-.nav-bar-2-vertical-menu:hover {
-  color: var(--orange);
-  font-size: 2rem;
-  cursor: pointer;
-  transition: 0.15s ease-in-out;
+.login-and-register .login:hover {
+  top: 115px;
+  transition: 0.1s ease;
 }
-
-.nav-bar-2-hamburger-menu {
-  display: none;
-}
-
-.nav-bar-2-img-link {
-  margin-left: 4.4rem;
-  margin-top: 0.48rem;
-}
-
-.nav-bar-2-links {
+.login-and-register .login a {
+  justify-content: center;
+  align-items: center;
   display: flex;
-  margin-left: 3rem;
+  flex-direction: column;
+  text-decoration: none;
+  color: #f3f3f3;
 }
-
-.nav-bar-2-link-container {
+.login-and-register .login img {
+  width: 35%;
+  margin-bottom: 0.27rem;
+}
+.login-and-register .register {
+  position: absolute;
+  top: 120px;
+  right: 745px;
+  transition: 0.5s ease;
+}
+.login-and-register .register:hover {
+  top: 115px;
+  transition: 0.1s ease;
+}
+.login-and-register .register a {
+  justify-content: center;
+  align-items: center;
   display: flex;
+  flex-direction: column;
   text-decoration: none;
+  color: #f3f3f3;
+}
+.login-and-register .register img {
+  width: 35%;
+  margin-bottom: 0.27rem;
 }
 
-.nav-bar-2-link {
-  text-decoration: none;
-  color: var(--dark);
-  margin-left: 1rem;
-  margin-right: 0.7rem;
-}
-.nav-bar-2-link .fa-angle-down {
-  transition: 0.2s;
-  margin-left: 5px;
-}
-.nav-bar-2-link .fa-angle-down {
-  transition: 0.3s;
-}
-.nav-bar-2-link:hover {
-  transition: 0.1s;
-  color: var(--orange);
-}
-.nav-bar-2-link:hover .fa-angle-down {
-  transform: rotateX(180deg);
-  transition: 0.3s;
+.offcanvas-backdrop.fade.show {
+  opacity: 0;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 1023px) {
-  .nav-bar-2-links {
-    display: none;
+  .fa-xmark {
+    margin-right: 1rem;
   }
-  .nav-bar-2-vertical-menu {
-    display: none;
+  .login-and-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
-  .nav-bar-2-hamburger-menu {
-    display: block;
-    font-size: 1.4rem;
+  .login-and-register .login {
     position: absolute;
-    top: 30%;
-    left: 1.5%;
+    top: 130px;
+    left: 145px;
   }
-  .nav-bar-2-hamburger-menu:hover {
-    transition: 0.1s;
-    color: var(--orange);
+  .login-and-register .login:hover {
+    top: 130px;
   }
-  .nav-bar-2-img-link {
-    margin: 0;
-    margin-left: 3rem;
-    margin-top: 0.27rem;
+  .login-and-register .login a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #f3f3f3;
+  }
+  .login-and-register .login img {
+    width: 23%;
+    margin-right: 0.27rem;
+  }
+  .login-and-register .register {
+    position: absolute;
+    top: 130px;
+    right: 310px;
+  }
+  .login-and-register .register:hover {
+    top: 130px;
+  }
+  .login-and-register .register a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #f3f3f3;
+  }
+  .login-and-register .register img {
+    width: 17%;
+    margin-right: 0.27rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .nav-bar-2-img-link img {
-    width: 55%;
-    margin-bottom: 0.3rem;
+  .login-and-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
-  .nav-bar-2-hamburger-menu {
-    top: 29%;
-    left: 2%;
+  .login-and-register .login {
+    position: absolute;
+    top: 130px;
+    left: 15px;
+  }
+  .login-and-register .login:hover {
+    top: 130px;
+  }
+  .login-and-register .login a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #f3f3f3;
+  }
+  .login-and-register .login img {
+    width: 23%;
+    margin-right: 0.27rem;
+  }
+  .login-and-register .register {
+    position: absolute;
+    top: 130px;
+    right: 170px;
+  }
+  .login-and-register .register:hover {
+    top: 130px;
+  }
+  .login-and-register .register a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #f3f3f3;
+  }
+  .login-and-register .register img {
+    width: 17%;
+    margin-right: 0.27rem;
   }
 }
 @media screen and (max-width: 639px) {
-  .nav-bar-2-img-link img {
-    width: 55%;
-    margin-bottom: 0.3rem;
+  .login-and-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
-  .nav-bar-2-hamburger-menu {
-    top: 29%;
-    left: 2%;
+  .login-and-register .login {
+    position: absolute;
+    top: 135px;
+    left: 0px;
+  }
+  .login-and-register .login:hover {
+    top: 135px;
+  }
+  .login-and-register .login a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #f3f3f3;
+  }
+  .login-and-register .login img {
+    width: 23%;
+    margin-right: 0.27rem;
+  }
+  .login-and-register .register {
+    position: absolute;
+    top: 135px;
+    right: 110px;
+  }
+  .login-and-register .register:hover {
+    top: 135px;
+  }
+  .login-and-register .register a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #f3f3f3;
+  }
+  .login-and-register .register img {
+    width: 17%;
+    margin-right: 0.27rem;
   }
 }
 :root {
