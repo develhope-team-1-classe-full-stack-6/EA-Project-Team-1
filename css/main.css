@@ -1461,6 +1461,45 @@ h6 {
     left: 7%;
   }
 }
+.custom-pagination .pagination {
+  border: 2px solid var(--dark);
+  color: #c2c2c2;
+}
+.custom-pagination .pagination-border-right {
+  border-right: 2px solid var(--dark);
+}
+.custom-pagination .pagination-border-left {
+  border-left: 2px solid var(--dark);
+}
+.custom-pagination .carousel-item {
+  margin-right: 0;
+  width: auto;
+  float: none;
+  transition: none;
+}
+.custom-pagination .carousel-indicators {
+  position: static;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.custom-pagination .carousel-indicators [data-bs-target] {
+  width: auto;
+  height: auto;
+  margin-right: 0;
+  margin-left: 0;
+  text-indent: 0;
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+  padding: 6px;
+}
+.custom-pagination .carousel-indicators .active {
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  color: var(--black);
+}
+
 .nav-bar-1 {
   height: 40px;
   background-color: var(--dark);
