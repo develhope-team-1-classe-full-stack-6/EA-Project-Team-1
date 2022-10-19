@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>offcanvas sidebar</title>
+    <script src="https://kit.fontawesome.com/2975f57649.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="bg-success">
+
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasSidebar" role="button"
+        aria-controls="offcanvasSidebar">
+        Link with href</a>
+    <section class="offcanvas-sidebar">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar"
+            aria-labelledby="offcanvasSidebarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasSidebarLabel">
+                  <a class="l3 sidebar-title" href="https://www.ea.com/it-it/games">Tutti i giochi</a>
+                </h5>
+                <button type="button" class="btn-close sidebar-close-icon" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="d-flex justify-content-between flex-wrap gap-4">
+                <a class="position-relative w-100 d-flex justify-content-center align-items-center sidebar-ea-play-box" href="https://www.ea.com/it-it/ea-play-live">
+                  <img class="position-absolute top-0 start-0 w-100 sidebar-ea-play-bg" src="../assets/images/ea-play-16x9-png.adapt.crop1x1.jpg">
+                  <img class="position-absolute sidebar-box-logo" src="../assets/images/ea-play-mono-logo-svg.svg" alt="">
+                </a>
+                <a class="position-relative d-flex justify-content-center align-items-center sidebar-little-box" href="https://www.ea.com/it-it/games/fifa/fifa-23">
+                  <img class="position-absolute top-0 start-0 w-100 sidebar-little-box-bg" src="../assets/images/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767p.jpg">
+                  <img class="position-absolute sidebar-little-box-logo" src="../assets/images/fifa23-logo-white-stacked.svg" alt="">
+                </a>
+                <a class="position-relative d-flex justify-content-center align-items-center sidebar-little-box" href="https://www.ea.com/it-it/games/f1/f1-22">
+                  <img class="position-absolute top-0 start-0 w-100 sidebar-little-box-bg" src="../assets/images/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767p.png">
+                  <img class="position-absolute sidebar-little-box-logo" src="../assets/images/f122-gamebox-logo.png" alt="">
+                </a>
+                <a class="position-relative d-flex justify-content-center align-items-center sidebar-little-box" href="https://www.ea.com/games/madden-nfl/madden-nfl-23?isLocalized=true">
+                  <img class="position-absolute top-0 start-0 w-100 sidebar-little-box-bg" src="../assets/images/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg">
+                  <img class="position-absolute sidebar-little-box-logo" src="../assets/images/m23-gamebox-logo.svg" alt="">
+                </a>
+                <a class="position-relative d-flex justify-content-center align-items-center sidebar-little-box" href="https://www.ea.com/it-it/games/apex-legends">
+                  <img class="position-absolute top-0 start-0 w-100 sidebar-little-box-bg" src="../assets/images/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg">
+                  <img class="position-absolute sidebar-little-box-logo" src="../assets/images/apex-legends-mono-logo.svg" alt="">
+                </a>
+                <a class="position-relative d-flex justify-content-center align-items-center sidebar-little-box" href="https://www.ea.com/it-it/games/battlefield/battlefield-2042">
+                  <img class="position-absolute top-0 start-0 w-100 sidebar-little-box-bg" src="../assets/images/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg">
+                  <img class="position-absolute sidebar-little-box-logo" src="../assets/images/battlefield-2042-mono-logo-svg.svg" alt="">
+                </a>
+                <a class="position-relative d-flex justify-content-center align-items-center sidebar-little-box" href="https://www.ea.com/it-it/games/the-sims/the-sims-4">
+                  <img class="position-absolute top-0 start-0 w-100 sidebar-little-box-bg" src="../assets/images/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg">
+                  <img class="position-absolute sidebar-little-box-logo" src="../assets/images/game-box-logo-thesims4-refresh.svg" alt="">
+                </a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
