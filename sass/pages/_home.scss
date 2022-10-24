@@ -1,6 +1,11 @@
 /*Sezione giochi in evidenza*/
+body[style^='overflow']{
+  padding-right: 0px !important;
+}
+
 .wrapper{
-  transform: translateY(35px);
+  position: relative;
+  top: 35px;
 }
 
 #giochi-in-evidenza {
