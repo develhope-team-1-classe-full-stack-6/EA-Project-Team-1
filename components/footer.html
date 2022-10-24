@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css"/>
     <title>Footer</title>
 </head>
@@ -17,8 +18,6 @@
                     <a href="">Rapporto sull'impatto</a>
                     <a href="">Attività politiche</a>
                     <a href="">Segnala un problema</a>
-                    <a href="">Dichiarazione globale sul rispetto dei diritti umani</a>
-                    <a href="">Sicurezza e privacy</a>
                 </div>
                 <div id="ea-social-links">
                     <h3 style="width: 220px; align-self: flex-end; margin: 0; padding: 0; text-align: right; font-family: ElectronicArtsDisplay; font-size: 16px; font-weight: 600;">Partecipa alla conversazione</h3>
@@ -49,25 +48,36 @@
                             <a href="">Aiuto</a>
                         </div>
                         <div id="selector-container">
-                            <div id="pricing-selector" class="footer-selector" tabindex="0" onclick="myToggle()">
-                                <div id="options-container-pricing">
-                                    <div id="regional-prices">Prezzi Regionali</div>
-                                    <div id="dropdown-selection">
-                                        <div id="country-prices-dropdown">Italia</div>
-                                        <svg id="regional-dropdown" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 16px; height: 16px;"><g><path d="M7.4,9.7l5.8-4.8c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4l-5.8,4.8 c-0.4,0.4-1,0.4-1.4,0l0,0C7,10.7,7,10.1,7.4,9.7z"></path><path d="M7.2,11.1L1.4,6.3C1,5.9,1,5.3,1.4,4.9l0,0c0.4-0.4,1-0.4,1.4,0l5.8,4.8c0.4,0.4,0.4,1,0,1.4 l0,0C8.3,11.5,7.6,11.5,7.2,11.1z"></path></g></svg>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div id="language-selector" class="footer-selector" tabindex="5678">
-                                <div id="options-container-language">
-                                    <div id="footer-language">Lingua</div>
-                                    <div id="dropdown-language-selection">
-                                        <span id="selected-flag"></span>
-                                        <div id="country-language-dropdown">Italia</div>
-                                        <svg id="language-dropdown" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 16px; height: 16px;"><g><path d="M7.4,9.7l5.8-4.8c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4l-5.8,4.8 c-0.4,0.4-1,0.4-1.4,0l0,0C7,10.7,7,10.1,7.4,9.7z"></path><path d="M7.2,11.1L1.4,6.3C1,5.9,1,5.3,1.4,4.9l0,0c0.4-0.4,1-0.4,1.4,0l5.8,4.8c0.4,0.4,0.4,1,0,1.4 l0,0C8.3,11.5,7.6,11.5,7.2,11.1z"></path></g></svg>
+                            <div id="pricing-selector" class="btn-group dropup footer-selector" tabindex="0" onclick="myToggle()">
+                                <button type="button" class="btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div id="options-container-pricing">
+                                        <div id="regional-prices">Prezzi Regionali</div>
+                                        <div id="dropdown-selection">
+                                            <div id="country-prices-dropdown">Italia</div>
+                                            <svg id="regional-dropdown" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 16px; height: 16px;"><g><path d="M7.4,9.7l5.8-4.8c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4l-5.8,4.8 c-0.4,0.4-1,0.4-1.4,0l0,0C7,10.7,7,10.1,7.4,9.7z"></path><path d="M7.2,11.1L1.4,6.3C1,5.9,1,5.3,1.4,4.9l0,0c0.4-0.4,1-0.4,1.4,0l5.8,4.8c0.4,0.4,0.4,1,0,1.4 l0,0C8.3,11.5,7.6,11.5,7.2,11.1z"></path></g></svg>
+                                        </div> 
                                     </div>
-                                </div>
+                                </button>
                             </div>
+                            <div id="language-selector" class="btn-group dropup footer-selector">
+                                <button type="button" class="btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div id="options-container-language">
+                                        <div id="footer-language">Lingua</div>
+                                        <div id="dropdown-language-selection">
+                                            <span id="selected-flag"></span>
+                                            <div id="country-language-dropdown">Italia</div>
+                                            <svg id="language-dropdown" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 16px; height: 16px;"><g><path d="M7.4,9.7l5.8-4.8c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4l-5.8,4.8 c-0.4,0.4-1,0.4-1.4,0l0,0C7,10.7,7,10.1,7.4,9.7z"></path><path d="M7.2,11.1L1.4,6.3C1,5.9,1,5.3,1.4,4.9l0,0c0.4-0.4,1-0.4,1.4,0l5.8,4.8c0.4,0.4,0.4,1,0,1.4 l0,0C8.3,11.5,7.6,11.5,7.2,11.1z"></path></g></svg>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <!-- Dropdown menu links -->
+                                  <p>Austria</p>
+                                  <p>Belgium</p>
+                                  <p>Bulgaria</p>
+                                  <p>Croatia</p>
+                                </div>
+                              </div>
                         </div>
                     </div>
                     <div id="row-2">
@@ -90,8 +100,13 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    
+    <!--
     <script>
-        function myToggle () {
+            
+            function myToggle () {
             document.getElementById("pricing-selector").classList.toggle("footer-activated");
             document.getElementById("regional-dropdown").classList.toggle("dropdown-activated");
         }
@@ -106,5 +121,7 @@
 			            dropDownActivated.classList.remove('dropdown-activated');}
         }}
     </script>
+
+-->
 </body>
 </html>
