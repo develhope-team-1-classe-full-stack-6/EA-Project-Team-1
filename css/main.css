@@ -2676,12 +2676,73 @@ h6 {
   }
   #countryselector .selectedcontainer p {
     font-weight: 400;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #f3f3f3;
     width: 100%;
     padding-left: 20px;
   }
   #countryselector .selectedcontainer p:hover {
+    background-color: lightblue;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  #countryselector {
+    width: 43vw;
+    background-color: #f3f3f3;
+    height: 600px;
+    overflow: scroll;
+  }
+  #countryselector .firstcountries, #countryselector .secondcountries, #countryselector .thirdcountries, #countryselector .fourthcountries {
+    width: 100%;
+    height: 25px;
+  }
+  #countryselector .firstcountries .checkcontainer, #countryselector .secondcountries .checkcontainer, #countryselector .thirdcountries .checkcontainer, #countryselector .fourthcountries .checkcontainer {
+    display: none;
+  }
+  #countryselector .selectedcontainer {
+    width: 100%;
+  }
+  #countryselector .selectedcontainer:hover {
+    background-color: lightblue;
+  }
+  #countryselector .selectedcontainer p {
+    font-weight: 400;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #countryselector .selectedcontainer p:hover {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #countryselector {
+    width: 90vw;
+    height: 450px;
+    background-color: #f3f3f3;
+    overflow: scroll;
+  }
+  #countryselector .firstcountries, #countryselector .secondcountries, #countryselector .thirdcountries, #countryselector .fourthcountries {
+    height: 25px;
+    width: 100%;
+  }
+  #countryselector .firstcountries:hover, #countryselector .secondcountries:hover, #countryselector .thirdcountries:hover, #countryselector .fourthcountries:hover {
+    background-color: lightblue;
+  }
+  #countryselector .firstcountries span, #countryselector .secondcountries span, #countryselector .thirdcountries span, #countryselector .fourthcountries span {
+    display: none;
+  }
+  #countryselector .firstcountries .selectedcontainer, #countryselector .secondcountries .selectedcontainer, #countryselector .thirdcountries .selectedcontainer, #countryselector .fourthcountries .selectedcontainer {
+    height: 100%;
+    width: 100%;
+  }
+  #countryselector .firstcountries .selectedcontainer:hover, #countryselector .secondcountries .selectedcontainer:hover, #countryselector .thirdcountries .selectedcontainer:hover, #countryselector .fourthcountries .selectedcontainer:hover {
+    background-color: lightblue;
+  }
+  #countryselector .firstcountries .selectedcontainer p, #countryselector .secondcountries .selectedcontainer p, #countryselector .thirdcountries .selectedcontainer p, #countryselector .fourthcountries .selectedcontainer p {
+    font-weight: 400 !important;
+    padding-left: 20px;
+  }
+  #countryselector .firstcountries .selectedcontainer p:hover, #countryselector .secondcountries .selectedcontainer p:hover, #countryselector .thirdcountries .selectedcontainer p:hover, #countryselector .fourthcountries .selectedcontainer p:hover {
     background-color: lightblue;
   }
 }
