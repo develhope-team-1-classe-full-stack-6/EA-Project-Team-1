@@ -1,4 +1,8 @@
 /*Sezione giochi in evidenza*/
+.wrapper{
+  transform: translateY(35px);
+}
+
 #giochi-in-evidenza {
   max-width: 1456px;
   margin: 0 auto;

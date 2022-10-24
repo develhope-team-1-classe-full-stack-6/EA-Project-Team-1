@@ -1461,145 +1461,94 @@ h6 {
     left: 7%;
   }
 }
-.nav-bar-1 {
-  height: 40px;
-  background-color: var(--dark);
+.navbar1 .navbar-head {
+  width: 100%;
+  height: 35px;
   color: #b0b0b0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
+  background-color: var(--black);
+  position: fixed;
+  z-index: 1045;
 }
-.nav-bar-1 .nav-bar-1-link {
+.navbar1 .navbar-head .navbar1-link {
   text-decoration: none;
   color: #636363;
 }
-.nav-bar-1 .fa-user,
-.nav-bar-1 .fa-question {
+.navbar1 .navbar-head .fa-user,
+.navbar1 .navbar-head .fa-question {
+  font-size: 1.05rem;
   margin-left: 2rem;
   margin-right: 1rem;
   cursor: pointer;
 }
-.nav-bar-1 .nav-bar-1-svg-container {
+.navbar1 .navbar-head .navbar1-svg-container {
   width: 32px;
   height: 32px;
   fill: #777777;
   margin-right: 2.25rem;
   margin-left: 1.5rem;
 }
-.nav-bar-1 .nav-bar-1-svg-container:hover {
+.navbar1 .navbar-head .navbar1-svg-container:hover {
   fill: #a3a3a3;
 }
-.nav-bar-1 .fa-user:hover,
-.nav-bar-1 .fa-question:hover {
+.navbar1 .navbar-head .fa-user:hover,
+.navbar1 .navbar-head .fa-question:hover {
   color: var(--light);
 }
-
-.nav-bar-2 {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  position: relative;
+.navbar1 .offcanvas.offcanvas-top {
+  background: var(--transparent);
+  top: 5%;
+  border-bottom: none;
+  height: 40vh;
 }
-
-.nav-bar-2-vertical-menu {
-  font-size: 1.5rem;
-  transition: 0.15s;
-  position: absolute;
-  margin-left: 1.5rem;
+.navbar1 .offcanvas.offcanvas-top.show.hiding .btn-close {
+  visibility: hidden;
 }
-.nav-bar-2-vertical-menu:hover {
-  color: var(--orange);
-  font-size: 2rem;
-  cursor: pointer;
-  transition: 0.15s ease-in-out;
+.navbar1 .offcanvas.offcanvas-top .offcanvas-header {
+  padding-top: 40px;
+  padding-right: 40px;
 }
-
-.nav-bar-2-hamburger-menu {
-  display: none;
+.navbar1 .offcanvas.offcanvas-top .offcanvas-header .btn-close {
+  background: none;
+  opacity: 1;
 }
-
-.nav-bar-2-img-link {
-  margin-left: 4.4rem;
-  margin-top: 0.48rem;
+.navbar1 .offcanvas.offcanvas-top .offcanvas-header .btn-close:hover {
+  opacity: 1;
 }
-
-.nav-bar-2-links {
-  display: flex;
-  margin-left: 3rem;
+.navbar1 .offcanvas.offcanvas-top .offcanvas-header .btn-close:focus {
+  box-shadow: none;
 }
-
-.nav-bar-2-link-container {
-  display: flex;
+@media (min-width: 576px) {
+  .navbar1 .offcanvas.offcanvas-top .offcanvas-body.gap-sm-5 {
+    gap: 13rem !important;
+  }
+}
+.navbar1 .offcanvas.offcanvas-top .offcanvas-body a {
   text-decoration: none;
+  font-weight: normal;
+}
+.navbar1 .offcanvas.offcanvas-top .offcanvas-body .hover-translation {
+  transition: all 0.15s;
+}
+.navbar1 .offcanvas.offcanvas-top .offcanvas-body .hover-translation:hover {
+  transform: translateY(-7px);
+  transition: all 0.25;
+}
+.navbar1 .offcanvas.offcanvas-top .offcanvas-body .img-nav1 {
+  max-width: 35px;
+  min-width: 35px;
+}
+.navbar1 .offcanvas.offcanvas-top .offcanvas-body .img-nav1 ~ p {
+  margin: 0;
+}
+.navbar1 .offcanvas-backdrop {
+  z-index: 1043;
+  height: 48vh;
+  background-color: var(--black);
+}
+.navbar1 .offcanvas-backdrop.show {
+  opacity: 1;
 }
 
-.nav-bar-2-link {
-  text-decoration: none;
-  color: var(--dark);
-  margin-left: 1rem;
-  margin-right: 0.7rem;
-}
-.nav-bar-2-link .fa-angle-down {
-  transition: 0.2s;
-  margin-left: 5px;
-}
-.nav-bar-2-link .fa-angle-down {
-  transition: 0.3s;
-}
-.nav-bar-2-link:hover {
-  transition: 0.1s;
-  color: var(--orange);
-}
-.nav-bar-2-link:hover .fa-angle-down {
-  transform: rotateX(180deg);
-  transition: 0.3s;
-}
-
-@media only screen and (max-width: 1023px) {
-  .nav-bar-2-links {
-    display: none;
-  }
-  .nav-bar-2-vertical-menu {
-    display: none;
-  }
-  .nav-bar-2-hamburger-menu {
-    display: block;
-    font-size: 1.4rem;
-    position: absolute;
-    top: 30%;
-    left: 1.5%;
-  }
-  .nav-bar-2-hamburger-menu:hover {
-    transition: 0.1s;
-    color: var(--orange);
-  }
-  .nav-bar-2-img-link {
-    margin: 0;
-    margin-left: 3rem;
-    margin-top: 0.27rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .nav-bar-2-img-link img {
-    width: 55%;
-    margin-bottom: 0.3rem;
-  }
-  .nav-bar-2-hamburger-menu {
-    top: 29%;
-    left: 2%;
-  }
-}
-@media screen and (max-width: 639px) {
-  .nav-bar-2-img-link img {
-    width: 55%;
-    margin-bottom: 0.3rem;
-  }
-  .nav-bar-2-hamburger-menu {
-    top: 29%;
-    left: 2%;
-  }
-}
 :root {
   --black: #000000;
   --dark: #161616;
@@ -2535,6 +2484,10 @@ h6 {
   }
 }
 /*Sezione giochi in evidenza*/
+.wrapper {
+  transform: translateY(35px);
+}
+
 #giochi-in-evidenza {
   max-width: 1456px;
   margin: 0 auto;
