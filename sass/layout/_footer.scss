@@ -720,6 +720,14 @@
   #finlandcont, #liechcont, #slovcont, #switzcont {
     border-bottom: none !important;
   }
+
+  .countryitem {
+    transition: margin-left 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      margin-left: 20px !important;
+    } 
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
