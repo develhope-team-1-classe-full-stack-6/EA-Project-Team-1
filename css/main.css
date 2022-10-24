@@ -2534,6 +2534,13 @@ h6 {
     align-self: center !important;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .prices-dropdown-menu {
+    width: 653px;
+    height: 453px;
+    background: #f3f3f3;
+  }
+}
 /*Sezione giochi in evidenza*/
 #giochi-in-evidenza {
   max-width: 1456px;
