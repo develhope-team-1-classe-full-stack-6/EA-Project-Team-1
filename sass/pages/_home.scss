@@ -1,6 +1,7 @@
 /*Sezione giochi in evidenza*/
 .wrapper{
-  transform: translateY(35px);
+  position: relative;
+  top: 35px;
 }
 
 #giochi-in-evidenza {

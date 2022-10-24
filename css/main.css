@@ -1809,6 +1809,7 @@ h6 {
 
 .offcanvas-navbar2 .offcanvas.offcanvas-start {
   width: 380px;
+  top: 35px;
 }
 .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-header {
   background-color: var(--light);
@@ -1928,6 +1929,9 @@ h6 {
 }
 
 /* sidebar */
+.offcanvas-sidebar .offcanvas.offcanvas-start {
+  top: 35px;
+}
 .offcanvas-sidebar .btn-close.sidebar-close-icon {
   width: 16px;
 }
@@ -2485,7 +2489,8 @@ h6 {
 }
 /*Sezione giochi in evidenza*/
 .wrapper {
-  transform: translateY(35px);
+  position: relative;
+  top: 35px;
 }
 
 #giochi-in-evidenza {
