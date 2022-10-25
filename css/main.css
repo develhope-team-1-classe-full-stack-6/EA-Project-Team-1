@@ -2660,35 +2660,15 @@ h6 {
   .countryitem:hover {
     margin-left: 20px !important;
   }
-}
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-  #countryselector {
-    width: 43vw;
+  #locallanguageselector {
+    padding: 21px 5px;
+    width: 547.63px;
+    height: 552px;
     background-color: #f3f3f3;
-    height: 600px;
-    overflow: scroll;
-  }
-  #countryselector .firstcountries, #countryselector .secondcountries, #countryselector .thirdcountries, #countryselector .fourthcountries {
-    width: 100%;
-    height: 25px;
-  }
-  #countryselector .firstcountries .checkcontainer, #countryselector .secondcountries .checkcontainer, #countryselector .thirdcountries .checkcontainer, #countryselector .fourthcountries .checkcontainer {
-    display: none;
-  }
-  #countryselector .selectedcontainer {
-    width: 100%;
-  }
-  #countryselector .selectedcontainer:hover {
-    background-color: lightblue;
-  }
-  #countryselector .selectedcontainer p {
-    font-weight: 400;
-    background-color: #f3f3f3;
-    width: 100%;
-    padding-left: 20px;
-  }
-  #countryselector .selectedcontainer p:hover {
-    background-color: lightblue;
+    border: 3px solid rgb 194, 194, 194;
+    /*display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
@@ -2750,6 +2730,37 @@ h6 {
     padding-left: 20px;
   }
   #countryselector .firstcountries .selectedcontainer p:hover, #countryselector .secondcountries .selectedcontainer p:hover, #countryselector .thirdcountries .selectedcontainer p:hover, #countryselector .fourthcountries .selectedcontainer p:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector {
+    width: 90vw;
+    height: 450px;
+    overflow: scroll;
+    background-color: #f3f3f3;
+  }
+  #locallanguageselector .firstlanguages, #locallanguageselector .secondlanguages, #locallanguageselector .thirdlanguages {
+    height: 25px;
+    width: 100%;
+    display: flex;
+  }
+  #locallanguageselector .firstlanguages:hover, #locallanguageselector .secondlanguages:hover, #locallanguageselector .thirdlanguages:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector .firstlanguages span, #locallanguageselector .secondlanguages span, #locallanguageselector .thirdlanguages span {
+    display: none;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer, #locallanguageselector .secondlanguages .languagetextcontainer, #locallanguageselector .thirdlanguages .languagetextcontainer {
+    height: 100%;
+    width: 100%;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer:hover, #locallanguageselector .secondlanguages .languagetextcontainer:hover, #locallanguageselector .thirdlanguages .languagetextcontainer:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer p, #locallanguageselector .secondlanguages .languagetextcontainer p, #locallanguageselector .thirdlanguages .languagetextcontainer p {
+    font-weight: 400 !important;
+    padding-left: 20px;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer p:hover, #locallanguageselector .secondlanguages .languagetextcontainer p:hover, #locallanguageselector .thirdlanguages .languagetextcontainer p:hover {
     background-color: lightblue;
   }
 }
