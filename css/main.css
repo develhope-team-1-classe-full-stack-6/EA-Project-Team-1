@@ -2249,6 +2249,10 @@ h6 {
   transform: scale(-1, -1);
 }
 
+.footerbtn:active, .footerbtn:target, .footerbtn:focus, .footerbtn:visited {
+  border: none !important;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   #ea-local-footer {
     height: 172.78px;
@@ -2535,6 +2539,20 @@ h6 {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .countryitem {
+    transition: margin-left 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .countryitem:hover {
+    margin-left: 20px !important;
+  }
+  .languagetextcontainer {
+    transition: margin-left 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .languagetextcontainer:hover {
+    margin-left: 20px !important;
+  }
   #countryselector {
     transform: translate(32vw, -167%);
     width: 653px;
@@ -2653,22 +2671,125 @@ h6 {
   #finlandcont, #liechcont, #slovcont, #switzcont {
     border-bottom: none !important;
   }
-  .countryitem {
-    transition: margin-left 0.2s;
-    transition-timing-function: ease-in-out;
-  }
-  .countryitem:hover {
-    margin-left: 20px !important;
-  }
   #locallanguageselector {
+    transform: translate(53vw, -237%);
     padding: 21px 5px;
     width: 547.63px;
     height: 552px;
-    background-color: #f3f3f3;
-    border: 3px solid rgb 194, 194, 194;
-    /*display: flex;
+    background: #f3f3f3;
+    border: 3px solid rgb(194, 194, 194);
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
+  }
+  #locallanguageselector #uklanguage {
+    width: 165px;
+  }
+  #locallanguageselector #uklanguage p {
+    width: 140px;
+  }
+  #locallanguageselector #czechlang {
+    width: 165px;
+  }
+  #locallanguageselector #czechlang p {
+    width: 140px;
+  }
+  #locallanguageselector #brlanguage, #locallanguageselector #nedlanguage, #locallanguageselector #turklanguage {
+    border-bottom: none;
+  }
+  #locallanguageselector .firstlanguages {
+    margin-left: 20px;
+    width: 156.06px;
+    height: 56px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  #locallanguageselector .firstlanguages .flaglistcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 16px;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer {
+    width: 124.06px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer p {
+    height: 22.5px;
+    font-weight: 400 !important;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #locallanguageselector .firstlanguages .checklangcontainer {
+    height: 100%;
+    width: 16px;
+  }
+  #locallanguageselector .secondlanguages {
+    width: 155.56px;
+    height: 56px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  #locallanguageselector .secondlanguages .flaglistcontainer {
+    height: 100%;
+    width: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #locallanguageselector .secondlanguages .languagetextcontainer {
+    width: 123.56px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #locallanguageselector .secondlanguages .languagetextcontainer p {
+    height: 22.5px;
+    font-weight: 400 !important;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #locallanguageselector .secondlanguages .checklangcontainer {
+    height: 100%;
+    width: 16px;
+  }
+  #locallanguageselector .thirdlanguages {
+    width: 108px;
+    height: 56px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  #locallanguageselector .thirdlanguages .flaglistcontainer {
+    height: 100%;
+    width: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #locallanguageselector .thirdlanguages .languagetextcontainer {
+    width: 76px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #locallanguageselector .thirdlanguages .languagetextcontainer p {
+    height: 22.5px;
+    font-weight: 400 !important;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #locallanguageselector .thirdlanguages .checklangcontainer {
+    height: 100%;
+    width: 16px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
@@ -2698,6 +2819,34 @@ h6 {
     padding-left: 20px;
   }
   #countryselector .selectedcontainer p:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector {
+    width: 43vw;
+    background-color: #f3f3f3;
+    height: 600px;
+    overflow: scroll;
+  }
+  #locallanguageselector .firstlanguages, #locallanguageselector .secondlanguages, #locallanguageselector .thirdlanguages {
+    width: 100%;
+    height: 25px;
+  }
+  #locallanguageselector .firstlanguages .checklangcontainer, #locallanguageselector .firstlanguages .flaglistcontainer, #locallanguageselector .secondlanguages .checklangcontainer, #locallanguageselector .secondlanguages .flaglistcontainer, #locallanguageselector .thirdlanguages .checklangcontainer, #locallanguageselector .thirdlanguages .flaglistcontainer {
+    display: none;
+  }
+  #locallanguageselector .languagetextcontainer {
+    width: 100%;
+  }
+  #locallanguageselector .languagetextcontainer:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector .languagetextcontainer p {
+    font-weight: 400;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #locallanguageselector .languagetextcontainer p:hover {
     background-color: lightblue;
   }
 }

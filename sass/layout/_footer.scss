@@ -260,6 +260,11 @@
       transform: scale(-1, -1);
 }
 
+.footerbtn {
+  &:active, &:target, &:focus, &:visited {
+    border: none !important;
+  }
+}
 
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -602,6 +607,22 @@
 
 
 @media only screen and (min-width: 1024px) {
+  .countryitem {
+    transition: margin-left 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      margin-left: 20px !important;
+    } 
+  }
+  .languagetextcontainer {
+    transition: margin-left 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      margin-left: 20px !important;
+    } 
+  }
+
+
   #countryselector {
     transform: translate(32vw, -167%);
     width: 653px;
@@ -721,25 +742,127 @@
     border-bottom: none !important;
   }
 
-  .countryitem {
-    transition: margin-left 0.2s;
-    transition-timing-function: ease-in-out;
-    &:hover {
-      margin-left: 20px !important;
-    } 
-  }
-
   // PROVARE E TOGLIERE EVENTUALMENTE
 
   #locallanguageselector {
+    transform: translate(53vw, -237%);
     padding: 21px 5px;
     width: 547.63px;
     height: 552px;
-    background-color: #f3f3f3;
-    border: 3px solid rgb (194, 194, 194);
-    /*display: flex;
+    background: #f3f3f3;
+    border: 3px solid rgb(194, 194, 194);
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
+    #uklanguage {
+      width: 165px;
+      p {
+        width: 140px;
+      }
+    }
+    #czechlang {
+      width: 165px;
+      p {
+        width: 140px;
+      }
+    }
+    #brlanguage, #nedlanguage, #turklanguage {
+      border-bottom: none;
+    }
+    .firstlanguages {
+      margin-left: 20px;
+      width: 156.06px;
+      height: 56px;
+      display: flex;
+      border-bottom: 2px solid rgb(234, 234, 234);
+      .flaglistcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 16px;
+      }
+      .languagetextcontainer {
+        width: 124.06px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        p {
+          height: 22.5px;
+          font-weight: 400 !important;
+          font-size: 15px;
+          margin-left: 10px;
+        }
+      }
+      .checklangcontainer {
+        height: 100%;
+        width: 16px;
+      }
+    }
+    .secondlanguages {
+      width: 155.56px;
+      height: 56px;
+      display: flex;
+      border-bottom: 2px solid rgb(234, 234, 234);
+      .flaglistcontainer {
+        height: 100%;
+        width: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .languagetextcontainer {
+        width: 123.56px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        p {
+          height: 22.5px;
+          font-weight: 400 !important;
+          font-size: 15px;
+          margin-left: 10px;
+        }
+      }
+      .checklangcontainer {
+        height: 100%;
+        width: 16px;
+      }
+    }
+    .thirdlanguages {
+      width: 108px;
+      height: 56px;
+      display: flex;
+      border-bottom: 2px solid rgb(234, 234, 234);
+      .flaglistcontainer {
+        height: 100%;
+        width: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .languagetextcontainer {
+        width: 76px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        p {
+          height: 22.5px;
+          font-weight: 400 !important;
+          font-size: 15px;
+          margin-left: 10px;
+        }
+      }
+      .checklangcontainer {
+        height: 100%;
+        width: 16px;
+      }
+    }
   }
 
   
@@ -776,6 +899,36 @@
       }
     }
   }
+
+  #locallanguageselector {
+    width: 43vw;
+    background-color: #f3f3f3;
+    height: 600px;
+    overflow: scroll;
+    .firstlanguages, .secondlanguages, .thirdlanguages {
+      width: 100%;
+      height: 25px;
+      .checklangcontainer, .flaglistcontainer {
+        display: none;
+      }
+    }
+    .languagetextcontainer {
+      width: 100%;
+      &:hover {
+        background-color: lightblue;
+      }
+      p {
+        font-weight: 400;
+        background-color: #f3f3f3;
+        width: 100%;
+        padding-left: 20px;
+        &:hover {
+          background-color: lightblue;
+        }
+      }
+    }
+  }
+
 }
 
 
