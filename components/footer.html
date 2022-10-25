@@ -48,7 +48,7 @@
                             <a href="">Aiuto</a>
                         </div>
                         <div id="selector-container">
-                            <div id="pricing-selector" class="btn-group dropup footer-selector" tabindex="0" onclick="myToggle()">
+                            <div id="pricing-selector" class="btn-group dropup footer-selector">
                                 <button type="button" id="footerbtn1" class="btn footerbtn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div id="options-container-pricing">
                                         <div id="regional-prices">Prezzi Regionali</div>
@@ -494,7 +494,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script>
         const dropdownArr = document.getElementById('language-dropdown');
+        const regArr = document.getElementById('regional-dropdown');
         const languageSelector = document.getElementById('language-selector');
+        const pricingSelector = document.getElementById('pricing-selector');
         const footerButton1 = document.querySelector('#footerbtn1');
         const footerButton2 = document.querySelector('#footerbtn2');
 
@@ -506,6 +508,19 @@
             if (!event.target.matches('#footerbtn2') && !event.target.matches('#languageselector') && !event.target.matches('#footer-language') && !event.target.matches('#dropdown-language-selection') && !event.target.matches('#selected-flag') && !event.target.matches('#country-language-dropdown')) {
                 if (dropdownArr.classList.contains('dropdown-activated')) {
                     dropdownArr.classList.remove('dropdown-activated');
+                }
+            }
+        }
+        // Eventualmente togliere
+
+        footerButton1.addEventListener ('click', () => {
+            regArr.classList.toggle ('dropdown-activated');
+        });
+
+        window.onclick = function (event) {
+            if (!event.target.matches('#footerbtn1') && !event.target.matches('#pricing-selector') && !event.target.matches('#regional-prices') && !event.target.matches('#dropdown-selection') && !event.target.matches('#country-prices-dropdown')) {
+                if (regArr.classList.contains ('dropdown-activated')) {
+                    regArr.classList.remove ('dropdown-activated');
                 }
             }
         }
