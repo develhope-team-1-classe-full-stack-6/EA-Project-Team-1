@@ -1996,13 +1996,17 @@ h6 {
   color: var(--red);
 }
 
+/*#countryselector, #locallanguageselector {
+  overflow: visible !important;
+  position: absolute;
+  z-index: 4
+}*/
 .bottom-footer {
   width: 100% !important;
   max-width: 100% !important;
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
-  overflow: hidden !important;
 }
 
 #ea-local-footer {
@@ -2554,7 +2558,6 @@ h6 {
     margin-left: 20px !important;
   }
   #countryselector {
-    transform: translate(32vw, -167%);
     width: 653px;
     height: 453px;
     background: #f3f3f3;
@@ -2672,7 +2675,6 @@ h6 {
     border-bottom: none !important;
   }
   #locallanguageselector {
-    transform: translate(53vw, -237%);
     padding: 21px 5px;
     width: 547.63px;
     height: 552px;

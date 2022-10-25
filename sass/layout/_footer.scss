@@ -1,6 +1,12 @@
 @use "../abstracts/colors" as color;
 @use "../base/typography" as font;
 
+/*#countryselector, #locallanguageselector {
+  overflow: visible !important;
+  position: absolute;
+  z-index: 4
+}*/
+
 
 .bottom-footer {
   width: 100% !important;
@@ -8,7 +14,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
-  overflow: hidden !important;
 }
 
 #ea-local-footer {
@@ -624,7 +629,6 @@
 
 
   #countryselector {
-    transform: translate(32vw, -167%);
     width: 653px;
     height: 453px;
     background: #f3f3f3;
@@ -745,7 +749,6 @@
   // PROVARE E TOGLIERE EVENTUALMENTE
 
   #locallanguageselector {
-    transform: translate(53vw, -237%);
     padding: 21px 5px;
     width: 547.63px;
     height: 552px;
