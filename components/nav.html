@@ -11,116 +11,127 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/main.css" />
+    <script src="https://kit.fontawesome.com/2975f57649.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="container" style="padding: 0px;">
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button
-          class="nav-link h6 active"
-          id="nav-notizie-ea-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-notizie-ea"
-          type="button"
-          role="tab"
-          aria-controls="nav-notizie-ea"
-          aria-selected="true"
-        >
-          <p>Notizie EA</p>
-          <hr class="button-hr" />
-        </button>
-        <button
-          class="nav-link h6"
-          id="nav-ea-play-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-ea-play"
-          type="button"
-          role="tab"
-          aria-controls="nav-ea-play"
-          aria-selected="false"
-        >
-          <p>EA Play</p>
-          <hr class="button-hr" />
-        </button>
-        <button
-          class="nav-link h6"
-          id="nav-fifa-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-fifa"
-          type="button"
-          role="tab"
-          aria-controls="nav-fifa"
-          aria-selected="false"
-        >
-          <p>FIFA</p>
-          <hr class="button-hr" />
-        </button>
-        <button
-          class="nav-link h6"
-          id="nav-f1-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-f1"
-          type="button"
-          role="tab"
-          aria-controls="nav-f1"
-          aria-selected="false"
-        >
-          <p>F1</p>
-          <hr class="button-hr" />
-        </button>
-        <button
-          class="nav-link h6"
-          id="nav-apex-legends-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-apex-legends"
-          type="button"
-          role="tab"
-          aria-controls="nav-apex-legends"
-          aria-selected="false"
-        >
-          <p>Apex Legends</p>
-          <hr class="button-hr" />
-        </button>
-        <button
-          class="nav-link h6"
-          id="nav-the-sims-4-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-the-sims-4"
-          type="button"
-          role="tab"
-          aria-controls="nav-the-sims-4"
-          aria-selected="false"
-        >
-          <p>The Sims <sup>tm</sup>4</p>
-          <hr class="button-hr" />
-        </button>
-        <button
-          class="nav-link h6"
-          id="nav-battlefield-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-battlefield"
-          type="button"
-          role="tab"
-          aria-controls="nav-battlefield"
-          aria-selected="false"
-        >
-          <p>Battlefield</p>
-          <hr class="button-hr" />
-        </button>
-        <button
-          class="nav-link h6"
-          id="nav-inside-ea-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-inside-ea"
-          type="button"
-          role="tab"
-          aria-controls="nav-inside-ea"
-          aria-selected="false"
-        >
-          <p>Inside EA</p>
-          <hr class="button-hr" />
-        </button>
+    <div class="buttons">
+      <button  type="button"><i id="slideBack" class="fas fa-regular fa-chevron-left"></i></button>
+      <button id="slide" type="button"><i id="slideBack" class="fas fa-regular fa-chevron-right"></i></button>
+    </div>
+    <div id="container" style="overflow: scroll;">
+      <div id="content">
+        <nav class="container">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link h6 active"
+              id="nav-notizie-ea-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-notizie-ea"
+              type="button"
+              role="tab"
+              aria-controls="nav-notizie-ea"
+              aria-selected="true"
+            >
+              <p>Notizie EA</p>
+              <hr class="button-hr" />
+            </button>
+            <button
+              class="nav-link h6"
+              id="nav-ea-play-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-ea-play"
+              type="button"
+              role="tab"
+              aria-controls="nav-ea-play"
+              aria-selected="false"
+            >
+              <p>EA Play</p>
+              <hr class="button-hr" />
+            </button>
+            <button
+              class="nav-link h6"
+              id="nav-fifa-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-fifa"
+              type="button"
+              role="tab"
+              aria-controls="nav-fifa"
+              aria-selected="false"
+            >
+              <p>FIFA</p>
+              <hr class="button-hr" />
+            </button>
+            <button
+              class="nav-link h6"
+              id="nav-f1-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-f1"
+              type="button"
+              role="tab"
+              aria-controls="nav-f1"
+              aria-selected="false"
+            >
+              <p>F1</p>
+              <hr class="button-hr" />
+            </button>
+            <button
+              class="nav-link h6"
+              id="nav-apex-legends-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-apex-legends"
+              type="button"
+              role="tab"
+              aria-controls="nav-apex-legends"
+              aria-selected="false"
+            >
+              <p>Apex Legends</p>
+              <hr class="button-hr" />
+            </button>
+            <button
+              class="nav-link h6"
+              id="nav-the-sims-4-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-the-sims-4"
+              type="button"
+              role="tab"
+              aria-controls="nav-the-sims-4"
+              aria-selected="false"
+            >
+              <p>The Sims <sup>tm</sup>4</p>
+              <hr class="button-hr" />
+            </button>
+            <button
+              class="nav-link h6"
+              id="nav-battlefield-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-battlefield"
+              type="button"
+              role="tab"
+              aria-controls="nav-battlefield"
+              aria-selected="false"
+            >
+              <p>Battlefield</p>
+              <hr class="button-hr" />
+            </button>
+            <button
+              class="nav-link h6"
+              id="nav-inside-ea-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-inside-ea"
+              type="button"
+              role="tab"
+              aria-controls="nav-inside-ea"
+              aria-selected="false"
+            >
+              <p>Inside EA</p>
+              <hr class="button-hr" />
+            </button>
+          </div>
+        </nav>
       </div>
-    </nav>
+      </div>
+      <div>
+    </div>
     <hr class="nav-hr" />
     <div class="tab-content" id="nav-tabContent">
       <div
@@ -201,5 +212,34 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var button = document.getElementById("slide");
+      button.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "right", 25, 100, 10);
+      };
+
+      var back = document.getElementById("slideBack");
+      back.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "left", 25, 100, 10);
+      };
+
+      function sideScroll(element, direction, speed, distance, step) {
+        scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+          if (direction == "left") {
+            element.scrollLeft -= step;
+          } else {
+            element.scrollLeft += step;
+          }
+          scrollAmount += step;
+          if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+          }
+        }, speed);
+      }
+    </script>
   </body>
 </html>
