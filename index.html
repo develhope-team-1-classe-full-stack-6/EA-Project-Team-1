@@ -1649,53 +1649,8 @@
         </div>
       </div>
   </main>
-  <!--iframe da aggiustare -->
-  <!--
-  <iframe src="scss/footer/footer.html" height="572.5vh" width="100%" overflow="visible" scrolling="none" frameborder="0"></iframe>
--->
 
-
-  <script>
-      const dropdownArr = document.getElementById('language-dropdown');
-        const regArr = document.getElementById('regional-dropdown');
-        const languageSelector = document.getElementById('language-selector');
-        const pricingSelector = document.getElementById('pricing-selector');
-        const footerButton1 = document.querySelector('#footerbtn1');
-        const footerButton2 = document.querySelector('#footerbtn2');
-        const countryselector = document.getElementById('countryselector');
-        const locallanguageselector = document.getElementById('locallanguageselector');
-
-        footerButton2.addEventListener ('click', () => {
-            dropdownArr.classList.toggle ('dropdown-activated');
-        });
-
-        window.onclick = function (event) {
-            if (!event.target.matches('#footerbtn2') && !event.target.matches('#languageselector') && !event.target.matches('#footer-language') && !event.target.matches('#dropdown-language-selection') && !event.target.matches('#selected-flag') && !event.target.matches('#country-language-dropdown')) {
-                if (dropdownArr.classList.contains('dropdown-activated')) {
-                    dropdownArr.classList.remove('dropdown-activated');
-                }
-            }
-        }
-        // Eventualmente togliere
-
-        footerButton1.addEventListener ('click', () => {
-            regArr.classList.toggle ('dropdown-activated');
-        });
-
-        window.onclick = function (event) {
-            if (!event.target.matches('#footerbtn1') && !event.target.matches('#pricing-selector') && !event.target.matches('#regional-prices') && !event.target.matches('#dropdown-selection') && !event.target.matches('#country-prices-dropdown')) {
-                if (regArr.classList.contains ('dropdown-activated')) {
-                    regArr.classList.remove ('dropdown-activated');
-                }
-            }
-        }
-
-        window.onload = function () {hide ()};
-        function hide () {
-          countryselector.style.display = 'none';
-          locallanguageselector.style.display = 'none';
-        }
-  </script>
+<!-- footer -->
 
 <footer class="bottom-footer">
   <div id="ea-local-footer">
