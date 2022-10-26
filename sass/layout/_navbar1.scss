@@ -1,0 +1,106 @@
+.navbar1 {
+  .navbar-head {
+    width: 100%;
+    height: 35px;
+    color: #b0b0b0;
+    background-color: var(--black);
+    position: fixed;
+    z-index: 1045;
+
+    .navbar1-link {
+      text-decoration: none;
+      color: #636363;
+    }
+
+    .fa-user,
+    .fa-question {
+      font-size: 1.05rem;
+      margin-left: 2rem;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    .navbar1-svg-container {
+      width: 32px;
+      height: 32px;
+      fill: #777777;
+      margin-right: 2.25rem;
+      margin-left: 1.5rem;
+
+      &:hover {
+        fill: #a3a3a3;
+      }
+    }
+
+    .fa-user:hover,
+    .fa-question:hover {
+      color: var(--light);
+    }
+  }
+
+  .offcanvas.offcanvas-top {
+    background: var(--transparent);
+    top: 5%;
+    border-bottom: none;
+    height: 40vh;
+
+    &.show.hiding {
+      .btn-close {
+        visibility: hidden;
+      }
+    }
+
+    .offcanvas-header {
+      padding-top: 40px;
+      padding-right: 40px;
+
+      .btn-close {
+        background: none;
+        opacity: 1;
+        &:hover {
+          opacity: 1;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .offcanvas-body {
+      &.gap-sm-5 {
+        @media (min-width: 576px){
+            gap: 13rem !important;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-weight: normal;
+      }
+      .hover-translation {
+        transition: all 0.15s;
+        &:hover {
+          transform: translateY(-7px);
+          transition: all 0.25;
+        }
+      }
+
+      .img-nav1 {
+        max-width: 35px;
+        min-width: 35px;
+        & ~ p{
+            margin: 0;
+        }
+      }
+    }
+  }
+
+  .offcanvas-backdrop {
+    z-index: 1043;
+    height: 48vh;
+    background-color: var(--black);
+  }
+
+  .offcanvas-backdrop.show {
+    opacity: 1;
+  }
+}
