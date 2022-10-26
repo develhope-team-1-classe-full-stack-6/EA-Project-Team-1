@@ -12,9 +12,11 @@
 @use "./components/card-2";
 @use "./components/nav";
 @use "./components/pagination";
+@use "./components/ea-play-card";
 
 
-@use "./layout/navbar";
+// @use "./layout/navbar";
+@use "./layout/navbar1";
 @use "./layout/navbar2";
 @use "./layout/offcanvas-navbar";
 @use "./layout/hero";

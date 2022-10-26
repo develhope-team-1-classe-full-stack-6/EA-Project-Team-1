@@ -1,4 +1,13 @@
 /*Sezione giochi in evidenza*/
+body[style^='overflow']{
+  padding-right: 0px !important;
+}
+
+.wrapper{
+  position: relative;
+  top: 35px;
+}
+
 #giochi-in-evidenza {
   max-width: 1456px;
   margin: 0 auto;
