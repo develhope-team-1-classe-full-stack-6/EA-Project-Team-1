@@ -1461,6 +1461,125 @@ h6 {
     left: 7%;
   }
 }
+#card-container-center {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(124, 17, 78) 55%, rgb(255, 0, 69) 100%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  gap: 20px;
+  overflow: scroll;
+}
+
+.eapl__card {
+  width: 27.2vw !important;
+}
+.eapl__card:hover {
+  animation: none !important;
+  transition: none !important;
+}
+
+.ea-play-card-img {
+  width: 100%;
+  height: 15.3vw;
+}
+
+.ea-play-card-content-wrapper {
+  height: 166.19px;
+  width: 100%;
+  padding: 24px 16px;
+  background-color: #f3f3f3;
+}
+@media only screen and (max-width: 348px) {
+  .ea-play-card-content-wrapper {
+    height: 180.27px !important;
+  }
+}
+
+.eapl-tile-content {
+  width: 100%;
+  height: 100%;
+}
+
+.ea-play-card-h2 {
+  font-size: 14px;
+  color: #ff4747;
+  text-align: center;
+}
+
+.ea-play-card-h3 {
+  color: #161616;
+  font-size: 24px;
+  font-family: "ElectronicArtsText", Verdana;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration-thickness: auto;
+  margin: 6px 0px 0px;
+  -webkit-font-smoothing: antialiased;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+@media only screen and (max-width: 1023px) {
+  .ea-play-card-h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.eapl-card-p {
+  font-family: "ElectronicArtsText", Verdana;
+  font-size: 18px;
+  text-align: center;
+  color: #161616;
+  margin: 6.3px 0px 0px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1023px) {
+  .eapl-card-p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1262px) {
+  .ea-play-card-content-wrapper {
+    height: 196.19px;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 769px) {
+  .ea-play-card-content-wrapper {
+    height: 151.48px;
+  }
+  .eapl__card {
+    width: 41.1vw !important;
+  }
+  .ea-play-card-img {
+    width: 100%;
+    height: 23vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ea-play-card-content-wrapper {
+    height: 128.88px;
+  }
+  .eapl__card {
+    width: 85vw !important;
+  }
+  .ea-play-card-img {
+    width: 100%;
+    height: 48vw;
+  }
+}
+@media only screen and (max-width: 583px) {
+  .ea-play-card-content-wrapper {
+    height: 153.88px;
+  }
+}
 .navbar1 .navbar-head {
   width: 100%;
   height: 35px;
@@ -1949,13 +2068,17 @@ h6 {
   color: var(--red);
 }
 
+/*#countryselector, #locallanguageselector {
+  overflow: visible !important;
+  position: absolute;
+  z-index: 4
+}*/
 .bottom-footer {
   width: 100% !important;
   max-width: 100% !important;
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
-  overflow: hidden !important;
 }
 
 #ea-local-footer {
@@ -2200,6 +2323,10 @@ h6 {
   -o-transform: scale(-1, -1);
   -webkit-transform: scale(-1, -1);
   transform: scale(-1, -1);
+}
+
+.footerbtn:active, .footerbtn:target, .footerbtn:focus, .footerbtn:visited {
+  border: none !important;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -2485,6 +2612,390 @@ h6 {
   }
   #ea-social-links {
     align-self: center !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #finlandcont, #liechcont, #slovcont, #switzcont {
+    border-bottom: none !important;
+  }
+  .firstcountries {
+    margin-left: 30px;
+    width: 137.09px;
+    height: 47px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  .firstcountries .selectedcontainer {
+    height: 100%;
+    width: 121.09px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstcountries .selectedcontainer p {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    text-align: left;
+    height: 22.5px;
+    width: 121.09px;
+    color: rgb(22, 22, 22);
+  }
+  .firstcountries span {
+    width: 16px;
+    height: 16px;
+  }
+  .secondcountries {
+    width: 124.72px;
+    height: 47px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  .secondcountries .selectedcontainer {
+    height: 100%;
+    width: 108.72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .secondcountries .selectedcontainer p {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    text-align: left;
+    height: 22.5px;
+    width: 108.72px;
+    color: rgb(22, 22, 22);
+  }
+  .secondcountries span {
+    width: 16px;
+    height: 16px;
+  }
+  .thirdcountries {
+    width: 116.66px;
+    height: 47px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  .thirdcountries .selectedcontainer {
+    height: 100%;
+    width: 100.66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .thirdcountries .selectedcontainer p {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    text-align: left;
+    height: 22.5px;
+    width: 100.66px;
+    color: rgb(22, 22, 22);
+  }
+  .thirdcountries span {
+    width: 16px;
+    height: 16px;
+  }
+  .fourthcountries {
+    width: 110.61px;
+    height: 47px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  .fourthcountries .selectedcontainer {
+    height: 100%;
+    width: 94.61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourthcountries .selectedcontainer p {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    text-align: left;
+    height: 22.5px;
+    width: 94.61px;
+    color: rgb(22, 22, 22);
+  }
+  .fourthcountries span {
+    width: 16px;
+    height: 16px;
+  }
+  #countryfootercontainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .countryitem {
+    transition: margin-left 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .countryitem:hover {
+    margin-left: 20px !important;
+  }
+  .languagetextcontainer {
+    transition: margin-left 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .languagetextcontainer:hover {
+    margin-left: 20px !important;
+  }
+  #countryselector {
+    width: 653px;
+    height: 453px;
+    overflow: hidden !important;
+    background: #f3f3f3;
+    border: 3px solid rgb(194, 194, 194);
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #languagescontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #locallanguageselector {
+    padding: 21px 5px;
+    width: 547.63px;
+    height: 552px;
+    background: #f3f3f3;
+    border: 3px solid rgb(194, 194, 194);
+  }
+  #locallanguageselector #uklanguage {
+    width: 165px;
+  }
+  #locallanguageselector #uklanguage p {
+    width: 140px;
+  }
+  #locallanguageselector #czechlang {
+    width: 165px;
+  }
+  #locallanguageselector #czechlang p {
+    width: 140px;
+  }
+  #locallanguageselector #brlanguage, #locallanguageselector #nedlanguage, #locallanguageselector #turklanguage {
+    border-bottom: none;
+  }
+  #locallanguageselector .firstlanguages {
+    margin-left: 20px;
+    width: 156.06px;
+    height: 56px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  #locallanguageselector .firstlanguages .flaglistcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 16px;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer {
+    width: 124.06px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer p {
+    height: 22.5px;
+    font-weight: 400 !important;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #locallanguageselector .firstlanguages .checklangcontainer {
+    height: 100%;
+    width: 16px;
+  }
+  #locallanguageselector .secondlanguages {
+    width: 155.56px;
+    height: 56px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  #locallanguageselector .secondlanguages .flaglistcontainer {
+    height: 100%;
+    width: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #locallanguageselector .secondlanguages .languagetextcontainer {
+    width: 123.56px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #locallanguageselector .secondlanguages .languagetextcontainer p {
+    height: 22.5px;
+    font-weight: 400 !important;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #locallanguageselector .secondlanguages .checklangcontainer {
+    height: 100%;
+    width: 16px;
+  }
+  #locallanguageselector .thirdlanguages {
+    width: 108px;
+    height: 56px;
+    display: flex;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  #locallanguageselector .thirdlanguages .flaglistcontainer {
+    height: 100%;
+    width: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #locallanguageselector .thirdlanguages .languagetextcontainer {
+    width: 76px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #locallanguageselector .thirdlanguages .languagetextcontainer p {
+    height: 22.5px;
+    font-weight: 400 !important;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #locallanguageselector .thirdlanguages .checklangcontainer {
+    height: 100%;
+    width: 16px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  #countryselector {
+    width: 43vw;
+    background-color: #f3f3f3;
+    height: 600px;
+    overflow: scroll;
+  }
+  #countryselector .firstcountries, #countryselector .secondcountries, #countryselector .thirdcountries, #countryselector .fourthcountries {
+    width: 100%;
+    height: 25px;
+  }
+  #countryselector .firstcountries .checkcontainer, #countryselector .secondcountries .checkcontainer, #countryselector .thirdcountries .checkcontainer, #countryselector .fourthcountries .checkcontainer {
+    display: none;
+  }
+  #countryselector .selectedcontainer {
+    width: 100%;
+  }
+  #countryselector .selectedcontainer:hover {
+    background-color: lightblue;
+  }
+  #countryselector .selectedcontainer p {
+    font-weight: 400;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #countryselector .selectedcontainer p:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector {
+    width: 43vw;
+    background-color: #f3f3f3;
+    height: 600px;
+    overflow: scroll;
+  }
+  #locallanguageselector .firstlanguages, #locallanguageselector .secondlanguages, #locallanguageselector .thirdlanguages {
+    width: 100%;
+    height: 25px;
+  }
+  #locallanguageselector .firstlanguages .checklangcontainer, #locallanguageselector .firstlanguages .flaglistcontainer, #locallanguageselector .secondlanguages .checklangcontainer, #locallanguageselector .secondlanguages .flaglistcontainer, #locallanguageselector .thirdlanguages .checklangcontainer, #locallanguageselector .thirdlanguages .flaglistcontainer {
+    display: none;
+  }
+  #locallanguageselector .languagetextcontainer {
+    width: 100%;
+  }
+  #locallanguageselector .languagetextcontainer:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector .languagetextcontainer p {
+    font-weight: 400;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-left: 20px;
+  }
+  #locallanguageselector .languagetextcontainer p:hover {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #countryselector {
+    width: 90vw;
+    height: 450px;
+    background-color: #f3f3f3;
+    overflow: scroll;
+  }
+  #countryselector .firstcountries, #countryselector .secondcountries, #countryselector .thirdcountries, #countryselector .fourthcountries {
+    height: 25px;
+    width: 100%;
+  }
+  #countryselector .firstcountries:hover, #countryselector .secondcountries:hover, #countryselector .thirdcountries:hover, #countryselector .fourthcountries:hover {
+    background-color: lightblue;
+  }
+  #countryselector .firstcountries span, #countryselector .secondcountries span, #countryselector .thirdcountries span, #countryselector .fourthcountries span {
+    display: none;
+  }
+  #countryselector .firstcountries .selectedcontainer, #countryselector .secondcountries .selectedcontainer, #countryselector .thirdcountries .selectedcontainer, #countryselector .fourthcountries .selectedcontainer {
+    height: 100%;
+    width: 100%;
+  }
+  #countryselector .firstcountries .selectedcontainer:hover, #countryselector .secondcountries .selectedcontainer:hover, #countryselector .thirdcountries .selectedcontainer:hover, #countryselector .fourthcountries .selectedcontainer:hover {
+    background-color: lightblue;
+  }
+  #countryselector .firstcountries .selectedcontainer p, #countryselector .secondcountries .selectedcontainer p, #countryselector .thirdcountries .selectedcontainer p, #countryselector .fourthcountries .selectedcontainer p {
+    font-weight: 400 !important;
+    padding-left: 20px;
+  }
+  #countryselector .firstcountries .selectedcontainer p:hover, #countryselector .secondcountries .selectedcontainer p:hover, #countryselector .thirdcountries .selectedcontainer p:hover, #countryselector .fourthcountries .selectedcontainer p:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector {
+    width: 90vw;
+    height: 450px;
+    overflow: scroll;
+    background-color: #f3f3f3;
+  }
+  #locallanguageselector .firstlanguages, #locallanguageselector .secondlanguages, #locallanguageselector .thirdlanguages {
+    height: 25px;
+    width: 100%;
+    display: flex;
+  }
+  #locallanguageselector .firstlanguages:hover, #locallanguageselector .secondlanguages:hover, #locallanguageselector .thirdlanguages:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector .firstlanguages span, #locallanguageselector .secondlanguages span, #locallanguageselector .thirdlanguages span {
+    display: none;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer, #locallanguageselector .secondlanguages .languagetextcontainer, #locallanguageselector .thirdlanguages .languagetextcontainer {
+    height: 100%;
+    width: 100%;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer:hover, #locallanguageselector .secondlanguages .languagetextcontainer:hover, #locallanguageselector .thirdlanguages .languagetextcontainer:hover {
+    background-color: lightblue;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer p, #locallanguageselector .secondlanguages .languagetextcontainer p, #locallanguageselector .thirdlanguages .languagetextcontainer p {
+    font-weight: 400 !important;
+    padding-left: 20px;
+  }
+  #locallanguageselector .firstlanguages .languagetextcontainer p:hover, #locallanguageselector .secondlanguages .languagetextcontainer p:hover, #locallanguageselector .thirdlanguages .languagetextcontainer p:hover {
+    background-color: lightblue;
   }
 }
 /*Sezione giochi in evidenza*/
