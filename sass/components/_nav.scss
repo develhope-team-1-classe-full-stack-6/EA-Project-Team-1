@@ -112,17 +112,24 @@
   }
 }
 
-@media screen and (max-width: 730px){
+@media screen and (max-width: 730px) {
   .buttons {
+    height: 3.5rem;
     display: flex;
     visibility: visible;
     justify-content: space-between;
     width: 100%;
-    height: 3.5rem;
     align-items: center;
+  
 
-    button{
-      border: none;  
+    button {
+      border: none;
+      background: transparent;
+
+      .fas {
+        font-size: 1.5rem;
+        background: transparent;
+      }
     }
   }
 }

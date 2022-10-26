@@ -15,8 +15,12 @@
   </head>
   <body>
     <div class="buttons">
-      <button  type="button"><i id="slideBack" class="fas fa-regular fa-chevron-left"></i></button>
-      <button id="slide" type="button"><i id="slideBack" class="fas fa-regular fa-chevron-right"></i></button>
+      <button id="slide-back" type="button">
+        <i class="fas fa-regular fa-chevron-left"></i>
+      </button>
+      <button id="slide" type="button">
+        <i class="fas fa-regular fa-chevron-right"></i>
+      </button>
     </div>
     <div id="container" style="overflow: scroll;">
       <div id="content">
@@ -220,7 +224,7 @@
         sideScroll(container, "right", 25, 100, 10);
       };
 
-      var back = document.getElementById("slideBack");
+      var back = document.getElementById("slide-back");
       back.onclick = function () {
         var container = document.getElementById("container");
         sideScroll(container, "left", 25, 100, 10);

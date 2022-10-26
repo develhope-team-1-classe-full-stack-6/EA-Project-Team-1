@@ -1383,18 +1383,47 @@ h6 {
   background-color: var(--transparent);
 }
 
-.nav::-webkit-scrollbar {
+.buttons {
+  display: flex;
+  visibility: hidden;
+}
+
+#container::-webkit-scrollbar {
   display: none;
 }
 
-.nav {
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+#container {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 0px;
+    margin-inline: 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 0px;
+    margin-inline: 0;
+  }
+}
+.container .nav {
+  display: flex;
+  position: relative;
   flex-wrap: nowrap;
   border-bottom: 0px solid var(--gray);
   flex-shrink: 0;
-  overflow-x: scroll;
-  overflow-y: hidden;
 }
-.nav .nav-link {
+.container .nav .nav-link {
   height: 3.5rem;
   position: relative;
   color: black;
@@ -1404,7 +1433,7 @@ h6 {
   border: 0px;
   flex-shrink: 0;
 }
-.nav .nav-link .button-hr {
+.container .nav .nav-link .button-hr {
   border: 0px;
   width: 85%;
   height: 2px;
@@ -1416,7 +1445,7 @@ h6 {
   visibility: hidden;
   flex-shrink: 0;
 }
-.nav .nav-link p {
+.container .nav .nav-link p {
   width: 100%;
   padding-inline: 1rem;
   margin-bottom: 0px;
@@ -1424,21 +1453,21 @@ h6 {
   border-right: 1px solid var(--gray-focus);
   flex-shrink: 0;
 }
-.nav .nav-link:nth-of-type(1) p {
+.container .nav .nav-link:nth-of-type(1) p {
   border-left: none;
 }
-.nav .nav-link:last-of-type p {
+.container .nav .nav-link:last-of-type p {
   border-right: none;
 }
-.nav .nav-link:hover {
+.container .nav .nav-link:hover {
   background-color: rgba(222, 222, 222, 0.5);
 }
-.nav .nav-link.active {
+.container .nav .nav-link.active {
   color: black, 0.5;
   background-color: rgba(222, 222, 222, 0.5);
   border-radius: 0%;
 }
-.nav .nav-link.active .button-hr {
+.container .nav .nav-link.active .button-hr {
   visibility: visible;
   animation: myanimation 0.1s;
 }
@@ -1459,6 +1488,24 @@ h6 {
   to {
     width: 85%;
     left: 7%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .buttons {
+    height: 3.5rem;
+    display: flex;
+    visibility: visible;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .buttons button {
+    border: none;
+    background: transparent;
+  }
+  .buttons button .fas {
+    font-size: 1.5rem;
+    background: transparent;
   }
 }
 #card-container-center {
