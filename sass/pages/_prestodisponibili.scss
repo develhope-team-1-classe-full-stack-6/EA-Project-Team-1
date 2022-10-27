@@ -39,7 +39,6 @@
 .comingsooncardscontainer {
     width: 100vw;
     height: auto;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -65,7 +64,7 @@
         .d-flex {
             height: 35.5px;
             padding: 4px 0px;
-            max-width: 80%;
+            max-width: 85%;
         }
         p {
             font-size: 18px;
@@ -85,9 +84,6 @@
     @media only screen and (min-width: 1024px) and (max-width: 1180px) {
         margin-bottom: 5vw;
     }
-    //height: 56vw;
-    //width: 41.2vw;
-    border: 1px solid black;
     @media only screen and (min-width: 769px) and (max-width: 1023px) {
         position: relative;
         width: 40.8vw !important;
@@ -141,6 +137,12 @@
 }
 
 .comingsooncardsm {
+    .d-flex {
+        max-width: 70%;
+        .w-75 {
+            text-align: center;
+        }
+    }
     @media only screen and (min-width: 1024px) {
         height: 41.2vw;
         max-height: 560.98px;

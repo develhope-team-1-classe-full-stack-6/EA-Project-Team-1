@@ -3386,7 +3386,6 @@ body[style^=overflow] {
 .comingsooncardscontainer {
   width: 100vw;
   height: auto;
-  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -3394,9 +3393,6 @@ body[style^=overflow] {
   margin: auto;
 }
 
-.comingsooncard {
-  border: 1px solid black;
-}
 @media only screen and (min-width: 1024px) {
   .comingsooncard {
     width: 41.4vw !important;
@@ -3416,7 +3412,7 @@ body[style^=overflow] {
   .comingsooncard .d-flex {
     height: 35.5px;
     padding: 4px 0px;
-    max-width: 80%;
+    max-width: 85%;
   }
   .comingsooncard p {
     font-size: 18px;
@@ -3499,6 +3495,12 @@ body[style^=overflow] {
   }
 }
 
+.comingsooncardsm .d-flex {
+  max-width: 70%;
+}
+.comingsooncardsm .d-flex .w-75 {
+  text-align: center;
+}
 @media only screen and (min-width: 1024px) {
   .comingsooncardsm {
     height: 41.2vw;
