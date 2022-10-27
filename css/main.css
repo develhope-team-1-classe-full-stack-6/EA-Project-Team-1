@@ -3360,6 +3360,11 @@ body[style^=overflow] {
     height: 40vw !important;
   }
 }
+@media only screen and (min-width: 1023px) and (min-width: 1456px) {
+  .comingsoonhero {
+    height: 28.5vw !important;
+  }
+}
 .comingsooncontainer {
   height: 60px;
 }
