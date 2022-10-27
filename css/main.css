@@ -3342,4 +3342,74 @@ body[style^=overflow] {
   margin: 3rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .comingsoonhero {
+    height: 83vw;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .comingsoonhero {
+    overflow: hidden;
+    height: 68vw;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .comingsoonhero {
+    overflow: hidden !important;
+    height: 30vw !important;
+  }
+}
+.comingsooncontainer {
+  height: 60px;
+}
+
+.comingsooncontainer p {
+  font-size: 17px;
+}
+
+.comingsoonh3 {
+  font-size: 40px;
+  width: 100vw;
+  height: 46px;
+  font-family: ElectronicArtsDisplay;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.comingsooncardscontainer {
+  width: 100vw;
+  height: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.comingsooncard {
+  height: 56vw;
+  width: 41.2vw;
+  border: 1px solid black;
+}
+@media only screen and (min-width: 1440px) {
+  .comingsooncard {
+    height: 45vw;
+  }
+}
+.comingsooncard .comingsooncardimg {
+  width: 100%;
+}
+.comingsooncard .comingsooncardh5 {
+  width: 100%;
+  height: 30px;
+  margin: 15.6px 0px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.comingsooncard .cscardrow {
+  height: 35.5px;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=main.css.map */
