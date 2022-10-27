@@ -5,19 +5,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   top: 0%;
-  // z-index: 1;
 }
 
 #slide-back {
-  top: 1.5%;
+  visibility: hidden;
+  border: none;
+  color: ($orange);
+  height: 3.5rem;
+  width: 2rem;
+  top: 0%;
   position: absolute;
+  background: linear-gradient(90deg, var(--gray-focus), transparent);
+  z-index: 1;
 }
 
 #slide {
-  top: 1.5%;
+  visibility: hidden;
+  border: none;
+  color: var(--orange);
+  height: 3.5rem;
+  width: 3rem;
+  top: 0%;
   right: 0%;
   position: absolute;
+  background: linear-gradient(90deg, transparent,var(--gray-focus));
+  z-index: 1;
 }
 #container {
   position: relative;
@@ -28,34 +42,23 @@
 }
 }
 .container {
-  // @media (min-width: 1200px){
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-
-  @media (max-width: 992px){
-    max-width: 1450px;
-    margin-left: auto;
+  @media (min-width:568px){
+    max-width: 960px;
   }
-
-  @media (max-width: 768px) {
-    max-width: 1450px;
-  }
-  
-  @media (max-width: 576px) {
-    max-width: 1450px;
-  }
-  .nav::-webkit-scrollbar{
+}
+  .nav::-webkit-scrollbar {
     display: none;
   }
   .nav {
     overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
+    justify-content: center;
     position: relative;
     flex-wrap: nowrap;
-    border-bottom: 0px solid var(--gray);
+    border-bottom: 0px;
     flex-shrink: 0;
+
 
     .nav-link {
       height: 3.5rem;
@@ -111,14 +114,14 @@
       }
     }
   }
-}
+
 
 .nav-hr {
   opacity: 1;
   margin: 0px;
   border-top: 2px solid var(--gray-focus);
   flex-shrink: 0;
-  // margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 @keyframes myanimation {
@@ -132,24 +135,8 @@
   }
 }
 
-@media screen and (max-width: 730px) {
-  .buttons {
-    height: 3.5rem;
-    display: flex;
+@media screen and (max-width: 768px) {
+  #slide-back, #slide {
     visibility: visible;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  
-
-    button {
-      border: none;
-      background: transparent;
-
-      .fas {
-        font-size: 1.5rem;
-        background: transparent;
-      }
-    }
   }
 }

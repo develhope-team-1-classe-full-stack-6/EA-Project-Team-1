@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Nav</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,7 +11,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/main.css" />
-    <script src="https://kit.fontawesome.com/2975f57649.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2975f57649.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="container">
@@ -125,18 +128,16 @@
           </div>
         </nav>
       </div>
-      </div>
       <hr class="nav-hr" />
-      <div>
-        <div class="buttons">
-          <button id="slide-back" type="button">
-            <i class="fas fa-regular fa-chevron-left"></i>
-          </button>
-          <button id="slide" type="button">
-            <i class="fas fa-regular fa-chevron-right"></i>
-          </button>
-        </div>
+
+      <button id="slide-back" type="button">
+        <i class="fas fa-regular fa-chevron-left"></i>
+      </button>
+      <button id="slide" type="button">
+        <i class="fas fa-regular fa-chevron-right"></i>
+      </button>
     </div>
+
     <div class="tab-content" id="nav-tabContent">
       <div
         class="tab-pane fade show active"
@@ -216,34 +217,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      var button = document.getElementById("slide");
-      button.onclick = function () {
-        var container = document.querySelector(".nav");
-        sideScroll(container, "right", 25, 100, 10);
-      };
-
-      var back = document.getElementById("slide-back");
-      back.onclick = function () {
-        var container = document.querySelector(".nav");
-        sideScroll(container, "left", 25, 100, 10);
-      };
-
-      function sideScroll(element, direction, speed, distance, step) {
-        scrollAmount = 0;
-        var slideTimer = setInterval(function () {
-          if (direction == "left") {
-            element.scrollLeft -= step;
-          } else {
-            element.scrollLeft += step;
-          }
-          scrollAmount += step;
-          if (scrollAmount >= distance) {
-            window.clearInterval(slideTimer);
-          }
-        }, speed);
-      }
-    </script>
+    <script src="../scripts/horizontal-scroll.js"></script>
   </body>
 </html>
