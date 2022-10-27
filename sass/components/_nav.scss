@@ -1,73 +1,120 @@
 @import "../abstracts/colors";
 
-
-.nav::-webkit-scrollbar {
-  display:none;
+.buttons {
+  visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0%;
 }
-.nav {
-  flex-wrap: nowrap;
-  border-bottom: 0px solid var(--gray);
-  flex-shrink: 0;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  
-  
-  .nav-link {
-    height: 3.5rem;
+
+#slide-back {
+  visibility: hidden;
+  border: none;
+  color: ($orange);
+  height: 3.5rem;
+  width: 2rem;
+  top: 0%;
+  position: absolute;
+  background: linear-gradient(90deg, var(--gray-focus), transparent);
+  z-index: 1;
+}
+
+#slide {
+  visibility: hidden;
+  border: none;
+  color: var(--orange);
+  height: 3.5rem;
+  width: 3rem;
+  top: 0%;
+  right: 0%;
+  position: absolute;
+  background: linear-gradient(90deg, transparent,var(--gray-focus));
+  z-index: 1;
+}
+#container {
+  position: relative;
+
+  #content {
+    width: 100%;
+    height: 100%;
+}
+}
+.container {
+  @media (min-width:568px){
+    max-width: 960px;
+  }
+}
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  .nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
     position: relative;
-    color: black;
-    border-radius: 0%;
-    padding-left: 0px;
-    padding-right: 0px;
-    border: 0px;
+    flex-wrap: nowrap;
+    border-bottom: 0px;
     flex-shrink: 0;
-    
 
-    .button-hr {
+
+    .nav-link {
+      height: 3.5rem;
+      position: relative;
+      color: black;
+      border-radius: 0%;
+      padding-left: 0px;
+      padding-right: 0px;
       border: 0px;
-      width: 85%;
-      height: 2px;
-      opacity: 1;
-      background-color: var(--orange);
-      position: absolute;
-      bottom: -27%;
-      left: 7%;
-      visibility:hidden;
       flex-shrink: 0;
-    }
 
-    p {
-      width: 100%;
-      padding-inline: 1rem;
-      margin-bottom: 0px;
-      border-left: 1px solid var(--gray-focus);
-      border-right: 1px solid var(--gray-focus);
-      flex-shrink: 0;
-      
-    }
+      .button-hr {
+        border: 0px;
+        width: 85%;
+        height: 2px;
+        opacity: 1;
+        background-color: var(--orange);
+        position: absolute;
+        bottom: -27%;
+        left: 7%;
+        visibility: hidden;
+        flex-shrink: 0;
+      }
 
-    &:nth-of-type(1) p {
-      border-left: none;
-    }
+      p {
+        width: 100%;
+        padding-inline: 1rem;
+        margin-bottom: 0px;
+        border-left: 1px solid var(--gray-focus);
+        border-right: 1px solid var(--gray-focus);
+        flex-shrink: 0;
+      }
 
-    &:last-of-type p {
-      border-right: none;
-    }
+      &:nth-of-type(1) p {
+        border-left: none;
+      }
 
-    &:hover {
+      &:last-of-type p {
+        border-right: none;
+      }
+
+      &:hover {
+        background-color: transparentize(($gray-focus), 0.5);
+      }
+    }
+    .nav-link.active {
+      color: black, 0.5;
       background-color: transparentize(($gray-focus), 0.5);
+      border-radius: 0%;
+      .button-hr {
+        visibility: visible;
+        animation: myanimation 0.1s;
+      }
     }
   }
-  .nav-link.active {
-    color: black, 0.5;    
-    background-color: transparentize(($gray-focus), 0.5);
-    border-radius: 0%;
-    .button-hr {
-      visibility: visible;
-      animation: myanimation 0.1s;
-    }
-  }
-}
+
 
 .nav-hr {
   opacity: 1;
@@ -78,6 +125,18 @@
 }
 
 @keyframes myanimation {
-  from {width: 1%; left: 50%;}
-  to {width: 85%; left: 7%;}
+  from {
+    width: 1%;
+    left: 50%;
+  }
+  to {
+    width: 85%;
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #slide-back, #slide {
+    visibility: visible;
+  }
 }
