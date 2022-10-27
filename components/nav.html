@@ -14,15 +14,7 @@
     <script src="https://kit.fontawesome.com/2975f57649.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="buttons">
-      <button id="slide-back" type="button">
-        <i class="fas fa-regular fa-chevron-left"></i>
-      </button>
-      <button id="slide" type="button">
-        <i class="fas fa-regular fa-chevron-right"></i>
-      </button>
-    </div>
-    <div id="container" style="overflow: scroll;">
+    <div id="container">
       <div id="content">
         <nav class="container">
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -134,9 +126,17 @@
         </nav>
       </div>
       </div>
+      <hr class="nav-hr" />
       <div>
+        <div class="buttons">
+          <button id="slide-back" type="button">
+            <i class="fas fa-regular fa-chevron-left"></i>
+          </button>
+          <button id="slide" type="button">
+            <i class="fas fa-regular fa-chevron-right"></i>
+          </button>
+        </div>
     </div>
-    <hr class="nav-hr" />
     <div class="tab-content" id="nav-tabContent">
       <div
         class="tab-pane fade show active"
@@ -220,13 +220,13 @@
     <script>
       var button = document.getElementById("slide");
       button.onclick = function () {
-        var container = document.getElementById("container");
+        var container = document.querySelector(".nav");
         sideScroll(container, "right", 25, 100, 10);
       };
 
       var back = document.getElementById("slide-back");
       back.onclick = function () {
-        var container = document.getElementById("container");
+        var container = document.querySelector(".nav");
         sideScroll(container, "left", 25, 100, 10);
       };
 
