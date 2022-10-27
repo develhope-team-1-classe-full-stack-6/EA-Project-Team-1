@@ -3377,11 +3377,6 @@ body[style^=overflow] {
   text-align: center;
   margin-bottom: 3rem;
 }
-@media only screen and (max-width: 769px) {
-  .comingsoonh3 {
-    font-size: 32px;
-  }
-}
 
 .comingsooncardscontainer {
   width: 100vw;
@@ -3416,7 +3411,6 @@ body[style^=overflow] {
   .comingsooncard .d-flex {
     height: 35.5px;
     padding: 4px 0px;
-    max-width: 80%;
   }
   .comingsooncard p {
     font-size: 18px;
@@ -3444,12 +3438,11 @@ body[style^=overflow] {
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   .comingsooncard {
-    position: relative;
     width: 40.8vw !important;
     margin-right: 24px;
   }
   .comingsooncard .longitem {
-    height: 60px !important;
+    height: 80px !important;
   }
   .comingsooncard .d-flex {
     height: 35.5px;
@@ -3462,80 +3455,28 @@ body[style^=overflow] {
   }
   .comingsooncard p {
     font-family: "ElectronicArtsText";
-    font-size: 16px;
-    text-decoration-style: solid;
+    font-size: 15px;
   }
   .comingsooncard p.l3 {
     width: 143.64px !important;
-  }
-  .comingsooncard .mt-4 {
-    position: absolute;
-    bottom: 0.5vw;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 768px) {
-  .comingsooncard {
-    width: 85vw !important;
-    height: 93vw;
-    margin-bottom: 5vw;
-  }
-  .comingsooncard p {
-    font-size: 16px;
-    font-family: "ElectronicArtsText";
-  }
-  .comingsooncard .mt-4 {
-    margin-top: 10px !important;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .comingsooncard {
-    margin-bottom: 40px;
-    width: 85vw !important;
-  }
-  .comingsooncard p {
-    font-size: 16px;
-    font-family: "ElectronicArtsText";
-    width: 100% !important;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .comingsooncardsm {
     height: 41.2vw;
-    max-height: 560.98px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   .comingsooncardsm {
-    height: 44vw !important;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 768px) {
-  .comingsooncardsm {
-    height: 75vw !important;
-    margin-bottom: 30px !important;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .comingsooncardsm {
-    margin-bottom: 40px !important;
+    height: 45vw !important;
   }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1023px) {
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
   .comingsooncardm {
-    height: 53vw !important;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 900px) {
-  .comingsooncardm {
-    height: 60vw !important;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .comingsooncardm .btn-container {
-    margin-top: -20px;
+    height: 51.9vw !important;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

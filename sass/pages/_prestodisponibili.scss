@@ -13,7 +13,7 @@
 @media only screen and (min-width: 1023px) {
     .comingsoonhero {
         overflow: hidden !important;
-        height: 30vw !important;
+        height: 40vw !important;
     }
 }   
 .comingsooncontainer {
@@ -31,6 +31,9 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 3rem;
+    @media only screen and (max-width: 769px) {
+        font-size: 32px;
+    }
 }
 
 .comingsooncardscontainer {
@@ -40,27 +43,131 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1456px;
+    margin: auto;
 }
 
 .comingsooncard {
+    @media only screen and (min-width: 1024px) {
+        width: 41.4vw !important;
+        height: 47.6vw;
+        margin-right: 28px;
+        a {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'ElectronicArtsText', Verdana;
+            letter-spacing: -0.6px;
+            margin: 15.6px 0px;
+        }
+        .d-flex {
+            height: 35.5px;
+            padding: 4px 0px;
+            max-width: 80%;
+        }
+        p {
+            font-size: 18px;
+            font-family: 'ElectronicArtsText', Verdana;
+        }
+        .l3 {
+            width: 143.64px !important;
+        }
+    }
     @media only screen and (min-width: 1440px) {
         height: 45vw;
     }
-    height: 56vw;
-    width: 41.2vw;
+    @media only screen and (min-width: 1456px) {
+        width: 544px !important;
+        height: 644.98px !important;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1180px) {
+        margin-bottom: 5vw;
+    }
+    //height: 56vw;
+    //width: 41.2vw;
     border: 1px solid black;
-    .comingsooncardimg {
-        width: 100%;
+    @media only screen and (min-width: 769px) and (max-width: 1023px) {
+        position: relative;
+        width: 40.8vw !important;
+        margin-right: 24px;
+        .longitem {
+            height: 60px !important;
+        }
+        .d-flex {
+            height: 35.5px;
+            width: 290px;
+            padding: 4px 0px;
+        }
+        h5 {
+            margin: 13px 0px !important;
+            font-family: 'ElectronicArtsText';
+        }
+        p {
+            font-family: 'ElectronicArtsText';
+            font-size: 16px;
+            text-decoration-style: solid;
+            &.l3 {
+                width: 143.64px !important;
+            }
+        }
+        .mt-4 {
+            position: absolute;
+            bottom: 0.5vw;
+        }
     }
-    .comingsooncardh5 {
-        width: 100%;
-        height: 30px;
-        margin: 15.6px 0px;
-        font-size: 24px;
-        font-weight: 700;
+    @media only screen and (min-width: 701px) and (max-width: 768px) {
+        width: 85vw !important;
+        height: 93vw;
+        margin-bottom: 5vw;
+        p {
+            font-size: 16px;
+            font-family: 'ElectronicArtsText';
+        }
+        .mt-4 {
+            margin-top: 10px !important;
+        }
     }
-    .cscardrow {
-        height: 35.5px;
-        border: 1px solid black;
+    @media only screen and (max-width: 700px) {
+        margin-bottom: 40px;
+        width: 85vw !important;
+        p {
+            font-size: 16px;
+            font-family: 'ElectronicArtsText';
+            width: 100% !important;
+        }
     }
 }
+
+.comingsooncardsm {
+    @media only screen and (min-width: 1024px) {
+        height: 41.2vw;
+        max-height: 560.98px;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 1023px) {
+        height: 44vw !important;
+    }
+    @media only screen and (min-width: 701px) and (max-width: 768px) {
+        height: 75vw !important;
+        margin-bottom: 30px !important;
+    }
+    @media only screen and (max-width: 700px) {
+        margin-bottom: 40px !important;
+    }
+}
+
+.comingsooncardm {
+    @media only screen and (min-width: 901px) and (max-width: 1023px) {
+        height: 53vw !important;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 900px) {
+        height: 60vw !important;
+    }
+    @media only screen and (max-width: 767px) {
+        .btn-container {
+            margin-top: -20px;
+        }
+    }
+}
+
