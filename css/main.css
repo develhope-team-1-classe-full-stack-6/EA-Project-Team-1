@@ -1018,6 +1018,45 @@ h6 {
   color: var(--white);
 }
 
+/* Box Styling blue background*/
+.box-container-blue {
+  width: 355px;
+  height: 355px;
+  background: var(--dark-blue);
+}
+.box-container-blue:hover .box-background {
+  opacity: 0.1;
+}
+.box-container-blue:hover .box-logo {
+  transform: translateY(-70px);
+}
+.box-container-blue:hover p {
+  visibility: visible;
+  color: gray;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.box-container-blue:hover p:last-child {
+  border-bottom: none;
+}
+.box-container-blue:hover p:hover {
+  color: var(--white);
+}
+.box-container-blue .box-background {
+  width: 355px;
+  height: 355px;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+  filter: brightness(0.7);
+}
+.box-container-blue p {
+  visibility: hidden;
+  color: var(--white);
+}
+.box-container-blue p:first-child {
+  padding-top: 80px;
+}
+
 .btn-container {
   width: 160px;
   height: 65px;
@@ -1461,7 +1500,6 @@ h6 {
     left: 7%;
   }
 }
-<<<<<<< HEAD
 .custom-pagination .pagination {
   border: 2px solid var(--dark);
   color: #c2c2c2;
@@ -1501,17 +1539,11 @@ h6 {
   color: var(--black);
 }
 
-.nav-bar-1 {
-  height: 40px;
-  background-color: var(--dark);
-  color: #b0b0b0;
-=======
 #card-container-center {
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(124, 17, 78) 55%, rgb(255, 0, 69) 100%);
   height: 100vh;
   width: 100%;
->>>>>>> origin/dev
   display: flex;
   justify-content: center !important;
   align-items: center;
