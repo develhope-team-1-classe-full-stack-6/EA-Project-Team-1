@@ -20,9 +20,17 @@
         height: 28.5vw !important;
     }
 }
-}   
+}
 .comingsooncontainer {
     height: 60px;
+    .container {
+        max-width: 1140px !important;
+        .nav-link{
+            &:hover, &:active, &:focus {
+                background: rgba(222, 222, 222) !important;
+            }
+        }
+    }
 }
 .comingsooncontainer p {
     font-size: 17px;

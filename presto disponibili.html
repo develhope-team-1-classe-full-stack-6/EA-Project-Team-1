@@ -68,7 +68,7 @@
 
 <body>
   <section class="navbar1">
-    <div class="navbar-head d-flex justify-content-end align-items-center">
+    <div class="navbar-head comingsoonnavbarhead d-flex justify-content-end align-items-center" style="max-width: 100vw !important">
         <i class="fa-regular fa-user" data-bs-toggle="offcanvas" href="#offcanvasDark1" role="button"
             aria-controls="offcanvasDark1"></i>
         <i class="fa-solid fa-question" data-bs-toggle="offcanvas" href="#offcanvasDark2" role="button"
@@ -743,51 +743,128 @@
           <video autoplay muted loop id="myVideo" style="height: auto; width: 100vw !important"> <source src="https://media.contentapi.ea.com/content/dam/eacom/videos/2022/07/ea-mashup-video-2x1-m.webm" type="video/webm"> </video>
       </picture>
     </section>
-      <nav class="container comingsooncontainer" style="max-width: 1124px">
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link h6 active" id="nav-notizie-ea-tab" data-bs-toggle="tab"
-            data-bs-target="#nav-notizie-ea" type="button" role="tab" aria-controls="nav-notizie-ea"
-            aria-selected="true">
-            <p>Nuovi Giochi</p>
-            <hr class="button-hr" />
-          </button>
-          <button class="nav-link h6" id="nav-ea-play-tab" data-bs-toggle="tab" data-bs-target="#nav-ea-play"
-            type="button" role="tab" aria-controls="nav-ea-play" aria-selected="false">
-            <p>Presto Disponibile</p>
-            <hr class="button-hr" />
-          </button>
-          <button class="nav-link h6" id="nav-fifa-tab" data-bs-toggle="tab" data-bs-target="#nav-fifa" type="button"
-            role="tab" aria-controls="nav-fifa" aria-selected="false">
-            <p>EA SPORTS<sup>tm</sup></p>
-            <hr class="button-hr" />
-          </button>
-          <button class="nav-link h6" id="nav-f1-tab" data-bs-toggle="tab" data-bs-target="#nav-f1" type="button"
-            role="tab" aria-controls="nav-f1" aria-selected="false">
-            <p>STAR WARS<sup>tm</sup></p>
-            <hr class="button-hr" />
-          </button>
-          <button class="nav-link h6" id="nav-apex-legends-tab" data-bs-toggle="tab" data-bs-target="#nav-apex-legends"
-            type="button" role="tab" aria-controls="nav-apex-legends" aria-selected="false">
-            <p>The Sims <sup>tm</sup>4</p>
-            <hr class="button-hr" />
-          </button>
-          <button class="nav-link h6" id="nav-the-sims-4-tab" data-bs-toggle="tab" data-bs-target="#nav-the-sims-4"
-            type="button" role="tab" aria-controls="nav-the-sims-4" aria-selected="false">
-            <p>EA Orignals</p>
-            <hr class="button-hr" />
-          </button>
-          <button class="nav-link h6" id="nav-battlefield-tab" data-bs-toggle="tab" data-bs-target="#nav-battlefield"
-            type="button" role="tab" aria-controls="nav-battlefield" aria-selected="false">
-            <p>Pogo<sup>tm</sup></p>
-            <hr class="button-hr" />
-          </button>
-          <button class="nav-link h6" id="nav-inside-ea-tab" data-bs-toggle="tab" data-bs-target="#nav-inside-ea"
-            type="button" role="tab" aria-controls="nav-inside-ea" aria-selected="false">
-            <p>Tutti i Giochi</p>
-            <hr class="button-hr" />
-          </button>
+    <div id="container" class="comingsooncontainer">
+        <div id="content">
+          <nav class="container">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link h6 active"
+                id="nav-notizie-ea-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-notizie-ea"
+                type="button"
+                role="tab"
+                aria-controls="nav-notizie-ea"
+                aria-selected="true"
+              >
+                <p>Nuovi Giochi</p>
+                <hr class="button-hr" />
+              </button>
+              <button
+                class="nav-link h6"
+                id="nav-ea-play-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-ea-play"
+                type="button"
+                role="tab"
+                aria-controls="nav-ea-play"
+                aria-selected="false"
+              >
+                <p>Presto Disponibile</p>
+                <hr class="button-hr" />
+              </button>
+              <button
+                class="nav-link h6"
+                id="nav-fifa-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-fifa"
+                type="button"
+                role="tab"
+                aria-controls="nav-fifa"
+                aria-selected="false"
+              >
+                <p>EA SPORTS™</p>
+                <hr class="button-hr" />
+              </button>
+              <button
+                class="nav-link h6"
+                id="nav-f1-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-f1"
+                type="button"
+                role="tab"
+                aria-controls="nav-f1"
+                aria-selected="false"
+              >
+                <p>STAR WARS™</p>
+                <hr class="button-hr" />
+              </button>
+              <button
+                class="nav-link h6"
+                id="nav-apex-legends-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-apex-legends"
+                type="button"
+                role="tab"
+                aria-controls="nav-apex-legends"
+                aria-selected="false"
+              >
+                <p>The Sims™</p>
+                <hr class="button-hr" />
+              </button>
+              <button
+                class="nav-link h6"
+                id="nav-the-sims-4-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-the-sims-4"
+                type="button"
+                role="tab"
+                aria-controls="nav-the-sims-4"
+                aria-selected="false"
+              >
+                <p>EA Originals</p>
+                <hr class="button-hr" />
+              </button>
+              <button
+                class="nav-link h6"
+                id="nav-battlefield-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-battlefield"
+                type="button"
+                role="tab"
+                aria-controls="nav-battlefield"
+                aria-selected="false"
+              >
+                <p>Pogo™</p>
+                <hr class="button-hr" />
+              </button>
+              <button
+                class="nav-link h6"
+                id="nav-inside-ea-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-inside-ea"
+                type="button"
+                role="tab"
+                aria-controls="nav-inside-ea"
+                aria-selected="false"
+              >
+                <p>Tutti i Giochi</p>
+                <hr class="button-hr" />
+              </button>
+            </div>
+          </nav>
         </div>
-      </nav>
+        <hr class="nav-hr" />
+      
+        
+          
+            <button id="slide-back" type="button">
+              <i class="fas fa-regular fa-chevron-left"></i>
+            </button>
+            <button id="slide" type="button">
+              <i class="fas fa-regular fa-chevron-right"></i>
+            </button>
+      </div>
       <hr class="nav-hr" />
       <!-- h3 "Prossimamente" -->
       <h3 class="comingsoonh3">Prossimamente</h3>
