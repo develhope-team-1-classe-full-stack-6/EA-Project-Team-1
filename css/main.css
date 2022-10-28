@@ -1593,6 +1593,11 @@ h6 {
   padding: 6px;
 }
 .custom-pagination .carousel-indicators .active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
   border: 2px solid var(--black);
   border-radius: 50%;
   color: var(--black);
