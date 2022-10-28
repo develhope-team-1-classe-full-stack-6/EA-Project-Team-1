@@ -47,7 +47,7 @@
       transform: translateY(-70px);
     }
 
-    p {
+    a {
       visibility: visible;
       color: gray;
       padding-bottom: 10px;
@@ -70,9 +70,12 @@
     filter: brightness(0.7);
   }
 
-  p {
+  a {
+    display: block;
     visibility: hidden;
     color: var(--white);
+    text-decoration: none;
+    padding-top: 10px;
 
     &:first-child{
       padding-top: 80px;

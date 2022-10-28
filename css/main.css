@@ -1030,16 +1030,16 @@ h6 {
 .box-container-blue:hover .box-logo {
   transform: translateY(-70px);
 }
-.box-container-blue:hover p {
+.box-container-blue:hover a {
   visibility: visible;
   color: gray;
   padding-bottom: 10px;
   border-bottom: 1px solid gray;
 }
-.box-container-blue:hover p:last-child {
+.box-container-blue:hover a:last-child {
   border-bottom: none;
 }
-.box-container-blue:hover p:hover {
+.box-container-blue:hover a:hover {
   color: var(--white);
 }
 .box-container-blue .box-background {
@@ -1049,11 +1049,14 @@ h6 {
   transition: all 300ms ease-in-out;
   filter: brightness(0.7);
 }
-.box-container-blue p {
+.box-container-blue a {
+  display: block;
   visibility: hidden;
   color: var(--white);
+  text-decoration: none;
+  padding-top: 10px;
 }
-.box-container-blue p:first-child {
+.box-container-blue a:first-child {
   padding-top: 80px;
 }
 
