@@ -88,8 +88,11 @@
     }
     @media only screen and (min-width: 1024px) and (max-width: 1180px) {
         margin-bottom: 5vw;
+        .longitem {
+            height: 70px;
+        }
     }
-    @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         position: relative;
         width: 40.8vw !important;
         margin-right: 24px;
@@ -97,7 +100,7 @@
             height: 60px !important;
         }
         .d-flex {
-            height: 35.5px;
+            height: 50px;
             width: 290px;
             padding: 4px 0px;
         }
@@ -118,7 +121,7 @@
             bottom: 0.5vw;
         }
     }
-    @media only screen and (min-width: 701px) and (max-width: 768px) {
+    @media only screen and (min-width: 701px) and (max-width: 767px) {
         width: 85vw !important;
         height: 93vw;
         margin-bottom: 5vw;
@@ -152,24 +155,36 @@
         height: 41.2vw;
         max-height: 560.98px;
     }
-    @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         height: 44vw !important;
+        margin-bottom: 5vw;
     }
-    @media only screen and (min-width: 701px) and (max-width: 768px) {
+    @media only screen and (min-width: 701px) and (max-width: 767px) {
         height: 75vw !important;
         margin-bottom: 30px !important;
+        .w-75 {
+            text-align: left !important;
+        }
     }
     @media only screen and (max-width: 700px) {
         margin-bottom: 40px !important;
+        .w-75 {
+            text-align: left !important;
+        }
     }
 }
 
 .comingsooncardm {
     @media only screen and (min-width: 901px) and (max-width: 1023px) {
-        height: 53vw !important;
+        height: 55vw !important;
+        margin-bottom: 5vw;
+        .longitem {
+            height: 70px;
+        }
     }
     @media only screen and (min-width: 768px) and (max-width: 900px) {
         height: 60vw !important;
+        margin-bottom: 5vw;
     }
     @media only screen and (max-width: 767px) {
         .btn-container {

@@ -3442,8 +3442,11 @@ body[style^=overflow] {
   .comingsooncard {
     margin-bottom: 5vw;
   }
+  .comingsooncard .longitem {
+    height: 70px;
+  }
 }
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .comingsooncard {
     position: relative;
     width: 40.8vw !important;
@@ -3453,7 +3456,7 @@ body[style^=overflow] {
     height: 60px !important;
   }
   .comingsooncard .d-flex {
-    height: 35.5px;
+    height: 50px;
     width: 290px;
     padding: 4px 0px;
   }
@@ -3474,7 +3477,7 @@ body[style^=overflow] {
     bottom: 0.5vw;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 768px) {
+@media only screen and (min-width: 701px) and (max-width: 767px) {
   .comingsooncard {
     width: 85vw !important;
     height: 93vw;
@@ -3512,31 +3515,43 @@ body[style^=overflow] {
     max-height: 560.98px;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .comingsooncardsm {
     height: 44vw !important;
+    margin-bottom: 5vw;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 768px) {
+@media only screen and (min-width: 701px) and (max-width: 767px) {
   .comingsooncardsm {
     height: 75vw !important;
     margin-bottom: 30px !important;
+  }
+  .comingsooncardsm .w-75 {
+    text-align: left !important;
   }
 }
 @media only screen and (max-width: 700px) {
   .comingsooncardsm {
     margin-bottom: 40px !important;
   }
+  .comingsooncardsm .w-75 {
+    text-align: left !important;
+  }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1023px) {
   .comingsooncardm {
-    height: 53vw !important;
+    height: 55vw !important;
+    margin-bottom: 5vw;
+  }
+  .comingsooncardm .longitem {
+    height: 70px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .comingsooncardm {
     height: 60vw !important;
+    margin-bottom: 5vw;
   }
 }
 @media only screen and (max-width: 767px) {
