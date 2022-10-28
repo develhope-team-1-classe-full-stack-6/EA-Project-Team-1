@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,59 +12,7 @@
 
   <link rel="stylesheet" href="../css/main.css" />
   <title>Presto Disponibili - Sito EA Ufficiale</title>
-  <!--<style>
-    @media only screen and (max-width: 320px) {
-        .comingsoonhero {
-            height: 83vw;
-            overflow: hidden;
-        }
-    }
-    @media only screen and (max-width: 768px) {
-        .comingsoonhero {
-            overflow: hidden;
-            height: 68vw;
-        }
-    }
-    @media only screen and (min-width: 1023px) {
-        .comingsoonhero {
-            overflow: hidden !important;
-            height: 28vw !important;
-        }
-    }   
-    .comingsooncontainer {
-        height: 60px;
-    }
-    .comingsooncontainer p {
-        font-size: 17px;
-    }
-
-    .comingsoonh3 {
-        font-size: 40px;
-        width: 100vw;
-        height: 46px;
-        font-family: ElectronicArtsDisplay;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    .comingsooncardscontainer {
-        width: 100vw;
-        height: auto;
-        border: 1px solid black;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .comingsooncard {
-        height: 56vw;
-        width: 41.2vw;
-        border: 1px solid black;
-    }
-  </style>-->
 </head>
-
 <body>
   <section class="navbar1">
     <div class="navbar-head comingsoonnavbarhead d-flex justify-content-end align-items-center" style="max-width: 100vw !important">
@@ -725,9 +672,7 @@
     </div>
 </section>
 </aside>
-    <!-- hero 1 -->
-
-
+<!-- hero 1 -->
     <section class="hero comingsoonhero position-relative overflow-hidden">
       <picture>
         <source media="(max-width: 320px)" 
@@ -736,10 +681,6 @@
           srcset="https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/ea-hero-md-bg-mashup-trailer-7x2-xl.jpg.adapt.crop16x9.767w.jpg">
         <source media="(max-width: 1023px)"
           srcset="https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/ea-hero-md-bg-mashup-trailer-7x2-xl.jpg.adapt.crop2x1.1023w.jpg">
-        <!--<source media="(max-width: 1455px)"
-          srcset="./assets/images/ea-play-grid-legends-hero-xl.jpg.adapt.crop5x2.1455w.jpg">
-        <source media="(min-width: 1456px)"
-          srcset="./assets/images/ea-play-grid-legends-hero-xl.jpg.adapt.crop7x2.1920w.jpg">-->
           <video autoplay muted loop id="myVideo" style="height: auto; width: 100vw !important"> <source src="https://media.contentapi.ea.com/content/dam/eacom/videos/2022/07/ea-mashup-video-2x1-m.webm" type="video/webm"> </video>
       </picture>
     </section>
@@ -855,9 +796,6 @@
           </nav>
         </div>
         <hr class="nav-hr" />
-      
-        
-          
             <button id="slide-back" type="button">
               <i class="fas fa-regular fa-chevron-left"></i>
             </button>
@@ -866,9 +804,9 @@
             </button>
       </div>
       <hr class="nav-hr" />
-      <!-- h3 "Prossimamente" -->
+<!-- h3 "Prossimamente" -->
       <h3 class="comingsoonh3">Prossimamente</h3>
-      <!-- container cards-->
+<!-- container cards-->
       <section class="comingsooncardscontainer">
         <div class=" comingsooncard comingsooncardm d-flex flex-column coming-soon-card-wrapper" style="width: 544px;">
             <img src="https://media.contentapi.ea.com/content/dam/eacom/it-takes-two/images/2020/06/feature-image-itt.png.adapt.crop16x9.1455w.png" alt="">
@@ -1001,12 +939,8 @@
         </div>
       </div>
     </section>
-      
-      
   </main>
-
 <!-- footer -->
-
 <footer class="bottom-footer">
   <div id="ea-network-footer">
       <div id="network-footer-section" style="max-width: 1120px">
@@ -1469,16 +1403,15 @@
   </div>
 </footer>
  </div>
+
+ <!-- script di Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 </body>
 
+<!-- script per sostituire il video nella hero con immagini -->
 <script>
-    /*if (window.matchMedia('(min-width: 1024px)').matches) {
-        document.querySelector('.comingsoonhero').innerHTML = '<video autoplay muted loop id="myVideo" style="height: 600px; width: 100vw"> <source src="https://media.contentapi.ea.com/content/dam/eacom/videos/2022/07/ea-mashup-video-2x1-m.webm" type="video/webm"> </video>';
-}*/
-
 const comingsoonhero = document.querySelector('.comingsoonhero');
 const largeDevice = window.matchMedia("(min-width: 1023px)");
 largeDevice.addListener(handleDeviceChange);
@@ -1511,5 +1444,4 @@ function resizefunc () {
     }
 }
 </script>
-
 </html>
