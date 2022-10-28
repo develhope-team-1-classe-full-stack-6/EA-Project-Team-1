@@ -92,6 +92,11 @@
             height: 70px;
         }
     }
+    @media only screen and (min-width: 1181px) and (max-width: 1299px) {
+        .longitemhearts {
+            max-width: 94%;
+        }
+    }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         position: relative;
         width: 40.8vw !important;
@@ -175,6 +180,9 @@
 }
 
 .comingsooncardm {
+    @media only screen and (min-width: 1024px) and (max-width: 1299px) {
+        height: 53vw;
+    }
     @media only screen and (min-width: 901px) and (max-width: 1023px) {
         height: 55vw !important;
         margin-bottom: 5vw;

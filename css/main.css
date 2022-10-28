@@ -3446,6 +3446,11 @@ body[style^=overflow] {
     height: 70px;
   }
 }
+@media only screen and (min-width: 1181px) and (max-width: 1299px) {
+  .comingsooncard .longitemhearts {
+    max-width: 94%;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .comingsooncard {
     position: relative;
@@ -3539,6 +3544,11 @@ body[style^=overflow] {
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+  .comingsooncardm {
+    height: 53vw;
+  }
+}
 @media only screen and (min-width: 901px) and (max-width: 1023px) {
   .comingsooncardm {
     height: 55vw !important;
