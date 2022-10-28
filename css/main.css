@@ -1467,12 +1467,6 @@ h6 {
   height: 100%;
 }
 
-@media (min-width: 568px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
 .nav::-webkit-scrollbar {
   display: none;
 }
@@ -1559,6 +1553,7 @@ h6 {
     visibility: visible;
   }
 }
+
 .custom-pagination .pagination {
   border: 2px solid var(--dark);
   color: #c2c2c2;
@@ -1601,6 +1596,21 @@ h6 {
   border: 2px solid var(--black);
   border-radius: 50%;
   color: var(--black);
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+  .container .nav {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
 #card-container-center {
