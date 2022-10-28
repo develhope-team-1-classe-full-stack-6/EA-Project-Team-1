@@ -3439,9 +3439,6 @@ body[style^=overflow] {
     height: 28.5vw !important;
   }
 }
-.comingsooncontainer {
-  height: 60px;
-}
 .comingsooncontainer .container {
   max-width: 1140px !important;
 }
