@@ -1425,12 +1425,6 @@ h6 {
   height: 100%;
 }
 
-@media (min-width: 568px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
 .nav::-webkit-scrollbar {
   display: none;
 }
@@ -1515,6 +1509,19 @@ h6 {
 @media screen and (max-width: 768px) {
   #slide-back, #slide {
     visibility: visible;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+  .container .nav {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
   }
 }
 #card-container-center {
