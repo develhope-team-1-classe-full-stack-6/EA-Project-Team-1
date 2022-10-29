@@ -1,0 +1,50 @@
+.impegni-header{
+    background-image: url("https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-esg-commitments-header-section-bg-xl.jpg.adapt.320w.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 266px;
+}
+
+.paragraph-commitments{
+    text-align: center;
+
+    .pp{
+        width: 60%;
+    }
+}
+
+.gradient{
+    height: 220px;
+    width: 100%;
+    border: 1px solid #2d8a9a;
+    background: linear-gradient(#0599b3, #07809f);
+     
+}
+
+
+.commitments-buttons-container{
+    gap: 1rem;
+}
+
+.our-progress{
+// background-image: url("/EA-Project-Team-1/assets/images/ea-impact-report.jpg");
+// background-repeat: no-repeat;
+// background-size:auto;
+// height: 560px;
+
+.our-progress-text, .our-progress-text-buttons{
+    position: absolute;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+}
+
+.impact-buttons{
+    gap: 1rem;
+}
