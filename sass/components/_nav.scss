@@ -1,5 +1,6 @@
 @import "../abstracts/colors";
-
+.ultime-novità{
+  
 .buttons {
   visibility: hidden;
   display: flex;
@@ -149,5 +150,6 @@
 @media (min-width:768px){
   .container {
     max-width: 960px;
+}
 }
 }
