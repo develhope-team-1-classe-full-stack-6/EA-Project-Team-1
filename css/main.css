@@ -3410,28 +3410,49 @@ body[style^=overflow] {
   margin: 3rem;
 }
 
-.last-game .container-fluid .sport-section .container .row {
+.last-game .bg-black {
+  background: linear-gradient(180deg, var(--transparent), var(--black), var(--black), var(--black), var(--black), var(--black), var(--black), var(--black)) !important;
+}
+@media (min-width: 768px) {
+  .last-game .bg-black {
+    background: linear-gradient(180deg, var(--transparent), var(--black), var(--black), var(--black), var(--black), var(--black)) !important;
+  }
+}
+@media (min-width: 1200px) {
+  .last-game .bg-black {
+    background: linear-gradient(180deg, var(--transparent), var(--black), var(--black), var(--black)) !important;
+  }
+}
+.last-game .bg-black .container-fluid .sport-section .container .row {
   justify-content: center;
 }
-.last-game .container-fluid .sport-section .container .row .box {
+.last-game .bg-black .container-fluid .sport-section .container .row .box {
   aspect-ratio: 1/1;
 }
-.last-game .container-fluid .sport-section .container .row .box .sidebar-little-box {
+.last-game .bg-black .container-fluid .sport-section .container .row .box .sidebar-little-box {
   width: 100%;
   height: 100%;
 }
-.last-game .container-fluid .sport-section .container .row .box .sidebar-little-box :nth-child(1) {
+.last-game .bg-black .container-fluid .sport-section .container .row .box .sidebar-little-box :nth-child(1) {
   filter: brightness(0.8);
 }
-.last-game .container-fluid .sport-section .container .row .box .sidebar-little-box :nth-child(1):hover {
-  filter: brightness(1);
-}
-.last-game .container-fluid .sport-section .container .row .box .sidebar-little-box .sidebar-little-box-logo {
+.last-game .bg-black .container-fluid .sport-section .container .row .box .sidebar-little-box .sidebar-little-box-logo {
   width: 150px;
 }
-.last-game .container-fluid .sport-section .btn-container {
+.last-game .bg-black .container-fluid .sport-section .container .row .box:hover .sidebar-little-box :nth-child(1) {
+  filter: brightness(1);
+}
+.last-game .bg-black .container-fluid .sport-section .btn-container {
   width: 220px;
   height: 70px;
+}
+
+.banner .img-banner:hover {
+  transition: all 0.2s;
+}
+.banner .img-banner:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
 }
 
 @media only screen and (max-width: 320px) {
