@@ -3851,4 +3851,235 @@ body[style^=overflow] {
   margin: 3rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .comingsoonhero {
+    height: 83vw;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .comingsoonhero {
+    overflow: hidden;
+    height: 68vw;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .comingsoonhero {
+    overflow: hidden !important;
+    height: 40vw !important;
+  }
+}
+@media only screen and (min-width: 1023px) and (min-width: 1456px) {
+  .comingsoonhero {
+    height: 28.5vw !important;
+  }
+}
+.comingsooncontainer .container {
+  max-width: 1140px !important;
+}
+.comingsooncontainer .container .nav-link:hover, .comingsooncontainer .container .nav-link:active, .comingsooncontainer .container .nav-link:focus {
+  background: rgb(222, 222, 222) !important;
+}
+
+.comingsooncontainer p {
+  font-size: 17px;
+}
+
+.comingsoonh3 {
+  font-size: 40px;
+  width: 100vw;
+  height: 46px;
+  font-family: ElectronicArtsDisplay;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 769px) {
+  .comingsoonh3 {
+    font-size: 32px;
+  }
+}
+
+.comingsooncardscontainer {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1456px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .comingsooncard {
+    width: 41.4vw !important;
+    height: 47.6vw;
+    margin-right: 28px;
+  }
+  .comingsooncard a {
+    font-size: 18px;
+  }
+  .comingsooncard h5 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "ElectronicArtsText", Verdana;
+    letter-spacing: -0.6px;
+    margin: 15.6px 0px;
+  }
+  .comingsooncard .d-flex {
+    height: 35.5px;
+    padding: 4px 0px;
+    max-width: 85%;
+  }
+  .comingsooncard p {
+    font-size: 18px;
+    font-family: "ElectronicArtsText", Verdana;
+  }
+  .comingsooncard .l3 {
+    width: 143.64px !important;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .comingsooncard {
+    height: 45vw;
+  }
+}
+@media only screen and (min-width: 1456px) {
+  .comingsooncard {
+    width: 544px !important;
+    height: 644.98px !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+  .comingsooncard {
+    margin-bottom: 5vw;
+  }
+  .comingsooncard .longitem {
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 1181px) and (max-width: 1299px) {
+  .comingsooncard .longitemhearts {
+    max-width: 94%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .comingsooncard {
+    position: relative;
+    width: 40.8vw !important;
+    margin-right: 24px;
+  }
+  .comingsooncard .longitem {
+    height: 60px !important;
+  }
+  .comingsooncard .d-flex {
+    height: 50px;
+    width: 290px;
+    padding: 4px 0px;
+  }
+  .comingsooncard h5 {
+    margin: 13px 0px !important;
+    font-family: "ElectronicArtsText";
+  }
+  .comingsooncard p {
+    font-family: "ElectronicArtsText";
+    font-size: 16px;
+    text-decoration-style: solid;
+  }
+  .comingsooncard p.l3 {
+    width: 143.64px !important;
+  }
+  .comingsooncard .mt-4 {
+    position: absolute;
+    bottom: 0.5vw;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 767px) {
+  .comingsooncard {
+    width: 85vw !important;
+    height: 93vw;
+    margin-bottom: 5vw;
+  }
+  .comingsooncard p {
+    font-size: 16px;
+    font-family: "ElectronicArtsText";
+  }
+  .comingsooncard .mt-4 {
+    margin-top: 10px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .comingsooncard {
+    margin-bottom: 40px;
+    width: 85vw !important;
+  }
+  .comingsooncard p {
+    font-size: 16px;
+    font-family: "ElectronicArtsText";
+    width: 100% !important;
+  }
+}
+
+.comingsooncardsm .d-flex {
+  max-width: 80%;
+}
+.comingsooncardsm .d-flex .w-75 {
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .comingsooncardsm {
+    height: 41.2vw;
+    max-height: 560.98px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .comingsooncardsm {
+    height: 44vw !important;
+    margin-bottom: 5vw;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 767px) {
+  .comingsooncardsm {
+    height: 75vw !important;
+    margin-bottom: 30px !important;
+  }
+  .comingsooncardsm .w-75 {
+    text-align: left !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .comingsooncardsm {
+    margin-bottom: 40px !important;
+  }
+  .comingsooncardsm .w-75 {
+    text-align: left !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+  .comingsooncardm {
+    height: 53vw;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1023px) {
+  .comingsooncardm {
+    height: 55vw !important;
+    margin-bottom: 5vw;
+  }
+  .comingsooncardm .longitem {
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .comingsooncardm {
+    height: 60vw !important;
+    margin-bottom: 5vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .comingsooncardm .btn-container {
+    margin-top: -20px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
