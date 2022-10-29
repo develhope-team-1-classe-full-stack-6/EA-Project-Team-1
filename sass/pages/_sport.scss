@@ -1,22 +1,46 @@
 .last-game {
-    // video{
-    //     @media (min-width:1922px) {
-    //         transform: scale(1.5);
-    //     }
-    //     @media (min-width:2401px) {
-    //         transform: scale(2);
-    //     }
-    //     @media (min-width:2881px) {
-    //         transform: scale(2.5);
-    //     }
-    // }
+  video{
+      @media (min-width:1922px) {
+          transform: scale(1.5);
+      }
+      @media (min-width:2401px) {
+          transform: scale(2);
+      }
+      @media (min-width:2881px) {
+          transform: scale(2.5);
+      }
+  }
   .bg-black {
-      background: linear-gradient(180deg, var(--transparent), var(--black), var(--black),var(--black), var(--black),var(--black), var(--black), var(--black)) !important;
-      @media (min-width:768px) {
-        background: linear-gradient(180deg, var(--transparent), var(--black), var(--black), var(--black), var(--black), var(--black)) !important;
+    background: linear-gradient(
+      180deg,
+      var(--transparent),
+      var(--black),
+      var(--black),
+      var(--black),
+      var(--black),
+      var(--black),
+      var(--black),
+      var(--black)
+    ) !important;
+    @media (min-width: 768px) {
+      background: linear-gradient(
+        180deg,
+        var(--transparent),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black)
+      ) !important;
     }
-    @media (min-width:1200px) {
-    background: linear-gradient(180deg, var(--transparent), var(--black), var(--black), var(--black)) !important;
+    @media (min-width: 1200px) {
+      background: linear-gradient(
+        180deg,
+        var(--transparent),
+        var(--black),
+        var(--black),
+        var(--black)
+      ) !important;
     }
     .container-fluid {
       .sport-section {
@@ -53,12 +77,12 @@
     }
   }
 }
-.banner{
-    .img-banner:hover{
-        transition: all 0.2s;
-    }
-    .img-banner:hover{
-        transform: scale(1.1);
-        transition: all 0.2s;
-    }
+.banner {
+  .img-banner:hover {
+    transition: all 0.2s;
+  }
+  .img-banner:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+  }
 }

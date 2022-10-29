@@ -3410,6 +3410,21 @@ body[style^=overflow] {
   margin: 3rem;
 }
 
+@media (min-width: 1922px) {
+  .last-game video {
+    transform: scale(1.5);
+  }
+}
+@media (min-width: 2401px) {
+  .last-game video {
+    transform: scale(2);
+  }
+}
+@media (min-width: 2881px) {
+  .last-game video {
+    transform: scale(2.5);
+  }
+}
 .last-game .bg-black {
   background: linear-gradient(180deg, var(--transparent), var(--black), var(--black), var(--black), var(--black), var(--black), var(--black), var(--black)) !important;
 }
