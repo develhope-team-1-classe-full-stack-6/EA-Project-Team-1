@@ -13,6 +13,8 @@
 @use "./components/nav";
 @use "./components/pagination";
 @use "./components/ea-play-card";
+@use "./components/card-libreria-giochi";
+@use "./components/card-piattaforme";
 
 
 // @use "./layout/navbar";
@@ -27,5 +29,10 @@
 
 
 @use "./pages/home";
+<<<<<<< HEAD
 @use "./pages/prestodisponibili";
 @use "./pages/commitments";
+=======
+@use "./pages/sport";
+@use "./pages/prestodisponibili";
+>>>>>>> af3cc23219006a7c1a0e5c9f8f415c532bf43a58

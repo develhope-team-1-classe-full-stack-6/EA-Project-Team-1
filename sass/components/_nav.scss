@@ -1,5 +1,6 @@
 @import "../abstracts/colors";
-
+.ultime-novità{
+  
 .buttons {
   visibility: hidden;
   display: flex;
@@ -116,7 +117,6 @@
   margin: 0px;
   border-top: 2px solid var(--gray-focus);
   flex-shrink: 0;
-  margin-bottom: 3rem;
 }
 
 @keyframes myanimation {
@@ -149,5 +149,6 @@
 @media (min-width:768px){
   .container {
     max-width: 960px;
+}
 }
 }
