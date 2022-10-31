@@ -4352,6 +4352,9 @@ body[style^=overflow] {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .impegni-header {
+    height: 210px;
+  }
   .paragraph-commitments .pp {
     width: 86%;
   }
