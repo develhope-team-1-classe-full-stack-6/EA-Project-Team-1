@@ -1,6 +1,10 @@
 @import "../abstracts/colors";
 
 .navbar2 {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 35px;
     .navbar {
         --bs-navbar-padding-x: 0;
         --bs-navbar-padding-y: 0.5rem;
