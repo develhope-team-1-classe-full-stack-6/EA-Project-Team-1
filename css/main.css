@@ -2125,6 +2125,12 @@ h6 {
   background-color: var(--transparent);
 }
 
+.navbar2 {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 35px;
+}
 .navbar2 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
@@ -3324,7 +3330,7 @@ body[style^=overflow] {
 
 .wrapper {
   position: relative;
-  top: 35px;
+  top: 70px;
 }
 
 #giochi-in-evidenza {
