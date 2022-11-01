@@ -1,4 +1,4 @@
-.impegni-header{
+.commitments-header{
     background-image: url("https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-esg-commitments-header-section-bg-xl.jpg.adapt.320w.jpg");
     background-position:center;
     background-repeat: no-repeat;
@@ -29,19 +29,23 @@
 
 .our-progress-container{
     .our-progress{
+        padding-left: 25rem;
         width: 50%;
         
         .our-progress-text{
-            h6{
-                width: 90%;
+            p{
+                width: 85%;
             }
         }
 
+
     }
     .our-progress-img{
+        display: flex;
+        justify-content: center;
         width: 50%;
         img{
-            width: 90%;
+            width: 80%;
         }
     }
 }
@@ -49,12 +53,19 @@
 
 .impact-buttons{
     gap: 1rem;
+    width: 100%;
 }
 
 
+@media only screen and (max-width: 1250px){
+    .our-progress{
+        padding-right: 10rem;
+       padding-left: 0;
+    }
+}
 
 @media only screen and (min-width: 769px) and (max-width: 1023px){
-    .impegni-header{
+    .commitments-header{
         height: 210px;
     }
     
@@ -67,11 +78,29 @@
     .gradient{
         height: 144px;
     }
+
+    .our-progress-container{
+        .our-progress{
+            padding-left: 0;
+        }
+    }
+
+    
 }
+
+@media screen and (min-width: 769px) and (max-width: 1090px){
+    .our-progress-container{
+     .our-progress{
+         padding-right: 0;
+         padding-left: 0;
+     }
+    }
+    
+ }
 
 
 @media only screen and (max-width: 768px) {
-    .impegni-header{
+    .commitments-header{
         height: 240px;
     }
 
@@ -92,9 +121,10 @@
         gap: 30px;
         .our-progress{
             width: 100%;
+            padding: 0;
             
             .our-progress-text{
-                h6{
+                p{
                     width: 100%;
                 }
             }
@@ -113,7 +143,7 @@
 }
 
 @media only screen and (max-width: 639px){
-    .impegni-header{
+    .commitments-header{
         height: 190px;
     }
 
@@ -125,11 +155,27 @@
     }
 
     .gradient{
-        height: 190px;
+        height: 200px;
         .commitments-buttons-container{
             flex-direction: column;
+            width: 100%;
         }
     }
+
+    .our-progress-container{
+        .our-progress{
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .our-progress-text-buttons{
+            width: 100%;
+        }
+       }
+
+       
+    
+    
 
     .impact{
         

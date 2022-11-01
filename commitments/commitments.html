@@ -3,12 +3,226 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/2975f57649.js" crossorigin="anonymous"></script>
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <section class="impegni-header d-flex align-items-center justify-content-center">
+
+      <!--Nav 1 e 2-->
+  <header>
+    <section class="navbar1">
+      <div class="navbar-head d-flex justify-content-end align-items-center">
+          <i class="fa-regular fa-user" data-bs-toggle="offcanvas" href="#offcanvasDark1" role="button"
+              aria-controls="offcanvasDark1"></i>
+          <i class="fa-solid fa-question" data-bs-toggle="offcanvas" href="#offcanvasDark2" role="button"
+          aria-controls="offcanvasDark2"></i>
+          <a class="navbar1-link" href="#">
+              <!--EA-->
+              <div class="navbar1-svg-container">
+                  <svg viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" focusable="false"
+                      style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                      <g>
+                          <path
+                              d="M19.766,8.372L6.927,8.392l-2.093,3.337l12.818-0.004L19.766,8.372 M14.221,20.518c-0.151,0-7.604,0.016-8.114,0.016 c0.249-0.393,1.665-2.611,1.738-2.733c0.163,0,5.014,0,5.271,0l2.122-3.354L3.117,14.467l-2.114,3.342l2.827-0.005L0,23.874h16.151 c0.286-0.453,5.654-9.017,5.904-9.412c0.219,0.334,1.664,2.623,1.9,3.002c-0.363,0-1.682,0-1.682,0l-2.101,3.337 c0,0,0.009,0,0.029,0c0.428,0,5.719,0,5.875,0c0.085,0.135,1.827,2.876,1.921,3.023H32L22.038,8.127 C21.646,8.738,14.311,20.374,14.221,20.518">
+                          </path>
+                      </g>
+                  </svg>
+              </div>
+          </a>
+      </div>
+  
+      <div class="offcanvas offcanvas-top bg-transparent" tabindex="-1" id="offcanvasDark1"
+          aria-labelledby="offcanvasDark1Label">
+          <div class="offcanvas-header justify-content-end">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-sm-row justify-content-center align-items-sm-center pb-5 ps-5 ms-5 gap-3 gap-sm-5">
+            <a href="#">
+              <div class="d-flex flex-row flex-lg-column align-items-center gap-3 gap-lg-1 hover-translation">
+                <img class="img-nav1" src="../assets/images/eaglobalnav-iconsignin.svg" alt="Accedi" />
+                <p class="text-white">Accedi</p>
+              </div>
+            </a>
+            <a href="#">
+            <div class="d-flex flex-row flex-lg-column align-items-center gap-3 gap-lg-1 hover-translation">
+              <img
+                class="img-nav1" src="../assets/images/eaglobalnav-iconregister.svg" alt="Crea Account" />
+                <p class="text-white" >Crea Account</p>
+            </div>
+          </a>
+          </div>
+      </div>
+      <div class="offcanvas offcanvas-top bg-transparent" tabindex="-1" id="offcanvasDark2"
+          aria-labelledby="offcanvasDark2Label">
+          <div class="offcanvas-header justify-content-end">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-sm-row justify-content-center align-items-center pb-0 pb-sm-5 ps-5 mx-1 ms-sm-5 overflow-hidden">
+              <div class="d-flex flex-column justify-content-center gap-2" style="max-width: 600px">
+                  <p class="text-white text-center fs-6 mb-0 nav-link"><strong>Ti serve aiuto?</strong> </p>
+                  <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+                      <a class="flex-grow-1" href="#">
+                        <div class="d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center gap-2 hover-translation">
+                          <img class="img-nav1" src="../assets/images/eaglobalnav-iconorigin.svg" alt="Accedi" />
+                          <span class="text-white">Verifica dati di accesso a Origin
+                              </span>
+                        </div>
+                      </a>
+                      <a class="flex-grow-1" href="#">
+                      <div class="d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center gap-2 hover-translation">
+                        <img
+                          class="img-nav1" src="../assets/images/eaglobalnav-iconlink.svg" alt="Crea Account" />
+                          <span class="text-white" >Collega Origin al mio ID PSN</span>
+                      </div>
+                    </a>
+                  </div>
+               <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+                    <a class="flex-grow-1" href="#">
+                      <div class="d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center gap-2 hover-translation">
+                        <img class="img-nav1" src="../assets/images/eaglobalnav-iconorigincode.svg" alt="Accedi" />
+                        <span class="text-white">Come riscattare un codice
+                          </span>
+                      </div>
+                    </a>
+                    <a class="flex-grow-1" href="#">
+                    <div class="d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-center gap-2 hover-translation">
+                      <img
+                        class="img-nav1" src="../assets/images/eaglobalnav-iconalert.svg" alt="Crea Account" />
+                        <span class="text-white" >
+                          Non riesco a giocare online</span>
+                    </div>
+                  </a>
+               </div>
+               <p class="text-white">Non hai trovato ciò che cerchi? Vai su <a class="text-red">Aiuto EA</a>, <a class="text-red">Answers HQ</a> oder die <a class="text-red">Forum EA</a>.</p>
+              </div>
+            </div>
+      </div>
+  </section>
+    <section class="navbar2">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid gap-4">
+
+          <div class="nav-bar2-buttons d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-ellipsis-vertical nav-bar2-dots-menu" data-bs-toggle="offcanvas" href="#offcanvasSidebar" role="button"
+            aria-controls="offcanvasSidebar"></i>
+            <i class="fa-solid fa-bars nav-bar2-hamburger-menu"  data-bs-toggle="offcanvas" href="#offcanvas-navbar2" role="button"
+            aria-controls="offcanvas-navbar2"></i>
+          </div>
+
+          <a class="navbar-brand pb-2" href="#">
+            <img src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-wordmark-network-nav-coral.svg"
+              alt=""></a>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-4" style="--bs-scroll-height: 100px;">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle show" href="#" role="button" aria-current="page" href="#">Giochi<i
+                    class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu show d-flex">
+                  <ul class="box-dropdown left-radius">
+                    <li>
+                      <a class="dropdown-title">ESPLORA I GIOCHI</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Ultimi giochi</a></li>
+                    <li><a class="dropdown-item" href="#">Prossimamente</a></li>
+                    <li><a class="dropdown-item" href="#">Giochi gratuiti</a></li>
+                    <li><a class="dropdown-item" href="#">EA SPORTS</a></li>
+                    <li><a class="dropdown-item" href="#">EA Originals</a></li>
+                    <li><a class="dropdown-item" href="./Games/libreria-dei-giochi.html">Libreria dei giochi</a></li>
+                  </ul>
+                  <ul class="box-dropdown right-radius">
+                    <li>
+                      <a class="dropdown-title">PIATTAFORME</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">PlayStation®5</a></li>
+                    <li><a class="dropdown-item" href="#">Xbox Series X</a></li>
+                    <li><a class="dropdown-item" href="#">Nintendo Switch™</a></li>
+                    <li><a class="dropdown-item" href="#">Cellulari</a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle show" href="#" role="button" href="#">Altre esperienze<i
+                    class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu show d-flex">
+                  <ul class="box-dropdown all-radius">
+                    <li><a class="dropdown-item" href="#">EA Play</a></li>
+                    <li><a class="dropdown-item" href="#">l'EA app</a></li>
+                    <li><a class="dropdown-item" href="#">Competizioni videoludiche
+                      </a></li>
+                    <li><a class="dropdown-item" href="#">Diretta di EA Play
+                      </a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle show" href="#" role="button" href="#">Informazioni<i
+                    class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu show d-flex">
+                  <ul class="box-dropdown all-radius">
+                    <li><a class="dropdown-item" href="#">Società</a></li>
+                    <li><a class="dropdown-item" href="#">EA Studi</a></li>
+                    <li><a class="dropdown-item" href="#">Lavora con noi</a></li>
+                    <li><a class="dropdown-item" href="#">La nostra tecnologia</a></li>
+                    <li><a class="dropdown-item" href="#">EA Partners</a></li>
+                    <li><a class="dropdown-item" href="#">Notizie</a></li>
+                    <li><a class="dropdown-item" href="#">Inside EA</a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle show" href="#" role="button" href="#">Impegni<i
+                    class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu show d-flex">
+                  <ul class="box-dropdown all-radius">
+                    <li><a class="dropdown-item" href="#">I nostri impegni</a></li>
+                    <li><a class="dropdown-item" href="#">Gioco positivo</a></li>
+                    <li><a class="dropdown-item" href="#">Diversità e inclusione</a></li>
+                    <li><a class="dropdown-item" href="#">Impatto sociale</a></li>
+                    <li><a class="dropdown-item" href="#">Persone e cultura</a></li>
+                    <li><a class="dropdown-item" href="#">Ambiente</a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle show" href="#" role="button" href="#">Risorse<i
+                    class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu show d-flex">
+                  <ul class="box-dropdown all-radius">
+                    <li><a class="dropdown-item" href="#">Aiuto</a></li>
+                    <li><a class="dropdown-item" href="#">Forum</a></li>
+                    <li><a class="dropdown-item" href="#">Filtro famiglia</a></li>
+                    <li><a class="dropdown-item" href="#">Accessibilità</a></li>
+                    <li><a class="dropdown-item" href="#">Stampa</a></li>
+                    <li><a class="dropdown-item" href="#">Investitori</a></li>
+                    <li><a class="dropdown-item" href="#">Test di gioco</a></li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+  </header>
+
+
+
+  <div class="wrapper">
+
+    <section class="commitments-header d-flex align-items-center justify-content-center">
         <h1 class="text-white">I nostri impegni</h1>
     </section>
     
@@ -107,15 +321,15 @@
 
 
   
-    <section class="our-progress-container d-flex" style="margin-top: 5rem; margin-bottom:6rem;">
+    <section class="our-progress-container position-relative d-flex" style="margin-top: 1rem; margin-bottom:6rem;">
         <div class="our-progress d-flex flex-column justify-content-center align-items-center">
-            <div class="our-progress-text">
+            <div class="our-progress-text d-flex flex-column align-items-center ">
                 <h1 class="text-center">I nostri progressi</h1>
-                <h6 class="text-center">Scopri di più sui nostri progressi consultando il nostro rapporto
+                <p class="text-center">Scopri di più sui nostri progressi consultando il nostro rapporto
                     sull'impatto annuale
-                </h6>
+                </p>
             </div>
-                <div class="our-progress-text-buttons d-flex">
+                <div class="our-progress-text-buttons d-flex" style="gap: 1rem;">
                     
                     <div class="btn-container d-sm-block">
                         <a class="btn btn-dark" href="#">
@@ -637,6 +851,7 @@
             </div>
         </div>
       </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
