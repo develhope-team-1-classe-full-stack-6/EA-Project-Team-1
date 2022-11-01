@@ -47,6 +47,47 @@
 
             }
         }
+        &.pplayimpegni {
+            .impegnicontainer {
+                height: 24.5vw;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 40px;
+                .cardimpegni {
+                    width: 33.3%;
+                    height: 50%;
+                    padding: 0px 8px;
+                    margin-bottom: 16px;
+                    .impegnilink {
+                        height: 100%;
+                        background-image: url('https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-our-commnitments-cta-orange.jpg.adapt.crop16x9.652w.jpg');
+                        background-size: cover;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        h3 {
+                            color: #f3f3f3;
+                            font-size: 24px;
+                            text-align: center;
+                            font-weight: 700;
+                            margin-bottom: 0px;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+        &.pplayinside {
+            .cards-container {
+                display: flex;
+                flex-direction: column;
+                .btn-container {
+                    align-self: center;
+                    display: inline !important;
+                }
+            }
+        }
     
     .header.d5 {
         font-size: 32px;
@@ -89,5 +130,112 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .pplay-main {
+        section {
+            margin: 40px 0px;
+            &.pplayaccessibility {
+                h3 {
+                margin-top: 40px;
+                }
+                p {
+                    margin-bottom: 30px !important;
+                }
+            }
+            &.pplayinside {
+                h3 {
+                    margin-bottom: 0px !important;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            margin: 16px 0px !important;
+            &.pplayintro {
+                margin-top: 100px !important;
+            }  
+        }
+        h3 {
+            font-size: 22px !important;
+        }
+    .positiveplayhero {
+        height: 26vw;
+    }
+    .impegnicontainer {
+        height: auto !important;
+        .cardimpegni {
+            width: 50% !important;
+            height: 18.5vw !important;
+            margin: 0px 0px 24px !important;
+            padding: 0px 12px !important;
+            h3 {
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+}
 
+@media only screen and (max-width: 767px) {
+    .positiveplayhero {
+        height: auto;
+        img {
+            min-height: 250px;
+        }
+        h3 {
+            font-size: 36px;
+            width: 100vw;
+        }
+    }
+    .pplay-main {
+        section {
+            margin: 40px 0px;
+            &.pplayaccessibility {
+                h3 {
+                margin-top: 40px;
+                }
+                p {
+                    margin-bottom: 30px !important;
+                }
+            }
+            &.pplayinside {
+                h3 {
+                    margin-bottom: 0px !important;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            margin: 16px 0px !important;
+            &.pplayintro {
+                margin-top: 40px !important;
+            }  
+        }
+        h3 {
+            font-size: 22px !important;
+        }
+    .impegnicontainer {
+        height: auto !important;
+        .cardimpegni {
+            width: 100% !important;
+            height: 35vw !important;
+            margin: 0px 0px 20px !important;
+            padding: 0px !important;
+            h3 {
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+.pplaycardcontainer {
+    flex-direction: column;
+    .pplaycard {
+        width: 85vw !important;
+    }
+}
+.pplayeacard {
+    width: 85vw !important;
+}
+.pplaybtn {
+    width: 85vw !important;
+}
 }
