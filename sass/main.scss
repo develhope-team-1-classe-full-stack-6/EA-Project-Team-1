@@ -25,8 +25,10 @@
 @use "./layout/offcanvas-sidebar";
 @use "./layout/banner.scss";
 @use "./layout/footer";
+@use "./layout/form-the-sims";
 
 
 @use "./pages/home";
 @use "./pages/sport";
 @use "./pages/prestodisponibili";
+@use "./pages/commitments";
