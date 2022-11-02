@@ -22,14 +22,12 @@
      
 }
 
-
 .commitments-buttons-container{
     gap: 1rem;
 }
 
 .our-progress-container{
     .our-progress{
-        padding-left: 25rem;
         width: 50%;
         
         .our-progress-text{
@@ -57,13 +55,6 @@
 }
 
 
-@media only screen and (max-width: 1250px){
-    .our-progress{
-        padding-right: 10rem;
-       padding-left: 0;
-    }
-}
-
 @media only screen and (min-width: 769px) and (max-width: 1023px){
     .commitments-header{
         height: 210px;
@@ -79,24 +70,7 @@
         height: 144px;
     }
 
-    .our-progress-container{
-        .our-progress{
-            padding-left: 0;
-        }
-    }
-
-    
 }
-
-@media screen and (min-width: 769px) and (max-width: 1090px){
-    .our-progress-container{
-     .our-progress{
-         padding-right: 0;
-         padding-left: 0;
-     }
-    }
-    
- }
 
 
 @media only screen and (max-width: 768px) {
@@ -162,20 +136,11 @@
         }
     }
 
-    .our-progress-container{
-        .our-progress{
-            padding-right: 0;
-            padding-left: 0;
-        }
-
         .our-progress-text-buttons{
             width: 100%;
         }
        }
 
-       
-    
-    
 
     .impact{
         
@@ -186,6 +151,4 @@
     }
 
     
-}
-
 }

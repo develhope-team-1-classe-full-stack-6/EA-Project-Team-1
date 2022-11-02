@@ -4341,7 +4341,6 @@ body[style^=overflow] {
 }
 
 .our-progress-container .our-progress {
-  padding-left: 25rem;
   width: 50%;
 }
 .our-progress-container .our-progress .our-progress-text p {
@@ -4361,12 +4360,6 @@ body[style^=overflow] {
   width: 100%;
 }
 
-@media only screen and (max-width: 1250px) {
-  .our-progress {
-    padding-right: 10rem;
-    padding-left: 0;
-  }
-}
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   .commitments-header {
     height: 210px;
@@ -4376,15 +4369,6 @@ body[style^=overflow] {
   }
   .gradient {
     height: 144px;
-  }
-  .our-progress-container .our-progress {
-    padding-left: 0;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1090px) {
-  .our-progress-container .our-progress {
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -4434,13 +4418,11 @@ body[style^=overflow] {
     flex-direction: column;
     width: 100%;
   }
-  .our-progress-container .our-progress {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .our-progress-container .our-progress-text-buttons {
+  .our-progress-text-buttons {
     width: 100%;
   }
+}
+@media only screen and (max-width: 768px) {
   .impact .impact-buttons {
     flex-direction: column;
     gap: 0.5rem;
