@@ -1085,7 +1085,7 @@ h6 {
 }
 @media (max-width: 576px) {
   .d-sm-block {
-    display: block-inline;
+    display: inline-block !important;
     width: 100%;
   }
 }
