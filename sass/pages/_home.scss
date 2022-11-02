@@ -5,7 +5,7 @@ body[style^='overflow']{
 
 .wrapper{
   position: relative;
-  top: 35px;
+  top: 70px;
 }
 
 #giochi-in-evidenza {
@@ -36,89 +36,6 @@ body[style^='overflow']{
 //#region
 @import "../abstracts/colors";
 .ultime-novità{
-  .nav::-webkit-scrollbar {
-    display: none;
-  }
-  .nav {
-    flex-wrap: nowrap;
-    border-bottom: 0px solid var(--gray);
-    flex-shrink: 0;
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-    .nav-link {
-      height: 3.5rem;
-      position: relative;
-      color: black;
-      border-radius: 0%;
-      padding-left: 0px;
-      padding-right: 0px;
-      border: 0px;
-      flex-shrink: 0;
-
-      .button-hr {
-        border: 0px;
-        width: 85%;
-        height: 2px;
-        opacity: 1;
-        background-color: var(--orange);
-        position: absolute;
-        bottom: -27%;
-        left: 7%;
-        visibility: hidden;
-        flex-shrink: 0;
-      }
-
-      p {
-        width: 100%;
-        padding-inline: 1rem;
-        margin-bottom: 0px;
-        border-left: 1px solid var(--gray-focus);
-        border-right: 1px solid var(--gray-focus);
-        flex-shrink: 0;
-      }
-
-      &:nth-of-type(1) p {
-        border-left: none;
-      }
-
-      &:last-of-type p {
-        border-right: none;
-      }
-
-      &:hover {
-        background-color: transparentize(($gray-focus), 0.5);
-      }
-    }
-    .nav-link.active {
-      color: black, 0.5;
-      background-color: transparentize(($gray-focus), 0.5);
-      border-radius: 0%;
-      .button-hr {
-        visibility: visible;
-        animation: myanimation 0.1s;
-      }
-    }
-  }
-
-  .nav-hr {
-    opacity: 1;
-    margin: 0px;
-    border-top: 2px solid var(--gray-focus);
-    flex-shrink: 0;
-    margin-bottom: 3rem;
-  }
-
-  @keyframes myanimation {
-    from {
-      width: 1%;
-      left: 50%;
-    }
-    to {
-      width: 85%;
-      left: 7%;
-    }
-  }
 
   .ultimenov {
     text-align: center;
@@ -235,5 +152,5 @@ body[style^='overflow']{
     align-items: center;
     margin: 3rem
   }
-//#endregion
 }
+//#endregion

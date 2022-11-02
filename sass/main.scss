@@ -11,6 +11,10 @@
 @use "./components/card";
 @use "./components/card-2";
 @use "./components/nav";
+@use "./components/pagination";
+@use "./components/ea-play-card";
+@use "./components/card-libreria-giochi";
+@use "./components/card-piattaforme";
 
 
 // @use "./layout/navbar";
@@ -21,6 +25,10 @@
 @use "./layout/offcanvas-sidebar";
 @use "./layout/banner.scss";
 @use "./layout/footer";
+@use "./layout/form-the-sims";
 
 
 @use "./pages/home";
+@use "./pages/sport";
+@use "./pages/prestodisponibili";
+@use "./pages/commitments";
