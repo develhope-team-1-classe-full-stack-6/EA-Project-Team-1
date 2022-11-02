@@ -17,7 +17,6 @@
 @use "./components/card-piattaforme";
 
 
-// @use "./layout/navbar";
 @use "./layout/navbar1";
 @use "./layout/navbar2";
 @use "./layout/offcanvas-navbar";
@@ -25,8 +24,10 @@
 @use "./layout/offcanvas-sidebar";
 @use "./layout/banner.scss";
 @use "./layout/footer";
+@use "./layout/form-the-sims";
 
 
 @use "./pages/home";
 @use "./pages/sport";
 @use "./pages/prestodisponibili";
+@use "./pages/commitments";
