@@ -3323,6 +3323,441 @@ h6 {
     background-color: lightblue;
   }
 }
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.form-text-container {
+  width: 500px;
+}
+.form-text-container p {
+  width: 530px;
+  margin-top: 2rem;
+}
+
+form {
+  width: 500px;
+}
+
+.form-input-container {
+  width: 500px;
+}
+
+.form-date-country-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.email-container {
+  width: 533px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  position: relative;
+}
+.email-container label {
+  position: absolute;
+  pointer-events: none;
+  top: 30%;
+  left: 30px;
+  color: #a3a3a3;
+  transition: 0.2s;
+  transform: translateX(-15%);
+}
+
+.form-email {
+  border-radius: 2.5px;
+  width: 528px;
+  height: 56px;
+  border: 2px solid black;
+  outline: none;
+  background: none;
+  text-indent: 20px;
+  position: absolute;
+  transition: 0.1s;
+}
+.form-email:hover, .form-email:focus {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+.form-email:focus ~ label {
+  top: 5px;
+  left: 26px;
+  font-size: 0.8rem;
+}
+
+.date-container {
+  width: 251px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  position: relative;
+}
+.date-container label {
+  position: absolute;
+  pointer-events: none;
+  top: 30%;
+  left: 40px;
+  color: #a3a3a3;
+  transition: 0.2s;
+  transform: translateX(-15%);
+}
+
+.form-date {
+  width: 246px;
+  height: 58px;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 2.5px;
+  position: absolute;
+  transition: 0.1s;
+  background: none;
+  text-indent: 20px;
+}
+.form-date:hover, .form-date:focus {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+.form-date:focus ~ label {
+  top: 5px;
+  left: 36px;
+  font-size: 0.8rem;
+}
+
+.country-container {
+  width: 251px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  position: relative;
+}
+.country-container label {
+  position: absolute;
+  pointer-events: none;
+  top: 10%;
+  left: 75px;
+  color: #a3a3a3;
+  transition: 0.2s;
+  transform: translateX(-15%);
+  font-size: 0.8rem;
+}
+
+.btn-country {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  width: 246px;
+  height: 58px;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 2.5px;
+  transition: 0.1s;
+  background: none;
+}
+.btn-country:hover, .btn-country:focus {
+  width: 100%;
+  height: 100%;
+}
+.btn-country p {
+  position: absolute;
+  top: 35%;
+  padding-right: 6.6rem;
+  width: auto;
+}
+.btn-country .fa-angle-down {
+  position: absolute;
+  width: 40px;
+  left: 70px;
+  z-index: -1;
+  top: 50%;
+  transition: 0.2s;
+}
+.btn-country:focus .fa-angle-down {
+  transform: rotateX(180deg);
+}
+
+.check-form {
+  display: flex;
+  position: relative;
+}
+.check-form .form-checkbox {
+  position: absolute;
+  top: 22%;
+  left: 0;
+  width: 20px;
+  height: 15px;
+}
+.check-form p {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.check-form .form-the-sims-a {
+  text-decoration: none;
+  color: #6553c3;
+}
+.check-form .form-the-sims-a:hover {
+  color: #6553c3;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  width: 251px;
+  position: absolute;
+  top: 9.5%;
+  left: 66%;
+}
+.select-box .options-container {
+  background: #f3f3f3;
+  color: #161616;
+  max-height: 0;
+  width: 100%;
+  display: none;
+  transition: all 0.2s;
+  border-radius: 2.5px;
+  border: 2px solid black;
+  z-index: 1;
+}
+.select-box .options-container.active {
+  display: block;
+  overflow-y: scroll;
+  max-height: 270px;
+}
+.select-box .option {
+  padding: 3px 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 25px;
+  height: 25px;
+}
+.select-box .option:first-child {
+  margin-top: 1rem;
+}
+.select-box .option:hover {
+  margin-left: 35px;
+}
+.select-box .option .radio {
+  display: none;
+}
+.select-box label {
+  cursor: pointer;
+}
+.select-box hr {
+  width: 170px;
+  border: 1px solid #a3a3a3;
+  margin-left: 1.8rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .country-container {
+    width: 251px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    position: relative;
+  }
+  .country-container label {
+    position: absolute;
+    pointer-events: none;
+    top: 10%;
+    left: 75px;
+    color: #a3a3a3;
+    transition: 0.2s;
+    transform: translateX(-15%);
+    font-size: 0.8rem;
+  }
+  .btn-country {
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    width: 246px;
+    height: 58px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 2.5px;
+    transition: 0.1s;
+    background: none;
+  }
+  .btn-country:hover, .btn-country:focus {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-country p {
+    position: absolute;
+    top: 35%;
+    padding-right: 6.6rem;
+    width: auto;
+  }
+  .btn-country .fa-angle-down {
+    position: absolute;
+    width: 40px;
+    left: 70px;
+    z-index: -1;
+    top: 50%;
+    transition: 0.2s;
+  }
+  .btn-country:focus .fa-angle-down {
+    transform: rotateX(180deg);
+  }
+}
+@media only screen and (min-width: 643px) and (max-width: 1023px) {
+  .form-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .form-text-container {
+    width: 890px;
+  }
+  .form-text-container p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .form-input-container {
+    width: 900px;
+    margin: auto;
+  }
+  .email-container {
+    width: 855px;
+    height: 55px;
+  }
+  .form-email {
+    width: 850px;
+    height: 45px;
+  }
+  .form-email:focus ~ label {
+    left: 27px;
+  }
+  .form-date-country-container {
+    width: 825px;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .date-container {
+    width: 405px;
+    height: 55px;
+  }
+  .form-date {
+    width: 400px;
+    height: 45px;
+  }
+  .form-date:focus ~ label {
+    left: 37px;
+  }
+  .country-container {
+    width: 405px;
+    height: 55px;
+  }
+  .btn-country {
+    width: 400px;
+    height: 45px;
+  }
+  .btn-country p {
+    padding-right: 16.5rem;
+  }
+  .btn-country .fa-angle-down {
+    left: 170px;
+  }
+  .select-box {
+    top: 22.5%;
+    left: 49.5%;
+    width: 425px;
+  }
+  .select-box hr {
+    width: 90%;
+  }
+  .check-form {
+    display: flex;
+    position: relative;
+  }
+  .check-form .form-checkbox {
+    top: 16%;
+  }
+  .check-form p {
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .form-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .form-text-container {
+    max-width: 100%;
+    width: 700px;
+    margin-left: 2rem;
+  }
+  .form-text-container p {
+    width: 83%;
+    margin-top: 1rem;
+  }
+  .form-input-container {
+    width: 670px;
+    margin: auto;
+  }
+  .email-container {
+    width: 655px;
+    height: 52px;
+  }
+  .form-email {
+    width: 650px;
+    height: 47px;
+  }
+  .form-date-country-container {
+    width: 600px;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .date-container {
+    width: 655px;
+    height: 52px;
+    margin-left: 3.6rem;
+  }
+  .form-date {
+    width: 650px;
+    height: 47px;
+  }
+  .country-container {
+    width: 755px;
+    height: 52px;
+    margin-right: 0.5rem;
+  }
+  .country-container label {
+    left: 165px;
+  }
+  .btn-country {
+    width: 650px;
+    height: 47px;
+  }
+  .btn-country p {
+    padding-right: 540px;
+  }
+  .btn-country .fa-angle-down {
+    right: 0;
+  }
+}
 /*Sezione giochi in evidenza*/
 body[style^=overflow] {
   padding-right: 0px !important;
@@ -4108,6 +4543,120 @@ body[style^=overflow] {
   }
   .impegnicontainer {
     max-height: 321.31px;
+  }
+}
+.commitments-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-esg-commitments-header-section-bg-xl.jpg.adapt.320w.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 266px;
+}
+
+.paragraph-commitments {
+  text-align: center;
+}
+.paragraph-commitments .pp {
+  width: 60%;
+}
+
+.gradient {
+  height: 220px;
+  width: 100%;
+  border: 1px solid #2d8a9a;
+  background: linear-gradient(#0599b3, #07809f);
+}
+
+.commitments-buttons-container {
+  gap: 1rem;
+}
+
+.our-progress-container .our-progress {
+  width: 50%;
+}
+.our-progress-container .our-progress .our-progress-text p {
+  width: 85%;
+}
+.our-progress-container .our-progress-img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.our-progress-container .our-progress-img img {
+  width: 80%;
+}
+
+.impact-buttons {
+  gap: 1rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .commitments-header {
+    height: 210px;
+  }
+  .paragraph-commitments .pp {
+    width: 86%;
+  }
+  .gradient {
+    height: 144px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .commitments-header {
+    height: 240px;
+  }
+  .paragraph-commitments .pp {
+    width: 90%;
+  }
+  .gradient {
+    height: 140px;
+    border: none;
+    background: linear-gradient(45deg, #04aec5, #05abc3);
+  }
+  .our-progress-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 30px;
+  }
+  .our-progress-container .our-progress {
+    width: 100%;
+    padding: 0;
+  }
+  .our-progress-container .our-progress .our-progress-text p {
+    width: 100%;
+  }
+  .our-progress-container .our-progress .our-progress-text-buttons {
+    flex-direction: column;
+  }
+  .our-progress-container .our-progress-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 639px) {
+  .commitments-header {
+    height: 190px;
+  }
+  .paragraph-commitments .pp {
+    width: 90%;
+  }
+  .gradient {
+    height: 200px;
+  }
+  .gradient .commitments-buttons-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .our-progress-text-buttons {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .impact .impact-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
