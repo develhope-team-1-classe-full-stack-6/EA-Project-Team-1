@@ -13,11 +13,12 @@
 }
 
 .pplayeacard {
-    max-width: 20vw !important;
+    max-width: 85vw;
 }
 
 .pplay-main {
     width: 85.15vw;
+    max-width: 1120px;
     margin: auto;
     p {
         line-height: 27px;
@@ -238,4 +239,15 @@
 .pplaybtn {
     width: 85vw !important;
 }
+}
+
+@media only screen and (min-width: 1456px) {
+    .positiveplayhero {
+        h3 {
+            font-size: 54px;
+        }
+    }
+    .impegnicontainer {
+        max-height: 321.31px;
+    }
 }
