@@ -1068,6 +1068,7 @@ h6 {
   padding: 5px 5px;
   border-radius: 2px;
   transition: 0.1s;
+  cursor: pointer;
 }
 .btn-container:hover {
   transform: scale(1.1, 1.1);
@@ -4068,10 +4069,17 @@ body[style^=overflow] {
 .last-game .container-box .container-fluid .sport-section .container .row .box:hover .sidebar-little-box :nth-child(1) {
   filter: brightness(1);
 }
+.last-game .container-box .container-fluid .sport-section .container #row2 .box .sidebar-little-box .sidebar-little-box-logo {
+  width: 200px;
+}
 
 .banner.bg-img {
-  background: url(../../assets/images/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
+  background: url(../assets/images/sports/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
   background-size: cover;
+}
+.banner.bg-gradient {
+  background: linear-gradient(80deg, var(--dark-blue), var(--orange)) !important;
+  background-size: 200% !important;
 }
 .banner .img-banner:hover {
   transition: all 0.2s;

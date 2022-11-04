@@ -88,6 +88,15 @@
               }
             }
           }
+          #row2{
+            .box {
+              .sidebar-little-box{
+                .sidebar-little-box-logo {
+                  width: 200px;
+                }
+              }
+            }
+          }
         }
 
         // .btn-container {
@@ -101,8 +110,12 @@
 
 .banner {
   &.bg-img{
-    background: url(../../assets/images/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
+    background: url(../assets/images/sports/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
     background-size: cover;
+  }
+  &.bg-gradient{
+    background: linear-gradient(80deg, var(--dark-blue), var(--orange)) !important;
+    background-size: 200% !important;
   }
 
   .img-banner:hover {
