@@ -100,6 +100,11 @@
 }
 
 .banner {
+  &.bg-img{
+    background: url(../../assets/images/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
+    background-size: cover;
+  }
+
   .img-banner:hover {
     transition: all 0.2s;
   }

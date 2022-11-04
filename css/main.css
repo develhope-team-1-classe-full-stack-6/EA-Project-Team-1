@@ -4074,6 +4074,10 @@ body[style^=overflow] {
   filter: brightness(1);
 }
 
+.banner.bg-img {
+  background: url(../../assets/images/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
+  background-size: cover;
+}
 .banner .img-banner:hover {
   transition: all 0.2s;
 }
