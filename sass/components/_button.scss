@@ -8,13 +8,14 @@
     border-radius: 2px;
     transition: 0.1s;
     &:hover {
-        padding: 0px;
-        transition: 0.1s;
-        .btn{
+        transform: scale(1.1,1.1);
+    //     padding: 0px;
+    //     transition: 0.1s;
+    //     .btn{
             
-    transition: 0.1s;
-            padding: 20px 25px;
-        }
+    // transition: 0.1s;
+    //         padding: 20px 25px;
+    //     }
     }
 }
 
