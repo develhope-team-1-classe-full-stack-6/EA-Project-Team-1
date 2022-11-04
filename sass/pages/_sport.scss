@@ -1,64 +1,84 @@
 .last-game {
-  video{
-      @media (min-width:1922px) {
-          transform: scale(1.5);
-      }
-      @media (min-width:2401px) {
-          transform: scale(2);
-      }
-      @media (min-width:2881px) {
-          transform: scale(2.5);
-      }
+  video {
+    @media (min-width:1922px) {
+      transform: scale(1.5);
+    }
+
+    @media (min-width:2401px) {
+      transform: scale(2);
+    }
+
+    @media (min-width:2881px) {
+      transform: scale(2.5);
+    }
   }
+
   .bg-black {
-    background: linear-gradient(
-      180deg,
-      var(--transparent),
-      var(--black),
-      var(--black),
-      var(--black),
-      var(--black),
-      var(--black),
-      var(--black),
-      var(--black)
-    ) !important;
+    background: linear-gradient(180deg,
+        var(--transparent),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black),
+        var(--black)) !important;
+
     @media (min-width: 768px) {
-      background: linear-gradient(
-        180deg,
-        var(--transparent),
-        var(--black),
-        var(--black),
-        var(--black),
-        var(--black),
-        var(--black)
-      ) !important;
+      background: linear-gradient(180deg,
+          var(--transparent),
+          var(--black),
+          var(--black),
+          var(--black),
+          var(--black),
+          var(--black)) !important;
     }
+
     @media (min-width: 1200px) {
-      background: linear-gradient(
-        180deg,
-        var(--transparent),
-        var(--black),
-        var(--black),
-        var(--black)
-      ) !important;
+      background: linear-gradient(180deg,
+          var(--transparent),
+          var(--black),
+          var(--black),
+          var(--black)) !important;
     }
+  }
+  .container-box{
     .container-fluid {
       .sport-section {
         .container {
           .row {
             justify-content: center;
+
             .box {
               aspect-ratio: 1/1;
+
               .sidebar-little-box {
                 width: 100%;
                 height: 100%;
+
                 :nth-child(1) {
                   filter: brightness(0.8);
                 }
+
                 .sidebar-little-box-logo {
                   width: 150px;
                 }
               }
+
               &:hover {
                 .sidebar-little-box {
                   :nth-child(1) {
@@ -69,6 +89,7 @@
             }
           }
         }
+
         // .btn-container {
         //   width: 220px;
         //   height: 70px;
@@ -77,10 +98,17 @@
     }
   }
 }
+
 .banner {
+  &.bg-img{
+    background: url(../../assets/images/ea-sports-pc-join-us-xl.png.adapt.1920w.png);
+    background-size: cover;
+  }
+
   .img-banner:hover {
     transition: all 0.2s;
   }
+
   .img-banner:hover {
     transform: scale(1.1);
     transition: all 0.2s;
