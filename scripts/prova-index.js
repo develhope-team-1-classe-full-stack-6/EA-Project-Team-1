@@ -84,8 +84,8 @@ const boxContent = [
   }
 ];
 
-function colGenerator(item, cont, n) {
-  for (let i = 0; i < n; i++) {
+function colGenerator(item, cont) {
+  for (let i = 0; i < cont.length; i++) {
     row.innerHTML += `<div class="box col-12 col-md-6 col-xl-4">
   ${item(cont[i].href, cont[i].src1, cont[i].src2)}
   </div>`;
@@ -113,4 +113,4 @@ function box(href, src1, src2) {
   return box;
 }
 
-colGenerator(box, boxContent, 6);
+colGenerator(box, boxContent);
