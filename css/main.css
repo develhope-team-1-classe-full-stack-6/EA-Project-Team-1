@@ -1020,8 +1020,9 @@ h6 {
 
 /* Box Styling blue background*/
 .box-container-blue {
-  width: 355px;
-  height: 355px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
   background: var(--dark-blue);
 }
 .box-container-blue:hover .box-background {
@@ -1043,8 +1044,8 @@ h6 {
   color: var(--white);
 }
 .box-container-blue .box-background {
-  width: 355px;
-  height: 355px;
+  width: 100%;
+  height: 100%;
   opacity: 1;
   transition: all 300ms ease-in-out;
   filter: brightness(0.7);
