@@ -338,7 +338,7 @@ const boxContent = [
 ];
 
 
-const row = document.getElementById("row1");
+const row = document.getElementById("ultimi-giochi-row");
 
 function colGenerator(item, cont) {
   for (let i = 0; i < cont.length; i++) {
