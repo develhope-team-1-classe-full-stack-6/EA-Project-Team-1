@@ -34,8 +34,9 @@
 
 /* Box Styling blue background*/
 .box-container-blue{
-  width: 355px;
-  height: 355px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
   background: var(--dark-blue);
   
   &:hover{
@@ -63,8 +64,8 @@
   }
 
   .box-background {
-    width: 355px;
-    height: 355px;
+    width: 100%;
+    height: 100%;
     opacity: 1;
     transition: all 300ms ease-in-out;
     filter: brightness(0.7);
