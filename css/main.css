@@ -4363,7 +4363,6 @@ body[style^=overflow] {
 
 .impact-buttons {
   gap: 1rem;
-  width: 100%;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
@@ -4410,7 +4409,7 @@ body[style^=overflow] {
     width: 100%;
   }
 }
-@media only screen and (max-width: 768px) and (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   .commitments-header {
     height: 190px;
   }
@@ -4428,11 +4427,9 @@ body[style^=overflow] {
     width: 100%;
   }
 }
-@media only screen and (max-width: 768px) {
-  .impact .impact-buttons {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+.impact .impact-buttons {
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
