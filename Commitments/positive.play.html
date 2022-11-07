@@ -786,14 +786,7 @@
         </section>
         <section class="pplayimpegni">
             <h3 class="header d5">I nostri impegni</h3>
-            <div class="impegnicontainer">
-                <div class="cardimpegni"><a href="#" class="impegnilink" style="text-decoration: none"><h3 class="h5">Squadre sane e all'insegna della diversità</h3></a></div>
-                <div class="cardimpegni"><a href="#" class="impegnilink" style="text-decoration: none"><h3 class="h5">Gioco positivo</h3></a></div>
-                <div class="cardimpegni"><a href="#" class="impegnilink" style="text-decoration: none"><h3 class="h5">Impatto sociale</h3></a></div>
-                <div class="cardimpegni"><a href="#" class="impegnilink" style="text-decoration: none"><h3 class="h5">Investire nella privacy e nella sicurezza</h3></a></div>
-                <div class="cardimpegni"><a href="#" class="impegnilink" style="text-decoration: none"><h3 class="h5">Proteggere l'ambiente</h3></a></div>
-                <div class="cardimpegni"><a href="#" class="impegnilink" style="text-decoration: none"><h3 class="h5">Rafforzare la gestione d'impresa</h3></a></div>
-            </div>
+            <div class="impegnicontainer"></div>
         </section>
     </main>
 
@@ -1267,4 +1260,66 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 </body>
+
+<!-- prova card generator -->
+<script>
+const row = document.querySelector('.impegnicontainer');
+const boxContent = [
+  {
+      id: 0,
+      href: "https://www.ea.com/it-it/commitments/people-and-culture",
+      h1: "Squadre sane e all'insegna della diversità"
+
+  },
+
+  {
+      id: 1,
+      href: "https://www.ea.com/it-it/commitments/positive-play",
+      h1: "Gioco positivo"
+
+  },
+
+  {
+      id: 2,
+      href: "https://www.ea.com/it-it/commitments/social-impact",
+      h1: "Impatto sociale"
+  },
+
+  {
+      id: 3,
+      href: "https://www.ea.com/it-it/commitments/privacy",
+      h1: "Investire nella privacy e nella sicurezza"
+  },
+
+  {
+      id: 4,
+      href: "https://www.ea.com/it-it/commitments/environment",
+      h1: "Investire nell'ambiente"
+  },
+
+  {
+      id: 5,
+      href: "https://ir.ea.com/corporate-governance/governance-documents/default.aspx",
+      h1: "Rafforzare la gestione d'impresa"
+  }
+];
+
+function colGenerator(item, cont) {
+
+  for (let i = 0; i < cont.length; i++) {
+    row.innerHTML += `
+  ${item(cont[i].href, cont[i].h1)}`;
+  }
+
+}
+
+function box(href, h1) {
+  const box = `
+  <div class="cardimpegni"><a href=${href} class="impegnilink" style="text-decoration: none"><h3 class="h5">${h1}</h3></a></div>
+  `;
+  return box;
+}
+
+colGenerator(box, boxContent);
+</script>
 </html>
