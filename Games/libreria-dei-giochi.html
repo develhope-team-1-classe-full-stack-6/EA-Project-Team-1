@@ -678,74 +678,76 @@
       <video src="../assets/videos/video-libreria-giochi-hero.mp4"autoplay="" loop="" muted="" class="w-100"></video>
     </section>
     <!-- Nav -->
-    <div id="container">
-        <div id="content">
-          <nav class="container">
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button
-                class="nav-link h6 active"
-                id="libreria-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#libreria"
-                type="button"
-                role="tab"
-                aria-controls="libreria"
-                aria-selected="true"
-              >
-                <p>Generi</p>
-                <hr class="button-hr" />
+    <div class="nav-wrapper">
+      <div id="container">
+          <div id="content">
+            <nav class="container">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link h6 active"
+                  id="libreria-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#libreria"
+                  type="button"
+                  role="tab"
+                  aria-controls="libreria"
+                  aria-selected="true"
+                >
+                  <p>Generi</p>
+                  <hr class="button-hr" />
+                </button>
+                <button
+                  class="nav-link h6"
+                  id="piattaforme-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#piattaforme"
+                  type="button"
+                  role="tab"
+                  aria-controls="piattaforme"
+                  aria-selected="false"
+                >
+                  <p>Piattaforme</p>
+                  <hr class="button-hr" />
+                </button>
+                <button
+                  class="nav-link h6"
+                  id="classificazione-età-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#classificazione-età"
+                  type="button"
+                  role="tab"
+                  aria-controls="classificazione-età"
+                  aria-selected="false"
+                >
+                  <p>Classificazione Età</p>
+                  <hr class="button-hr" />
+                </button>
+                <button
+                  class="nav-link h6"
+                  id="modalità-di-gioco-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#modalità-di-gioco"
+                  type="button"
+                  role="tab"
+                  aria-controls="modalità-di-gioco"
+                  aria-selected="false"
+                >
+                  <p>Modalità di gioco</p>
+                  <hr class="button-hr" />
               </button>
-              <button
-                class="nav-link h6"
-                id="piattaforme-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#piattaforme"
-                type="button"
-                role="tab"
-                aria-controls="piattaforme"
-                aria-selected="false"
-              >
-                <p>Piattaforme</p>
-                <hr class="button-hr" />
-              </button>
-              <button
-                class="nav-link h6"
-                id="classificazione-età-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#classificazione-età"
-                type="button"
-                role="tab"
-                aria-controls="classificazione-età"
-                aria-selected="false"
-              >
-                <p>Classificazione Età</p>
-                <hr class="button-hr" />
-              </button>
-              <button
-                class="nav-link h6"
-                id="modalità-di-gioco-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#modalità-di-gioco"
-                type="button"
-                role="tab"
-                aria-controls="modalità-di-gioco"
-                aria-selected="false"
-              >
-                <p>Modalità di gioco</p>
-                <hr class="button-hr" />
-            </button>
-            </div>
-          </nav>
-        </div>
-        <hr class="nav-hr" />
-  
-        <button id="slide-back" type="button">
-          <i class="fas fa-regular fa-chevron-left"></i>
-        </button>
-        <button id="slide" type="button">
-          <i class="fas fa-regular fa-chevron-right"></i>
-        </button>
+              </div>
+            </nav>
+          </div>
+          <hr class="nav-hr" />
+    
+          <button id="slide-back" type="button">
+            <i class="fas fa-regular fa-chevron-left"></i>
+          </button>
+          <button id="slide" type="button">
+            <i class="fas fa-regular fa-chevron-right"></i>
+          </button>
       </div>
+    </div>
   
       <div class="tab-content" id="nav-tabContent">
         <div
@@ -757,7 +759,7 @@
         >
         <div class="card-libreria-giochi">
             <div class="title-piattaforme d-flex justify-content-center align-items-center pt-3 pb-3" style="color: black;">
-                <div class="container-h3-piattaforme">
+                <div class="container-h3-piattaforme my-5">
                     <h3>Generi</h3>
                 </div>
             </div>
@@ -1043,7 +1045,7 @@
         >
         <div class="card-piattaforme" style="background-image: url(../assets/images/bacground-piattaforme-libreria-giochi.jpg); background-size: cover;">
             <div class="title-piattaforme d-flex justify-content-center align-items-center pt-3" style="color: white;">
-                <div class="container-h3-piattaforme">
+                <div class="container-h3-piattaforme my-5">
                     <h3>Piattaforme</h3>
                 </div>
             </div>
@@ -1290,7 +1292,7 @@
         >
         <div class="card-libreria-giochi">
             <div class="title-piattaforme d-flex justify-content-center align-items-center pt-3 pb-3" style="color: black;">
-                <div class="container-h3-piattaforme">
+                <div class="container-h3-piattaforme my-5">
                     <h3>Classificazione Età</h3>
                 </div>
             </div>
@@ -1381,7 +1383,7 @@
         >
         <div class="card-libreria-giochi">
             <div class="title-piattaforme d-flex justify-content-center align-items-center pt-3 pb-3" style="color: black;">
-                <div class="container-h3-piattaforme">
+                <div class="container-h3-piattaforme my-5">
                     <h3>Modalità di Gioco</h3>
                 </div>
             </div>
