@@ -1,0 +1,46 @@
+.form-wrapper {
+    div {
+        div {
+            @media screen and (min-width:992px) {
+                flex: 1 1 50%;
+            }
+        }
+
+        .form {
+            .form-floating {
+
+                height: 60px;
+
+                .form-control {
+                    border: none;
+                    box-shadow: none;
+
+                }
+
+            }
+
+            div:nth-child(2) {
+                div {
+                    @media screen and (min-width:768px) {
+                        flex: 1 1 50%;
+                    }
+
+                    .form-select {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
