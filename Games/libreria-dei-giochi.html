@@ -684,7 +684,7 @@
             <nav class="container">
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button
-                  class="nav-link h6 active"
+                  class="nav-link h6 active generi-tab"
                   id="libreria-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#libreria"
@@ -697,7 +697,7 @@
                   <hr class="button-hr" />
                 </button>
                 <button
-                  class="nav-link h6"
+                  class="nav-link h6 piattaforme-tab"
                   id="piattaforme-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#piattaforme"
@@ -710,7 +710,7 @@
                   <hr class="button-hr" />
                 </button>
                 <button
-                  class="nav-link h6"
+                  class="nav-link h6 classificazione-età-tab"
                   id="classificazione-età-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#classificazione-età"
@@ -723,7 +723,7 @@
                   <hr class="button-hr" />
                 </button>
                 <button
-                  class="nav-link h6"
+                  class="nav-link h6 modalità-di-gioco-tab"
                   id="modalità-di-gioco-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#modalità-di-gioco"
@@ -748,7 +748,7 @@
           </button>
       </div>
     </div>
-  
+    <!-- Tab Content -->
       <div class="tab-content" id="nav-tabContent">
         <div
           class="tab-pane fade show active"
@@ -764,275 +764,9 @@
                 </div>
             </div>
             <div
-              class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
+              id="tab-generi" class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
               style="max-width: 1456px; margin-bottom: 5rem;"
             >
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Azione</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                      Azione
-                    </h3>
-                  </div>
-                </a>
-            
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Avventura</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                      Avventura
-                    </h3>
-                  </div>
-                </a>
-        
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Famiglia</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                      Famiglia
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Fantasy</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                      Fantasy
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Horror</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                      Horror
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>MMORPG</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                      MMORPG
-                    </h3>
-                  </div>
-                </a>
-
-                 <!--card component -->
-                 <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Musica</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Musica
-                      </h3>
-                    </div>
-                  </a>
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Giochi Platform</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Giochi Platform
-                      </h3>
-                    </div>
-                  </a>
-
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Rompicapo</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Rompicapo
-                      </h3>
-                    </div>
-                  </a>
-
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Corse</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Corse
-                      </h3>
-                    </div>
-                  </a>
-
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Gioco di Ruolo (GDR)</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Gioco di Ruolo (GDR)
-                      </h3>
-                    </div>
-                  </a>
-
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Sparatutto</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Sparatutto
-                      </h3>
-                    </div>
-                  </a>
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Simulazione</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Simulazione
-                      </h3>
-                    </div>
-                  </a>
-
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Sport</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Sport
-                      </h3>
-                    </div>
-                  </a>
-                   <!--card component -->
-                <a href="*" class="card">
-                    <div class="h3-container">
-                        <h3>Strategia</h3>
-                        <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                    </div>
-                    <img
-                      src="../assets/images/background-card-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-start mb-2">
-                        Strategia
-                      </h3>
-                    </div>
-                  </a>
             </div>
           </div>
         </div>
@@ -1050,235 +784,9 @@
                 </div>
             </div>
             <div
-              class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
+              id="tab-piattaforme"class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
               style="max-width: 1456px; margin: 0 auto"
             >
-                <!--card component -->
-                <a href="*" class="card">
-                  <img
-                    src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-center mb-2">
-                      Download per Mac
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <img
-                    src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-center mb-2">
-                      Download per Mac
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <img
-                    src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-center mb-2">
-                      Download per Mac
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <img
-                    src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-center mb-2">
-                      Download per Mac
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <img
-                    src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-center mb-2">
-                      Download per Mac
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <img
-                    src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-center mb-2">
-                      Download per Mac
-                    </h3>
-                  </div>
-                </a>
-
-                <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-                  
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
-                  <a href="*" class="card">
-                    <img
-                      src="../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body p-4">
-                      <h3 class="h5 title text-center text-md-center mb-2">
-                        Download per Mac
-                      </h3>
-                    </div>
-                  </a>
-
             </div>
         </div>
 
@@ -1297,82 +805,11 @@
                 </div>
             </div>
             <div
-              class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
+              id="tab-classificazione-età"class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
               style="max-width: 1456px; margin-bottom: 5rem;"
             >
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>PEGI 3</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                        PEGI 3
-                    </h3>
-                  </div>
-                </a>
-            
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>PEGI 7</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                        PEGI 7
-                    </h3>
-                  </div>
-                </a>
-        
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>PEGI 12</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                        PEGI 12
-                    </h3>
-                  </div>
-                </a>
-
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>PEGI 16</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                        PEGI 16
-                    </h3>
-                  </div>
-                </a>
             </div>
-          </div>
+        </div>
         </div>
         <div
           class="tab-pane fade"
@@ -1388,91 +825,11 @@
                 </div>
             </div>
             <div
-              class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
+              id="tab-modalità-di-gioco" class="container cards-container d-flex justify-content-center gap-4 flex-wrap"
               style="max-width: 1456px; margin-bottom: 5rem;"
             >
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Gratis</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                        Gratis
-                    </h3>
-                  </div>
-                </a>
-            
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Multigiocatore</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                        Multigiocatore
-                    </h3>
-                  </div>
-                </a>
-        
-                <!--card component -->
-                <a href="*" class="card">
-                  <div class="h3-container">
-                      <h3>Giocatore Singolo</h3>
-                      <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
-                  </div>
-                  <img
-                    src="../assets/images/background-card-libreria-giochi.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body p-4">
-                    <h3 class="h5 title text-center text-md-start mb-2">
-                        Giocatore Singolo
-                    </h3>
-                  </div>
-                </a>
             </div>
           </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="nav-the-sims-4"
-          role="tabpanel"
-          aria-labelledby="nav-the-sims-4-tab"
-          tabindex="0"
-        >
-          ...
-        </div>
-        <div
-          class="tab-pane fade"
-          id="nav-battlefield"
-          role="tabpanel"
-          aria-labelledby="nav-battlefield-tab"
-          tabindex="0"
-        >
-          ...
-        </div>
-        <div
-          class="tab-pane fade"
-          id="nav-inside-ea"
-          role="tabpanel"
-          aria-labelledby="nav-inside-ea-tab"
-          tabindex="0"
-        >
-          ...
         </div>
       </div>
       <script
@@ -1950,7 +1307,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous">
   </script>
-  
+  <script src="../scripts/libreria-dei-giochi.js"></script>
 </body>
 
 </html>
