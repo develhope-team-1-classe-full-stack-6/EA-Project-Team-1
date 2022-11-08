@@ -17,6 +17,12 @@
 
                 }
 
+                input[type="text"].form-control:focus{
+                    &::placeholder{
+                        color: #919191;
+                    }
+                }
+
             }
 
             div:nth-child(2) {
@@ -26,21 +32,16 @@
                     }
 
                     .form-select {
-                        height: 100%;
+                        height: 60px;
+                        border-radius: 0px;
+                        border: 1px solid #000000;
+                        box-shadow: none;
+                        padding: 0px;
+
+                       
                     }
                 }
             }
         }
     }
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
 }

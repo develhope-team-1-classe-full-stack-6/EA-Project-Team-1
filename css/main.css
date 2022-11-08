@@ -3331,24 +3331,20 @@ h6 {
   border: none;
   box-shadow: none;
 }
+.form-wrapper div .form .form-floating input[type=text].form-control:focus::placeholder {
+  color: #919191;
+}
 @media screen and (min-width: 768px) {
   .form-wrapper div .form div:nth-child(2) div {
     flex: 1 1 50%;
   }
 }
 .form-wrapper div .form div:nth-child(2) div .form-select {
-  height: 100%;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+  height: 60px;
+  border-radius: 0px;
+  border: 1px solid #000000;
+  box-shadow: none;
+  padding: 0px;
 }
 
 /*Sezione giochi in evidenza*/
