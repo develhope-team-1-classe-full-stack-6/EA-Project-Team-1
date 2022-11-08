@@ -244,7 +244,7 @@ piattaformeTabBtn.addEventListener("click", () => {
     return cardPiattaforme;
 };
 colGeneratorCard(tabPiattaforme, cardPiattaforme, cardContentPiattaforme);
-});
+}, {once:true});
 
 classificazioneEtàTabBtn.addEventListener("click", () =>{
     const cardContentClassificazioneEtà = [
@@ -298,7 +298,7 @@ classificazioneEtàTabBtn.addEventListener("click", () =>{
     };
 
     colGeneratorCard(tabClassificazioneEtà, card, cardContentClassificazioneEtà);
-});
+}, {once:true});
 
 modalitàDiGiocoTabBtn.addEventListener("click", () =>{
     const cardContentModalitàDiGioco = [
@@ -346,4 +346,4 @@ modalitàDiGiocoTabBtn.addEventListener("click", () =>{
         return card;
     };
     colGeneratorCard(tabModalitàDiGioco, card, cardContentModalitàDiGioco);
-});
+}, {once:true});
