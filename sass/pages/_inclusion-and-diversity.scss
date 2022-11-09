@@ -51,16 +51,19 @@ section {
         .textcontent {
             padding: 24px;
             background-color: rgb(243, 243, 243);
-            height: 64%;
+            height: 80%;
             h3 {
                 font-size: 24px;
                 font-weight: 700;
                 margin: 0px;
             }
+            p {
+                font-size: 18px;
+            }
         }
     }
     .dgc5, .dgc6, .dgc7 {
-        margin-top: 30px;
+        margin-top: 90px;
         .textcontent {
             height: 77%;
         }
@@ -93,8 +96,22 @@ section {
     .diversitygreycardcontainer {
         flex-direction: column;
         gap: 30px;
+        width: 100%;
         .diversitygreycard {
             width: 100% !important;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1456px) {
+    .diversitygreycardcontainer {
+        width: 85vw !important;
+        max-width: 1600px !important;
+        .textcontent {
+            height: 50% !important;
         }
     }
 }

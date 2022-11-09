@@ -4728,15 +4728,18 @@ section .diversitylink {
 .diversitygreycardcontainer .diversitygreycard .textcontent {
   padding: 24px;
   background-color: rgb(243, 243, 243);
-  height: 64%;
+  height: 80%;
 }
 .diversitygreycardcontainer .diversitygreycard .textcontent h3 {
   font-size: 24px;
   font-weight: 700;
   margin: 0px;
 }
+.diversitygreycardcontainer .diversitygreycard .textcontent p {
+  font-size: 18px;
+}
 .diversitygreycardcontainer .dgc5, .diversitygreycardcontainer .dgc6, .diversitygreycardcontainer .dgc7 {
-  margin-top: 30px;
+  margin-top: 90px;
 }
 .diversitygreycardcontainer .dgc5 .textcontent, .diversitygreycardcontainer .dgc6 .textcontent, .diversitygreycardcontainer .dgc7 .textcontent {
   height: 77%;
@@ -4766,9 +4769,22 @@ section .diversitylink {
   .diversitygreycardcontainer {
     flex-direction: column;
     gap: 30px;
+    width: 100%;
   }
   .diversitygreycardcontainer .diversitygreycard {
     width: 100% !important;
+  }
+  .diversitygreycardcontainer .diversitygreycard p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1456px) {
+  .diversitygreycardcontainer {
+    width: 85vw !important;
+    max-width: 1600px !important;
+  }
+  .diversitygreycardcontainer .textcontent {
+    height: 50% !important;
   }
 }
 
