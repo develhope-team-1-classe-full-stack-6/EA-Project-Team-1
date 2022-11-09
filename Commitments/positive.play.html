@@ -11,7 +11,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
   <link rel="stylesheet" href="../css/main.css" />
-  <title>Presto Disponibili - Sito EA Ufficiale</title>
+  <title>Il nostro impegno per il gioco positivo - Sito Ufficiale Electronic Arts</title>
 </head>
 <body>
   <!--Nav 1-->
@@ -735,50 +735,34 @@
             </div>
         </section>
         <section class="pplayinside">
-            <h3 class="header d5">Dentro Electronic Arts</h3><div class="container cards-container" style="max-width: 1456px; margin: 0 auto;" >
-                <section class="card-1">
-                    <div class="container cards-container" style="max-width: 1456px; margin: 0 auto">
-                      <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <!--card component -->
-                        <a href="*" class="card pplayeacard">
-                          <img src="https://media.contentapi.ea.com/content/dam/eacom/inside-ea/common/inside-ea-2022-wordmark-over-heritage-shapes-featured-image.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
-                          <div class="card-body p-4">
-                            <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
-                              <span class="me-md-3" style="color:var(--orange);">Inside EA</span>
-                              <span>19-set-2022</span>
-                            </div>
-                            <h3 class="h5 title text-center text-md-start mb-2">Festeggiamo i 6 anni dei nostri Purpose and Belief Awards</h3>
-                            <p class="card-text text-dark">Questi valori sono alla base di tutto ciò che facciamo.</p>
-                          </div>
-                        </a>
-                        <a href="*" class="card pplayeacard">
-                            <img src="../assets/images/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" class="card-img-top" alt="...">
-                            <div class="card-body p-4">
-                              <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
-                                <span class="me-md-3" style="color:var(--orange);">Inside EA</span>
-                                <span>25-ago-2022</span>
-                              </div>
-                              <h3 class="h5 title text-center text-md-start mb-2">Un'estate di STEAM con EA</h3>
-                              <p class="card-text text-dark">Un post per mettere in luce e omaggiare il sostegno di EA ai programmi estivi che aiutano i giovani di diversa estrazione a sviluppare competenze in ambito STEAM (scienza, tecnologia, ingegneria, arti e matematica). </p>
-                            </div>
-                          </a>
-                          <a href="*" class="card pplayeacard">
-                            <img src="https://media.contentapi.ea.com/content/dam/eacom/inside-ea/images/2022/04/maxiswebsite-brand-logo.jpg.adapt.crop16x9.431p.jpg" class="card-img-top" alt="...">
-                            <div class="card-body p-4">
-                              <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
-                                <span class="me-md-3" style="color:var(--orange);">Inside EA</span>
-                                <span>01-apr-2022</span>
-                              </div>
-                              <h3 class="h5 title text-center text-md-start mb-2">Vieni a costruire il futuro di The Sims a Maxis</h3>
-                              <p class="card-text text-dark">
-                                La nostra ambizione: ispirare tutti a creare un mondo migliore attraverso il gioco creativo
-                            </p>
-                            </div>
-                          </a>
-                      </div>
+            <h3 class="header d5">Dentro Electronic Arts</h3>
+            <div class="tab-content mt-5" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-notizie-ea" role="tabpanel" aria-labelledby="nav-notizie-ea-tab"
+                  tabindex="0">
+                  <section class="card-1">
+                    <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;" >
+                    <div id="row-card" class="d-flex flex-wrap justify-content-center gap-4">
                     </div>
+                  </div>
+                  </section>  
+                </div>
+                <div class="tab-pane fade" id="nav-ea-play" role="tabpanel" aria-labelledby="nav-ea-play-tab" tabindex="0">
+                  <section class="card-1">
+                    <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+                      <div id="row-card-2" class="d-flex flex-wrap justify-content-center gap-4">
+                      </div>
+                  </div>
                   </section>
-                  <div class="btn-container d-sm-block pplaybtn">
+                </div>
+                <div class="tab-pane fade" id="nav-fifa" role="tabpanel" aria-labelledby="nav-fifa-tab" tabindex="0">
+                  <section class="card-1">
+                    <div class="container cards-container" style="max-width: 1456px; margin: 0 auto;">
+                      <div id="row-card-3" class="d-flex flex-wrap justify-content-center gap-4">
+                      </div>
+                  </div>
+                  </section>
+              </div>
+                <div class="btn-container d-sm-block pplaybtn pplaybtncard">
                     <a class="btn btn-dark" href="#">
                         Scopri di più
                     </a>
@@ -1324,6 +1308,85 @@ colGenerator(box, boxContent);
 </script>
 <!-- funzione generatrice card di sopra -->
 <script>
+const rowCard = document.getElementById("row-card");
+const rowCard2 = document.getElementById("row-card-2");
+const rowCard3 = document.getElementById("row-card-3");
 
+const cardContent = [
+  {
+    id: 0,
+    href: "https://www.ea.com/it-it/news/celebrating-6-years-of-our-purpose-beliefs-awards",
+
+    src1: "../assets/images/commitments/ea-impegni-01.png",
+
+    type: "Inside EA",
+
+    date: "19-set-2022",
+
+    title: "Festeggiamo i 6 anni dei nostri Purpose and Belief Awards",
+
+    content:
+      "Questi valori sono alla base di tutto ciò che facciamo.",
+  },
+
+  {
+    id: 1,
+    href: "https://www.ea.com/it-it/news/ea-s-summer-of-steam",
+
+    src1: "../assets/images/commitments/ea-impegni-02.png",
+
+    type: "Inside EA",
+
+    date: "25-ago-2022",
+
+    title: "Un'estate di STEAM con EA",
+
+    content:
+      "Un posto per mettere in luce e omaggiare il sostegno di EA ai programmi estivi che aiutano i giovani di diversa estrazione a sviluppare competenze in ambito STEAM (scienza, tecnologia, ingegneria, arti e matematica).",
+  },
+
+  {
+    id: 2,
+    href: "https://www.ea.com/it-it/news/come-build-the-future-of-the-sims-at-maxis",
+
+    src1: "../assets/images/commitments/ea-impegni-03.jpg",
+
+    type: "Inside EA",
+
+    date: "1-apr-2022",
+
+    title: "Vieni a costruire il futuro di The Sims a Maxis",
+
+    content:
+      "La nostra ambizione: ispirare tutti a creare un mondo migliore attraverso il gioco creativo",
+  }
+];
+
+function colGeneratorCard(row, item, cont) {
+  for (let i = 0; i < cont.length; i++) {
+    row.innerHTML += item(cont[i].href, cont[i].src1, cont[i].type, cont[i].date, cont[i].title, cont[i].content);
+  }
+}
+
+function card(href, src1, type, date, title, content) {
+  const card = `
+    <a href=${href} class="card">
+            <img src=${src1} class="card-img-top" alt="${title}">
+            <div class="card-body p-4">
+              <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+                <span class="me-md-3" style="color:var(--orange);">${type}</span>
+                <span>${date}</span>
+              </div>
+              <h3 class="h5 title text-center text-md-start mb-2">${title}</h3>
+              <p class="card-text text-dark">${content}</p>
+            </div>
+    </a>
+  `;
+  return card;
+}
+
+colGeneratorCard(rowCard, card, cardContent);
+colGeneratorCard(rowCard2, card, cardContent);
+colGeneratorCard(rowCard3, card, cardContent);
 </script>
 </html>

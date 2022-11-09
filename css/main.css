@@ -4340,6 +4340,16 @@ body[style^=overflow] {
   width: 70%;
 }
 
+@media only screen and (min-width: 768px) {
+  #nav-tabContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px !important;
+  }
+  #nav-tabContent .pplaybtn {
+    align-self: center;
+  }
+}
 .pplayeacard {
   max-width: 85vw;
 }
