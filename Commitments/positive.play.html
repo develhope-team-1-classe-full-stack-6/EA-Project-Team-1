@@ -675,16 +675,16 @@
     <section class="hero positiveplayhero position-relative overflow-hidden">
         <picture>
             <source media="(max-width: 320px)" 
-                srcset="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-header-section-bg-xl.jpg.adapt.320w.jpg">
+                srcset="../assets/images/commitments/eacom-positive-play-header-section-bg-xl.jpg.adapt.320w.jpg">
             <source media="(max-width: 767px)"
-              srcset="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-header-section-bg-xl.jpg.adapt.768w.jpg">
+              srcset="../assets/images/commitments/eacom-positive-play-header-section-bg-xl.jpg.adapt.320w.jpg">
             <source media="(max-width: 1023px)"
-              srcset="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-header-section-bg-xl.jpg.adapt.1024w.jpg">
+              srcset="../assets/images/commitments/eacom-positive-play-header-section-bg-xl.jpg.adapt.1024w.jpg">
             <source media="(max-width: 1455px)"
-                srcset="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-header-section-bg-xl.jpg.adapt.1456w.jpg">
+                srcset="../assets/images/commitments/eacom-positive-play-header-section-bg-xl.jpg.adapt.1456w.jpg">
             <source media="(min-width: 1920px)"
-                srcset="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-header-section-bg-xl.jpg.adapt.1920w.jpg">
-              <img src="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-header-section-bg-xl.jpg.adapt.1920w.jpg" alt="">
+                srcset="../assets/images/commitments/eacom-positive-play-header-section-bg-xl.jpg.adapt.1920w.jpg">
+              <img src="../assets/images/commitments/eacom-positive-play-header-section-bg-xl.jpg.adapt.1920w.jpg" alt="">
               <h3 class="d3">Il nostro impegno per il gioco positivo</h3>
           </picture>
     </section>
@@ -710,14 +710,14 @@
             <p>Progettiamo i nostri giochi in modo che ogni utente si senta benvenuto, visto, ascoltato e supportato. Abbiamo sviluppato un framework di design inclusivo per consentire ai team e ai marchi di Electronic Arts di offrire esperienze che incorporino inclusività e autenticità durante tutto il ciclo vitale dei nostri prodotti.</p>
             <div class="pplaycardcontainer">
                 <div class="pplaycard">
-                    <img src="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-grid-tile-apex-legends-16x9.jpg.adapt.crop16x9.652w.jpg" alt="Guerriera">
+                    <img src="../assets/images/commitments/eacom-positive-play-grid-tile-apex-legends-16x9.jpg.adapt.crop16x9.652w.jpg" alt="Guerriera">
                     <div class="text">
                         <h3 class="h5">Apex Legends</h3>
                         <p>In seguito a un'analisi basata su 100 giochi distribuiti tra il 2017 e il 2021, ad Apex Legends è stato riconosciuto il merito di aver dato vita al roster di personaggi più variegato. Delle leggende pubblicate finora, la metà…</p>
                     </div>
                 </div>
                 <div class="pplaycard">
-                    <img src="https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-positive-play-grid-tile-the-sims-16x9.jpg.adapt.crop16x9.652w.jpg" alt="LGBT">
+                    <img src="../assets/images/commitments/eacom-positive-play-grid-tile-the-sims-16x9.jpg.adapt.crop16x9.652w.jpg" alt="LGBT">
                     <div class="text">
                         <h3 class="h5">The Sims</h3>
                         <p>A gennaio del 2022 abbiamo svelato i pronomi personalizzabili per Sims 4. L'espansione The Sims Wedding Story ha introdotto inoltre Camille e Dominique, la prima coppia interrazziale LGBTQ+ a essere inclusa nel gioco.</p>
@@ -1243,150 +1243,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+<!-- script generatore cards -->
+<script src="../scripts/positive-play.js"></script>
 </body>
-
-<!-- prova card generator -->
-<script>
-const row = document.querySelector('.impegnicontainer');
-const boxContent = [
-  {
-      id: 0,
-      href: "https://www.ea.com/it-it/commitments/people-and-culture",
-      h1: "Squadre sane e all'insegna della diversità"
-
-  },
-
-  {
-      id: 1,
-      href: "https://www.ea.com/it-it/commitments/positive-play",
-      h1: "Gioco positivo"
-
-  },
-
-  {
-      id: 2,
-      href: "https://www.ea.com/it-it/commitments/social-impact",
-      h1: "Impatto sociale"
-  },
-
-  {
-      id: 3,
-      href: "https://www.ea.com/it-it/commitments/privacy",
-      h1: "Investire nella privacy e nella sicurezza"
-  },
-
-  {
-      id: 4,
-      href: "https://www.ea.com/it-it/commitments/environment",
-      h1: "Investire nell'ambiente"
-  },
-
-  {
-      id: 5,
-      href: "https://ir.ea.com/corporate-governance/governance-documents/default.aspx",
-      h1: "Rafforzare la gestione d'impresa"
-  }
-];
-
-function colGenerator(item, cont) {
-
-  for (let i = 0; i < cont.length; i++) {
-    row.innerHTML += `
-  ${item(cont[i].href, cont[i].h1)}`;
-  }
-
-}
-
-function box(href, h1) {
-  const box = `
-  <div class="cardimpegni"><a href=${href} class="impegnilink" style="text-decoration: none"><h3 class="h5">${h1}</h3></a></div>
-  `;
-  return box;
-}
-
-colGenerator(box, boxContent);
-</script>
-<!-- funzione generatrice card di sopra -->
-<script>
-const rowCard = document.getElementById("row-card");
-const rowCard2 = document.getElementById("row-card-2");
-const rowCard3 = document.getElementById("row-card-3");
-
-const cardContent = [
-  {
-    id: 0,
-    href: "https://www.ea.com/it-it/news/celebrating-6-years-of-our-purpose-beliefs-awards",
-
-    src1: "../assets/images/commitments/ea-impegni-01.png",
-
-    type: "Inside EA",
-
-    date: "19-set-2022",
-
-    title: "Festeggiamo i 6 anni dei nostri Purpose and Belief Awards",
-
-    content:
-      "Questi valori sono alla base di tutto ciò che facciamo.",
-  },
-
-  {
-    id: 1,
-    href: "https://www.ea.com/it-it/news/ea-s-summer-of-steam",
-
-    src1: "../assets/images/commitments/ea-impegni-02.png",
-
-    type: "Inside EA",
-
-    date: "25-ago-2022",
-
-    title: "Un'estate di STEAM con EA",
-
-    content:
-      "Un posto per mettere in luce e omaggiare il sostegno di EA ai programmi estivi che aiutano i giovani di diversa estrazione a sviluppare competenze in ambito STEAM (scienza, tecnologia, ingegneria, arti e matematica).",
-  },
-
-  {
-    id: 2,
-    href: "https://www.ea.com/it-it/news/come-build-the-future-of-the-sims-at-maxis",
-
-    src1: "../assets/images/commitments/ea-impegni-03.jpg",
-
-    type: "Inside EA",
-
-    date: "1-apr-2022",
-
-    title: "Vieni a costruire il futuro di The Sims a Maxis",
-
-    content:
-      "La nostra ambizione: ispirare tutti a creare un mondo migliore attraverso il gioco creativo",
-  }
-];
-
-function colGeneratorCard(row, item, cont) {
-  for (let i = 0; i < cont.length; i++) {
-    row.innerHTML += item(cont[i].href, cont[i].src1, cont[i].type, cont[i].date, cont[i].title, cont[i].content);
-  }
-}
-
-function card(href, src1, type, date, title, content) {
-  const card = `
-    <a href=${href} class="card">
-            <img src=${src1} class="card-img-top" alt="${title}">
-            <div class="card-body p-4">
-              <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
-                <span class="me-md-3" style="color:var(--orange);">${type}</span>
-                <span>${date}</span>
-              </div>
-              <h3 class="h5 title text-center text-md-start mb-2">${title}</h3>
-              <p class="card-text text-dark">${content}</p>
-            </div>
-    </a>
-  `;
-  return card;
-}
-
-colGeneratorCard(rowCard, card, cardContent);
-colGeneratorCard(rowCard2, card, cardContent);
-colGeneratorCard(rowCard3, card, cardContent);
-</script>
 </html>
