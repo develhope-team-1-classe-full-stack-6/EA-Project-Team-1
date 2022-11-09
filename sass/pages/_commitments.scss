@@ -51,7 +51,6 @@
 
 .impact-buttons{
     gap: 1rem;
-    width: 100%;
 }
 
 
@@ -69,7 +68,6 @@
     .gradient{
         height: 144px;
     }
-
 }
 
 
@@ -106,6 +104,7 @@
             .our-progress-text-buttons{
                 flex-direction: column;
             }
+
             }
 
             .our-progress-img{
@@ -114,6 +113,7 @@
                 width: 100%;
     }
     
+}
 }
 
 @media only screen and (max-width: 639px){
@@ -151,4 +151,3 @@
     }
 
     
-}
