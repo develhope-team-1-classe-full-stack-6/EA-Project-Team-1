@@ -4681,13 +4681,9 @@ body[style^=overflow] {
 
 .diversityheader {
   font-size: 48px;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 36px;
   text-align: center;
-}
-
-.diversityhero h3 {
-  font-size: 44px;
 }
 
 section.corporatediversity p {
@@ -4712,12 +4708,10 @@ section .diversitylink {
 
 .diversitygreycardcontainer {
   width: 70vw;
-  border: 1px solid black;
   margin: auto;
 }
 .diversitygreycardcontainer .diversitygreycard {
   width: 25%;
-  border: 1px solid black;
   margin: 0px 0px 16px;
   padding: 0px 8px;
 }
@@ -4746,6 +4740,18 @@ section .diversitylink {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .pplay-main .diversityheader {
+    font-size: 32px !important;
+    margin-top: 50px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .accessibilityinclusionea h3 {
+    margin-bottom: 0px !important;
+  }
+  .diversityhero h3 {
+    font-size: 38px;
+  }
   .diversitygreycardcontainer {
     gap: 20px;
   }
@@ -4766,6 +4772,24 @@ section .diversitylink {
   }
 }
 @media only screen and (max-width: 767px) {
+  .diversityitem {
+    height: fit-content !important;
+  }
+  .dgc5, .dgc6, .dgc7 {
+    margin-top: 0px !important;
+  }
+  .positivediversity {
+    height: 33vw;
+  }
+  .pplay-main .diversityheader {
+    font-size: 32px !important;
+    margin-top: 50px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .firstdivhero h3 {
+    font-size: 36px;
+  }
   .diversitygreycardcontainer {
     flex-direction: column;
     gap: 30px;
@@ -4779,6 +4803,12 @@ section .diversitylink {
   }
 }
 @media only screen and (min-width: 1456px) {
+  .positivediversity {
+    height: 18vw !important;
+  }
+  .positivediversity img {
+    height: 100%;
+  }
   .diversitygreycardcontainer {
     width: 85vw !important;
     max-width: 1600px !important;
@@ -4822,6 +4852,24 @@ section .diversitylink {
   font-weight: 400;
   margin: 3px !important;
   padding-left: 30px;
+}
+
+.pplaygreycard p {
+  margin-top: 9px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .diversityhero .d3 {
+    font-size: 44px !important;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .positivediversity {
+    height: 15vw !important;
+  }
+  .positivediversity img {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
