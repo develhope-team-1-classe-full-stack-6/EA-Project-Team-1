@@ -4787,5 +4787,41 @@ section .diversitylink {
     height: 50% !important;
   }
 }
+.diversitytablecontainer {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 800px) {
+  .diversitytablecontainer {
+    max-width: 90vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+.diversitytablecontainer .diversitytable {
+  width: 100%;
+  margin: 0px;
+  overflow: scroll !important;
+}
+.diversitytablecontainer .diversitytable tr {
+  height: 72.5px;
+}
+.diversitytablecontainer .diversitytable thead th {
+  background-color: #990703;
+  font-size: 14px;
+  color: #f3f3f3;
+  font-family: "ElectronicArtsText", Verdana;
+  border: 4px solid white;
+  border-radius: 10px !important;
+  height: 80px;
+  min-width: 100px;
+}
+.diversitytablecontainer .diversitytable thead .diversityth {
+  height: 72.5px;
+}
+.diversitytablecontainer .diversitytable td {
+  font-weight: 400;
+  margin: 3px !important;
+  padding-left: 30px;
+}
 
 /*# sourceMappingURL=main.css.map */
