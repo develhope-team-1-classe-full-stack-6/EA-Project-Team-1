@@ -171,3 +171,142 @@ function colGenerator2(item, cont) {
 
   
 colGenerator2(box, boxContentMobile);
+/*cards*/
+const rowCard = document.getElementById("row-card");
+const rowCard2 = document.getElementById("row-card-2");
+const rowCard3 = document.getElementById("row-card-3");
+const rowCard4 = document.getElementById("row-card-4");
+const rowCard5 = document.getElementById("row-card-5");
+const rowCard6 = document.getElementById("row-card-6");
+const rowCard7 = document.getElementById("row-card-7");
+const rowCard8 = document.getElementById("row-card-8");
+
+const cardContent = [
+  {
+    id: 0,
+    href: "https://www.ea.com/it-it/games/fifa/fifa-23/news/fifa-23-pitch-notes-fifa-world-cup",
+
+    src1: "../assets/images/sports/f23-worldcup-featureimg-16x9.jpg.adapt.crop16x9.431p.jpg",
+
+    type: "FIFA",
+
+    date: "1 nov 2022",
+
+    title: "FIFA 23 | Note degli sviluppatori - FIFA World Cup<sup>tm</sup>",
+
+    content:
+      "Abbiamo numerosi dettagli da condividere sulla FIFA World Cup 2022™, disponibile a breve in FIFA 23.",
+  },
+
+  {
+    id: 1,
+    href: "https://www.ea.com/it-it/games/fifa/fifa-23/news/fifa-23-show-racism-the-red-card",
+
+    src1: "../assets/images/sports/main.jpg.adapt.crop16x9.431p.jpg",
+
+    type: "FIFA",
+
+    date: "28 ott 2022",
+
+    title: "Show Racism the Red Card",
+
+    content:
+      "28 ottobre 2022 - EA SPORTS™ e Show Racism the Red Card (SRtRC) hanno annunciato che l'opera d'arte vincitrice del concorso scolastico \"IT\'S IN THE GAME\" di quest'anno sarà da oggi parte di FIFA 23.",
+  },
+
+  {
+    id: 2,
+    href: "https://www.ea.com/it-it/games/fifa/fifa-20/news/pitch-notes-fifa-23-title-update-2",
+
+    src1: "../assets/images/sports/pitch-notes-tile-update.png.adapt.crop16x9.431p.png",
+
+    type: "FIFA",
+
+    date: "18-ott-2022",
+
+    title: "FIFA 20 | Note degli sviluppatori sull'aggiornamento #2 - EA SPORTS",
+
+    content:
+      "L'aggiornamento #2 di FIFA 23 è disponibile per tutte le versioni e include modifiche alla velocità della palla di un passaggio rasoterra, alla precisione dei pallonetti e all'efficacia dei contrasti in piedi.",
+  },
+
+  {
+    id: 3,
+    href: "https://www.ea.com/it-it/games/fifa/fifa-20/news/pitch-notes-fifa-23-title-update-2",
+
+    src1: "../assets/images/sports/f23-featured-image-ea-play-trial.jpg.adapt.crop16x9.431p.jpg",
+
+    type: "FIFA",
+
+    date: "26 sett 2022",
+
+    title: `Tutto ciò che è stato annunciato durante l'evento:"Behind The Sims Summit"`,
+
+    content: `Uno sguardo al passato, al presente e al radioso futuro di The Sims`
+      ,
+  },
+
+  {
+    id: 4,
+    href: "https://www.ea.com/it-it/games/fifa/fifa-20/news/pitch-notes-fifa-23-fgs-23-deep-dive",
+
+    src1: "../assets/images/sports/pitchnotes-23-hotorange.png.adapt.crop16x9.431p.png",
+
+    type: "FIFA",
+
+    date: "26 sett 2022",
+
+    title: "Un aggiornamento per i nostri giocatori Mac sull'EA app per Windows",
+
+    content:
+      "Forse avrai letto qualche notizia sulla nuova EA app per Windows, che presto diventerà il principale punto di riferimento per i giochi PC di EA, andando a sostituire Origin.",
+  },
+
+  {
+    id: 5,
+    href: "https://www.ea.com/it-it/games/fifa/fifa-20/news/musqueam-fifa-23",
+
+    src1: "../assets/images/sports/f23-media-musqueam-environment.jpg.adapt.crop16x9.431p.jpg",
+
+    type: "FIFA",
+
+    date: "23 sett 2022",
+
+    title: "La nuovissima EA app per Windows",
+
+    content:
+      "Siamo lieti di annunciare che l'EA app ha ufficialmente abbandonato la fase open beta e presto sostituirà Origin in qualità di piattaforma primaria per PC.",
+  },
+];
+
+function colGeneratorCard(row, item, cont) {
+  for (let i = 0; i < cont.length; i++) {
+    row.innerHTML += item(cont[i].href, cont[i].src1, cont[i].type, cont[i].date, cont[i].title, cont[i].content);
+  }
+}
+
+function card(href, src1, type, date, title, content) {
+  const card = `
+    <a href=${href} class="card">
+            <img src=${src1} class="card-img-top" alt="${title}">
+            <div class="card-body p-4">
+              <div class="d-flex flex-column align-items-center flex-md-row align-items-md-start mb-2">
+                <span class="me-md-3" style="color:var(--orange);">${type}</span>
+                <span>${date}</span>
+              </div>
+              <h3 class="h5 title text-center text-md-start mb-2">${title}</h3>
+              <p class="card-text text-dark">${content}</p>
+            </div>
+    </a>
+  `;
+  return card;
+}
+
+colGeneratorCard(rowCard, card, cardContent);
+colGeneratorCard(rowCard2, card, cardContent);
+colGeneratorCard(rowCard3, card, cardContent);
+colGeneratorCard(rowCard4, card, cardContent);
+colGeneratorCard(rowCard5, card, cardContent);
+colGeneratorCard(rowCard6, card, cardContent);
+colGeneratorCard(rowCard7, card, cardContent);
+colGeneratorCard(rowCard8, card, cardContent);
