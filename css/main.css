@@ -4679,4 +4679,97 @@ body[style^=overflow] {
   gap: 0.5rem;
 }
 
+.diversityheader {
+  font-size: 48px;
+  margin-top: 120px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.diversityhero h3 {
+  font-size: 44px;
+}
+
+section.corporatediversity p {
+  margin: 9px 0px;
+}
+section.corporatediversity p#lastpdiversity {
+  margin-bottom: 55px;
+}
+section .diversitylink {
+  text-decoration: none;
+  color: #960E0E;
+}
+
+.diversityitem {
+  display: flex;
+  height: 56px;
+  margin-top: 24px;
+}
+.diversityitem .diversityimgcont {
+  margin-right: 16px;
+}
+
+.diversitygreycardcontainer {
+  width: 70vw;
+  border: 1px solid black;
+  margin: auto;
+}
+.diversitygreycardcontainer .diversitygreycard {
+  width: 25%;
+  border: 1px solid black;
+  margin: 0px 0px 16px;
+  padding: 0px 8px;
+}
+.diversitygreycardcontainer .diversitygreycard img {
+  width: 100%;
+  height: auto;
+}
+.diversitygreycardcontainer .diversitygreycard .textcontent {
+  padding: 24px;
+  background-color: rgb(243, 243, 243);
+  height: 64%;
+}
+.diversitygreycardcontainer .diversitygreycard .textcontent h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
+}
+.diversitygreycardcontainer .dgc5, .diversitygreycardcontainer .dgc6, .diversitygreycardcontainer .dgc7 {
+  margin-top: 30px;
+}
+.diversitygreycardcontainer .dgc5 .textcontent, .diversitygreycardcontainer .dgc6 .textcontent, .diversitygreycardcontainer .dgc7 .textcontent {
+  height: 77%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .diversitygreycardcontainer {
+    gap: 20px;
+  }
+  .diversitygreycardcontainer .diversitygreycard {
+    width: 33vw !important;
+  }
+  .diversitygreycardcontainer .diversitygreycard .textcontent {
+    height: 50%;
+  }
+  .diversitygreycardcontainer .dgc5, .diversitygreycardcontainer .dgc6 {
+    margin-top: 0px;
+  }
+  .diversitygreycardcontainer .dgc5 .textcontent, .diversitygreycardcontainer .dgc6 .textcontent {
+    height: 63%;
+  }
+  .diversitygreycardcontainer .dgc7 {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .diversitygreycardcontainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .diversitygreycardcontainer .diversitygreycard {
+    width: 100% !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
