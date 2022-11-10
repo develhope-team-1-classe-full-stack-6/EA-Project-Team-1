@@ -1,0 +1,103 @@
+.form-wrapper {
+    div {
+        div {
+            @media screen and (min-width:992px) {
+                flex: 1 1 50%;
+            }
+        }
+
+        .form {
+            .form-floating {
+
+                height: 60px;
+
+                .form-control {
+                    border: none;
+                    box-shadow: none;
+
+                }
+
+                input[type="text"].form-control:focus {
+                    &::placeholder {
+                        color: #919191;
+                    }
+                }
+
+            }
+
+            div:nth-child(2) {
+                div {
+                    @media screen and (min-width:768px) {
+                        flex: 1 1 50%;
+                    }
+
+                    .form-select {
+                        height: 60px;
+                        border-radius: 0px;
+                        border: 1px solid #000000;
+                        box-shadow: none;
+                        padding: 0px;
+                        position: relative;
+                        cursor: pointer;
+
+                        &>div {
+                            position: absolute;
+                            padding: 0rem 0.75rem;
+
+                            p {
+                                margin: 0;
+                            }
+                        }
+
+                        &:not(:focus) {
+                            ul {
+                                display: none;
+                            }
+                        }
+
+                        ul {
+                            display: block;
+                            width: 100%;
+                            height: calc(60px * 5);
+                            position: absolute;
+                            background-color: white;
+                            overflow-y: scroll;
+                            list-style-type: none;
+                            padding-inline: 1.5em;
+                            border: 3px solid black;
+
+                            li {
+                                height: 60px;
+                                display: flex;
+                                align-items: center;
+                                transition: all 0.25s;
+
+                                &:not(:last-child) {
+                                    border-bottom: 2px solid #c5c5c5;
+                                }
+
+                                &:hover p {
+                                    transform: translateX(10px);
+                                    transition: all 0.25s;
+                                }
+
+                                p {
+                                    margin: 0;
+                                }
+                                .fa-solid.fa-check{
+                                    display: none;
+                                }
+
+                                &.selected {
+                                    .fa-solid.fa-check{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
