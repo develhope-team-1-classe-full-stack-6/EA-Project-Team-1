@@ -174,3 +174,29 @@
         }
     }
 }
+
+.wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1920w.jpg);
+
+    @media screen and (max-width: 1455px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1456w.jpg);
+    }
+    @media screen and (max-width: 1023px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1024w.jpg);
+    }
+    @media screen and (max-width: 767px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.768w.jpg);
+    }
+    @media screen and (max-width: 320px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.320w.jpg);
+    }
+
+    .card1 {
+        .card-img-overlay {
+            .btn {
+                background-color: rgb(255, 193, 36);
+                border: 1px solid rgb(255, 193, 36);
+            }
+        }
+    }
+}

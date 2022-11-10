@@ -4478,4 +4478,32 @@ body[style^=overflow] {
   transition: all 0.45s;
 }
 
+.wrapper-wide-banners {
+  background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1920w.jpg);
+}
+@media screen and (max-width: 1455px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1456w.jpg);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1024w.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.768w.jpg);
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.320w.jpg);
+  }
+}
+.wrapper-wide-banners .card1 .card-img-overlay .btn {
+  background-color: rgb(255, 193, 36);
+  border: 1px solid rgb(255, 193, 36);
+}
+
 /*# sourceMappingURL=main.css.map */
