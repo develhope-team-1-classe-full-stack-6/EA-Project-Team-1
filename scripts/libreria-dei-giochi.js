@@ -96,10 +96,10 @@ function card(href, title) {
     <a href="${href}" class="card">
     <div class="h3-container">
     <h3>${title}</h3>
-    <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
+    <img class="arrow" src="../assets/images/libreria-dei-giochi/arrow-card-libreria-giochi.svg" alt="arrow">
     </div>
     <img
-    src="../assets/images/background-card-libreria-giochi.png"
+    src="../assets/images/libreria-dei-giochi/background-card-libreria-giochi.png"
     class="card-img-top"
     alt="grey-background"
     />
@@ -119,103 +119,103 @@ piattaformeTabBtn.addEventListener("click", () => {
         {
             id: 0,
             href: "https://www.ea.com/it-it/games/library/xbox-series-x",
-            src: "../assets/images/xbox-seres-x-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/xbox-seres-x-transparent-background-card-platforms-libreria-giochi.png",
             title: "Xbox Series X",
         },
         {
             id: 1,
             href: "https://www.ea.com/it-it/games/library/ps5",
-            src: "../assets/images/ps5-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/ps5-transparent-background-card-platforms-libreria-giochi.png",
             title: "PlayStation 5",
         },
         {
             id: 2,
             href: "https://www.ea.com/it-it/games/library/pc-download",
-            src: "../assets/images/pc-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/pc-transparent-background-card-platforms-libreria-giochi.png",
             title: "Scaricabile per PC",
         },
         {
             id: 3,
             href: "https://www.ea.com/it-it/games/library/xbox-one",
-            src: "../assets/images/xbox-one-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/xbox-one-transparent-background-card-platforms-libreria-giochi.png",
             title: "Xbox One",
         },
         {
             id: 4,
             href: "https://www.ea.com/it-it/games/library/ps4",
-            src: "../assets/images/ps4-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/ps4-transparent-background-card-platforms-libreria-giochi.png",
             title: "PlayStation 4",
         },
         {
             id: 5,
             href: "https://www.ea.com/it-it/games/library/nintendo-switch",
-            src: "../assets/images/nintendo-switch-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/nintendo-switch-transparent-background-card-platforms-libreria-giochi.png",
             title: "Nintendo Switch<sup>tm</sup>",
         },
         {
             id: 6,
             href: "https://www.ea.com/it-it/games/library/nintendo-wii-u",
-            src: "../assets/images/wii-u-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/wii-u-transparent-background-card-platforms-libreria-giochi.png",
             title: "Nintendo Wii U",
         },
         {
             id: 7,
             href: "https://www.ea.com/it-it/games/library/mobile",
-            src: "../assets/images/mobile-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/mobile-transparent-background-card-platforms-libreria-giochi.png",
             title: "Cellulari",
         },
         {
             id: 8,
             href: "https://www.ea.com/it-it/games/library/nintendo-3ds",
-            src: "../assets/images/nintendo-3ds-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/nintendo-3ds-transparent-background-card-platforms-libreria-giochi.png",
             title: "Nintendo 3DS",
         },
         {
             id: 9,
             href: "https://www.ea.com/it-it/games/library/playstation-vita",
-            src: "../assets/images/ps-vita-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/ps-vita-transparent-background-card-platforms-libreria-giochi.png",
             title: "PS Vita",
         },
         {
             id: 10,
             href: "https://www.ea.com/it-it/games/library/mac-download",
-            src: "../assets/images/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/best-laptop-and-smartphone-brand-transparent-background-card-platforms-libreria-giochi.png",
             title: "Download per Mac",
         },
         {
             id: 11,
             href: "https://www.ea.com/it-it/games/library/xbox-360",
-            src: "../assets/images/xbox360-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/xbox360-transparent-background-card-platforms-libreria-giochi.png",
             title: "Xbox360",
         },
         {
             id: 12,
             href: "https://www.ea.com/it-it/games/library/ps3",
-            src: "../assets/images/ps3-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/ps3-transparent-background-card-platforms-libreria-giochi.png",
             title: "PlayStation 3",
         },
         {
             id: 13,
             href: "https://www.ea.com/it-it/games/library/psp",
-            src: "../assets/images/psp-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/psp-transparent-background-card-platforms-libreria-giochi.png",
             title: "PSP(PlaystationPortable)",
         },
         {
             id: 14,
             href: "https://www.ea.com/it-it/games/library/ps2",
-            src: "../assets/images/ps2-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/ps2-transparent-background-card-platforms-libreria-giochi.png",
             title: "PlayStation 2",
         },
         {
             id: 15,
             href: "https://www.ea.com/it-it/games/library/facebook",
-            src: "../assets/images/facebook-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/facebook-transparent-background-card-platforms-libreria-giochi.png",
             title: "Facebook",
         },
         {
             id: 16,
             href: "https://www.ea.com/it-it/games/library/online",
-            src: "../assets/images/network-transparent-background-card-platforms-libreria-giochi.png",
+            src: "../assets/images/libreria-dei-giochi/network-transparent-background-card-platforms-libreria-giochi.png",
             title: "Online",
         },
     ];
@@ -280,10 +280,10 @@ classificazioneEtàTabBtn.addEventListener("click", () =>{
         <a href="${href}" class="card">
         <div class="h3-container">
             <h3>${title}</h3>
-            <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
+            <img class="arrow" src="../assets/images/libreria-dei-giochi/arrow-card-libreria-giochi.svg" alt="arrow">
         </div>
         <img
-            src="../assets/images/background-card-libreria-giochi.png"
+            src="../assets/images/libreria-dei-giochi/background-card-libreria-giochi.png"
             class="card-img-top"
             alt="grey-background"
         />
@@ -329,10 +329,10 @@ modalitàDiGiocoTabBtn.addEventListener("click", () =>{
         <a href="${href}" class="card">
         <div class="h3-container">
             <h3>${title}</h3>
-            <img class="arrow" src="../assets/images/arrow-card-libreria-giochi.svg" alt="arrow">
+            <img class="arrow" src="../assets/images/libreria-dei-giochi/arrow-card-libreria-giochi.svg" alt="arrow">
         </div>
         <img
-            src="../assets/images/background-card-libreria-giochi.png"
+            src="../assets/images/libreria-dei-giochi/background-card-libreria-giochi.png"
             class="card-img-top"
             alt="grey-background"
         />
