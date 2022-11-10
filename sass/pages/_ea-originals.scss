@@ -1,0 +1,48 @@
+#ea-originals-wrapper{
+  #video-originals-large{
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .socials-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+
+  #video-originals-small{
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .check-form{  
+    .form-the-sims-a{
+        text-decoration: none;
+        color: #ff4747;
+        
+  
+        &:hover{
+           color: #ff4747;
+        }
+    }
+  }
+
+  .form-email{
+    border: 2px solid #ffffff;
+  }
+
+  .form-date{
+    border: 2px solid #ffffff;
+  }
+
+  .btn-country{
+    border: 2px solid #ffffff;
+
+  }
+};
+

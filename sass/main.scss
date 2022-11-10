@@ -15,6 +15,7 @@
 @use "./components/ea-play-card";
 @use "./components/card-libreria-giochi";
 @use "./components/card-piattaforme";
+@use "./components/carousel";
 
 
 @use "./layout/navbar1";
@@ -31,3 +32,6 @@
 @use "./pages/sports";
 @use "./pages/prestodisponibili";
 @use "./pages/commitments";
+@use "./pages/ea-originals";
+@use "./pages/inclusion-and-diversity";
+@use "./pages/positive-play"
