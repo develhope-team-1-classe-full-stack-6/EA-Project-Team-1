@@ -1,0 +1,176 @@
+@import "../abstracts/colors";
+
+.navbar2 {
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 35px;
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0.5rem;
+        padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+
+        &>.container-fluid {
+            @media screen and (max-width:991px) {
+                justify-content: start;
+            }
+
+            a {
+                img {
+                    transition: transform 0.5s ease;
+                    height: 90%;
+                    width: 90%;
+                    @media screen and (max-width:991px) {
+                        transition: transform 0.5s ease;
+                        transform: scale(.9);
+                    }
+
+                    @media screen and (max-width:767px){
+                        transition: transform 0.5s ease;
+                        transform: scale(.8);
+                    }
+                }
+            }
+        }
+
+        .nav-bar2-buttons {
+            width: 30px;
+            height: 30px;
+
+
+            .nav-bar2-dots-menu {
+                font-size: 1.5rem;
+                transition: all 0.25s linear;
+                cursor: pointer;
+
+                &:hover {
+                    font-size: 2rem;
+                    color: gold;
+                }
+
+                @media screen and (max-width:991px) {
+                    display: none;
+                }
+            }
+
+            .nav-bar2-hamburger-menu {
+                display: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: gold;
+                    transition: all .15s;
+                }
+                
+                @media screen and (max-width:991px) {
+                    font-size: 1.5rem;
+                    transition: 0.25s;
+                    margin-left: 2rem;
+                    margin-right: 1.5rem;
+                    display: inline;
+                }
+            }
+        }
+
+        .nav-item.dropdown {
+
+            & .dropdown-menu.show {
+                transform-origin: top !important;
+                transform: scaleY(0) !important;
+            }
+
+            &:hover {
+                & .dropdown-menu.show {
+                    transform: scaleY(1) !important;
+                    transition: all 0.25s;
+                    background: transparent;
+                    border: none;
+                    padding-top: 1rem;
+                    & .box-dropdown{
+                        background:  transparentize($black, 0.12);
+                        list-style: none;
+                        padding: 35px ;
+    
+                        &.left-radius{
+                            border-radius: 5px 0px 0px 5px ;
+                        }
+                        
+                        &.right-radius{
+                            border-radius: 0px 5px 5px 0px;
+                            padding-left: 0px ;
+                            
+                        }
+    
+                        &.all-radius{
+                            border-radius: 5px;
+                            padding: 10px 25px ;
+                        }
+    
+                    }
+    
+                    .dropdown-title {
+                        display: block;
+                        width: 100%;
+                        padding: 0.25rem 1rem;
+                        clear: both;
+                        color: var(--black);
+                        text-align: inherit;
+                        text-decoration: none;
+                        white-space: nowrap;
+                        background-color: transparent;
+                        border: 0;
+                    }
+                    .dropdown-divider{
+                        width: 82%;
+                        transform: translateX(10%);
+                        margin: 1px;
+                    }
+    
+                    .dropdown-item{
+                        color: var(--white);
+                        opacity: 0.9;
+                        padding-block: 8px;
+    
+                        &:hover{
+                            background: unset;
+                            color: gold;
+                        }
+                    }
+                }
+            }
+
+            .nav-link {
+                padding-top: .6rem;
+
+                &:hover {
+                    color: gold;
+                    transition: all .15s;
+                }
+            }
+
+            .nav-link.dropdown-toggle.show {
+                &::after {
+                    display: none;
+                }
+
+                i {
+                    transform: rotateX(85deg) scaleY(10) scaleX(0.9);
+                    &.fa-solid.fa-angle-down::before {
+                        display: inline-block;
+                        margin-left: .255em;
+                    }
+                }
+
+                &:hover {
+                    i {
+                        &.fa-solid.fa-angle-down::before {
+                            transform: rotateX(180deg);
+                            transition: all 0.45s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
