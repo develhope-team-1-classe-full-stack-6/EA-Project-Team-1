@@ -3915,21 +3915,11 @@ body[style^=overflow] {
     display: none;
   }
 }
-#ea-originals-wrapper .check-form .form-the-sims-a {
-  text-decoration: none;
-  color: #ff4747;
+#ea-originals-wrapper .form-select ul {
+  background-color: #161616;
 }
-#ea-originals-wrapper .check-form .form-the-sims-a:hover {
-  color: #ff4747;
-}
-#ea-originals-wrapper .form-email {
-  border: 2px solid #ffffff;
-}
-#ea-originals-wrapper .form-date {
-  border: 2px solid #ffffff;
-}
-#ea-originals-wrapper .btn-country {
-  border: 2px solid #ffffff;
+#ea-originals-wrapper .btn:hover {
+  background-color: var(--orange);
 }
 
 .diversityheader {

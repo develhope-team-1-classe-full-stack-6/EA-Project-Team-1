@@ -20,29 +20,12 @@
     }
   }
 
-  .check-form{  
-    .form-the-sims-a{
-        text-decoration: none;
-        color: #ff4747;
-        
-  
-        &:hover{
-           color: #ff4747;
-        }
-    }
+  .form-select ul{
+    background-color: #161616;
   }
 
-  .form-email{
-    border: 2px solid #ffffff;
-  }
-
-  .form-date{
-    border: 2px solid #ffffff;
-  }
-
-  .btn-country{
-    border: 2px solid #ffffff;
-
+  .btn:hover{
+    background-color: var(--orange);
   }
 };
 
