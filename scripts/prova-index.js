@@ -114,3 +114,4 @@ function box(href, src1, src2) {
 }
 
 colGenerator(box, boxContent);
+
