@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/2975f57649.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -16,168 +16,105 @@
     <div class="d-flex flex-column flex-lg-row container gap-4 px-4" style="max-width: 1180px;">
       <div class="">
         <h3 class="d4 mb-3">TIENITI AL PASSO CON LE E-MAIL SU EA E THE SIMS</h3>
-        <p>Iscriviti oggi stesso per ricevere tramite e-mail i più recenti aggiornamenti, notizie, contenuti dietro le quinte, offerte esclusive e molto altro su The Sims (come pure su altri prodotti, notizie, eventi e promozioni di EA).</p>
+        <p>Iscriviti oggi stesso per ricevere tramite e-mail i più recenti aggiornamenti, notizie, contenuti dietro le
+          quinte, offerte esclusive e molto altro su The Sims (come pure su altri prodotti, notizie, eventi e promozioni
+          di EA).</p>
       </div>
       <div class="form">
         <div class="form-floating mb-3" style="border: 1px solid #000">
           <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
+          <label for="floatingInput">E-mail</label>
         </div>
         <div class="d-flex flex-column flex-md-row gap-3 mb-3">
-         <div>
+          <div>
             <div class="form-floating" style="border: 1px solid #000">
               <input type="text" class="form-control" id="floatingAge" placeholder="GG/MM/YYYY">
               <label for="floatingAge">Data di Nascita</label>
             </div>
-         </div>
-          
+          </div>
+
           <div>
-            <div class="form-select">
+            <div tabindex="0" class="form-select">
+              <div>
+                <p>Lingua</p>
+                <p id="display-lang">Italia</p>
+              </div>
+              <ul>
+                <li class="d-flex justify-content-between"><p>Stati Uniti</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Arabia Saudita</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Argentina</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Australia</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Austria</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Belgio</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Brasile</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Canada</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Cile</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Colombia</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Corea</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Danimarca</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Emirati Arabi</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Finlandia</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Francia</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Germania</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Giappone</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Grecia</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Hong-Kong</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>India</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Irlanda</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between"><p>Isdraele</p><i class="fa-solid fa-check"></i></li>
+                <li class="d-flex justify-content-between selected"><p>Italia</p><i class="fa-solid fa-check"></i></li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="form-check mb-3">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label" for="flexCheckDefault">
-            Posso disiscrivermi in qualsiasi momento modificando le mie preferenze sulle e-mail, contattando privacyadmin.ea.com o scrivendo a Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy, Redwood City, CA, 94065, USA.
+            Posso disiscrivermi in qualsiasi momento modificando le mie preferenze sulle e-mail, contattando
+            privacyadmin.ea.com o scrivendo a Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy,
+            Redwood City, CA, 94065, USA.
           </label>
         </div>
         <div class="btn-container d-sm-block">
           <a class="btn btn-blue" href="#">
-              Iscriviti
+            Iscriviti
           </a>
-      </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- <section class="form-wrapper container">
-    <div class="form-text-container">
-      <h2>TIENITI AL PASSO CON LE E-MAIL SU EA E THE SIMS</h2>
-      <p>Iscriviti oggi stesso per ricevere tramite e-mail i più recenti aggiornamenti, notizie, contenuti dietro le
-        quinte,
-        offerte esclusive e molto altro su The Sims (come pure su altri prodotti, notizie, eventi e promozioni di EA).
-      </p>
-    </div>
-
-    <div class="form-input-container ">
-      <form action="">
-        <div class="email-container">
-          <input type="email" class="form-email" required>
-          <label for="email" class="label">E-mail</label>
-        </div>
-
-        <div class="form-date-country-container">
-          <div class="date-container">
-            <input type="text"  id="date" class="form-date">
-            <label for="date">Data di nascita</label>
-          </div>
-
-
-          <div class="country-container">
-            <button type="button" class="btn-country"><p class="selected">Stati Uniti</p><i class="fa-solid fa-angle-down"></i></button>
-            <label for="button">Paese</label>
-          </div>
-        </div>
-
-        <div class="select-container">
-
-          <div class="select-box">
-            <div class="options-container" id="options-container">
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="stati-uniti">
-                <label id="option-label" for="stati-uniti">Stati Uniti</label>
-              </div> <hr>
-              
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="argentina">
-                <label for="argentina">Argentina</label>
-              </div> <hr>
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="australia">
-                <label for="australia">Australia</label>
-              </div> <hr>
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="danimarca">
-                <label for="danimarca">Danimarca</label>
-              </div> <hr>
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="finlandia">
-                <label for="finlandia">Finlandia</label>
-              </div> <hr>
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="germania">
-                <label for="germania">Germania</label>
-              </div> <hr>
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="giappone">
-                <label for="giappone">Giappone</label>
-              </div> <hr>
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="portogallo">
-                <label for="portogallo">Portogallo</label>
-              </div> <hr>
-              <div class="option">
-                <input type="radio" class="radio" name="category" id="sudafrica">
-                <label for="sudafrica">Sudafrica</label>
-              </div> <hr>
-            </div>
-    
-            /*<div class="selected country-select">Stati Uniti<i class="fa-solid fa-angle-down"></i></div> */
-          </div>
-        </div>
-
-        <div class="check-form">
-          <input type="checkbox" class="form-checkbox">
-          <p>Posso disiscrivermi in qualsiasi momento modificando le mie 
-             <a class="form-the-sims-a" href="#"> preferenze sulle e-mail</a>, contattando <a class="form-the-sims-a" href="#">privacyadmin.ea.com</a> o 
-             scrivendo a Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood  
-             Shores Pkwy, Redwood City, CA, 94065, USA.</p>
-        </div>
-      </form>
-      <div class="btn-container d-sm-block">
-        <a class="btn btn-blue" href="#">
-            Iscriviti
-        </a>
-    </div>
-    </div>
-  </section> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
+    <script>
 
+      const formSelect = document.querySelector(".form-select");
+      let ulNodes = formSelect.querySelector("ul");
+      const displayLang = document.getElementById("display-lang");
+      let selectedLang = document.querySelector(".selected");
 
-    
-   
+      ulNodes.addEventListener('click', (event) => {
+        if(event.target !== ulNodes){
 
+          if(event.target != selectedLang){
+            selectedLang.classList.remove("selected");
 
-    <!-- <script>
-      const selected = document.querySelector(".selected");
-      const optionsContainer = document.getElementById("options-container");
-      const btnCountry = document.querySelector(".btn-country");
-      const optionsList = document.querySelectorAll(".option");
-      
-
-      selected.addEventListener("click", function(){
-        optionsContainer.classList.toggle("active");
-      });
-
-      optionsList.forEach(o => {
-        o.addEventListener("click", () => {
-          selected.innerHTML = o.querySelector("label").innerHTML;
-          optionsContainer.classList.remove("active");
-        });
-      });
-
-      document.addEventListener('mouseup', function(e){
-        if(!optionsContainer.contains(e.target)){
-          optionsContainer.classList.remove("active");
+            if(event.target.parentElement == ulNodes){
+              event.target.classList.add("selected");
+            } else {
+              event.target.parentElement.classList.add("selected");
+            }
+          }
         }
-      });
+        selectedLang = document.querySelector(".selected");
 
-      
-    
-    </script> -->
+        displayLang.innerText = selectedLang.innerText;
+
+        formSelect.blur();
+      })
+
+    </script>
 </body>
 
 </html>
