@@ -192,6 +192,12 @@
     }
 
     .card1 {
+
+        .h6-squadron {
+            @media screen and (max-width:767px) {
+                color: white;
+            }
+        }
         .card-img-overlay {
             .btn {
                 background-color: rgb(255, 193, 36);
