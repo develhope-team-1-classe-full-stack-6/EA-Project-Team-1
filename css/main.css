@@ -1227,7 +1227,7 @@ h6 {
     font-size: var(--h5-font-size-desktop);
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
   .card-1 .cards-container {
     display: flex;
     flex-direction: column;
@@ -4034,68 +4034,68 @@ body[style^=overflow] {
   background-color: var(--transparent);
 }
 
-.navbar2 {
+.navbar-2-star-wars {
   color: white;
   position: fixed;
   width: 100%;
   z-index: 1;
   top: 35px;
 }
-.navbar2 .navbar {
+.navbar-2-star-wars .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 @media screen and (max-width: 991px) {
-  .navbar2 .navbar > .container-fluid {
+  .navbar-2-star-wars .navbar > .container-fluid {
     justify-content: start;
   }
 }
-.navbar2 .navbar > .container-fluid a img {
+.navbar-2-star-wars .navbar > .container-fluid a img {
   transition: transform 0.5s ease;
   height: 90%;
   width: 90%;
 }
 @media screen and (max-width: 991px) {
-  .navbar2 .navbar > .container-fluid a img {
+  .navbar-2-star-wars .navbar > .container-fluid a img {
     transition: transform 0.5s ease;
     transform: scale(0.9);
   }
 }
 @media screen and (max-width: 767px) {
-  .navbar2 .navbar > .container-fluid a img {
+  .navbar-2-star-wars .navbar > .container-fluid a img {
     transition: transform 0.5s ease;
     transform: scale(0.8);
   }
 }
-.navbar2 .navbar .nav-bar2-buttons {
+.navbar-2-star-wars .navbar .nav-bar2-buttons {
   width: 30px;
   height: 30px;
 }
-.navbar2 .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
   font-size: 1.5rem;
   transition: all 0.25s linear;
   cursor: pointer;
 }
-.navbar2 .navbar .nav-bar2-buttons .nav-bar2-dots-menu:hover {
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu:hover {
   font-size: 2rem;
   color: gold;
 }
 @media screen and (max-width: 991px) {
-  .navbar2 .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
+  .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
     display: none;
   }
 }
-.navbar2 .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
   display: none;
   cursor: pointer;
 }
-.navbar2 .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu:hover {
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu:hover {
   color: gold;
   transition: all 0.15s;
 }
 @media screen and (max-width: 991px) {
-  .navbar2 .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
+  .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
     font-size: 1.5rem;
     transition: 0.25s;
     margin-left: 2rem;
@@ -4103,34 +4103,34 @@ body[style^=overflow] {
     display: inline;
   }
 }
-.navbar2 .navbar .nav-item.dropdown .dropdown-menu.show {
+.navbar-2-star-wars .navbar .nav-item.dropdown .dropdown-menu.show {
   transform-origin: top !important;
   transform: scaleY(0) !important;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show {
   transform: scaleY(1) !important;
   transition: all 0.25s;
   background: transparent;
   border: none;
   padding-top: 1rem;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown {
   background: rgba(0, 0, 0, 0.88);
   list-style: none;
   padding: 35px;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.left-radius {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.left-radius {
   border-radius: 5px 0px 0px 5px;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.right-radius {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.right-radius {
   border-radius: 0px 5px 5px 0px;
   padding-left: 0px;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.all-radius {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.all-radius {
   border-radius: 5px;
   padding: 10px 25px;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-title {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-title {
   display: block;
   width: 100%;
   padding: 0.25rem 1rem;
@@ -4142,38 +4142,38 @@ body[style^=overflow] {
   background-color: transparent;
   border: 0;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-divider {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-divider {
   width: 82%;
   transform: translateX(10%);
   margin: 1px;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item {
   color: var(--white);
   opacity: 0.9;
   padding-block: 8px;
 }
-.navbar2 .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item:hover {
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item:hover {
   background: unset;
   color: gold;
 }
-.navbar2 .navbar .nav-item.dropdown .nav-link {
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link {
   padding-top: 0.6rem;
 }
-.navbar2 .navbar .nav-item.dropdown .nav-link:hover {
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link:hover {
   color: gold;
   transition: all 0.15s;
 }
-.navbar2 .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show::after {
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show::after {
   display: none;
 }
-.navbar2 .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i {
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i {
   transform: rotateX(85deg) scaleY(10) scaleX(0.9);
 }
-.navbar2 .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i.fa-solid.fa-angle-down::before {
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i.fa-solid.fa-angle-down::before {
   display: inline-block;
   margin-left: 0.255em;
 }
-.navbar2 .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show:hover i.fa-solid.fa-angle-down::before {
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show:hover i.fa-solid.fa-angle-down::before {
   transform: rotateX(180deg);
   transition: all 0.45s;
 }
