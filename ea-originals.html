@@ -676,8 +676,8 @@
          
       <section id="ea-originals-wrapper">
         <header class="hero position-relative overflow-hidden">
-          <video id="video-originals-large" src="https://media.contentapi.ea.com/content/dam/eacom/ea-originals/videos/2022/10/ea-hero-section-ea-originals-xl.mp4" autoplay="" muted="" class="w-100"></video>
-          <video id="video-originals-small" src="https://media.contentapi.ea.com/content/dam/eacom/ea-originals/videos/2022/10/ea-hero-section-ea-originals-xs-s.webm" autoplay="" muted="" class="w-100"></video>
+          <video id="video-originals-large" src="./assets/videos/ea-originals/ea-hero-section-ea-originals-xl.mp4" autoplay="" muted="" class="w-100"></video>
+          <video id="video-originals-small" src="./assets/videos/ea-originals/ea-hero-section-ea-originals-xs-s.webm" autoplay="" muted="" class="w-100"></video>
         </header>
         <section class="bg-dark" style="margin: -7px;">
           <div class="container p-5" style="max-width: 950px;">
@@ -804,95 +804,76 @@
           </div>
 
           <!-- Form -->
-          <section class="form-wrapper" style="margin-top: 200px; padding-bottom: 150px;">
-            <div class="form-text-container text-white">
-              <h2 class="d4">Resta sempre aggiornato con le e-mail di EA Originals e EA</h2>
-              <p>Iscriviti subito per ricevere tramite e-mail le ultime novità su notizie, aggiornamenti, contenuti dietro le quinte, offerte esclusive e molto altro su EA Originals (sono incluse altre novità su notizie, prodotti, eventi e promozioni di EA).
-              </p>
-            </div>
-        
-            <div class="form-input-container text-white">
-              <form action="">
-                <div class="email-container">
-                  <input type="email" class="form-email" required>
-                  <label for="email" class="label">E-mail</label>
+          <section class="form-wrapper py-5" style="margin-top: 150px;">
+            <div class="d-flex flex-column flex-lg-row container gap-4 px-4" style="max-width: 1180px; padding-bottom: 100px;">
+              <div class="text-white">
+                <h3 class="d4 mb-3">Resta sempre aggiornato con le e-mail di EA Originals e EA</h3>
+                <p>Iscriviti subito per ricevere tramite e-mail le ultime novità su notizie, aggiornamenti, contenuti dietro le quinte, offerte esclusive e molto altro su EA Originals (sono incluse altre novità su notizie, prodotti, eventi e promozioni di EA).</p>
+              </div>
+              <div class="form text-secondary">
+                <div class="form-floating mb-3" style="border: 1px solid #fff">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="background-color: transparent;">
+                  <label for="floatingInput">E-mail</label>
                 </div>
-        
-                <div class="form-date-country-container">
-                  <div class="date-container">
-                    <input type="text"  id="date" class="form-date">
-                    <label for="date">Data di nascita</label>
-                  </div>
-        
-        
-                  <div class="country-container">
-                    <button type="button" class="btn-country"><p class="selected">Stati Uniti</p><i class="fa-solid fa-angle-down"></i></button>
-                    <label for="button">Paese</label>
-                  </div>
-                </div>
-        
-                <div class="select-container">
-        
-                  <div class="select-box">
-                    <div class="options-container" id="options-container">
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="stati-uniti">
-                        <label id="option-label" for="stati-uniti">Stati Uniti</label>
-                      </div> <hr>
-                      
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="argentina">
-                        <label for="argentina">Argentina</label>
-                      </div> <hr>
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="australia">
-                        <label for="australia">Australia</label>
-                      </div> <hr>
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="danimarca">
-                        <label for="danimarca">Danimarca</label>
-                      </div> <hr>
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="finlandia">
-                        <label for="finlandia">Finlandia</label>
-                      </div> <hr>
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="germania">
-                        <label for="germania">Germania</label>
-                      </div> <hr>
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="giappone">
-                        <label for="giappone">Giappone</label>
-                      </div> <hr>
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="portogallo">
-                        <label for="portogallo">Portogallo</label>
-                      </div> <hr>
-                      <div class="option">
-                        <input type="radio" class="radio" name="category" id="sudafrica">
-                        <label for="sudafrica">Sudafrica</label>
-                      </div> <hr>
+                <div class="d-flex flex-column flex-md-row gap-3 mb-3">
+                  <div>
+                    <div class="form-floating" style="border: 1px solid #fff">
+                      <input type="text" class="form-control" id="floatingAge" placeholder="GG/MM/YYYY" style="background-color: transparent;">
+                      <label for="floatingAge">Data di Nascita</label>
                     </div>
-            
-                    <!-- <div class="selected country-select">Stati Uniti<i class="fa-solid fa-angle-down"></i></div> -->
+                  </div>
+        
+                  <div>
+                    <div tabindex="0" class="form-select text-secondary" style="background-color: transparent; border: 1px solid #fff;">
+                      <div>
+                        <p>Lingua</p>
+                        <p id="display-lang">Italia</p>
+                      </div>
+                      <ul>
+                        <li class="d-flex justify-content-between"><p>Stati Uniti</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Arabia Saudita</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Argentina</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Australia</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Austria</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Belgio</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Brasile</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Canada</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Cile</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Colombia</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Corea</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Danimarca</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Emirati Arabi</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Finlandia</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Francia</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Germania</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Giappone</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Grecia</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Hong-Kong</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>India</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Irlanda</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between"><p>Isdraele</p><i class="fa-solid fa-check"></i></li>
+                        <li class="d-flex justify-content-between selected"><p>Italia</p><i class="fa-solid fa-check"></i></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-        
-                <div class="check-form">
-                  <input type="checkbox" class="form-checkbox">
-                  <p>Posso disiscrivermi in qualsiasi momento modificando le mie 
-                     <a class="form-the-sims-a" href="#"> preferenze sulle e-mail</a>, contattando <a class="form-the-sims-a" href="#">privacyadmin.ea.com</a> o 
-                     scrivendo a Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood  
-                     Shores Pkwy, Redwood City, CA, 94065, USA.</p>
+                <div class="form-check mb-3 text-white">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Posso disiscrivermi in qualsiasi momento modificando le mie preferenze sulle e-mail, contattando
+                    privacyadmin.ea.com o scrivendo a Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy,
+                    Redwood City, CA, 94065, USA.
+                  </label>
                 </div>
-              </form>
-              <div class="btn-container d-sm-block">
-                <a class="btn btn-blue bg-orange" href="#">
+                <div class="btn-container d-sm-block">
+                  <a class="btn bg-orange text-white" href="#">
                     Iscriviti
-                </a>
-            </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
+
         </section>
       </section>
       
@@ -1388,31 +1369,7 @@
       crossorigin="anonymous"></script>
       <script src="./scripts/ea-originals.js"></script>
       <script src="./scripts/carousel.js"></script>
-      <script>
-        const selected = document.querySelector(".selected");
-        const optionsContainer = document.getElementById("options-container");
-        const btnCountry = document.querySelector(".btn-country");
-        const optionsList = document.querySelectorAll(".option");
-        
-  
-        selected.addEventListener("click", function(){
-          optionsContainer.classList.toggle("active");
-        });
-  
-        optionsList.forEach(o => {
-          o.addEventListener("click", () => {
-            selected.innerHTML = o.querySelector("label").innerHTML;
-            optionsContainer.classList.remove("active");
-          });
-        });
-  
-        document.addEventListener('mouseup', function(e){
-          if(!optionsContainer.contains(e.target)){
-            optionsContainer.classList.remove("active");
-          }
-        });
-  
-      </script>
+      <script src="./scripts/form-select.js"></script>
   </body>
 
 </html>
