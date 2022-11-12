@@ -3,11 +3,11 @@ const boxContent = [
     {
       id: 0,
 
-      src1: "../assets/images/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767p.jpg",
+      src1: "../assets/images/ultimi-giochi/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767p.jpg",
 
       logoWidth: "width: 130px",
       
-      src2: "../assets/images/fifa23-logo-white-stacked.svg",
+      src2: "../assets/images/ultimi-giochi/fifa23-logo-white-stacked.svg",
 
       href1: "https://www.ea.com/it-it/games/fifa/fifa-23",
 
@@ -19,11 +19,11 @@ const boxContent = [
     {
         id: 1,
 
-        src1: "../assets/images/apex-mobile-keyart-1x1.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/apex-mobile-keyart-1x1.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 70px",
         
-        src2: "../assets/images/apex-mobile-logo.svg",
+        src2: "../assets/images/ultimi-giochi/apex-mobile-logo.svg",
 
         href1: "https://www.ea.com/it-it/games/apex-legends/apex-legends-mobile",
 
@@ -35,11 +35,11 @@ const boxContent = [
     {
         id: 2,
 
-        src1: "../assets/images/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg",
+        src1: "../assets/images/ultimi-giochi/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg",
 
         logoWidth: "width: 140px",
         
-        src2: "../assets/images/m23-gamebox-logo.svg",
+        src2: "../assets/images/ultimi-giochi/m23-gamebox-logo.svg",
 
         href1: "https://www.ea.com/games/madden-nfl/madden-nfl-23?setLocale=en-us",
 
@@ -51,11 +51,11 @@ const boxContent = [
     {
         id: 3,
 
-        src1: "../assets/images/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767p.png",
+        src1: "../assets/images/ultimi-giochi/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767p.png",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/f122-gamebox-logo.png",
+        src2: "../assets/images/ultimi-giochi/f122-gamebox-logo.png",
 
         href1: "https://www.ea.com/it-it/games/f1/f1-22",
 
@@ -67,11 +67,11 @@ const boxContent = [
     {
         id: 4,
 
-        src1: "../assets/images/grid-legends-gamebox.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/grid-legends-gamebox.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/grid-legends-logo-gamebox.png",
+        src2: "../assets/images/ultimi-giochi/grid-legends-logo-gamebox.png",
 
         href1: "https://www.ea.com/it-it/games/grid/grid-legends",
 
@@ -83,11 +83,11 @@ const boxContent = [
     {
         id: 5,
 
-        src1: "../assets/images/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/battlefield-2042-mono-logo-svg.svg",
+        src2: "../assets/images/ultimi-giochi/battlefield-2042-mono-logo-svg.svg",
 
         href1: "https://www.ea.com/it-it/games/battlefield/battlefield-2042",
 
@@ -99,11 +99,11 @@ const boxContent = [
     {
         id: 6,
 
-        src1: "../assets/images/nhl22-gin-16x9.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/nhl22-gin-16x9.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/nhl22-mono-logo.png",
+        src2: "../assets/images/ultimi-giochi/nhl22-mono-logo.png",
 
         href1: "https://www.ea.com/games/nhl/nhl-22?setLocale=en-us",
 
@@ -115,11 +115,11 @@ const boxContent = [
     {
         id: 7,
 
-        src1: "../assets/images/fifa22-key-art.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/fifa22-key-art.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 130px",
         
-        src2: "../assets/images/fifa22-mono-logo.svg",
+        src2: "../assets/images/ultimi-giochi/fifa22-mono-logo.svg",
 
         href1: "https://www.ea.com/it-it/games/fifa/fifa-22",
 
@@ -131,11 +131,11 @@ const boxContent = [
     {
         id: 8,
 
-        src1: "../assets/images/lir-keyart.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/lir-keyart.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/lir-logo-mono.png",
+        src2: "../assets/images/ultimi-giochi/lir-logo-mono.png",
 
         href1: "https://www.ea.com/it-it/games/lost-in-random",
 
@@ -147,11 +147,11 @@ const boxContent = [
     {
         id: 9,
 
-        src1: "../assets/images/madden-22-mobile-keyart.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/madden-22-mobile-keyart.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 130px",
         
-        src2: "../assets/images/madden-22-mobile-mono-logo.svg",
+        src2: "../assets/images/ultimi-giochi/madden-22-mobile-mono-logo.svg",
 
         href1: "https://www.ea.com/it-it/games/madden-nfl/madden-nfl-23-mobile",
 
@@ -163,11 +163,11 @@ const boxContent = [
     {
         id: 10,
 
-        src1: "../assets/images/madden-nfl-22-keyart.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/madden-nfl-22-keyart.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 130px",
         
-        src2: "../assets/images/madden-nfl-22-mono-logo.svg",
+        src2: "../assets/images/ultimi-giochi/madden-nfl-22-mono-logo.svg",
 
         href1: "https://www.ea.com/games/madden-nfl/madden-nfl-22?setLocale=en-us",
 
@@ -179,11 +179,11 @@ const boxContent = [
     {
         id: 11,
 
-        src1: "../assets/images/mass-effect-legendary-edition-key-art.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/mass-effect-legendary-edition-key-art.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 130px",
         
-        src2: "../assets/images/mele-mono-logo.svg",
+        src2: "../assets/images/ultimi-giochi/mele-mono-logo.svg",
 
         href1: "https://www.ea.com/it-it/games/mass-effect/mass-effect-legendary-edition",
 
@@ -195,11 +195,11 @@ const boxContent = [
     {
         id: 12,
 
-        src1: "../assets/images/it-takes-two-keyart.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/it-takes-two-keyart.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 130px",
         
-        src2: "../assets/images/it-takes-two-logo-mono.png",
+        src2: "../assets/images/ultimi-giochi/it-takes-two-logo-mono.png",
 
         href1: "https://www.ea.com/it-it/games/it-takes-two",
 
@@ -211,11 +211,11 @@ const boxContent = [
     {
         id: 13,
 
-        src1: "../assets/images/moh-medal-of-honor-above-and-beyond-keyart.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/moh-medal-of-honor-above-and-beyond-keyart.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/moh-above-and-beyond-logo-primary-horizontal-white.svg",
+        src2: "../assets/images/ultimi-giochi/moh-above-and-beyond-logo-primary-horizontal-white.svg",
 
         href1: "https://www.ea.com/it-it/games/medal-of-honor/medal-of-honor-above-and-beyond",
 
@@ -227,11 +227,11 @@ const boxContent = [
     {
         id: 14,
 
-        src1: "../assets/images/nfshpr-keyart-1x1.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/nfshpr-keyart-1x1.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/nfshpr-logo-white.png",
+        src2: "../assets/images/ultimi-giochi/nfshpr-logo-white.png",
 
         href1: "https://www.ea.com/it-it/games/need-for-speed/need-for-speed-hot-pursuit-remastered",
 
@@ -243,11 +243,11 @@ const boxContent = [
     {
         id: 15,
 
-        src1: "../assets/images/nhl21-keyart.png.adapt.crop1x1.767p.png",
+        src1: "../assets/images/ultimi-giochi/nhl21-keyart.png.adapt.crop1x1.767p.png",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/nhl21-mono-logo.png",
+        src2: "../assets/images/ultimi-giochi/nhl21-mono-logo.png",
 
         href1: "https://www.ea.com/games/nhl/nhl-21",
 
@@ -259,11 +259,11 @@ const boxContent = [
     {
         id: 16,
 
-        src1: "../assets/images/fifa21-keyart-horizontal-16x9.png.adapt.crop1x1.767p.png",
+        src1: "../assets/images/ultimi-giochi/fifa21-keyart-horizontal-16x9.png.adapt.crop1x1.767p.png",
 
         logoWidth: "width: 120px",
         
-        src2: "../assets/images/fifa-21-primary-stacked-white.svg",
+        src2: "../assets/images/ultimi-giochi/fifa-21-primary-stacked-white.svg",
 
         href1: "https://www.ea.com/it-it/games/fifa/fifa-21",
 
@@ -275,11 +275,11 @@ const boxContent = [
     {
         id: 17,
 
-        src1: "../assets/images/sws-keyart.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/sws-keyart.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/sws-logo-light.svg",
+        src2: "../assets/images/ultimi-giochi/sws-logo-light.svg",
 
         href1: "https://www.ea.com/it-it/games/starwars/squadrons",
 
@@ -291,11 +291,11 @@ const boxContent = [
     {
         id: 18,
 
-        src1: "../assets/images/m21-keyart.png.adapt.crop1x1.767p.png",
+        src1: "../assets/images/ultimi-giochi/m21-keyart.png.adapt.crop1x1.767p.png",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/m21-logo-light.svg",
+        src2: "../assets/images/ultimi-giochi/m21-logo-light.svg",
 
         href1: "https://www.ea.com/games/madden-nfl/madden-nfl-23?setLocale=en-us",
 
@@ -307,11 +307,11 @@ const boxContent = [
     {
         id: 19,
 
-        src1: "../assets/images/ufc4-gin-keyart.png.adapt.crop1x1.767p.png",
+        src1: "../assets/images/ultimi-giochi/ufc4-gin-keyart.png.adapt.crop1x1.767p.png",
 
         logoWidth: "width: 160px",
         
-        src2: "../assets/images/ufc-mono-logo.svg",
+        src2: "../assets/images/ultimi-giochi/ufc-mono-logo.svg",
 
         href1: "https://www.ea.com/it-it/games/ufc/ufc-4",
 
@@ -323,11 +323,11 @@ const boxContent = [
     {
         id: 20,
 
-        src1: "../assets/images/rocket-arena-keyart-16x9.jpg.adapt.crop1x1.767p.jpg",
+        src1: "../assets/images/ultimi-giochi/rocket-arena-keyart-16x9.jpg.adapt.crop1x1.767p.jpg",
 
         logoWidth: "width: 100px",
         
-        src2: "../assets/images/rocket-arena-mono-logo.svg",
+        src2: "../assets/images/ultimi-giochi/rocket-arena-mono-logo.svg",
 
         href1: "https://www.ea.com/it-it/games/rocket-arena",
 
