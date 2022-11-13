@@ -1,10 +1,12 @@
-.library-header{
-    background-image: url("EA-Project-Team-1/assets/images/games/library/consoles/ea-library-header.png");   
-    background-position: center;
-    background-size: cover;
-    height: 390px;
-    width: 100%;
-    margin-bottom: 5rem;
+.library-xbox-header{
+    background-image: url('https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png');   
+    height: 470px;
+
+    .xbox-h1{
+        h1{
+            width: 90%;
+        }
+    }
 
     hr{
         color: var(--light);
@@ -14,19 +16,35 @@
     }
 }
 
+.library-p{
+    
+    p{
+        width: 90%;
+        text-align: left;
+    }
+}
+
+
 @media only screen and (min-width: 1024px) and (max-width: 1500px){
-    .library-header{
+    .library-xbox-header{
         height: 350px;
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px){
-    .library-header{
+    .library-xbox-header{
         height: 210px;
         hr{
-            width: 160px;
+            width: 250px;
         }
-    }
+    }   
+
+    .xbox-h1{
+        text-align: center;
+        h1{
+            width: 40%;
+        }
+    }  
 
     .library-p{
         p{
@@ -37,9 +55,14 @@
 }
 
 @media only screen and (max-width: 768px){
-    .library-header{
+    .library-xbox-header{
         height: 160px;
     }
+
+    .xbox-h1{
+        text-align: center;
+        margin-top: 2rem;
+    }  
 
     .library-p{
         p{
@@ -50,12 +73,18 @@
 }
 
 @media only screen and (max-width: 639px){
-    .library-header{
+    .library-xbox-header{
         height: 160px;
         hr{
             width: 200px;
         }
     }
+
+    .xbox-h1{
+        h1{
+            width: 100%;
+        }
+    }   
 
     .library-p{
         p{

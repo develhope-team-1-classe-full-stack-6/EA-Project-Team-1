@@ -3896,16 +3896,15 @@ body[style^=overflow] {
   gap: 0.5rem;
 }
 
-<<<<<<< HEAD
-.library-header {
-  background-image: url("/EA-Project-Team-1/assets/images/games/library/consoles/ea-library-header.png");
+.library-ps5-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
   background-position: center;
   background-size: cover;
   height: 390px;
   width: 100%;
   margin-bottom: 5rem;
 }
-.library-header hr {
+.library-ps5-header hr {
   color: var(--light);
   width: 260px;
   border: 4px solid var(--light);
@@ -3913,15 +3912,15 @@ body[style^=overflow] {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1500px) {
-  .library-header {
+  .library-ps5-header {
     height: 350px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-  .library-header {
+  .library-ps5-header {
     height: 210px;
   }
-  .library-header hr {
+  .library-ps5-header hr {
     width: 160px;
   }
   .library-p p {
@@ -3930,7 +3929,7 @@ body[style^=overflow] {
   }
 }
 @media only screen and (max-width: 768px) {
-  .library-header {
+  .library-ps5-header {
     height: 160px;
   }
   .library-p p {
@@ -3939,486 +3938,161 @@ body[style^=overflow] {
   }
 }
 @media only screen and (max-width: 639px) {
-  .library-header {
+  .library-ps5-header {
     height: 160px;
   }
-  .library-header hr {
+  .library-ps5-header hr {
     width: 200px;
   }
   .library-p p {
     text-align: left;
     width: 100%;
   }
-=======
-@media screen and (max-width: 768px) {
-  #ea-originals-wrapper #video-originals-large {
-    display: none;
-  }
 }
-#ea-originals-wrapper .socials-wrapper {
-  display: flex;
-  justify-content: space-evenly;
+.library-xbox-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  height: 470px;
 }
-@media screen and (max-width: 768px) {
-  #ea-originals-wrapper .socials-wrapper {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  #ea-originals-wrapper #video-originals-small {
-    display: none;
-  }
-}
-#ea-originals-wrapper .check-form .form-the-sims-a {
-  text-decoration: none;
-  color: #ff4747;
-}
-#ea-originals-wrapper .check-form .form-the-sims-a:hover {
-  color: #ff4747;
-}
-#ea-originals-wrapper .form-email {
-  border: 2px solid #ffffff;
-}
-#ea-originals-wrapper .form-date {
-  border: 2px solid #ffffff;
-}
-#ea-originals-wrapper .btn-country {
-  border: 2px solid #ffffff;
-}
-
-.diversityheader {
-  font-size: 48px;
-  margin-top: 100px;
-  margin-bottom: 36px;
-  text-align: center;
-}
-
-section.corporatediversity p {
-  margin: 9px 0px;
-}
-section.corporatediversity p#lastpdiversity {
-  margin-bottom: 55px;
-}
-section .diversitylink {
-  text-decoration: none;
-  color: #960E0E;
-}
-
-.diversityitem {
-  display: flex;
-  height: 56px;
-  margin-top: 24px;
-}
-.diversityitem .diversityimgcont {
-  margin-right: 16px;
-}
-
-.diversitygreycardcontainer {
-  width: 70vw;
-  margin: auto;
-}
-.diversitygreycardcontainer .diversitygreycard {
-  width: 25%;
-  margin: 0px 0px 16px;
-  padding: 0px 8px;
-}
-.diversitygreycardcontainer .diversitygreycard img {
-  width: 100%;
-  height: auto;
-}
-.diversitygreycardcontainer .diversitygreycard .textcontent {
-  padding: 24px;
-  background-color: rgb(243, 243, 243);
-  height: 80%;
-}
-.diversitygreycardcontainer .diversitygreycard .textcontent h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0px;
-}
-.diversitygreycardcontainer .diversitygreycard .textcontent p {
-  font-size: 18px;
-}
-.diversitygreycardcontainer .dgc5, .diversitygreycardcontainer .dgc6, .diversitygreycardcontainer .dgc7 {
-  margin-top: 90px;
-}
-.diversitygreycardcontainer .dgc5 .textcontent, .diversitygreycardcontainer .dgc6 .textcontent, .diversitygreycardcontainer .dgc7 .textcontent {
-  height: 77%;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .pplay-main .diversityheader {
-    font-size: 32px !important;
-    margin-top: 50px;
-    margin-bottom: 36px;
-    text-align: center;
-  }
-  .accessibilityinclusionea h3 {
-    margin-bottom: 0px !important;
-  }
-  .diversityhero h3 {
-    font-size: 38px;
-  }
-  .diversitygreycardcontainer {
-    gap: 20px;
-  }
-  .diversitygreycardcontainer .diversitygreycard {
-    width: 33vw !important;
-  }
-  .diversitygreycardcontainer .diversitygreycard .textcontent {
-    height: 50%;
-  }
-  .diversitygreycardcontainer .dgc5, .diversitygreycardcontainer .dgc6 {
-    margin-top: 0px;
-  }
-  .diversitygreycardcontainer .dgc5 .textcontent, .diversitygreycardcontainer .dgc6 .textcontent {
-    height: 63%;
-  }
-  .diversitygreycardcontainer .dgc7 {
-    margin-top: 10px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .diversityitem {
-    height: fit-content !important;
-  }
-  .dgc5, .dgc6, .dgc7 {
-    margin-top: 0px !important;
-  }
-  .positivediversity {
-    height: 33vw;
-  }
-  .pplay-main .diversityheader {
-    font-size: 32px !important;
-    margin-top: 50px;
-    margin-bottom: 36px;
-    text-align: center;
-  }
-  .firstdivhero h3 {
-    font-size: 36px;
-  }
-  .diversitygreycardcontainer {
-    flex-direction: column;
-    gap: 30px;
-    width: 100%;
-  }
-  .diversitygreycardcontainer .diversitygreycard {
-    width: 100% !important;
-  }
-  .diversitygreycardcontainer .diversitygreycard p {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 1456px) {
-  .positivediversity {
-    height: 18vw !important;
-  }
-  .positivediversity img {
-    height: 100%;
-  }
-  .diversitygreycardcontainer {
-    width: 85vw !important;
-    max-width: 1600px !important;
-  }
-  .diversitygreycardcontainer .textcontent {
-    height: 50% !important;
-  }
-}
-.diversitytablecontainer {
-  margin-top: 40px;
-}
-@media only screen and (max-width: 800px) {
-  .diversitytablecontainer {
-    max-width: 90vw;
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-}
-.diversitytablecontainer .diversitytable {
-  width: 100%;
-  margin: 0px;
-  overflow: scroll !important;
-}
-.diversitytablecontainer .diversitytable tr {
-  height: 72.5px;
-}
-.diversitytablecontainer .diversitytable thead th {
-  background-color: #990703;
-  font-size: 14px;
-  color: #f3f3f3;
-  font-family: "ElectronicArtsText", Verdana;
-  border: 4px solid white;
-  border-radius: 10px !important;
-  height: 80px;
-  min-width: 100px;
-}
-.diversitytablecontainer .diversitytable thead .diversityth {
-  height: 72.5px;
-}
-.diversitytablecontainer .diversitytable td {
-  font-weight: 400;
-  margin: 3px !important;
-  padding-left: 30px;
-}
-
-.pplaygreycard p {
-  margin-top: 9px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .diversityhero .d3 {
-    font-size: 44px !important;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .positivediversity {
-    height: 15vw !important;
-  }
-  .positivediversity img {
-    height: 100%;
-  }
-}
-.positiveplayhero {
-  position: relative;
-}
-.positiveplayhero h3 {
-  position: absolute;
-  text-align: center;
-  color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  font-size: 38px;
-  width: 70%;
-}
-
-@media only screen and (min-width: 768px) {
-  #nav-tabContent {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0px !important;
-  }
-  #nav-tabContent .pplaybtn {
-    align-self: center;
-  }
-}
-.pplayeacard {
-  max-width: 85vw;
-}
-
-.pplay-main {
-  width: 85.15vw;
-  max-width: 1120px;
-  margin: auto;
-}
-.pplay-main p {
-  line-height: 27px;
-  font-size: 18px;
-  color: rgb(22, 22, 22);
-  margin: 18px 0px;
-}
-.pplay-main p.pplayintro {
-  margin: 80px 0px;
-}
-.pplay-main section {
-  margin: 80px 0px;
-}
-.pplay-main section.pplayaccessibility {
-  margin-top: -20px !important;
-}
-.pplay-main section.pplaycardpositive, .pplay-main section.pplayaccessibility {
-  display: flex;
-  flex-direction: column;
-}
-.pplay-main section.pplaycardpositive .btn-container, .pplay-main section.pplayaccessibility .btn-container {
-  align-self: center !important;
-}
-.pplay-main section.pplaycardpositive .btn-container .btn-darkred, .pplay-main section.pplayaccessibility .btn-container .btn-darkred {
-  background-color: #960E0E !important;
-}
-.pplay-main section.pplaycardpositive .btn-container .btn-darkred:hover, .pplay-main section.pplayaccessibility .btn-container .btn-darkred:hover {
-  background-color: #960E0E !important;
-}
-.pplay-main section.pplayimpegni .impegnicontainer {
-  height: 24.5vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 40px;
-}
-.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni {
-  width: 33.3%;
-  height: 50%;
-  padding: 0px 8px;
-  margin-bottom: 16px;
-}
-.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni .impegnilink {
-  height: 100%;
-  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-our-commnitments-cta-orange.jpg.adapt.crop16x9.652w.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni .impegnilink:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
-}
-.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni .impegnilink h3 {
-  color: #f3f3f3;
-  font-size: 24px;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 0px;
+.library-xbox-header .xbox-h1 h1 {
   width: 90%;
 }
-.pplay-main section.pplayinside .cards-container {
-  display: flex;
-  flex-direction: column;
-}
-.pplay-main section.pplayinside .cards-container .btn-container {
-  align-self: center;
-  display: inline !important;
-}
-.pplay-main section .header.d5 {
-  font-size: 32px;
-  color: #960E0E;
-  font-style: normal;
-  font-weight: 600;
-  margin-bottom: 11.2px;
-}
-.pplay-main .pplaycardcontainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: -50px !important;
-}
-.pplay-main .pplaycardcontainer .pplaycard {
-  margin: 0px 0px 16px;
-  padding: 0px 8px;
-  width: 42vw;
-}
-.pplay-main .pplaycardcontainer .pplaycard img {
-  width: 100%;
-  height: auto;
-}
-.pplay-main .pplaycardcontainer .pplaycard .text {
-  background-color: rgb(243, 243, 243);
-  padding: 24px;
-}
-.pplay-main .pplaycardcontainer .pplaycard .text h3 {
-  margin-bottom: 0px;
-  font-weight: 700;
-  letter-spacing: -0.6px;
-  line-height: 32px;
+.library-xbox-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .pplay-main section {
-    margin: 40px 0px;
-  }
-  .pplay-main section.pplayaccessibility h3 {
-    margin-top: 40px;
-  }
-  .pplay-main section.pplayaccessibility p {
-    margin-bottom: 30px !important;
-  }
-  .pplay-main section.pplayinside h3 {
-    margin-bottom: 0px !important;
-  }
-  .pplay-main p {
-    font-size: 16px;
-    margin: 16px 0px !important;
-  }
-  .pplay-main p.pplayintro {
-    margin-top: 100px !important;
-  }
-  .pplay-main h3 {
-    font-size: 22px !important;
-  }
-  .pplay-main .positiveplayhero {
-    height: 26vw;
-  }
-  .pplay-main .impegnicontainer {
-    height: auto !important;
-  }
-  .pplay-main .impegnicontainer .cardimpegni {
-    width: 50% !important;
-    height: 18.5vw !important;
-    margin: 0px 0px 24px !important;
-    padding: 0px 12px !important;
-  }
-  .pplay-main .impegnicontainer .cardimpegni h3 {
-    font-size: 20px !important;
+.library-p p {
+  width: 90%;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-xbox-header {
+    height: 350px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .positiveplayhero {
-    height: auto;
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-xbox-header {
+    height: 210px;
   }
-  .positiveplayhero img {
-    min-height: 250px;
+  .library-xbox-header hr {
+    width: 250px;
   }
-  .positiveplayhero h3 {
-    font-size: 36px;
-    width: 100vw;
+  .xbox-h1 {
+    text-align: center;
   }
-  .pplay-main section {
-    margin: 40px 0px;
+  .xbox-h1 h1 {
+    width: 40%;
   }
-  .pplay-main section.pplayaccessibility h3 {
-    margin-top: 40px;
-  }
-  .pplay-main section.pplayaccessibility p {
-    margin-bottom: 30px !important;
-  }
-  .pplay-main section.pplayinside h3 {
-    margin-bottom: 0px !important;
-  }
-  .pplay-main p {
-    font-size: 16px;
-    margin: 16px 0px !important;
-  }
-  .pplay-main p.pplayintro {
-    margin-top: 40px !important;
-  }
-  .pplay-main h3 {
-    font-size: 22px !important;
-  }
-  .pplay-main .impegnicontainer {
-    height: auto !important;
-  }
-  .pplay-main .impegnicontainer .cardimpegni {
-    width: 100% !important;
-    height: 35vw !important;
-    margin: 0px 0px 20px !important;
-    padding: 0px !important;
-  }
-  .pplay-main .impegnicontainer .cardimpegni h3 {
-    font-size: 20px !important;
-  }
-  .pplaycardcontainer {
-    flex-direction: column;
-  }
-  .pplaycardcontainer .pplaycard {
-    width: 85vw !important;
-  }
-  .pplayeacard {
-    width: 85vw !important;
-  }
-  .pplaybtn {
-    width: 85vw !important;
+  .library-p p {
+    text-align: left;
+    width: 90%;
   }
 }
-@media only screen and (min-width: 1456px) {
-  .positiveplayhero h3 {
-    font-size: 54px;
+@media only screen and (max-width: 768px) {
+  .library-xbox-header {
+    height: 160px;
   }
-  .impegnicontainer {
-    max-height: 321.31px;
+  .xbox-h1 {
+    text-align: center;
+    margin-top: 2rem;
   }
->>>>>>> 568b089a659a7341209b0d592b96fe2fcdd59860
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .library-xbox-header {
+    height: 160px;
+  }
+  .library-xbox-header hr {
+    width: 200px;
+  }
+  .xbox-h1 h1 {
+    width: 100%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
+}
+.library-switch-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  background-color: black;
+  height: 470px;
+}
+.library-switch-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+.library-switch-header .switch-h1 h1 {
+  width: 60%;
+}
+
+.library-p a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-switch-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-switch-header {
+    height: 210px;
+  }
+  .library-switch-header hr {
+    width: 250px;
+  }
+  .switch-h1 {
+    text-align: center;
+  }
+  .switch-h1 h1 {
+    width: 40%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-switch-header {
+    height: 250px;
+  }
+  .library-switch-header hr {
+    width: 150px;
+  }
+  .switch-h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 639px) {
+  .library-switch-header {
+    height: 220px;
+  }
+  .library-switch-header hr {
+    width: 150px;
+  }
+  .switch-h1 h1 {
+    width: 50%;
+    font-size: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
