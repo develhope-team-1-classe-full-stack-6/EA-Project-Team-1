@@ -224,7 +224,7 @@ const cardContent = [
 
     date: "18-ott-2022",
 
-    title: "FIFA 20 | Note degli sviluppatori sull'aggiornamento #2 - EA SPORTS",
+    title: "FIFA 23 | Note degli sviluppatori sull'aggiornamento #2 - EA SPORTS",
 
     content:
       "L'aggiornamento #2 di FIFA 23 è disponibile per tutte le versioni e include modifiche alla velocità della palla di un passaggio rasoterra, alla precisione dei pallonetti e all'efficacia dei contrasti in piedi.",
@@ -240,9 +240,9 @@ const cardContent = [
 
     date: "26 sett 2022",
 
-    title: `Tutto ciò che è stato annunciato durante l'evento:"Behind The Sims Summit"`,
+    title: `FIFA 23 - Versione di prova in accesso anticipato EA Play - Sito ufficiale …`,
 
-    content: `Uno sguardo al passato, al presente e al radioso futuro di The Sims`
+    content: `Inizia la tua stagione in anticipo con la versione di prova in accesso anticipato EA Play di FIFA 23`
       ,
   },
 
@@ -256,10 +256,10 @@ const cardContent = [
 
     date: "26 sett 2022",
 
-    title: "Un aggiornamento per i nostri giocatori Mac sull'EA app per Windows",
+    title: "FIFA 23 - Note degli sviluppatori - Un'occhiata da vicino alla FGS 23 - EA …",
 
     content:
-      "Forse avrai letto qualche notizia sulla nuova EA app per Windows, che presto diventerà il principale punto di riferimento per i giochi PC di EA, andando a sostituire Origin.",
+      "La FIFA Global Series (FGS) di quest'anno sarà simile a quella della passata stagione, ma con alcune modifiche di rilievo.",
   },
 
   {
@@ -272,10 +272,10 @@ const cardContent = [
 
     date: "23 sett 2022",
 
-    title: "La nuovissima EA app per Windows",
+    title: "Musqueam x FIFA 23",
 
     content:
-      "Siamo lieti di annunciare che l'EA app ha ufficialmente abbandonato la fase open beta e presto sostituirà Origin in qualità di piattaforma primaria per PC.",
+      "Scopri di più Musqueam in FIFA 23",
   },
 ];
 

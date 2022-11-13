@@ -3896,11 +3896,77 @@ body[style^=overflow] {
   gap: 0.5rem;
 }
 
+<<<<<<< HEAD
 .library-ps5-header {
   background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
   background-position: center;
   background-size: cover;
   height: 390px;
+=======
+@media screen and (max-width: 768px) {
+  #ea-originals-wrapper #video-originals-large {
+    display: none;
+  }
+}
+#ea-originals-wrapper .socials-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  #ea-originals-wrapper .socials-wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  #ea-originals-wrapper #video-originals-small {
+    display: none;
+  }
+}
+#ea-originals-wrapper .form-select ul {
+  background-color: #161616;
+}
+#ea-originals-wrapper .btn:hover {
+  background-color: var(--orange);
+}
+
+.diversityheader {
+  font-size: 48px;
+  margin-top: 100px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+section.corporatediversity p {
+  margin: 9px 0px;
+}
+section.corporatediversity p#lastpdiversity {
+  margin-bottom: 55px;
+}
+section .diversitylink {
+  text-decoration: none;
+  color: #960E0E;
+}
+
+.diversityitem {
+  display: flex;
+  height: 56px;
+  margin-top: 24px;
+}
+.diversityitem .diversityimgcont {
+  margin-right: 16px;
+}
+
+.diversitygreycardcontainer {
+  width: 70vw;
+  margin: auto;
+}
+.diversitygreycardcontainer .diversitygreycard {
+  width: 25%;
+  margin: 0px 0px 16px;
+  padding: 0px 8px;
+}
+.diversitygreycardcontainer .diversitygreycard img {
+>>>>>>> f27ba57b0099bd30c482bf90495088d428e92522
   width: 100%;
   margin-bottom: 5rem;
 }
