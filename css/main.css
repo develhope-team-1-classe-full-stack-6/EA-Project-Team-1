@@ -4746,7 +4746,7 @@ section .diversitylink {
   color: white;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -40%);
   font-size: 38px;
   width: 70%;
 }
@@ -4976,6 +4976,218 @@ section .diversitylink {
   }
   .impegnicontainer {
     max-height: 321.31px;
+  }
+}
+.socialimpacthero {
+  position: relative;
+}
+.socialimpacthero h3 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  font-size: 38px;
+  width: 70%;
+}
+
+.socialimpactintro {
+  margin-top: 30px !important;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .socialimpactintro {
+    margin-top: -20px !important;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .socialimpactintro {
+    margin-top: 60px !important;
+  }
+}
+
+.impegnilinkblue {
+  height: 100%;
+  background-image: url("../../assets/images/commitments/impegnilinkblue.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.impegnilinkblue:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+.impegnilinkblue h3 {
+  color: #f3f3f3;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0px;
+  width: 90%;
+}
+
+.blueimpactheader {
+  color: #0A5681 !important;
+}
+
+.impactcardscontainer {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.impactcardscontainer .impactcardscard {
+  width: 33.3%;
+  height: 27vw;
+  max-height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.impactcardscontainer .impactcardscard .impacttile {
+  width: 95%;
+  height: 95%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4vw;
+}
+.impactcardscontainer .impactcardscard .impacttile .impactcardh3, .impactcardscontainer .impactcardscard .impacttile p {
+  color: #f3f3f3;
+  text-align: center;
+  font-weight: 700;
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .impactcardscard {
+    width: 48% !important;
+    height: 33vw !important;
+    max-height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vw;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 40px !important;
+  }
+  .socialimpactintro {
+    margin-top: 0px !important;
+  }
+  .socialimpactintro p {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+  .impactcardscard {
+    width: 100% !important;
+    height: 35vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 40px !important;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 529px) {
+  .impactcardscard {
+    width: 100% !important;
+    height: 45vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 90% !important;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 36px !important;
+    margin: 0px !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .impactcardscard {
+    width: 100% !important;
+    height: 60vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 90% !important;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 36px !important;
+    margin: 0px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .socialimpacthero h3 {
+    transform: translate(-50%, -50%) !important;
   }
 }
 
