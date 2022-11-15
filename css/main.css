@@ -1575,7 +1575,7 @@ h6 {
 }
 .custom-pagination .carousel-item {
   margin-right: 0;
-  width: auto;
+  width: 100%;
   float: none;
   transition: none;
 }
@@ -3938,6 +3938,272 @@ body[style^=overflow] {
   gap: 0.5rem;
 }
 
+.library-ps5-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  background-position: center;
+  background-size: cover;
+  height: 390px;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.library-ps5-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-ps5-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-ps5-header {
+    height: 210px;
+  }
+  .library-ps5-header hr {
+    width: 160px;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-ps5-header {
+    height: 160px;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .library-ps5-header {
+    height: 160px;
+  }
+  .library-ps5-header hr {
+    width: 200px;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
+}
+.library-xbox-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  height: 470px;
+}
+.library-xbox-header .xbox-h1 h1 {
+  width: 90%;
+}
+.library-xbox-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+
+.library-p p {
+  width: 90%;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-xbox-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-xbox-header {
+    height: 210px;
+  }
+  .library-xbox-header hr {
+    width: 250px;
+  }
+  .xbox-h1 {
+    text-align: center;
+  }
+  .xbox-h1 h1 {
+    width: 40%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-xbox-header {
+    height: 160px;
+  }
+  .xbox-h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .library-xbox-header {
+    height: 160px;
+  }
+  .library-xbox-header hr {
+    width: 200px;
+  }
+  .xbox-h1 h1 {
+    width: 100%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
+}
+.library-switch-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  background-color: black;
+  height: 470px;
+}
+.library-switch-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+.library-switch-header .switch-h1 h1 {
+  width: 60%;
+}
+
+.library-p a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-switch-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-switch-header {
+    height: 210px;
+  }
+  .library-switch-header hr {
+    width: 250px;
+  }
+  .switch-h1 {
+    text-align: center;
+  }
+  .switch-h1 h1 {
+    width: 40%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-switch-header {
+    height: 250px;
+  }
+  .library-switch-header hr {
+    width: 150px;
+  }
+  .switch-h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 639px) {
+  .library-switch-header {
+    height: 220px;
+  }
+  .library-switch-header hr {
+    width: 150px;
+  }
+  .switch-h1 h1 {
+    width: 50%;
+    font-size: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
+}
+.library-mobile-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  height: 400px;
+}
+.library-mobile-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+.library-mobile-header .mobile-h1 h1 {
+  width: 90%;
+}
+
+.library-p p {
+  width: 87%;
+}
+.library-p a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-mobile-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-mobile-header {
+    height: 210px;
+  }
+  .library-mobile-header hr {
+    width: 200px;
+  }
+  .library-p p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-mobile-header {
+    height: 250px;
+  }
+  .library-mobile-header hr {
+    width: 150px;
+  }
+  .mobile-h1 {
+    margin-top: 2rem;
+    width: 70%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 92%;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 639px) {
+  .library-mobile-header {
+    height: 220px;
+  }
+  .library-mobile-header hr {
+    width: 150px;
+  }
+  .mobile-h1 h1 {
+    font-size: 2rem;
+  }
+  .library-p p {
+    width: 100%;
+  }
+}
 :root {
   --black: #000000;
   --dark: #161616;
