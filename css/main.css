@@ -4670,5 +4670,30 @@ section .diversitylink {
     max-height: 321.31px;
   }
 }
+.impegnilinkblue {
+  height: 100%;
+  background-image: url("../../assets/images/commitments/impegnilinkblue.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.impegnilinkblue:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+.impegnilinkblue h3 {
+  color: #f3f3f3;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0px;
+  width: 90%;
+}
+
+.blueimpactheader {
+  color: #0A5681 !important;
+}
 
 /*# sourceMappingURL=main.css.map */
