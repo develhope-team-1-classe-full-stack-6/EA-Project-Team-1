@@ -4558,6 +4558,24 @@ body[style^=overflow] {
   background-color: var(--orange);
 }
 
+.form-wrapper div .form .form-floating {
+  border: 2px solid white;
+}
+.form-wrapper div .form .form-floating:hover {
+  outline: 2px solid white;
+}
+
+.form-wrapper div .form div:nth-child(2) div .form-select {
+  border: 2px solid white;
+}
+.form-wrapper div .form div:nth-child(2) div .form-select:hover {
+  outline: 2px solid white;
+}
+
+.form-wrapper div .form div:nth-child(2) div .form-select ul {
+  border: 3px solid white;
+}
+
 .diversityheader {
   font-size: 48px;
   margin-top: 100px;
