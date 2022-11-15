@@ -1,0 +1,31 @@
+#ea-originals-wrapper{
+  #video-originals-large{
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .socials-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+
+  #video-originals-small{
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .form-select ul{
+    background-color: #161616;
+  }
+
+  .btn:hover{
+    background-color: var(--orange);
+  }
+};
+

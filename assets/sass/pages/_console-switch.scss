@@ -1,0 +1,100 @@
+.library-switch-header{
+    background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+    background-color: black;
+    height: 470px;
+
+    hr{
+        color: var(--light);
+        width: 260px;
+        border: 4px solid var(--light);
+        opacity: 1;
+    }
+
+    .switch-h1{
+        h1{
+            width: 60%;
+        }
+    }
+}
+
+.library-p{
+    a{
+        text-decoration: none;
+        color: var(--orange);
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px){
+    .library-switch-header{
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    .library-switch-header{
+        height: 210px;
+        hr{
+            width: 250px;
+        }
+    }   
+
+    .switch-h1{
+        text-align: center;
+        h1{
+            width: 40%;
+        }
+    }  
+
+    .library-p{
+        p{
+            text-align: left;
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .library-switch-header{
+        height: 250px;
+
+        hr{
+            width: 150px;
+        }
+    }
+
+    .switch-h1{
+        text-align: center;
+        margin-top: 2rem;
+    }  
+
+    .library-p{
+        p{
+            text-align: left;
+            width: 95%;
+        }
+    }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 639px){
+    .library-switch-header{
+        height: 220px;
+        hr{
+            width: 150px;
+        }
+    }
+
+    .switch-h1{
+        h1{
+            width: 50%;
+            font-size: 2rem;
+        }
+    }   
+
+    .library-p{
+        p{
+            text-align: left;
+            width: 100%;
+        }
+    }
+}

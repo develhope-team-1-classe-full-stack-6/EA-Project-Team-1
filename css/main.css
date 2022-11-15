@@ -1227,7 +1227,7 @@ h6 {
     font-size: var(--h5-font-size-desktop);
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
   .card-1 .cards-container {
     display: flex;
     flex-direction: column;
@@ -3384,15 +3384,27 @@ h6 {
     flex: 1 1 50%;
   }
 }
+.form-wrapper div div p {
+  font-size: 16px;
+}
 .form-wrapper div .form .form-floating {
   height: 60px;
+  border-radius: 3px;
 }
 .form-wrapper div .form .form-floating .form-control {
   border: none;
   box-shadow: none;
+  padding-left: 20px;
+  background-color: var(--transparent);
 }
 .form-wrapper div .form .form-floating input[type=text].form-control:focus::placeholder {
   color: #919191;
+}
+.form-wrapper div .form .form-floating label {
+  color: #919191;
+  margin-left: 5px;
+  font-family: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 @media screen and (min-width: 768px) {
   .form-wrapper div .form div:nth-child(2) div {
@@ -3402,11 +3414,13 @@ h6 {
 .form-wrapper div .form div:nth-child(2) div .form-select {
   height: 60px;
   border-radius: 0px;
-  border: 1px solid #000000;
   box-shadow: none;
   padding: 0px;
   position: relative;
   cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: var(--transparent);
 }
 .form-wrapper div .form div:nth-child(2) div .form-select > div {
   position: absolute;
@@ -3414,13 +3428,25 @@ h6 {
 }
 .form-wrapper div .form div:nth-child(2) div .form-select > div p {
   margin: 0;
+  margin-left: 5px;
+}
+.form-wrapper div .form div:nth-child(2) div .form-select > div .label-select {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #afafaf;
+  font-family: "ElectronicArtsText", Verdana, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+.form-wrapper div .form div:nth-child(2) div .form-select > div #display-lang {
+  font-size: 16px;
 }
 .form-wrapper div .form div:nth-child(2) div .form-select:not(:focus) ul {
   display: none;
 }
 .form-wrapper div .form div:nth-child(2) div .form-select ul {
+  transform: translate(-3px, -3px);
   display: block;
-  width: 100%;
+  width: 102%;
   height: 300px;
   position: absolute;
   background-color: white;
@@ -3428,6 +3454,7 @@ h6 {
   list-style-type: none;
   padding-inline: 1.5em;
   border: 3px solid black;
+  border-radius: 3px;
 }
 .form-wrapper div .form div:nth-child(2) div .form-select ul li {
   height: 60px;
@@ -3450,6 +3477,21 @@ h6 {
 }
 .form-wrapper div .form div:nth-child(2) div .form-select ul li.selected .fa-solid.fa-check {
   display: block;
+}
+.form-wrapper div .form .form-check .form-check-input {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+.form-wrapper div .form .form-check .form-check-label {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.form-wrapper div .form .form-check .form-check-label a {
+  color: var(--violet);
+  text-decoration: none;
 }
 
 /*Sezione giochi in evidenza*/
@@ -4160,6 +4202,780 @@ body[style^=overflow] {
   }
   .library-p p {
     width: 100%;
+  }
+}
+:root {
+  --black: #000000;
+  --dark: #161616;
+  --light: #f3f3f3;
+  --white: #ffffff;
+  --gray: #eaeaea;
+  --gray-focus: #dedede;
+  --dark-blue: #29244d;
+  --blue: #001C9D;
+  --light-orange: #ed5355;
+  --orange: #ff4747;
+  --red: #fe0115;
+  --dark-light-blue: #6fb0d6;
+  --violet: #a649ce;
+  --dark-violet: #390086;
+  --transparent: transparent;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-gray-focus {
+  color: var(--gray-focus);
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-light-orange {
+  color: var(--light-orange);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-dark-light-blue {
+  color: var(--dark-light-blue);
+}
+
+.text-violet {
+  color: var(--violet);
+}
+
+.text-dark-violet {
+  color: var(--dark-violet);
+}
+
+.text-transparent {
+  color: var(--transparent);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-gray-focus {
+  background-color: var(--gray-focus);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-dark-light-blue {
+  background-color: var(--dark-light-blue);
+}
+
+.bg-violet {
+  background-color: var(--violet);
+}
+
+.bg-dark-violet {
+  background-color: var(--dark-violet);
+}
+
+.bg-transparent {
+  background-color: var(--transparent);
+}
+
+.navbar-2-star-wars {
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 35px;
+}
+.navbar-2-star-wars .navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+@media screen and (max-width: 991px) {
+  .navbar-2-star-wars .navbar > .container-fluid {
+    justify-content: start;
+  }
+}
+.navbar-2-star-wars .navbar > .container-fluid a img {
+  transition: transform 0.5s ease;
+  height: 90%;
+  width: 90%;
+}
+@media screen and (max-width: 991px) {
+  .navbar-2-star-wars .navbar > .container-fluid a img {
+    transition: transform 0.5s ease;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-2-star-wars .navbar > .container-fluid a img {
+    transition: transform 0.5s ease;
+    transform: scale(0.8);
+  }
+}
+.navbar-2-star-wars .navbar .nav-bar2-buttons {
+  width: 30px;
+  height: 30px;
+}
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
+  font-size: 1.5rem;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu:hover {
+  font-size: 2rem;
+  color: gold;
+}
+@media screen and (max-width: 991px) {
+  .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
+    display: none;
+  }
+}
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu:hover {
+  color: gold;
+  transition: all 0.15s;
+}
+@media screen and (max-width: 991px) {
+  .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
+    font-size: 1.5rem;
+    transition: 0.25s;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+    display: inline;
+  }
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown .dropdown-menu.show {
+  transform-origin: top !important;
+  transform: scaleY(0) !important;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show {
+  transform: scaleY(1) !important;
+  transition: all 0.25s;
+  background: transparent;
+  border: none;
+  padding-top: 1rem;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown {
+  background: rgba(0, 0, 0, 0.88);
+  list-style: none;
+  padding: 35px;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.left-radius {
+  border-radius: 5px 0px 0px 5px;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.right-radius {
+  border-radius: 0px 5px 5px 0px;
+  padding-left: 0px;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.all-radius {
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-title {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  color: var(--black);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-divider {
+  width: 82%;
+  transform: translateX(10%);
+  margin: 1px;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item {
+  color: var(--white);
+  opacity: 0.9;
+  padding-block: 8px;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item:hover {
+  background: unset;
+  color: gold;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link {
+  padding-top: 0.6rem;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link:hover {
+  color: gold;
+  transition: all 0.15s;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show::after {
+  display: none;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i {
+  transform: rotateX(85deg) scaleY(10) scaleX(0.9);
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i.fa-solid.fa-angle-down::before {
+  display: inline-block;
+  margin-left: 0.255em;
+}
+.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show:hover i.fa-solid.fa-angle-down::before {
+  transform: rotateX(180deg);
+  transition: all 0.45s;
+}
+
+.wrapper-wide-banners {
+  background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1920w.jpg);
+}
+@media screen and (max-width: 1455px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1456w.jpg);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1024w.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.768w.jpg);
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.320w.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper-wide-banners .card1 .h6-squadron {
+    color: white;
+  }
+}
+.wrapper-wide-banners .card1 .card-img-overlay .btn {
+  background-color: rgb(255, 193, 36);
+  border: 1px solid rgb(255, 193, 36);
+}
+
+@media screen and (max-width: 768px) {
+  #ea-originals-wrapper #video-originals-large {
+    display: none;
+  }
+}
+#ea-originals-wrapper .socials-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  #ea-originals-wrapper .socials-wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  #ea-originals-wrapper #video-originals-small {
+    display: none;
+  }
+}
+#ea-originals-wrapper .form-select ul {
+  background-color: #161616;
+}
+#ea-originals-wrapper .btn:hover {
+  background-color: var(--orange);
+}
+
+.diversityheader {
+  font-size: 48px;
+  margin-top: 100px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+section.corporatediversity p {
+  margin: 9px 0px;
+}
+section.corporatediversity p#lastpdiversity {
+  margin-bottom: 55px;
+}
+section .diversitylink {
+  text-decoration: none;
+  color: #960E0E;
+}
+
+.diversityitem {
+  display: flex;
+  height: 56px;
+  margin-top: 24px;
+}
+.diversityitem .diversityimgcont {
+  margin-right: 16px;
+}
+
+.diversitygreycardcontainer {
+  width: 70vw;
+  margin: auto;
+}
+.diversitygreycardcontainer .diversitygreycard {
+  width: 25%;
+  margin: 0px 0px 16px;
+  padding: 0px 8px;
+}
+.diversitygreycardcontainer .diversitygreycard img {
+  width: 100%;
+  height: auto;
+}
+.diversitygreycardcontainer .diversitygreycard .textcontent {
+  padding: 24px;
+  background-color: rgb(243, 243, 243);
+  height: 80%;
+}
+.diversitygreycardcontainer .diversitygreycard .textcontent h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
+}
+.diversitygreycardcontainer .diversitygreycard .textcontent p {
+  font-size: 18px;
+}
+.diversitygreycardcontainer .dgc5, .diversitygreycardcontainer .dgc6, .diversitygreycardcontainer .dgc7 {
+  margin-top: 90px;
+}
+.diversitygreycardcontainer .dgc5 .textcontent, .diversitygreycardcontainer .dgc6 .textcontent, .diversitygreycardcontainer .dgc7 .textcontent {
+  height: 77%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .pplay-main .diversityheader {
+    font-size: 32px !important;
+    margin-top: 50px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .accessibilityinclusionea h3 {
+    margin-bottom: 0px !important;
+  }
+  .diversityhero h3 {
+    font-size: 38px;
+  }
+  .diversitygreycardcontainer {
+    gap: 20px;
+  }
+  .diversitygreycardcontainer .diversitygreycard {
+    width: 33vw !important;
+  }
+  .diversitygreycardcontainer .diversitygreycard .textcontent {
+    height: 50%;
+  }
+  .diversitygreycardcontainer .dgc5, .diversitygreycardcontainer .dgc6 {
+    margin-top: 0px;
+  }
+  .diversitygreycardcontainer .dgc5 .textcontent, .diversitygreycardcontainer .dgc6 .textcontent {
+    height: 63%;
+  }
+  .diversitygreycardcontainer .dgc7 {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .diversityitem {
+    height: fit-content !important;
+  }
+  .dgc5, .dgc6, .dgc7 {
+    margin-top: 0px !important;
+  }
+  .positivediversity {
+    height: 33vw;
+  }
+  .pplay-main .diversityheader {
+    font-size: 32px !important;
+    margin-top: 50px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .firstdivhero h3 {
+    font-size: 36px;
+  }
+  .diversitygreycardcontainer {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  .diversitygreycardcontainer .diversitygreycard {
+    width: 100% !important;
+  }
+  .diversitygreycardcontainer .diversitygreycard p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1456px) {
+  .positivediversity {
+    height: 18vw !important;
+  }
+  .positivediversity img {
+    height: 100%;
+  }
+  .diversitygreycardcontainer {
+    width: 85vw !important;
+    max-width: 1600px !important;
+  }
+  .diversitygreycardcontainer .textcontent {
+    height: 50% !important;
+  }
+}
+.diversitytablecontainer {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 800px) {
+  .diversitytablecontainer {
+    max-width: 90vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+.diversitytablecontainer .diversitytable {
+  width: 100%;
+  margin: 0px;
+  overflow: scroll !important;
+}
+.diversitytablecontainer .diversitytable tr {
+  height: 72.5px;
+}
+.diversitytablecontainer .diversitytable thead th {
+  background-color: #990703;
+  font-size: 14px;
+  color: #f3f3f3;
+  font-family: "ElectronicArtsText", Verdana;
+  border: 4px solid white;
+  border-radius: 10px !important;
+  height: 80px;
+  min-width: 100px;
+}
+.diversitytablecontainer .diversitytable thead .diversityth {
+  height: 72.5px;
+}
+.diversitytablecontainer .diversitytable td {
+  font-weight: 400;
+  margin: 3px !important;
+  padding-left: 30px;
+}
+
+.pplaygreycard p {
+  margin-top: 9px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .diversityhero .d3 {
+    font-size: 44px !important;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .positivediversity {
+    height: 15vw !important;
+  }
+  .positivediversity img {
+    height: 100%;
+  }
+}
+.positiveplayhero {
+  position: relative;
+}
+.positiveplayhero h3 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 38px;
+  width: 70%;
+}
+
+@media only screen and (min-width: 768px) {
+  #nav-tabContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px !important;
+  }
+  #nav-tabContent .pplaybtn {
+    align-self: center;
+  }
+}
+.pplayeacard {
+  max-width: 85vw;
+}
+
+.pplay-main {
+  width: 85.15vw;
+  max-width: 1120px;
+  margin: auto;
+}
+.pplay-main p {
+  line-height: 27px;
+  font-size: 18px;
+  color: rgb(22, 22, 22);
+  margin: 18px 0px;
+}
+.pplay-main p.pplayintro {
+  margin: 80px 0px;
+}
+.pplay-main section {
+  margin: 80px 0px;
+}
+.pplay-main section.pplayaccessibility {
+  margin-top: -20px !important;
+}
+.pplay-main section.pplaycardpositive, .pplay-main section.pplayaccessibility {
+  display: flex;
+  flex-direction: column;
+}
+.pplay-main section.pplaycardpositive .btn-container, .pplay-main section.pplayaccessibility .btn-container {
+  align-self: center !important;
+}
+.pplay-main section.pplaycardpositive .btn-container .btn-darkred, .pplay-main section.pplayaccessibility .btn-container .btn-darkred {
+  background-color: #960E0E !important;
+}
+.pplay-main section.pplaycardpositive .btn-container .btn-darkred:hover, .pplay-main section.pplayaccessibility .btn-container .btn-darkred:hover {
+  background-color: #960E0E !important;
+}
+.pplay-main section.pplayimpegni .impegnicontainer {
+  height: 24.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni {
+  width: 33.3%;
+  height: 50%;
+  padding: 0px 8px;
+  margin-bottom: 16px;
+}
+.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni .impegnilink {
+  height: 100%;
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/commitments/common/eacom-our-commnitments-cta-orange.jpg.adapt.crop16x9.652w.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni .impegnilink:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+.pplay-main section.pplayimpegni .impegnicontainer .cardimpegni .impegnilink h3 {
+  color: #f3f3f3;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0px;
+  width: 90%;
+}
+.pplay-main section.pplayinside .cards-container {
+  display: flex;
+  flex-direction: column;
+}
+.pplay-main section.pplayinside .cards-container .btn-container {
+  align-self: center;
+  display: inline !important;
+}
+.pplay-main section .header.d5 {
+  font-size: 32px;
+  color: #960E0E;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 11.2px;
+}
+.pplay-main .pplaycardcontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: -50px !important;
+}
+.pplay-main .pplaycardcontainer .pplaycard {
+  margin: 0px 0px 16px;
+  padding: 0px 8px;
+  width: 42vw;
+}
+.pplay-main .pplaycardcontainer .pplaycard img {
+  width: 100%;
+  height: auto;
+}
+.pplay-main .pplaycardcontainer .pplaycard .text {
+  background-color: rgb(243, 243, 243);
+  padding: 24px;
+}
+.pplay-main .pplaycardcontainer .pplaycard .text h3 {
+  margin-bottom: 0px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .pplay-main section {
+    margin: 40px 0px;
+  }
+  .pplay-main section.pplayaccessibility h3 {
+    margin-top: 40px;
+  }
+  .pplay-main section.pplayaccessibility p {
+    margin-bottom: 30px !important;
+  }
+  .pplay-main section.pplayinside h3 {
+    margin-bottom: 0px !important;
+  }
+  .pplay-main p {
+    font-size: 16px;
+    margin: 16px 0px !important;
+  }
+  .pplay-main p.pplayintro {
+    margin-top: 100px !important;
+  }
+  .pplay-main h3 {
+    font-size: 22px !important;
+  }
+  .pplay-main .positiveplayhero {
+    height: 26vw;
+  }
+  .pplay-main .impegnicontainer {
+    height: auto !important;
+  }
+  .pplay-main .impegnicontainer .cardimpegni {
+    width: 50% !important;
+    height: 18.5vw !important;
+    margin: 0px 0px 24px !important;
+    padding: 0px 12px !important;
+  }
+  .pplay-main .impegnicontainer .cardimpegni h3 {
+    font-size: 20px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .positiveplayhero {
+    height: auto;
+  }
+  .positiveplayhero img {
+    min-height: 250px;
+  }
+  .positiveplayhero h3 {
+    font-size: 36px;
+    width: 100vw;
+  }
+  .pplay-main section {
+    margin: 40px 0px;
+  }
+  .pplay-main section.pplayaccessibility h3 {
+    margin-top: 40px;
+  }
+  .pplay-main section.pplayaccessibility p {
+    margin-bottom: 30px !important;
+  }
+  .pplay-main section.pplayinside h3 {
+    margin-bottom: 0px !important;
+  }
+  .pplay-main p {
+    font-size: 16px;
+    margin: 16px 0px !important;
+  }
+  .pplay-main p.pplayintro {
+    margin-top: 40px !important;
+  }
+  .pplay-main h3 {
+    font-size: 22px !important;
+  }
+  .pplay-main .impegnicontainer {
+    height: auto !important;
+  }
+  .pplay-main .impegnicontainer .cardimpegni {
+    width: 100% !important;
+    height: 35vw !important;
+    margin: 0px 0px 20px !important;
+    padding: 0px !important;
+  }
+  .pplay-main .impegnicontainer .cardimpegni h3 {
+    font-size: 20px !important;
+  }
+  .pplaycardcontainer {
+    flex-direction: column;
+  }
+  .pplaycardcontainer .pplaycard {
+    width: 85vw !important;
+  }
+  .pplayeacard {
+    width: 85vw !important;
+  }
+  .pplaybtn {
+    width: 85vw !important;
+  }
+}
+@media only screen and (min-width: 1456px) {
+  .positiveplayhero h3 {
+    font-size: 54px;
+  }
+  .impegnicontainer {
+    max-height: 321.31px;
   }
 }
 

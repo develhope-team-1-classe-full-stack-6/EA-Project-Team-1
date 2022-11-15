@@ -1,0 +1,23 @@
+.hero {
+
+    picture img {
+        width: 100vw;
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 125vw;
+    
+        .margin-hero{
+            margin-left: 5px;
+        }
+    }
+
+    .img-hero {
+        max-width: 80%;
+        margin-bottom: 1rem;
+
+    }
+    
+
+
+}
