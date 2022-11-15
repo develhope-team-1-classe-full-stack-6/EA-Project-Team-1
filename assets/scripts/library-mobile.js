@@ -266,7 +266,65 @@ const boxContent = [
 
     }];
 
-    const row = document.getElementById('ps5-row');
+    const boxContent2 = [{
+        id: 0,
+
+      src1: "../../../assets/images/games/library/mobile/the-sims-freeplay-keyart.jpg",
+
+      logoWidth: "width: 130px",
+      
+      src2: "../../../assets/images/games/library/mobile/the-sims-freeplay-mono-logo.png",
+
+      href1: "https://www.ea.com/games/lord-of-the-rings/the-lord-of-the-rings-heroes-of-middle-earth",
+
+      href2: "https://help.ea.com/",
+
+    },
+    {
+        id: 1,
+
+      src1: "../../../assets/images/games/library/mobile/bejeweled-classic-keyart.jpg",
+
+      logoWidth: "width: 130px",
+      
+      src2: "../../../assets/images/games/library/mobile/bejeweled-classic-mono-logo.svg",
+
+      href1: "https://www.ea.com/games/lord-of-the-rings/the-lord-of-the-rings-heroes-of-middle-earth",
+
+      href2: "https://help.ea.com/",
+
+    },
+
+    {id: 2,
+
+      src1: "../../../assets/images/games/library/mobile/pvz-mobile-keyart.jpg",
+
+      logoWidth: "width: 130px",
+      
+      src2: "../../../assets/images/games/library/mobile/plants-vs-zombies-mobile-mono-logo.png",
+
+      href1: "https://www.ea.com/games/lord-of-the-rings/the-lord-of-the-rings-heroes-of-middle-earth",
+
+      href2: "https://help.ea.com/",
+    },
+    {
+        id: 0,
+
+      src1: "../../../assets/images/games/library/mobile/simcity-mobile-keyart.jpg",
+
+      logoWidth: "width: 130px",
+      
+      src2: "../../../assets/images/games/library/mobile/simcity-mobile-mono-logo.png",
+
+      href1: "https://www.ea.com/games/lord-of-the-rings/the-lord-of-the-rings-heroes-of-middle-earth",
+
+      href2: "https://help.ea.com/",
+
+    },
+];
+
+    const row = document.getElementById('carousel-item');
+    const row2 = document.getElementById('carousel-item-2');
 
     function colGenerator(item, cont) {
         for (let i = 0; i < cont.length; i++) {
@@ -276,22 +334,31 @@ const boxContent = [
         }
       }
 
+      function colGenerator2(item, cont) {
+        for (let i = 0; i < cont.length; i++) {
+          row2.innerHTML += `<div class="box col-12 col-md-6 col-xl-4 pb-4">
+        ${item(cont[i].src1, cont[i].logoWidth, cont[i].src2, cont[i].href1, cont[i].href2)}
+        </div>`;
+        }
+      }
+
 
       function box(src1, logoWidth, src2, href1, href2) {
         const box = `
-          <div class="position-relative d-flex justify-content-center align-items-center box-container-blue">
-              <img class="position-absolute top-0 start-0 box-background"
-                  src=${src1}>
-              <img class="position-absolute box-logo" style="${logoWidth}; transition: all 300ms ease-out;"
-                  src=${src2}>
-              <div class="position-absolute text-center">
-                  <a href=${href1}>Sito ufficiale</a>
-                  <a href=${href2} class="b3">Supporto</a>
-              </div>
-          </div>
+        <div class="position-relative d-flex justify-content-center align-items-center box-container-blue">
+        <img class="position-absolute top-0 start-0 box-background"
+          src="${src1}">
+        <img class="position-absolute box-logo" style="${logoWidth}; transition: all 300ms ease-out;"
+          src="${src2}">
+        <div class="position-absolute text-center">
+          <a href="${href1}" class="b3">Sito ufficiale</a>
+          <a href="${href2}" class="b3">Aiuto</a>
+        </div>
+      </div>
       `;
       
         return box;
       }
       
       colGenerator(box, boxContent);
+      colGenerator2(box, boxContent2);
