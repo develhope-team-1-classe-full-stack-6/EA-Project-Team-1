@@ -140,5 +140,3 @@ function box(href, h1) {
 }
 
 colGenerator(box, boxContent);
-
-// Funzione generatrice card "impatto globale sulle nostre comunità"
