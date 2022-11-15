@@ -3390,6 +3390,12 @@ h6 {
 .form-wrapper div .form .form-floating {
   height: 60px;
   border-radius: 3px;
+  border: 2px solid #000;
+  outline: 2px solid transparent;
+}
+.form-wrapper div .form .form-floating:hover {
+  border: 2px solid transparent;
+  outline: 2px solid #000;
 }
 .form-wrapper div .form .form-floating .form-control {
   border: none;
@@ -3418,9 +3424,16 @@ h6 {
   padding: 0px;
   position: relative;
   cursor: pointer;
-  border: 2px solid #000;
   border-radius: 3px;
   background-color: var(--transparent);
+  border: 2px solid #000;
+  outline: 2px solid transparent;
+  transition: all 0.05s;
+}
+.form-wrapper div .form div:nth-child(2) div .form-select:hover {
+  border: 2px solid transparent;
+  outline: 2px solid #000;
+  transition: all 0.05s;
 }
 .form-wrapper div .form div:nth-child(2) div .form-select > div {
   position: absolute;
