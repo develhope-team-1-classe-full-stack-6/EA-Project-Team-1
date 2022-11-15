@@ -6,7 +6,7 @@
         color: white;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -40%);
         font-size: 38px;
         width: 70%;
     }
@@ -193,6 +193,7 @@
 }
 
 @media only screen and (max-width: 767px) {
+    
     .positiveplayhero {
         height: auto;
         img {
