@@ -1,3 +1,22 @@
+const openModalButton = document.getElementById("open-modal-button");
+const modalBody = document.querySelector(".modal-body");
+const caroselloID = document.getElementById("carosello");
+const closeButton = document.getElementById("close-modal-button");
+
+openModalButton.addEventListener("click", () => {
+  openModalButton.style = "display:none";
+  const carousel = document.getElementById("carouselExampleControls");
+  caroselloID.innerHTML = "";
+  modalBody.append(carousel);
+})
+
+closeButton.addEventListener("click", () => {
+  openModalButton.style = "display:block";
+  const carousel = document.getElementById("carouselExampleControls");
+  modalBody.innerHTML = "";
+  caroselloID.append(carousel);
+})
+
 let count = 1;
 let totalFrames = 10;
 let current = 1;
