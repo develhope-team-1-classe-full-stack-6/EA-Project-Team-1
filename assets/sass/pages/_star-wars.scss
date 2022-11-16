@@ -1,4 +1,7 @@
 @import "../abstracts/colors";
+body {
+
+    background-color: black;
 
 .navbar-2-star-wars {
     color: white;
@@ -225,4 +228,23 @@
       }
     }
   }
-  
+
+  #load-more {
+        @media screen and (min-width: 320px){
+            width: 87%;
+        }
+
+        @media screen and (min-width: 1179px){
+            width: 56%;
+        }
+        height: 120px;
+        width: 57%;
+        border: 2px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+        :hover {
+            border-color: white;
+            color: white;
+        }
+  }
+}
