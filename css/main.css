@@ -3953,11 +3953,7 @@ body[style^=overflow] {
 
 .library-ps5-header {
   background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
-  background-position: center;
-  background-size: cover;
   height: 390px;
-  width: 100%;
-  margin-bottom: 5rem;
 }
 .library-ps5-header hr {
   color: var(--light);
