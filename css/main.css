@@ -3512,12 +3512,43 @@ h6 {
   font-weight: bolder;
 }
 
+.starwarsbottomfooter {
+  background-color: rgb(37, 37, 37);
+}
+
 .starwarslocalfooter {
   display: flex;
   flex-direction: column;
   background-color: rgb(37, 37, 37) !important;
+  margin-bottom: 100px !important;
+  overflow: visible !important;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1155px) {
+  .starwarslocalfooter {
+    height: 320px !important;
+  }
+}
+@media only screen and (max-width: 892px) {
+  .starwarslocalfooter {
+    margin-bottom: 150px !important;
+  }
+}
+@media only screen and (max-width: 544px) {
+  .starwarslocalfooter {
+    margin-bottom: 200px !important;
+  }
+}
+@media only screen and (max-width: 516px) {
+  .starwarslocalfooter {
+    margin-bottom: 250px !important;
+  }
 }
 
+@media only screen and (max-width: 515px) {
+  .starwarsbottomfooter {
+    background-color: rgb(37, 37, 37) !important;
+  }
+}
 .eastarwarsintro {
   margin-left: 145px;
   margin-top: 40px;
