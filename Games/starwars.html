@@ -12,10 +12,11 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
     <title>Videogiochi STAR WARS</title>
 </head>
 
-<body>
+<body class="starwars-body">
     <section class="navbar1">
         <div class="navbar-head d-flex justify-content-end align-items-center bg-dark">
             <i class="fa-regular fa-user" data-bs-toggle="offcanvas" href="#offcanvasDark1" role="button"
@@ -209,7 +210,7 @@
                             <a class="position-relative d-flex justify-content-center align-items-center sidebar-little-box"
                                 href="https://www.ea.com/it-it/games/starwars/battlefront/star-wars-battlefront-2">
                                 <img class="position-absolute top-0 start-0 w-100 sidebar-little-box-bg"
-                                    src="../assets\images\star-wars\aside-battlefront-II-box-SWBF2-1x1-Tile.png.adapt.crop1x1.767w (1).png">
+                                    src="../assets\images\star-wars\aside-battlefront-II-box-SWBF2-1x1-Tile.png.adapt.crop1x1.767w.png">
                                 <img class="position-absolute sidebar-little-box-logo" style="width: 80%;"
                                     src="../assets\images\star-wars\swbf2-white-logo-low-padding.svg" alt="">
                             </a>
@@ -565,12 +566,31 @@
                         </div>
                         </div>
                         <div class="load-wrapper d-flex justify-content-center align-items-center my-5">
-                            <div id="load-more" class="d-flex flex-column justify-content-center align-items-center">
+                            <div id="load-more" class="d-none flex-column justify-content-center align-items-center">
                                 <svg class="mt-3" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 128 128" width="64px" height="64px">    <path fill="grey" d="M 64 6.0507812 C 49.15 6.0507812 34.3 11.7 23 23 C 0.4 45.6 0.4 82.4 23 105 C 34.3 116.3 49.2 122 64 122 C 78.8 122 93.7 116.3 105 105 C 127.6 82.4 127.6 45.6 105 23 C 93.7 11.7 78.85 6.0507812 64 6.0507812 z M 64 12 C 77.3 12 90.600781 17.099219 100.80078 27.199219 C 121.00078 47.499219 121.00078 80.500781 100.80078 100.80078 C 80.500781 121.10078 47.500781 121.10078 27.300781 100.80078 C 7.0007813 80.500781 6.9992188 47.499219 27.199219 27.199219 C 37.399219 17.099219 50.7 12 64 12 z M 64 42 C 62.3 42 61 43.3 61 45 L 61 61 L 45 61 C 43.3 61 42 62.3 42 64 C 42 65.7 43.3 67 45 67 L 61 67 L 61 83 C 61 84.7 62.3 86 64 86 C 65.7 86 67 84.7 67 83 L 67 67 L 83 67 C 84.7 67 86 65.7 86 64 C 86 62.3 84.7 61 83 61 L 67 61 L 67 45 C 67 43.3 65.7 42 64 42 z"/></svg>
                                 <p  class="d6 mt-2" style="color: grey;">Carica altro</p>
                             </div>
                         </div>
                     </section>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="discover d-flex justify-content-center align-items-center flex-column" style="max-width: 1080px;">
+                            <h2 class="d3 text-center text-white">Scopri i giochi di STAR WARS
+                            </h2>
+                            <p class="d7 text-center text-white mt-5">Da una galassia lontana lontana arrivano azione e avventura con gli eroi e i malvagi di Star Wars™. Padroneggia l'arte del combattimento tra caccia stellari nell'autentica esperienza di pilotaggio <a style="color: gold; cursor:pointer; text-decoration: none; " href="https://www.ea.com/it-it/games/starwars/squadrons">firmata Star Wars™: Squadrons</a>. In <a style="color: gold; cursor:pointer; text-decoration: none; " href="https://www.ea.com/it-it/games/starwars/jedi/jedi-fallen-order">Star Wars Jedi: Fallen Order™</a>, dovrai raccogliere i frammenti del tuo passato e completare l'addestramento da Jedi in una galassia sconvolta dalla messa in atto dell'Ordine 66. Guida il tuo eroe nell'universo di <a style="color: gold; cursor:pointer; text-decoration: none; " href="https://www.ea.com/it-it/games/starwars/battlefront/battlefront-2">Star Wars Battlefront™ II</a> e prendi parte ad avvincenti battaglie nelle iconiche ambientazioni che caratterizzano le tre ere cinematografiche. Usa il tuo dispositivo mobile per portare Star Wars sempre con te con <a style="color: gold; cursor:pointer; text-decoration: none; " href="https://www.ea.com/it-it/games/starwars/galaxy-of-heroes">Star Wars: Gli eroi della galassia</a>, avventurati in uno sconfinato mondo online con Star Wars: The Old Republic™ o consulta regolarmente questa sezione per non perderti i titoli Star Wars che verranno distribuiti in futuro.</p>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid" style="max-width: 1200px;">
+                        <div class="pb-4 pt-5 mb-5">
+                          <div class="container text-center">
+                            <div id="box-generator-starwars" class="row justify-content-between">
+              
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>
         <!-- footer -->
         <footer class="bottom-footer">
             <div id="ea-network-footer">
@@ -1090,6 +1110,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
         </script>
     <script src="../assets/scripts/starwars-card-generator-script.js"></script>
+    <script src="../assets/scripts/starwars-box-generator-script.js"></script>
 </body>
 
 </html>

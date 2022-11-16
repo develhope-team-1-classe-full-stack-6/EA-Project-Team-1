@@ -3,7 +3,7 @@ const rowCard = document.getElementById("row-card");
 const cardContent = [
   {
     id: 0,
-    href: "https://www.ea.com/it-it/games/it-takes-two/news/it-takes-two-now-available-on-nintendo-switch",
+    href: "https://www.ea.com/it-it/games/starwars/jedi-fallen-order/news/next-gen-release-details",
 
     src1: "../assets/images/star-wars/jedi-card.png",
 
@@ -12,7 +12,7 @@ const cardContent = [
 
   {
     id: 1,
-    href: "https://www.ea.com/it-it/news/ea-marvel-entertainment-multi-title-collaboration",
+    href: "https://www.ea.com/it-it/games/starwars/squadrons/news/weekly-balancing-05-06",
 
     src1: "../assets/images/star-wars/squadrons-card.jpg",
 

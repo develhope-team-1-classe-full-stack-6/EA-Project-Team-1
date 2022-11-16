@@ -1,5 +1,5 @@
 @import "../abstracts/colors";
-body {
+.starwars-body {
 
     background-color: black;
 
@@ -316,4 +316,36 @@ body {
             }
         }
     }
+
+    /* Box Styling blue background*/
+.box-container-blue{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    background: var(--grey);
+    
+    &:hover{
+      .box-background {
+        opacity: 0.1;
+      }
+  
+      .box-logo {
+        transform: translateY(-70px);
+      }
+  
+      a {
+        visibility: visible;
+        color: gray;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+        
+        &:last-child{
+          border-bottom: none;
+        }
+        &:hover{
+          color: var(--white);
+        } 
+        }
+    }
+}
 }
