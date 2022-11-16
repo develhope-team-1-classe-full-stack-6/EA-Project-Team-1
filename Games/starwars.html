@@ -128,7 +128,7 @@
                                 href="#offcanvasSidebar" role="button" aria-controls="offcanvasSidebar"></i>
                             <i class="fa-solid fa-bars nav-bar2-hamburger-menu" data-bs-toggle="offcanvas"
                                 href="#offcanvas-navbar2" role="button" aria-controls="offcanvas-navbar2"></i>
-                        </div class="nav-bar-buttons">
+                        </div>
 
                         <a class="navbar-brand d-flex justify-content-center align-items-center ms-3 me-3"
                             href="../Games/starwars.html">
@@ -142,7 +142,7 @@
                                     <a class="nav-link dropdown-toggle show" href="#" role="button" aria-current="page"
                                         href="#">Giochi<i class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown-menu show d-flex">
-                                        <ul class="box-dropdown left-radius">
+                                        <ul class="box-dropdown all-radius">
                                             <li><a class="dropdown-item"
                                                     href="https://www.ea.com/it-it/games/starwars/squadrons">STAR
                                                     WARS<sup>tm</sup>: Squadrons</a></li>
@@ -180,11 +180,11 @@
             </section>
         </header>
 
-        <aside>
-            <section class="offcanvas-sidebar sidebar-starwars">
+        <aside class="sidebar-starwars">
+            <section class="offcanvas-sidebar">
                 <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasSidebar"
                     aria-labelledby="offcanvasSidebarLabel">
-                    <div class="offcanvas-header">
+                    <div class="offcanvas-header my-4 me-3">
                         <h5 class="offcanvas-title" id="offcanvasSidebarLabel">
                         </h5>
                         <button type="button" class="btn-close sidebar-close-icon" data-bs-dismiss="offcanvas"
@@ -259,90 +259,11 @@
                         <div class="accordion accordion-flush">
                             <!-- primo accordion -->
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                                        aria-controls="panelsStayOpen-collapseOne">
-                                        Giochi<i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                </h2>
-                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingOne">
-                                    <div class="accordion-body">
-                                        <!-- sub accordion -->
-
-                                        <!-- sub-accordion 1 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="panelsStayOpen-sub-headingOne">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#panelsStayOpen-sub-collapseOne"
-                                                        aria-expanded="false"
-                                                        aria-controls="panelsStayOpen-sub-collapseOne">
-                                                        ESPLORA I GIOCHI<i class="fa-solid fa-xmark"></i>
-                                                    </button>
-                                                </h2>
-                                                <div id="panelsStayOpen-sub-collapseOne"
-                                                    class="accordion-collapse collapse"
-                                                    aria-labelledby="panelsStayOpen-sub-headingOne">
-                                                    <div class="accordion-body">
-                                                        <ul>
-                                                            <li><a class="accordion-item" href="#">Ultimi giochi</a>
-                                                            </li>
-                                                            <li><a class="accordion-item" href="#">Prossimamente</a>
-                                                            </li>
-                                                            <li><a class="accordion-item" href="#">Giochi gratuiti</a>
-                                                            </li>
-                                                            <li><a class="accordion-item" href="#">EA SPORTS</a></li>
-                                                            <li><a class="accordion-item" href="#">EA Originals</a></li>
-                                                            <li><a class="accordion-item" href="#">Libreria dei
-                                                                    giochi</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 2 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="panelsStayOpen-sub-headingTwo">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#panelsStayOpen-sub-collapseTwo"
-                                                        aria-expanded="false"
-                                                        aria-controls="panelsStayOpen-sub-collapseTwo">
-                                                        PIATTAFORME<i class="fa-solid fa-xmark"></i>
-                                                    </button>
-                                                </h2>
-                                                <div id="panelsStayOpen-sub-collapseTwo"
-                                                    class="accordion-collapse collapse"
-                                                    aria-labelledby="panelsStayOpen-sub-headingOne">
-                                                    <div class="accordion-body">
-                                                        <ul>
-                                                            <li><a class="accordion-item" href="#">PlayStation®5</a>
-                                                            </li>
-                                                            <li><a class="accordion-item" href="#">Xbox Series X</a>
-                                                            </li>
-                                                            <li><a class="accordion-item" href="#">Nintendo Switch™</a>
-                                                            </li>
-                                                            <li><a class="accordion-item" href="#">Cellulari</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- secondo accordion -->
-                            <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseTwo">
-                                        Altre esperienze<i class="fa-solid fa-angle-down"></i>
+                                        Giochi<i class="fa-solid fa-angle-down"></i>
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -355,7 +276,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                     <button class="accordion-button collapsed" type="button">
-                                                        EA Play
+                                                        STAR WARS<sup>tm</sup>: Squadrons
                                                     </button>
                                                 </h2>
                                             </div>
@@ -365,7 +286,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                     <button class="accordion-button collapsed" type="button">
-                                                        l'EA app
+                                                        STAR WARS<sup>tm</sup> Jedi: Fallen Order<sup>tm</sup>
                                                     </button>
                                                 </h2>
                                             </div>
@@ -375,7 +296,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                     <button class="accordion-button collapsed" type="button">
-                                                        Competizione videoludiche
+                                                    STAR WARS<sup>tm</sup> Battlefront<sup>tm</sup> II
                                                     </button>
                                                 </h2>
                                             </div>
@@ -385,7 +306,27 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                     <button class="accordion-button collapsed" type="button">
-                                                        Diretta di EA Play
+                                                    STAR WARS<sup>tm</sup> Gli eroi della galassia<sup>tm</sup>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <!-- sub-accordion 5 -->
+                                        <div class="accordion sub-accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button">
+                                                        STAR WARS<sup>tm</sup> The Old Republic<sup>tm</sup>
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <!-- sub-accordion 6 -->
+                                        <div class="accordion sub-accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button">
+                                                        STAR WARS<sup>tm</sup> Battlefront<sup>tm</sup>
                                                     </button>
                                                 </h2>
                                             </div>
@@ -393,262 +334,25 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- terzo accordion -->
+                            <!-- secondo accordion -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseThree">
-                                        Informazioni<i class="fa-solid fa-angle-down"></i>
+                                        Newsletter
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingThree">
-                                    <div class="accordion-body">
-                                        <!-- sub accordion -->
-
-                                        <!-- sub-accordion 1 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Società
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 2 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">EA Studi
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 3 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Lavora con
-                                                        noi
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 4 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">La nostra
-                                                        tecnologia
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 5 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">EA Partners
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 6 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Notizie
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 78 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Inside EA
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                            <!-- quarto accordion -->
+                            <!-- terzo accordion -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseFour">
-                                        Impegni<i class="fa-solid fa-angle-down"></i>
+                                        Acquista su Origin
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingFour">
-                                    <div class="accordion-body">
-                                        <!-- sub accordion -->
-
-                                        <!-- sub-accordion 1 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">I nostri
-                                                        impegni
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 2 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Gioco
-                                                        positivo
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 3 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Diversità e
-                                                        inclusione
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 4 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Impatto
-                                                        sociale
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 5 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Persone e
-                                                        cultura
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 6 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Ambiente
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- quinto accordion -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                                        aria-controls="panelsStayOpen-collapseFive">
-                                        Risorse<i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                </h2>
-                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingFive">
-                                    <div class="accordion-body">
-                                        <!-- sub accordion -->
-
-                                        <!-- sub-accordion 1 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Aiuto
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 2 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Forum
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 3 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Filtro
-                                                        famiglia
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 4 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed"
-                                                        type="button">Accessibilità
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 5 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Stampa
-
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 6 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Investitori
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <!-- sub-accordion 78 -->
-                                        <div class="accordion sub-accordion accordion-flush">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button">Test di
-                                                        gioco
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>

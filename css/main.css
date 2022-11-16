@@ -3953,11 +3953,7 @@ body[style^=overflow] {
 
 .library-ps5-header {
   background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
-  background-position: center;
-  background-size: cover;
   height: 390px;
-  width: 100%;
-  margin-bottom: 5rem;
 }
 .library-ps5-header hr {
   color: var(--light);
@@ -4538,6 +4534,7 @@ body .sidebar-starwars .offcanvas.offcanvas-start {
 }
 body .sidebar-starwars .btn-close.sidebar-close-icon {
   width: 16px;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
 body .sidebar-starwars .btn-close.sidebar-close-icon:hover {
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='goldenrod'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
@@ -4566,6 +4563,41 @@ body #load-more :hover {
   border-color: white;
   color: white;
 }
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion {
+  --bs-accordion-bg: var(--transparent);
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button {
+  color: white;
+  border-bottom: 1px solid white;
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:focus {
+  border-bottom: 1px solid rgb(255, 193, 36);
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:hover {
+  color: rgb(255, 193, 36);
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:not(.collapsed) {
+  color: rgb(255, 193, 36);
+  border-bottom: 1px solid rgb(255, 193, 36);
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-collapse {
+  border-bottom: 1px solid rgb(255, 193, 36);
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button {
+  border-bottom: 1px solid #b7b7b7;
+  color: #b7b7b7;
+  background-color: var(--transparent);
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:focus {
+  border-bottom: 1px solid #bd8700;
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:hover {
+  color: rgb(255, 193, 36);
+}
+body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:not(.collapsed) {
+  color: var(--white);
+  background-color: var(--transparent);
+}
 
 @media screen and (max-width: 768px) {
   #ea-originals-wrapper #video-originals-large {
@@ -4592,22 +4624,23 @@ body #load-more :hover {
 #ea-originals-wrapper .btn:hover {
   background-color: var(--orange);
 }
-
-.form-wrapper div .form .form-floating {
+#ea-originals-wrapper .form-wrapper div .form .form-floating {
+  outline: 2px solid transparent;
   border: 2px solid white;
 }
-.form-wrapper div .form .form-floating:hover {
+#ea-originals-wrapper .form-wrapper div .form .form-floating:hover {
+  border: 2px solid transparent;
   outline: 2px solid white;
 }
-
-.form-wrapper div .form div:nth-child(2) div .form-select {
+#ea-originals-wrapper .form-wrapper div .form div:nth-child(2) div .form-select {
   border: 2px solid white;
+  outline: 2px solid transparent;
 }
-.form-wrapper div .form div:nth-child(2) div .form-select:hover {
+#ea-originals-wrapper .form-wrapper div .form div:nth-child(2) div .form-select:hover {
+  border: 2px solid transparent;
   outline: 2px solid white;
 }
-
-.form-wrapper div .form div:nth-child(2) div .form-select ul {
+#ea-originals-wrapper .form-wrapper div .form div:nth-child(2) div .form-select ul {
   border: 3px solid white;
 }
 
