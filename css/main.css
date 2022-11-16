@@ -1575,7 +1575,7 @@ h6 {
 }
 .custom-pagination .carousel-item {
   margin-right: 0;
-  width: auto;
+  width: 100%;
   float: none;
   transition: none;
 }
@@ -3390,6 +3390,12 @@ h6 {
 .form-wrapper div .form .form-floating {
   height: 60px;
   border-radius: 3px;
+  border: 2px solid #000;
+  outline: 2px solid transparent;
+}
+.form-wrapper div .form .form-floating:hover {
+  border: 2px solid transparent;
+  outline: 2px solid #000;
 }
 .form-wrapper div .form .form-floating .form-control {
   border: none;
@@ -3418,9 +3424,16 @@ h6 {
   padding: 0px;
   position: relative;
   cursor: pointer;
-  border: 2px solid #000;
   border-radius: 3px;
   background-color: var(--transparent);
+  border: 2px solid #000;
+  outline: 2px solid transparent;
+  transition: all 0.05s;
+}
+.form-wrapper div .form div:nth-child(2) div .form-select:hover {
+  border: 2px solid transparent;
+  outline: 2px solid #000;
+  transition: all 0.05s;
 }
 .form-wrapper div .form div:nth-child(2) div .form-select > div {
   position: absolute;
@@ -3938,6 +3951,272 @@ body[style^=overflow] {
   gap: 0.5rem;
 }
 
+.library-ps5-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  background-position: center;
+  background-size: cover;
+  height: 390px;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.library-ps5-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-ps5-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-ps5-header {
+    height: 210px;
+  }
+  .library-ps5-header hr {
+    width: 160px;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-ps5-header {
+    height: 160px;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .library-ps5-header {
+    height: 160px;
+  }
+  .library-ps5-header hr {
+    width: 200px;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
+}
+.library-xbox-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  height: 470px;
+}
+.library-xbox-header .xbox-h1 h1 {
+  width: 90%;
+}
+.library-xbox-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+
+.library-p p {
+  width: 90%;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-xbox-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-xbox-header {
+    height: 210px;
+  }
+  .library-xbox-header hr {
+    width: 250px;
+  }
+  .xbox-h1 {
+    text-align: center;
+  }
+  .xbox-h1 h1 {
+    width: 40%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-xbox-header {
+    height: 160px;
+  }
+  .xbox-h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .library-xbox-header {
+    height: 160px;
+  }
+  .library-xbox-header hr {
+    width: 200px;
+  }
+  .xbox-h1 h1 {
+    width: 100%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
+}
+.library-switch-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  background-color: black;
+  height: 470px;
+}
+.library-switch-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+.library-switch-header .switch-h1 h1 {
+  width: 60%;
+}
+
+.library-p a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-switch-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-switch-header {
+    height: 210px;
+  }
+  .library-switch-header hr {
+    width: 250px;
+  }
+  .switch-h1 {
+    text-align: center;
+  }
+  .switch-h1 h1 {
+    width: 40%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-switch-header {
+    height: 250px;
+  }
+  .library-switch-header hr {
+    width: 150px;
+  }
+  .switch-h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 639px) {
+  .library-switch-header {
+    height: 220px;
+  }
+  .library-switch-header hr {
+    width: 150px;
+  }
+  .switch-h1 h1 {
+    width: 50%;
+    font-size: 2rem;
+  }
+  .library-p p {
+    text-align: left;
+    width: 100%;
+  }
+}
+.library-mobile-header {
+  background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png");
+  height: 400px;
+}
+.library-mobile-header hr {
+  color: var(--light);
+  width: 260px;
+  border: 4px solid var(--light);
+  opacity: 1;
+}
+.library-mobile-header .mobile-h1 h1 {
+  width: 90%;
+}
+
+.library-p p {
+  width: 87%;
+}
+.library-p a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .library-mobile-header {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .library-mobile-header {
+    height: 210px;
+  }
+  .library-mobile-header hr {
+    width: 200px;
+  }
+  .library-p p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .library-mobile-header {
+    height: 250px;
+  }
+  .library-mobile-header hr {
+    width: 150px;
+  }
+  .mobile-h1 {
+    margin-top: 2rem;
+    width: 70%;
+  }
+  .library-p p {
+    text-align: left;
+    width: 92%;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 639px) {
+  .library-mobile-header {
+    height: 220px;
+  }
+  .library-mobile-header hr {
+    width: 150px;
+  }
+  .mobile-h1 h1 {
+    font-size: 2rem;
+  }
+  .library-p p {
+    width: 100%;
+  }
+}
 :root {
   --black: #000000;
   --dark: #161616;
@@ -4292,6 +4571,24 @@ body[style^=overflow] {
   background-color: var(--orange);
 }
 
+.form-wrapper div .form .form-floating {
+  border: 2px solid white;
+}
+.form-wrapper div .form .form-floating:hover {
+  outline: 2px solid white;
+}
+
+.form-wrapper div .form div:nth-child(2) div .form-select {
+  border: 2px solid white;
+}
+.form-wrapper div .form div:nth-child(2) div .form-select:hover {
+  outline: 2px solid white;
+}
+
+.form-wrapper div .form div:nth-child(2) div .form-select ul {
+  border: 3px solid white;
+}
+
 .diversityheader {
   font-size: 48px;
   margin-top: 100px;
@@ -4493,7 +4790,7 @@ section .diversitylink {
   color: white;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -40%);
   font-size: 38px;
   width: 70%;
 }
@@ -4723,6 +5020,218 @@ section .diversitylink {
   }
   .impegnicontainer {
     max-height: 321.31px;
+  }
+}
+.socialimpacthero {
+  position: relative;
+}
+.socialimpacthero h3 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  font-size: 38px;
+  width: 70%;
+}
+
+.socialimpactintro {
+  margin-top: 30px !important;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .socialimpactintro {
+    margin-top: -20px !important;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .socialimpactintro {
+    margin-top: 60px !important;
+  }
+}
+
+.impegnilinkblue {
+  height: 100%;
+  background-image: url("../../assets/images/commitments/impegnilinkblue.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.impegnilinkblue:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+.impegnilinkblue h3 {
+  color: #f3f3f3;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0px;
+  width: 90%;
+}
+
+.blueimpactheader {
+  color: #0A5681 !important;
+}
+
+.impactcardscontainer {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.impactcardscontainer .impactcardscard {
+  width: 33.3%;
+  height: 27vw;
+  max-height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.impactcardscontainer .impactcardscard .impacttile {
+  width: 95%;
+  height: 95%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4vw;
+}
+.impactcardscontainer .impactcardscard .impacttile .impactcardh3, .impactcardscontainer .impactcardscard .impacttile p {
+  color: #f3f3f3;
+  text-align: center;
+  font-weight: 700;
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .impactcardscard {
+    width: 48% !important;
+    height: 33vw !important;
+    max-height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vw;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 40px !important;
+  }
+  .socialimpactintro {
+    margin-top: 0px !important;
+  }
+  .socialimpactintro p {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+  .impactcardscard {
+    width: 100% !important;
+    height: 35vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 80%;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 40px !important;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 529px) {
+  .impactcardscard {
+    width: 100% !important;
+    height: 45vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 90% !important;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 36px !important;
+    margin: 0px !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .impactcardscard {
+    width: 100% !important;
+    height: 60vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .impactcardscard .impacttile {
+    width: 95%;
+    height: 95%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 42, 77) 0%, rgb(90, 182, 201) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .impactcardscard .impacttile .impactcardh3, .impactcardscard .impacttile p {
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 700;
+    max-width: 90% !important;
+  }
+  .impactcardscard .impacttile .impactcardh3 {
+    font-size: 36px !important;
+    margin: 0px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .socialimpacthero h3 {
+    transform: translate(-50%, -50%) !important;
   }
 }
 
