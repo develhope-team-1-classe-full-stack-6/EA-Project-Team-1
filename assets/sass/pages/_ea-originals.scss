@@ -28,25 +28,43 @@
   .btn:hover {
     background-color: var(--orange);
   }
-}
 
-;
+  .form-wrapper {
 
-.form-wrapper div .form .form-floating {
-  border: 2px solid white;
-  &:hover{
-    outline: 2px solid white;
+    div {
+      .form {
+
+        .form-floating {
+          outline: 2px solid transparent;
+          border: 2px solid white;
+
+          &:hover {
+            border: 2px solid transparent;
+            outline: 2px solid white;
+          }
+        }
+
+
+        div:nth-child(2) {
+
+          div {
+
+            .form-select {
+              border: 2px solid white;
+              outline: 2px solid transparent;
+
+              &:hover {
+                border: 2px solid transparent;
+                outline: 2px solid white;
+              }
+
+              ul {
+                border: 3px solid white;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-}
-
-
-.form-wrapper div .form div:nth-child(2) div .form-select {
-  border: 2px solid white;
-  &:hover{
-    outline: 2px solid white;
-  }
-}
-
-.form-wrapper div .form div:nth-child(2) div .form-select ul{
-  border: 3px solid white;
 }

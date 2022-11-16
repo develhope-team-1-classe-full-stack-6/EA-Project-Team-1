@@ -4557,22 +4557,23 @@ body[style^=overflow] {
 #ea-originals-wrapper .btn:hover {
   background-color: var(--orange);
 }
-
-.form-wrapper div .form .form-floating {
+#ea-originals-wrapper .form-wrapper div .form .form-floating {
+  outline: 2px solid transparent;
   border: 2px solid white;
 }
-.form-wrapper div .form .form-floating:hover {
+#ea-originals-wrapper .form-wrapper div .form .form-floating:hover {
+  border: 2px solid transparent;
   outline: 2px solid white;
 }
-
-.form-wrapper div .form div:nth-child(2) div .form-select {
+#ea-originals-wrapper .form-wrapper div .form div:nth-child(2) div .form-select {
   border: 2px solid white;
+  outline: 2px solid transparent;
 }
-.form-wrapper div .form div:nth-child(2) div .form-select:hover {
+#ea-originals-wrapper .form-wrapper div .form div:nth-child(2) div .form-select:hover {
+  border: 2px solid transparent;
   outline: 2px solid white;
 }
-
-.form-wrapper div .form div:nth-child(2) div .form-select ul {
+#ea-originals-wrapper .form-wrapper div .form div:nth-child(2) div .form-select ul {
   border: 3px solid white;
 }
 
