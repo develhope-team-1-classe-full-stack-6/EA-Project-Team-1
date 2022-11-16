@@ -5267,5 +5267,44 @@ section .diversitylink {
     transform: translate(-50%, -50%) !important;
   }
 }
+@media screen and (max-width: 768px) {
+  #freetoplay-wrapper header {
+    height: 100%;
+  }
+  #freetoplay-wrapper header #hero-video-large {
+    display: none;
+  }
+  #freetoplay-wrapper header #hero-img-medium {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  #freetoplay-wrapper header {
+    aspect-ratio: 16/9;
+  }
+  #freetoplay-wrapper header #hero-video-large {
+    display: none;
+  }
+  #freetoplay-wrapper header #hero-img-small {
+    display: none;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #freetoplay-wrapper header {
+    aspect-ratio: 34/9;
+  }
+  #freetoplay-wrapper header #hero-video-large {
+    display: inline-block;
+  }
+  #freetoplay-wrapper header #hero-img-medium {
+    display: none;
+  }
+  #freetoplay-wrapper header #hero-img-small {
+    display: none;
+  }
+}
+#freetoplay-wrapper header img {
+  max-width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */

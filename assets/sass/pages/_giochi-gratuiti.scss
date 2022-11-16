@@ -1,0 +1,44 @@
+#freetoplay-wrapper{
+  header{
+    @media screen and (max-width: 768px) {
+      height: 100%;
+      #hero-video-large{
+        display: none;
+      }
+  
+      #hero-img-medium{
+        display: none;
+      }
+    }
+  
+    @media screen and (min-width: 768px) {
+      aspect-ratio: 16 / 9;
+      #hero-video-large{
+        display: none;
+      }
+  
+      #hero-img-small{
+        display: none;
+      }
+    }
+  
+    @media screen and (min-width: 1023px) {
+      aspect-ratio: 34 / 9;
+      #hero-video-large{
+        display: inline-block;
+      }
+  
+      #hero-img-medium{
+        display: none;
+      }
+  
+      #hero-img-small{
+        display: none;
+      }
+    }
+
+    img{
+      max-width: 100%;
+    }
+  }
+};
