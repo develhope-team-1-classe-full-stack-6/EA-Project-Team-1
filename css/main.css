@@ -2612,6 +2612,9 @@ h6 {
   border: 2px solid transparent;
   outline: 3px solid rgb(194, 194, 194);
 }
+#ea-network-footer #network-footer-section #footer-row #row-1 #selector-container .footer-selector .btn.show {
+  border: none;
+}
 #ea-network-footer #network-footer-section #footer-row #row-1 #selector-container .footer-selector #options-container-pricing {
   height: 50px;
   width: 142px;
