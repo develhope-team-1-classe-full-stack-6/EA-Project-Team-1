@@ -1,0 +1,50 @@
+.custom-pagination{ 
+  .pagination{
+    border: 2px solid var(--dark);
+    color: #c2c2c2;
+  }
+
+  .pagination-border-right{
+    border-right: 2px solid var(--dark);
+  }
+  .pagination-border-left{
+    border-left: 2px solid var(--dark);
+  }
+
+  .carousel-item{
+    margin-right: 0;
+    width: 100%;
+    float: none;
+    transition: none;
+  }
+
+  .carousel-indicators{
+    position: static;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+  .carousel-indicators [data-bs-target] {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    text-indent: 0;
+    border-top: 0;
+    border-bottom: 0;
+    opacity: 1;
+    padding: 6px;
+  }
+
+  .carousel-indicators .active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    color: var(--black);
+  }
+}

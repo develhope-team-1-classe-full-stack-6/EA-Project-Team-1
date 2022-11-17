@@ -1,0 +1,351 @@
+@import "../abstracts/colors";
+.starwars-body {
+
+    background-color: black;
+
+.navbar-2-star-wars {
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 35px;
+
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0.5rem;
+        padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+
+        &>.container-fluid {
+            @media screen and (max-width:991px) {
+                justify-content: start;
+            }
+
+            a {
+                img {
+                    transition: transform 0.5s ease;
+                    height: 90%;
+                    width: 90%;
+
+                    @media screen and (max-width:991px) {
+                        transition: transform 0.5s ease;
+                        transform: scale(.9);
+                    }
+
+                    @media screen and (max-width:767px) {
+                        transition: transform 0.5s ease;
+                        transform: scale(.8);
+                    }
+                }
+            }
+        }
+
+        .nav-bar2-buttons {
+            width: 30px;
+            height: 30px;
+
+
+            .nav-bar2-dots-menu {
+                font-size: 1.5rem;
+                transition: all 0.25s linear;
+                cursor: pointer;
+
+                &:hover {
+                    font-size: 2rem;
+                    color: gold;
+                }
+
+                @media screen and (max-width:991px) {
+                    display: none;
+                }
+            }
+
+            .nav-bar2-hamburger-menu {
+                display: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: gold;
+                    transition: all .15s;
+                }
+
+                @media screen and (max-width:991px) {
+                    font-size: 1.5rem;
+                    transition: 0.25s;
+                    margin-left: 2rem;
+                    margin-right: 1.5rem;
+                    display: inline;
+                }
+            }
+        }
+
+        .nav-item.dropdown {
+
+            & .dropdown-menu.show {
+                transform-origin: top !important;
+                transform: scaleY(0) !important;
+            }
+
+            &:hover {
+                & .dropdown-menu.show {
+                    transform: scaleY(1) !important;
+                    transition: all 0.25s;
+                    background: transparent;
+                    border: none;
+                    padding-top: 1rem;
+
+                    & .box-dropdown {
+                        background: transparentize($black, 0.12);
+                        list-style: none;
+                        padding: 35px;
+
+                        &.left-radius {
+                            border-radius: 5px 0px 0px 5px;
+                        }
+
+                        &.right-radius {
+                            border-radius: 0px 5px 5px 0px;
+                            padding-left: 0px;
+
+                        }
+
+                        &.all-radius {
+                            border-radius: 5px;
+                            padding: 10px 25px;
+                        }
+
+                    }
+
+                    .dropdown-title {
+                        display: block;
+                        width: 100%;
+                        padding: 0.25rem 1rem;
+                        clear: both;
+                        color: var(--black);
+                        text-align: inherit;
+                        text-decoration: none;
+                        white-space: nowrap;
+                        background-color: transparent;
+                        border: 0;
+                    }
+
+                    .dropdown-divider {
+                        width: 82%;
+                        transform: translateX(10%);
+                        margin: 1px;
+                    }
+
+                    .dropdown-item {
+                        color: var(--white);
+                        opacity: 0.9;
+                        padding-block: 8px;
+
+                        &:hover {
+                            background: unset;
+                            color: gold;
+                        }
+                    }
+                }
+            }
+
+            .nav-link {
+                padding-top: .6rem;
+
+                &:hover {
+                    color: gold;
+                    transition: all .15s;
+                }
+            }
+
+            .nav-link.dropdown-toggle.show {
+                &::after {
+                    display: none;
+                }
+
+                i {
+                    transform: rotateX(85deg) scaleY(10) scaleX(0.9);
+
+                    &.fa-solid.fa-angle-down::before {
+                        display: inline-block;
+                        margin-left: .255em;
+                    }
+                }
+
+                &:hover {
+                    i {
+                        &.fa-solid.fa-angle-down::before {
+                            transform: rotateX(180deg);
+                            transition: all 0.45s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapper-wide-banners {
+    background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1920w.jpg);
+
+    @media screen and (max-width: 1455px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1456w.jpg);
+    }
+
+    @media screen and (max-width: 1023px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1024w.jpg);
+    }
+
+    @media screen and (max-width: 767px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.768w.jpg);
+    }
+
+    @media screen and (max-width: 320px) {
+        background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.320w.jpg);
+    }
+
+    .card1 {
+
+        .h6-squadron {
+            @media screen and (max-width:767px) {
+                color: white;
+            }
+        }
+
+        .card-img-overlay {
+            .btn {
+                background-color: rgb(255, 193, 36);
+                border: 1px solid rgb(255, 193, 36);
+            }
+        }
+    }
+}
+
+
+.sidebar-starwars {
+    .offcanvas.offcanvas-start {
+        top: 35px;
+    }
+
+    .btn-close.sidebar-close-icon {
+        width: 16px;
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+
+        &:hover {
+            background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='goldenrod'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+  }
+
+  #load-more {
+        @media screen and (min-width: 320px){
+            width: 87%;
+        }
+
+        @media screen and (min-width: 1179px){
+            width: 56%;
+        }
+        height: 120px;
+        width: 57%;
+        border: 2px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+        :hover {
+            border-color: white;
+            color: white;
+        }
+  }
+
+
+
+    .offcanvas-navbar2 {
+
+        .offcanvas.offcanvas-start {
+
+            .offcanvas-body {
+                .accordion {
+                    --bs-accordion-bg: var(--transparent);
+                }
+
+                .accordion-button {
+                    color: white;
+                    border-bottom: 1px solid white;
+
+                    &:focus {
+                        border-bottom: 1px solid rgb(255, 193, 36);
+                    }
+
+                    &:hover {
+                        color: rgb(255, 193, 36);
+                    }
+
+                    &:not(.collapsed) {
+                        color: rgb(255, 193, 36);
+                        border-bottom: 1px solid rgb(255, 193, 36);
+                    }
+                }
+
+                .accordion-collapse {
+                    border-bottom: 1px solid rgb(255, 193, 36);
+                }
+
+                .accordion-body {
+                    .sub-accordion {
+                        .accordion-button {
+                            border-bottom: 1px solid darken($color: $gray, $amount: 20);
+                            color: darken($color: $gray, $amount: 20);
+                            background-color: var(--transparent);
+
+                            &:focus {
+                                border-bottom: 1px solid darken($color: rgb(255, 193, 36), $amount: 20);
+                            }
+
+                            &:hover {
+                                color: rgb(255, 193, 36);
+                            }
+
+                            &:not(.collapsed) {
+                                color: var(--white);
+                                background-color: var(--transparent);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Box Styling blue background*/
+.box-container-blue{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    background: var(--grey);
+    
+    &:hover{
+      .box-background {
+        opacity: 0.1;
+      }
+  
+      .box-logo {
+        transform: translateY(-70px);
+      }
+  
+      a {
+        visibility: visible;
+        color: gray;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+        
+        &:last-child{
+          border-bottom: none;
+        }
+        &:hover{
+          color: var(--white);
+        } 
+        }
+    }
+}
+}

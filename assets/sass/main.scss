@@ -1,0 +1,45 @@
+@use "./abstracts/colors";
+
+@use "./base/config";
+@use "./base/typography";
+
+
+@use "./components/box-2";
+@use "./components/box";
+@use "./components/button";
+@use "./components/card";
+@use "./components/card-2";
+@use "./components/nav";
+@use "./components/pagination";
+@use "./components/ea-play-card";
+@use "./components/card-libreria-giochi";
+@use "./components/card-piattaforme";
+@use "./components/carousel";
+
+
+@use "./layout/navbar1";
+@use "./layout/navbar2";
+@use "./layout/offcanvas-navbar";
+@use "./layout/hero";
+@use "./layout/offcanvas-sidebar";
+@use "./layout/banner.scss";
+@use "./layout/footer";
+@use "./layout/form";
+@use "./layout/footer-starwars";
+
+
+@use "./pages/home";
+@use "./pages/sports";
+@use "./pages/prestodisponibili";
+@use "./pages/commitments";
+@use "./pages/console-ps5";
+@use "./pages/console-xbox";
+@use "./pages/console-switch";
+@use "./pages/library-mobile";
+@use "./pages/star-wars";
+@use "./pages/ea-originals";
+@use "./pages/inclusion-and-diversity";
+@use "./pages/positive-play";
+@use "./pages/social-impact";
+@use "./pages/giochi-gratuiti";
+@use "./pages/libreria-dei-giochi";

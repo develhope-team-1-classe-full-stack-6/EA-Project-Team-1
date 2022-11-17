@@ -1,0 +1,74 @@
+.starwarsbottomfooter {
+    background-color: rgb(37, 37, 37);
+    font-family: 'Brandon Grotesque Light', sans-serif !important;
+    font-weight: bolder;
+}
+.starwarslocalfooter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 37, 37) !important;
+    margin-bottom: 100px !important;
+    overflow: visible !important;
+    @media only screen and (min-width: 1024px) and (max-width: 1155px) {
+        height: 320px !important;
+    }
+    @media only screen and (max-width: 892px) {
+        margin-bottom: 150px !important;
+    }
+    @media only screen and (max-width: 544px) {
+        margin-bottom: 200px !important;
+    }
+    @media only screen and (max-width: 516px) {
+        margin-bottom: 250px !important;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .starwarsbottomfooter {
+        background-color: rgb(37, 37, 37) !important;
+    }
+}
+
+.eastarwarsintro {
+    margin-left: 145px;
+    margin-top: 40px;
+}
+
+.starwarsnetworklinks {
+    width: 50% !important;
+}
+
+.starwarssociallinks {
+    max-width: 200px !important;
+}
+
+.starwarslogosfooter {
+    background-color: rgb(37, 37, 37);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.starwarslogoscontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-top: 1px solid #a3a3a3;
+    margin-bottom: 30px;
+    width: 90vw;
+    .imagesstarcontainer {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 25px;
+    }
+}
+
+.starwarsafooter {
+    color: #a3a3a3 !important;
+    &:hover {
+        color: rgb(205, 177, 25) !important;
+    }
+}
