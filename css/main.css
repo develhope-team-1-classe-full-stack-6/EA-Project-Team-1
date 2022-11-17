@@ -4351,68 +4351,72 @@ body[style^=overflow] {
   background-color: var(--transparent);
 }
 
-.navbar-2-star-wars {
+.starwars-body {
+  background-color: black;
+  /* Box Styling blue background*/
+}
+.starwars-body .navbar-2-star-wars {
   color: white;
   position: fixed;
   width: 100%;
   z-index: 1;
   top: 35px;
 }
-.navbar-2-star-wars .navbar {
+.starwars-body .navbar-2-star-wars .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 @media screen and (max-width: 991px) {
-  .navbar-2-star-wars .navbar > .container-fluid {
+  .starwars-body .navbar-2-star-wars .navbar > .container-fluid {
     justify-content: start;
   }
 }
-.navbar-2-star-wars .navbar > .container-fluid a img {
+.starwars-body .navbar-2-star-wars .navbar > .container-fluid a img {
   transition: transform 0.5s ease;
   height: 90%;
   width: 90%;
 }
 @media screen and (max-width: 991px) {
-  .navbar-2-star-wars .navbar > .container-fluid a img {
+  .starwars-body .navbar-2-star-wars .navbar > .container-fluid a img {
     transition: transform 0.5s ease;
     transform: scale(0.9);
   }
 }
 @media screen and (max-width: 767px) {
-  .navbar-2-star-wars .navbar > .container-fluid a img {
+  .starwars-body .navbar-2-star-wars .navbar > .container-fluid a img {
     transition: transform 0.5s ease;
     transform: scale(0.8);
   }
 }
-.navbar-2-star-wars .navbar .nav-bar2-buttons {
+.starwars-body .navbar-2-star-wars .navbar .nav-bar2-buttons {
   width: 30px;
   height: 30px;
 }
-.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
+.starwars-body .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
   font-size: 1.5rem;
   transition: all 0.25s linear;
   cursor: pointer;
 }
-.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu:hover {
+.starwars-body .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu:hover {
   font-size: 2rem;
   color: gold;
 }
 @media screen and (max-width: 991px) {
-  .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
+  .starwars-body .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-dots-menu {
     display: none;
   }
 }
-.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
+.starwars-body .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
   display: none;
   cursor: pointer;
 }
-.navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu:hover {
+.starwars-body .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu:hover {
   color: gold;
   transition: all 0.15s;
 }
 @media screen and (max-width: 991px) {
-  .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
+  .starwars-body .navbar-2-star-wars .navbar .nav-bar2-buttons .nav-bar2-hamburger-menu {
     font-size: 1.5rem;
     transition: 0.25s;
     margin-left: 2rem;
@@ -4420,34 +4424,34 @@ body[style^=overflow] {
     display: inline;
   }
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown .dropdown-menu.show {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown .dropdown-menu.show {
   transform-origin: top !important;
   transform: scaleY(0) !important;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show {
   transform: scaleY(1) !important;
   transition: all 0.25s;
   background: transparent;
   border: none;
   padding-top: 1rem;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown {
   background: rgba(0, 0, 0, 0.88);
   list-style: none;
   padding: 35px;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.left-radius {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.left-radius {
   border-radius: 5px 0px 0px 5px;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.right-radius {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.right-radius {
   border-radius: 0px 5px 5px 0px;
   padding-left: 0px;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.all-radius {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .box-dropdown.all-radius {
   border-radius: 5px;
   padding: 10px 25px;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-title {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-title {
   display: block;
   width: 100%;
   padding: 0.25rem 1rem;
@@ -4459,122 +4463,165 @@ body[style^=overflow] {
   background-color: transparent;
   border: 0;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-divider {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-divider {
   width: 82%;
   transform: translateX(10%);
   margin: 1px;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item {
   color: var(--white);
   opacity: 0.9;
   padding-block: 8px;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item:hover {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown:hover .dropdown-menu.show .dropdown-item:hover {
   background: unset;
   color: gold;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown .nav-link {
   padding-top: 0.6rem;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link:hover {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown .nav-link:hover {
   color: gold;
   transition: all 0.15s;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show::after {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show::after {
   display: none;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i {
   transform: rotateX(85deg) scaleY(10) scaleX(0.9);
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i.fa-solid.fa-angle-down::before {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show i.fa-solid.fa-angle-down::before {
   display: inline-block;
   margin-left: 0.255em;
 }
-.navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show:hover i.fa-solid.fa-angle-down::before {
+.starwars-body .navbar-2-star-wars .navbar .nav-item.dropdown .nav-link.dropdown-toggle.show:hover i.fa-solid.fa-angle-down::before {
   transform: rotateX(180deg);
   transition: all 0.45s;
 }
-
-.wrapper-wide-banners {
+.starwars-body .wrapper-wide-banners {
   background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1920w.jpg);
 }
 @media screen and (max-width: 1455px) {
-  .wrapper-wide-banners {
+  .starwars-body .wrapper-wide-banners {
     background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1456w.jpg);
   }
 }
 @media screen and (max-width: 1023px) {
-  .wrapper-wide-banners {
+  .starwars-body .wrapper-wide-banners {
     background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.1024w.jpg);
   }
 }
 @media screen and (max-width: 767px) {
-  .wrapper-wide-banners {
+  .starwars-body .wrapper-wide-banners {
     background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.768w.jpg);
   }
 }
 @media screen and (max-width: 320px) {
-  .wrapper-wide-banners {
+  .starwars-body .wrapper-wide-banners {
     background-image: url(../../assets/images/star-wars/star-wars-jedi-trailer-section-bg-xl.jpg.adapt.320w.jpg);
   }
 }
 @media screen and (max-width: 767px) {
-  .wrapper-wide-banners .card1 .h6-squadron {
+  .starwars-body .wrapper-wide-banners .card1 .h6-squadron {
     color: white;
   }
 }
-.wrapper-wide-banners .card1 .card-img-overlay .btn {
+.starwars-body .wrapper-wide-banners .card1 .card-img-overlay .btn {
   background-color: rgb(255, 193, 36);
   border: 1px solid rgb(255, 193, 36);
 }
-
-.sidebar-starwars .offcanvas.offcanvas-start {
+.starwars-body .sidebar-starwars .offcanvas.offcanvas-start {
   top: 35px;
 }
-.sidebar-starwars .btn-close.sidebar-close-icon {
+.starwars-body .sidebar-starwars .btn-close.sidebar-close-icon {
   width: 16px;
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
-.sidebar-starwars .btn-close.sidebar-close-icon:hover {
+.starwars-body .sidebar-starwars .btn-close.sidebar-close-icon:hover {
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='goldenrod'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
-.sidebar-starwars .btn-close.sidebar-close-icon:focus {
+.starwars-body .sidebar-starwars .btn-close.sidebar-close-icon:focus {
   box-shadow: none;
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion {
+.starwars-body #load-more {
+  height: 120px;
+  width: 57%;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) {
+  .starwars-body #load-more {
+    width: 87%;
+  }
+}
+@media screen and (min-width: 1179px) {
+  .starwars-body #load-more {
+    width: 56%;
+  }
+}
+.starwars-body #load-more :hover {
+  border-color: white;
+  color: white;
+}
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion {
   --bs-accordion-bg: var(--transparent);
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button {
   color: white;
   border-bottom: 1px solid white;
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:focus {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:focus {
   border-bottom: 1px solid rgb(255, 193, 36);
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:hover {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:hover {
   color: rgb(255, 193, 36);
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:not(.collapsed) {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-button:not(.collapsed) {
   color: rgb(255, 193, 36);
   border-bottom: 1px solid rgb(255, 193, 36);
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-collapse {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-collapse {
   border-bottom: 1px solid rgb(255, 193, 36);
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button {
   border-bottom: 1px solid #b7b7b7;
   color: #b7b7b7;
   background-color: var(--transparent);
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:focus {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:focus {
   border-bottom: 1px solid #bd8700;
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:hover {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:hover {
   color: rgb(255, 193, 36);
 }
-.sidebar-starwars .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:not(.collapsed) {
+.starwars-body .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .sub-accordion .accordion-button:not(.collapsed) {
   color: var(--white);
   background-color: var(--transparent);
+}
+.starwars-body .box-container-blue {
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  background: var(--grey);
+}
+.starwars-body .box-container-blue:hover .box-background {
+  opacity: 0.1;
+}
+.starwars-body .box-container-blue:hover .box-logo {
+  transform: translateY(-70px);
+}
+.starwars-body .box-container-blue:hover a {
+  visibility: visible;
+  color: gray;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.starwars-body .box-container-blue:hover a:last-child {
+  border-bottom: none;
+}
+.starwars-body .box-container-blue:hover a:hover {
+  color: var(--white);
 }
 
 @media screen and (max-width: 768px) {

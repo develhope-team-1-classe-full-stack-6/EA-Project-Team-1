@@ -1,4 +1,7 @@
 @import "../abstracts/colors";
+.starwars-body {
+
+    background-color: black;
 
 .navbar-2-star-wars {
     color: white;
@@ -234,6 +237,26 @@
             box-shadow: none;
         }
     }
+  }
+
+  #load-more {
+        @media screen and (min-width: 320px){
+            width: 87%;
+        }
+
+        @media screen and (min-width: 1179px){
+            width: 56%;
+        }
+        height: 120px;
+        width: 57%;
+        border: 2px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+        :hover {
+            border-color: white;
+            color: white;
+        }
+  }
 
 
 
@@ -293,4 +316,36 @@
             }
         }
     }
+
+    /* Box Styling blue background*/
+.box-container-blue{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    background: var(--grey);
+    
+    &:hover{
+      .box-background {
+        opacity: 0.1;
+      }
+  
+      .box-logo {
+        transform: translateY(-70px);
+      }
+  
+      a {
+        visibility: visible;
+        color: gray;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+        
+        &:last-child{
+          border-bottom: none;
+        }
+        &:hover{
+          color: var(--white);
+        } 
+        }
+    }
+}
 }
