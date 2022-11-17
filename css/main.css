@@ -2399,6 +2399,9 @@ h6 {
 .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .accordion-body ul li {
   margin: 10px;
 }
+.offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .accordion-body ul li .dropdown-item:hover {
+  color: var(--orange);
+}
 .offcanvas-navbar2 .offcanvas.offcanvas-start .offcanvas-body .accordion-body .accordion-body ul li .accordion-item {
   text-decoration: none;
   font-weight: normal;
