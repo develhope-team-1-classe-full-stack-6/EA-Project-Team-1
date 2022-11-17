@@ -8,6 +8,10 @@
         left: 50%;
         font-size: 38px;
         width: 70%;
+        
+        @media screen and (min-width:1456px) {
+            font-size: 54px !important;
+        }
     }
 }
 

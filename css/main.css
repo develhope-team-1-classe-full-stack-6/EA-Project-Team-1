@@ -4843,6 +4843,13 @@ section .diversitylink {
   .diversityhero h3 {
     font-size: 38px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
+  .diversityhero h3 {
+    font-size: 54px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .diversitygreycardcontainer {
     gap: 20px;
   }
@@ -5214,6 +5221,11 @@ section .diversitylink {
   left: 50%;
   font-size: 38px;
   width: 70%;
+}
+@media screen and (min-width: 1456px) {
+  .socialimpacthero h3 {
+    font-size: 54px !important;
+  }
 }
 
 .socialimpactintro {
