@@ -1545,7 +1545,8 @@ h6 {
   }
 }
 @media screen and (max-width: 768px) {
-  .nav-wrapper #slide-back, .nav-wrapper #slide {
+  .nav-wrapper #slide-back,
+.nav-wrapper #slide {
     visibility: visible;
   }
 }
@@ -5438,6 +5439,22 @@ section .diversitylink {
 }
 #freetoplay-wrapper header img {
   max-width: 100%;
+}
+
+.nav-wrapper.library-games .buttons {
+  visibility: hidden;
+}
+.nav-wrapper.library-games #slide-back {
+  visibility: hidden;
+}
+.nav-wrapper.library-games #slide {
+  visibility: hidden;
+}
+@media screen and (max-width: 510px) {
+  .nav-wrapper.library-games #slide-back,
+.nav-wrapper.library-games #slide {
+    visibility: visible;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
