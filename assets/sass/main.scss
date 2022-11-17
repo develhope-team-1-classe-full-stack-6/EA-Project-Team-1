@@ -1,6 +1,5 @@
 @use "./abstracts/colors";
 
-
 @use "./base/config";
 @use "./base/typography";
 
@@ -26,6 +25,7 @@
 @use "./layout/banner.scss";
 @use "./layout/footer";
 @use "./layout/form";
+@use "./layout/footer-starwars";
 
 
 @use "./pages/home";
