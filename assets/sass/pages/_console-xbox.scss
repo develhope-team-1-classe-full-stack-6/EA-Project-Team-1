@@ -1,6 +1,9 @@
 .library-xbox-header{
-    background-image: url('https://media.contentapi.ea.com/content/dam/eacom/common/ea-library-header-16x9-xl.png.adapt.320w.png');   
-    height: 470px;
+    background-image: url("../assets/images/games/library/consoles/ea-library-header-16x9-xl.png.adapt.1920w.png");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;   
+    height: 390px;
 
     .xbox-h1{
         h1{
